@@ -38,11 +38,6 @@ CTI_UI_Respawn_GetAvailableLocations = {
 	_ignore_mobile_crew = [];
 	if ((missionNamespace getVariable "CTI_RESPAWN_MOBILE") > 0) then {
 		_mobile = (CTI_DeathPosition) call CTI_UI_Respawn_GetMobileRespawn;
-		_mobile_at_sky = [];
-		for "_i" from 0 to ((count _mobile) - 1) do {
-		if ((getposATL (_mobile select _i) select 2) > 4) then {_mobile_at_sky = _mobile_at_sky + [_mobile select _i]};
-		};
-		_mobile = _mobile - _mobile_at_sky;
 		_list = _list + _mobile;
 		{{if (group _x == group player) then {_ignore_mobile_crew pushBack _x}} forEach crew _x} forEach _mobile;
 	};
@@ -97,7 +92,6 @@ CTI_UI_Respawn_GetRespawnLabel = {
 			_var = missionNamespace getVariable format ["CTI_%1_%2", CTI_P_SideJoined, _location getVariable "cti_structure_type"];
 			_value = (_var select 0) select 1;
 		};
-		case (typeOf _location == "B_Slingload_01_Medevac_F"): { _value = "Huron Medical Container" };
 		case (_location == (leader group player)) : {_value=format ["[LEADER] %1",name _location]};
 		case (_location isKindOf "AllVehicles"&& !(_location == (leader group player))): { _value = getText(configFile >> "CfgVehicles" >> typeOf _location >> "displayName") };
 	};
@@ -251,16 +245,16 @@ CTI_UI_Respawn_OnRespawnReady = {
 	CTI_P_LastRespawnTime=time;
 	if !(_respawn_ai) then { //--- Stock respawn
 
-		if ((_where isKindOf "Car" || _where isKindOf "Wheeled_APC_F" || _where isKindOf "Land_Pod_Heli_Transport_04_medevac_F") && (_where emptyPositions "cargo")>0 && (locked _where) < 2 &&  abs (speed _where) > 5) then {
+		if ((_where isKindOf "Car" || _where isKindOf "Wheeled_APC_F" || _where isKindOf "Land_Pod_Heli_Transport_04_medevac_F") && (_where emptyPositions "cargo")>0 && (locked _where) < 2 &&  abs (speed _where) < 5) then {
 				//Respawn in vehicles cargo
 				player moveInCargo _where;
 			} else {
 				_spawn_at = [_where, 8, 30] call CTI_CO_FNC_GetRandomPosition;
 
 				//try to find and position on building position
-				_nearestbuilding = nearestbuilding _spawn_at;
-				_buildingpos = _nearestbuilding buildingPos -1;
-				if (count _buildingpos > 0 && alive _nearestbuilding && ((_spawn_at distance2d _nearestbuilding) < 25) && (!(typeOF _nearestbuilding in CTI_BUILDINGPOS_MISSING))) then {
+				_nearestbuilding= nearestbuilding _spawn_at;
+				if (alive _nearestbuilding && ((_spawn_at distance2d _nearestbuilding) < 25) && (!(typeOF _nearestbuilding in CTI_BUILDINGPOS_MISSING))) then {
+					_buildingpos = _nearestbuilding buildingPos -1;
 					if (count _buildingpos > 10) then {
 						_buildingpos deleteRange [ceil(count _buildingpos / 3), count _buildingpos];
 					};

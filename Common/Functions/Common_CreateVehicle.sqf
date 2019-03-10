@@ -106,7 +106,7 @@ if (isNull _created) then {
 
 	if (_vehicle isKindOf "SHIP" && _side != CTI_RESISTANCE_ID && !(surfaceIsWater position _vehicle)) then {
 		_wp = [getPos _vehicle, 0, 75, 7, 2, 1, 0] call BIS_fnc_findSafePos;
-		if (count _wp == 0 || !(surfaceIsWater _wp)) then {_wp = (getPos _vehicle) findEmptyPosition [0,100,"O_T_VTOL_02_vehicle_dynamicLoadout_F"];};
+		if (count _wp == 0 || !(surfaceIsWater _wp)) then {_wp = getPos _vehicle;};
 		_vehicle setPos _wp;
 	};
 
@@ -260,11 +260,7 @@ if ((missionNamespace getVariable [format ["%1", typeOf _vehicle],["","","","","
 
 
 if (_locked && !( _vehicle isKindOf "Thing") && !( _vehicle isKindOf "StaticWeapon") && !( _vehicle isKindOf "UAV") && !( _vehicle isKindOf "UGV_01_base_F") && !( _vehicle isKindOf "B_T_UAV_03_dynamicLoadout_F")) then {_vehicle lock 2} else {_vehicle lock 0};
-if (_net && !( _vehicle isKindOf "Thing")) then {
-	_vehicle setVariable ["cti_net", _side, true];
-	} else {
-	if (_vehicle isKindOf "Slingload_01_Base_F") then {_vehicle setVariable ["cti_net", _side, true];};
-	};
+if (_net && !( _vehicle isKindOf "Thing")) then {_vehicle setVariable ["cti_net", _side, true]};
 if (_handle) then {
 	_vehicle addEventHandler ["killed", format["[_this select 0, _this select 1, %1] spawn CTI_CO_FNC_OnUnitKilled", _side]]; //--- Called on destruction
 	_vehicle addEventHandler ["hit", {_this spawn CTI_CO_FNC_OnUnitHit}]; //--- Register importants hits

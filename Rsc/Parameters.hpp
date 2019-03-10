@@ -21,7 +21,7 @@ class Params {
 		title = $STR_CTI_BASE_AREA_MAX;
 		values[] = {0,1,2,4,6};
 		texts[] = {"0","1","2","4","6"};
-		default = 4;
+		default = 2;
 	};
 	class CTI_BASE_HQ_REPAIR {
 		title = $STR_CTI_BASE_HQ_REPAIR;
@@ -39,7 +39,7 @@ class Params {
 		title = $STR_CTI_BASE_STARTUP_PLACEMENT;
 		values[] = {2000,3000,4000,5000,6000,7000,8000,9000,10000,12000,15000,20000};
 		texts[] = {"2 KM","3 KM","4 KM","5 KM","6 KM","7 KM","8 KM","9 KM","10 KM","12 KM","15 KM","20 KM"};
-		default = 15000;
+		default = 10000;
 	};
 	class CTI_ECONOMY_INCOME_CYCLE {
 		title = $STR_CTI_ECONOMY_INCOME_CYCLE;
@@ -153,7 +153,7 @@ class Params {
 		title = $STR_CTI_VEHICLES_EMPTY_TIMEOUT;
 		values[] = {60,120,180,240,300,600,1200,1800,2400,3000,3600};
 		texts[] = {"1 Minute","2 Minutes","3 Minutes","4 Minutes","5 Minutes","10 Minutes","20 Minutes","30 Minutes","40 Minutes","50 Minutes","1 Hour"};
-		default = 2400;
+		default = 3600;
 	};
 	class CTI_GRAPHICS_TG_MAX {
 		title = $STR_CTI_GRAPHICS_TG_MAX;
