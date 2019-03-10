@@ -38,6 +38,11 @@ CTI_UI_Respawn_GetAvailableLocations = {
 	_ignore_mobile_crew = [];
 	if ((missionNamespace getVariable "CTI_RESPAWN_MOBILE") > 0) then {
 		_mobile = (CTI_DeathPosition) call CTI_UI_Respawn_GetMobileRespawn;
+		_mobile_at_sky = [];
+		for "_i" from 0 to ((count _mobile) - 1) do {
+		if ((getposATL (_mobile select _i) select 2) > 4) then {_mobile_at_sky = _mobile_at_sky + [_mobile select _i]};
+		};
+		_mobile = _mobile - _mobile_at_sky;
 		_list = _list + _mobile;
 		{{if (group _x == group player) then {_ignore_mobile_crew pushBack _x}} forEach crew _x} forEach _mobile;
 	};
@@ -92,6 +97,7 @@ CTI_UI_Respawn_GetRespawnLabel = {
 			_var = missionNamespace getVariable format ["CTI_%1_%2", CTI_P_SideJoined, _location getVariable "cti_structure_type"];
 			_value = (_var select 0) select 1;
 		};
+		case (typeOf _location == "B_Slingload_01_Medevac_F"): { _value = "Huron Medical Container" };
 		case (_location == (leader group player)) : {_value=format ["[LEADER] %1",name _location]};
 		case (_location isKindOf "AllVehicles"&& !(_location == (leader group player))): { _value = getText(configFile >> "CfgVehicles" >> typeOf _location >> "displayName") };
 	};
@@ -229,9 +235,6 @@ CTI_UI_Respawn_UseSelector = {
 
 CTI_UI_Respawn_OnRespawnReady = {
 
-	EXCEPTIONS = ["Land_Dome_Small_F","Land_Dome_Big_F","Land_Cargo_Tower_V4_F","Land_Cargo_Tower_V1_F","Land_Cargo_Patrol_V4_F","Land_Cargo_Patrol_V1_F","Land_FuelStation_Shed_F","Land_fs_roof_F","Land_FuelStation_01_roof_F","Land_FuelStation_02_roof_F","Land_FuelStation_01_roof_malevil_F","Land_SM_01_shelter_wide_F","Land_Shed_Big_F","Land_Shed_Small_F","Land_SM_01_shelter_narrow_F","Land_TentHangar_V1_F","Land_Airport_01_hangar_F","Land_Shed_06_F","Land_MetalShelter_01_F","Land_MetalShelter_02_F","Land_WarehouseShelter_01_F","Land_SCF_01_shed_F"];
-
-
 	_where = uiNamespace getVariable "cti_dialog_ui_respawnmenu_respawnat";
 
 	_respawn_ai = false;
@@ -241,52 +244,51 @@ CTI_UI_Respawn_OnRespawnReady = {
 			_pos = getPos _where; //--- Get the AI position (todo: copy the stance)
 			_respawn_ai_gear = (_where) call CTI_UI_Gear_GetUnitEquipment; //--- Get the AI current equipment using the Gear UI function
 			deleteVehicle _where; //--- Remove the AI
-
-			_nearesthouse = typeOf ((position player) nearestObject "House");
-			_nearesthousepos = getPos ((position player) nearestObject "House");
-			_nearesthouseradius = round (sizeOF _nearesthouse / 2);
-			if (_nearesthouse == "Land_Cargo_Tower_V4_F" || _nearesthouse == "Land_Cargo_Tower_V1_F") then {_nearesthouseradius = 8.5;};
-			if (_nearesthouse == "Land_Cargo_Patrol_V4_F" || _nearesthouse == "Land_Cargo_Patrol_V1_F") then {_nearesthouseradius = 6;};
-			if (_nearesthouse == "Land_Shed_Big_F" || _nearesthouse == "Land_SM_01_shelter_wide_F") then {_nearesthouseradius = 16;};
-			if ((_nearesthouse in EXCEPTIONS) && ((player distance2d _nearesthousepos) < (_nearesthouseradius))) then {
-			[player, _pos] call KK_fnc_setPosAGLS;
-			player setPos [getPos player select 0, getPos player select 1, 0.25];
-			} else {
-			[player, _pos] call KK_fnc_setPosAGLS;
-			};
-
-			if (((player distance2d nearestbuilding player) < 10) && (!(typeOF nearestbuilding player in EXCEPTIONS))) then {
-			_buildingpos = nearestBuilding player buildingPos -1;
-			player setpos (selectrandom _buildingpos);
-			};
-
-//			player setPos _pos; //--- Place the player where the AI was
+			player setPos _pos; //--- Place the player where the AI was
 			_respawn_ai = true;
 		};
 	};
 	CTI_P_LastRespawnTime=time;
 	if !(_respawn_ai) then { //--- Stock respawn
-		_spawn_at = [_where, 8, 30] call CTI_CO_FNC_GetRandomPosition;
 
-		_nearesthouse = typeOf ((position player) nearestObject "House");
-		_nearesthousepos = getPos ((position player) nearestObject "House");
-		_nearesthouseradius = round (sizeOF _nearesthouse / 2);
-		if (_nearesthouse == "Land_Cargo_Tower_V4_F" || _nearesthouse == "Land_Cargo_Tower_V1_F") then {_nearesthouseradius = 8.5;};
-		if (_nearesthouse == "Land_Cargo_Patrol_V4_F" || _nearesthouse == "Land_Cargo_Patrol_V1_F") then {_nearesthouseradius = 6;};
-		if (_nearesthouse == "Land_Shed_Big_F" || _nearesthouse == "Land_SM_01_shelter_wide_F") then {_nearesthouseradius = 16;};
-		if ((_nearesthouse in EXCEPTIONS) && ((player distance2d _nearesthousepos) < (_nearesthouseradius))) then {
-		[player, _spawn_at] call KK_fnc_setPosAGLS;
-		player setPos [getPos player select 0, getPos player select 1, 0.25];
-		} else {
-		[player, _spawn_at] call KK_fnc_setPosAGLS;
+		if ((_where isKindOf "Car" || _where isKindOf "Wheeled_APC_F" || _where isKindOf "Land_Pod_Heli_Transport_04_medevac_F") && (_where emptyPositions "cargo")>0 && (locked _where) < 2 &&  abs (speed _where) > 5) then {
+				//Respawn in vehicles cargo
+				player moveInCargo _where;
+			} else {
+				_spawn_at = [_where, 8, 30] call CTI_CO_FNC_GetRandomPosition;
+
+				//try to find and position on building position
+				_nearestbuilding = nearestbuilding _spawn_at;
+				_buildingpos = _nearestbuilding buildingPos -1;
+				if (count _buildingpos > 0 && alive _nearestbuilding && ((_spawn_at distance2d _nearestbuilding) < 25) && (!(typeOF _nearestbuilding in CTI_BUILDINGPOS_MISSING))) then {
+					if (count _buildingpos > 10) then {
+						_buildingpos deleteRange [ceil(count _buildingpos / 3), count _buildingpos];
+					};
+					player setpos (selectrandom _buildingpos);
+				} else {
+					//spawn AGLS at spawn_at
+					_nearesthouse = typeOf ((_spawn_at) nearestObject "House");
+					_nearesthousepos = getPos ((_spawn_at) nearestObject "House");
+					_nearesthouseradius = round (sizeOF _nearesthouse / 2);
+					if (_nearesthouse == "Land_Shed_Big_F" || _nearesthouse == "Land_SM_01_shelter_wide_F") then {_nearesthouseradius = 16;};
+					[player, _spawn_at] call KK_fnc_setPosAGLS;
+					if ((_nearesthouse in CTI_BUILDINGPOS_MISSING) && ((_spawn_at distance2d _nearesthousepos) < (_nearesthouseradius))) then {
+						player setPos [getPos player select 0, getPos player select 1, 0.25];
+					};
+				};
+
+
+			};
+
+	};
+
+	//removes unclosed ppEffects (halo jump radialblur bug)
+	//thanks to auQuiksilver
+	for '_i' from 0 to 499 step 1 do {
+		if (ppEffectEnabled _i) then {
+			_i ppEffectEnable FALSE;
+			_i ppEffectCommit 0;
 		};
-
-		if (((player distance2d nearestbuilding player) < 10) && (!(typeOF nearestbuilding player in EXCEPTIONS))) then {
-		_buildingpos2 = nearestBuilding player buildingPos -1;
-		player setpos (selectrandom _buildingpos2);
-		};
-
-//		player setPos _spawn_at;
 	};
 
 	titleCut["","BLACK IN",1];
@@ -313,15 +315,7 @@ CTI_UI_Respawn_OnRespawnReady = {
 		} forEach (units player call CTI_CO_FNC_GetLiveUnits);
 		CTI_REDEPLOY=false;
 	};
-/*	if !(_respawn_ai) then { //--- Stock respawn
-		[player, missionNamespace getVariable format ["CTI_AI_%1_DEFAULT_GEAR", CTI_P_SideJoined]] call CTI_CO_FNC_EquipUnit; //--- Equip the default equipment
-	} else { //--- Respawn in own AI
-		[player, _respawn_ai_gear] call CTI_CO_FNC_EquipUnit; //--- Equip the equipment of the AI on the player
-	};
 
-	if ((missionNamespace getVariable "CTI_UNITS_FATIGUE") == 0) then {player enableFatigue false}; //--- Disable the unit's fatigue
-	CTI_P_Respawning = false;
-};*/
 	if !(_respawn_ai) then { //--- Stock respawn
 		// --- zerty edit
 		if  (!isNil {CTI_P_LastPurchase } &&  (CTI_PLAYER_REEQUIP >= 1 ) ) then {
