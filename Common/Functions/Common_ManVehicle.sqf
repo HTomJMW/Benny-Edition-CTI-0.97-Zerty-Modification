@@ -23,7 +23,7 @@
 	Common Function: CTI_CO_FNC_CreateUnit
 
   # EXAMPLE #
-    _crew = [tank1, "B_crew_F", group player, CTI_P_SideID] call CTI_CO_FNC_ManVehicle
+    _crew = [tank1, "B_T_crew_F", group player, CTI_P_SideID] call CTI_CO_FNC_ManVehicle
 	  -> Assuming tank1 is an empty tank, a crew will be spawned in it and will join the player's group
 */
 

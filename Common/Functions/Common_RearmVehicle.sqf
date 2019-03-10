@@ -43,8 +43,8 @@ if(((_t_side) call CTI_CO_FNC_GetSideUpgrades) select CTI_UPGRADE_DATA == 1) the
 
 // Fix for air vehicles ... uses sanatise script to clean up afterwards
 //enable for && (!(_vehicle isKindOf "O_Plane_Fighter_02_F")) && (!(_vehicle isKindOf "B_Plane_Fighter_01_F")) && (!(_vehicle isKindOf "I_Plane_Fighter_04_F"))
-if (	(((typeOf _vehicle) == "O_APC_Tracked_02_AA_F") 
-		|| ((typeOf _vehicle) == "B_APC_Tracked_01_AA_F")
+if (	(((typeOf _vehicle) == "O_T_APC_Tracked_02_AA_ghex_F") 
+		|| ((typeOf _vehicle) == "B_T_APC_Tracked_01_AA_F")
 		|| _vehicle isKindOf "Air") 
 		&& (missionNamespace getVariable "CTI_AC_ENABLED")>0
 		&& CTI_isCLient) then

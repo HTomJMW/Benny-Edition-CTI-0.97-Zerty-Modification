@@ -24,7 +24,7 @@ missionNamespace setVariable [format["CTI_SQUADS_%1_KIND_AIR", _side], ["AirAtta
 
 _v = _v		+ ["Infantry"];
 _t = _t		+ ["Infantry"];
-_p = _p		+ [[["B_Soldier_F", 5], ["B_soldier_AR_F", 2, 80], ["B_medic_F", 1], ["B_soldier_LAT_F", 1, 70], ["B_Soldier_GL_F", 2, 90], ["B_sniper_F", 1, 70], ["B_soldier_M_F", 1, 55]]];
+_p = _p		+ [[["B_T_Soldier_F", 5], ["B_T_soldier_AR_F", 2, 80], ["B_T_medic_F", 1], ["B_T_soldier_LAT_F", 1, 70], ["B_T_Soldier_GL_F", 2, 90], ["B_T_sniper_F", 1, 70], ["B_T_soldier_M_F", 1, 55]]];
 _f = _f		+ [CTI_BARRACKS];
 _m = _m		+ [500];
 _c = _c		+ ["Infantry"];
@@ -32,7 +32,7 @@ _s = _s		+ [[]];
 
 _v = _v		+ ["InfantryAT"];
 _t = _t		+ ["Infantry - AT"];
-_p = _p		+ [[["B_soldier_AT_F", 5, 85], ["B_medic_F", 1], ["B_soldier_LAT_F", 3, 75], ["B_soldier_LAT2_F", 2, 70]]];
+_p = _p		+ [[["B_T_soldier_AT_F", 5, 85], ["B_T_medic_F", 1], ["B_T_soldier_LAT_F", 3, 75], ["B_T_soldier_LAT2_F", 2, 70]]];
 _f = _f		+ [CTI_BARRACKS];
 _m = _m		+ [800];
 _c = _c		+ ["InfantryAT"];
@@ -40,7 +40,7 @@ _s = _s		+ [[]];
 
 _v = _v		+ ["InfantryAA"];
 _t = _t		+ ["Infantry - AA"];
-_p = _p		+ [[["B_soldier_AA_F", 5, 85], ["B_medic_F", 1], ["B_soldier_LAT_F", 2, 60]]];
+_p = _p		+ [[["B_T_soldier_AA_F", 5, 85], ["B_T_medic_F", 1], ["B_T_soldier_LAT_F", 2, 60]]];
 _f = _f		+ [CTI_BARRACKS];
 _m = _m		+ [800];
 _c = _c		+ ["InfantryAA"];
@@ -48,7 +48,7 @@ _s = _s		+ [[]];
 
 _v = _v		+ ["InfantryRanged"];
 _t = _t		+ ["Infantry - Snipers"];
-_p = _p		+ [[["B_sniper_F", 2], ["B_soldier_M_F", 1]]];
+_p = _p		+ [[["B_T_sniper_F", 2], ["B_T_soldier_M_F", 1]]];
 _f = _f		+ [CTI_BARRACKS];
 _m = _m		+ [900];
 _c = _c		+ ["InfantryAdvanced"];
@@ -56,7 +56,7 @@ _s = _s		+ [[]];
 
 // _v = _v		+ ["Motorized"];
 // _t = _t		+ ["Motorized - Transport"];
-// _p = _p		+ [[["B_Truck_01_transport_F", 1]]];
+// _p = _p		+ [[["B_T_Truck_01_transport_F", 1]]];
 // _f = _f		+ [CTI_LIGHT];
 // _m = _m		+ [1000];
 // _c = _c		+ ["MotorizedTransport"];
@@ -64,7 +64,7 @@ _s = _s		+ [[]];
 
 _v = _v		+ ["Motorized"];
 _t = _t		+ ["Motorized - MPRAP"];
-_p = _p		+ [[["B_MRAP_01_hmg_F", 3], ["B_MRAP_01_gmg_F", 2, 75]]];
+_p = _p		+ [[["B_T_MRAP_01_hmg_F", 3], ["B_T_MRAP_01_gmg_F", 2, 75]]];
 _f = _f		+ [CTI_LIGHT];
 _m = _m		+ [1500];
 _c = _c		+ ["Motorized"];
@@ -72,7 +72,7 @@ _s = _s		+ [[]];
 
 _v = _v		+ ["Mechanized"];
 _t = _t		+ ["Mechanized - APC"];
-_p = _p		+ [[["B_APC_Wheeled_01_cannon_F", 1], ["B_APC_Tracked_01_rcws_F", 1, 50]]];
+_p = _p		+ [[["B_T_APC_Wheeled_01_cannon_F", 1], ["B_T_APC_Tracked_01_rcws_F", 1, 50]]];
 _f = _f		+ [CTI_HEAVY];
 _m = _m		+ [2500];
 _c = _c		+ ["Mechanized"];
@@ -80,7 +80,7 @@ _s = _s		+ [[]];
 
 _v = _v		+ ["MechanizedHeavy"];
 _t = _t		+ ["Mechanized - APC (Heavy)"];
-_p = _p		+ [[["B_APC_Tracked_01_rcws_F", 1]]];
+_p = _p		+ [[["B_T_APC_Tracked_01_rcws_F", 1]]];
 _f = _f		+ [CTI_HEAVY];
 _m = _m		+ [3000];
 _c = _c		+ ["Mechanized"];
@@ -88,7 +88,7 @@ _s = _s		+ [[]];
 
 _v = _v		+ ["Armored"];
 _t = _t		+ ["Armored - MBT"];
-_p = _p		+ [[["B_MBT_01_cannon_F", 1], ["B_MBT_01_TUSK_F", 1, 50], ["B_AFV_Wheeled_01_up_cannon_F", 1, 40]]];
+_p = _p		+ [[["B_T_MBT_01_cannon_F", 1], ["B_T_MBT_01_TUSK_F", 1, 50], ["B_T_AFV_Wheeled_01_up_cannon_F", 1, 40]]];
 _f = _f		+ [CTI_HEAVY];
 _m = _m		+ [6500];
 _c = _c		+ ["Armored"];
@@ -96,7 +96,7 @@ _s = _s		+ [[]];
 
 _v = _v		+ ["AntiAir"];
 _t = _t		+ ["Armored - Anti Air"];
-_p = _p		+ [[["B_APC_Tracked_01_AA_F", 1]]];
+_p = _p		+ [[["B_T_APC_Tracked_01_AA_F", 1]]];
 _f = _f		+ [CTI_HEAVY];
 _m = _m		+ [8500];
 _c = _c		+ ["AntiAir"];

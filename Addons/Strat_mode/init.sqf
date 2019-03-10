@@ -55,8 +55,6 @@ with missionNamespace do {
 	   	KK_fnc_setPosAGLS= compileFinal preprocessFileLineNumbers "Addons\Strat_mode\Functions\KK_fnc_setPosAGLS.sqf";
 	   	SM_REPAIRVEHICLEREMOTE= compileFinal preprocessFileLineNumbers "Addons\Strat_mode\Functions\SM_RepairVehiculeRemote.sqf";
 	   	CTI_SM_Mines_script = compileFinal preprocessFileLineNumbers "Addons\Strat_mode\Functions\SM_Mines.sqf";
-
-	   	TASKS_LOOP= compileFinal preprocessFileLineNumbers "Addons\Strat_mode\Functions\TASKS_loop.sqf";
 };
 
 //Common stuff
@@ -83,10 +81,6 @@ with missionNamespace do {
 		if (local (_this select 0)) then {_this call SM_REPAIRVEHICLEREMOTE ;};
 	};
 };
-
-
-
-waitUntil {CTI_EAST getVariable ["CTI_LOAD_COMPLETED",false]};
 
 if (CTI_IsServer) then {
 
@@ -156,39 +150,39 @@ if (CTI_IsServer) then {
 
 
 		CTI_PVF_Server_Hud_Share_Add= {
-
-			_sl= (_this select 1) call CTI_CO_FNC_GetSideLogic;
-			while {HUD_WRITE} do {sleep random (1);};
-			HUD_WRITE=true;
-			_hud =_sl getVariable ["CTI_HUD_SHARED",[]];
-
-
-			//cleanup
-			_delete=+ [];
-			{
-				_obj = _x select 0;
-				_timeout= _x select 1;
-				if( isNull _obj || time > _timeout) then {_delete pushBack _forEachIndex;};
-			}  forEach  _hud;
-
-			{_hud deleteAt _x;true} count _delete;
-			//new objects
-			{
-				_new_obj= _x select 0;
-				_new_timeout= _x select 1;
-				_find=(_hud findif {_x select 0 == _new_obj});
-				if (_find == -1) then {
-					_hud pushBack _x;
-					_new_obj setVariable ["CTI_HUD_Detected",_new_timeout,true];
-				};
-				true
-			}count (_this select 0);
+			_this spawn {
+				_sl= (_this select 1) call CTI_CO_FNC_GetSideLogic;
+				while {HUD_WRITE} do {sleep random (1);};
+				HUD_WRITE=true;
+				_hud =_sl getVariable ["CTI_HUD_SHARED",[]];
 
 
+				//cleanup
+				_delete=+ [];
+				{
+					_obj = _x select 0;
+					_timeout= _x select 1;
+					if( isNull _obj || time > _timeout) then {_delete pushBack _forEachIndex;};
+				}  forEach  _hud;
 
-			_sl setVariable ["CTI_HUD_SHARED",_hud,true];
-			HUD_WRITE=false;
+				{_hud deleteAt _x;true} count _delete;
+				//new objects
+				{
+					_new_obj= _x select 0;
+					_new_timeout= _x select 1;
+					_find=(_hud findif {_x select 0 == _new_obj});
+					if (_find == -1) then {
+						_hud pushBack _x;
+						_new_obj setVariable ["CTI_HUD_Detected",_new_timeout,true];
+					};
+					true
+				}count (_this select 0);
 
+
+
+				_sl setVariable ["CTI_HUD_SHARED",_hud,true];
+				HUD_WRITE=false;
+			};
 		};
 
 
@@ -199,6 +193,11 @@ if (CTI_IsServer) then {
 
 		CTI_PVF_Server_Assign_Zeus= {
   		_this  assignCurator ADMIN_ZEUS;
+		};
+		CTI_PVF_Server_UAV_FUEL={
+			if (missionNamespace getvariable "CTI_GAMEPLAY_DARTER_FUEL" > 0) then {
+				_this spawn UAV_FUEL;
+			};
 		};
 	};
 
@@ -236,8 +235,9 @@ if (CTI_IsClient) then {
 			_marker setMarkerColorLocal  ((_side) call CTI_CO_FNC_GetSideColoration);
 			_marker setMarkerAlphaLocal 0.5;
 		};
-		CTI_PVF_Client_UAVSetFuel={
-			if (_this isKindOf "Helicopter_Base_F") then {_this spawn UAV_FUEL;};
+		CTI_PVF_SetFuel={
+			diag_log format [":: Fuel :: setting %1 at %2", _this select 0 , _this select 1];
+			(vehicle (_this select 0)) setfuel (_this select 1);
 		};
 	};
 
@@ -326,13 +326,10 @@ if (CTI_IsServer) then {
 
 		// time compression
 		0 spawn {
-			_day_ratio=14/CTI_WEATHER_FAST;
-			_nigth_ratio=10/CTI_WEATHER_FAST_NIGTH;
-			_sunrise = 5;
-			_sunset = 19;
-			if (ISLAND == 3) then {_sunrise = 7; _sunset = 18;};
+			_day_ratio=12/CTI_WEATHER_FAST;
+			_nigth_ratio=12/CTI_WEATHER_FAST_NIGTH;
 			while {!CTI_Gameover} do {
-				if (daytime > _sunrise && daytime < _sunset) then {
+				if (daytime > 7 && daytime <18 ) then {
 					if (timeMultiplier != _day_ratio) then  {setTimeMultiplier _day_ratio;};
 				} else {
 					if (timeMultiplier !=  _nigth_ratio) then {setTimeMultiplier _nigth_ratio;};
@@ -480,9 +477,6 @@ if (CTI_IsClient) then {
 		["darter","onEachFrame",{0 call UAV_RANGE } ] call BIS_fnc_addStackedEventHandler;
 	};
 
-
-	// Taks loop
-	0 spawn TASKS_LOOP;
 
 };
 
