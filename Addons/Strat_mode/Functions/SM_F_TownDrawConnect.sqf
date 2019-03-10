@@ -12,4 +12,4 @@ if (!(CTI_P_SideJoined == resistance))then {
 			[getPos _ct,getPos _x,"ColorBlack",CTI_MARKERS_TOWN_AREA_RANGE] call CTI_SM_Connect;
 		} forEach _neigh;
 	} forEach CTI_Towns;
-};
+}; 
