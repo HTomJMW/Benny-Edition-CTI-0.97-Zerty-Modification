@@ -78,7 +78,7 @@ _asked= missionNamespace getVariable "CTI_BASE_STARTUP_PLACEMENT";
 waitUntil {CTI_InitTowns};
 _eastLocation=CENTER_POS;
 _westLocation=CENTER_POS;
-while {(_eastLocation distance _westLocation) <(_asked)*0.95 ||(_eastLocation distance _westLocation) >( _asked)*1.25 || {(_x distance _eastLocation)<400} count CTI_Towns>0 || {(_x distance _westLocation)<400} count CTI_Towns>0 ||(_eastLocation distance CENTER_POS) > ( _asked)*1.2 ||(_westLocation distance CENTER_POS) > ( _asked)*1.2 } do {
+while {(_eastLocation distance _westLocation) <(_asked)*0.95 ||(_eastLocation distance _westLocation) >( _asked)*1.25 || {(_x distance _eastLocation)<600} count CTI_Towns>0 || {(_x distance _westLocation)<600} count CTI_Towns>0 ||(_eastLocation distance CENTER_POS) > ( _asked)*1.2 ||(_westLocation distance CENTER_POS) > ( _asked)*1.2 } do {
 	while {random(1)>0.2}do {
 		_a="BiS pseudo-random number Generator is crappy";
 	};
@@ -295,8 +295,8 @@ if (missionNamespace getvariable "CTI_PERSISTANT" == 1) then {
 	};
 	0 spawn {
 		while {!CTi_GameOver} do {
-			sleep 270 +random (60);
 			0 call PERS_SAVE;
+			sleep 270 +random (60);
 		};
 	};
 } else {
