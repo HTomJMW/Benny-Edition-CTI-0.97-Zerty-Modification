@@ -72,15 +72,6 @@ CENTER_POS=getMarkerPos "CENTER_POS";
 "CENTER_POS" setmarkeralpha 0;
 CENTER_RADIUS=(getMarkerSize "CENTER_POS")select 0;
 _locations= CENTER_POS nearroads CENTER_RADIUS;
-
-//remove Tanoa's small forrest paths and bugged wooden bridges from spawn locations --- [H] Tom
-_not_roads = [];
-for "_i" from 0 to ((count _locations) - 1) do
-{
-	if !(isOnRoad (_locations select _i)) then {_not_roads pushback (_locations select _i);};
-};
-_locations = _locations - _not_roads;
-
 _attempts = 0;
 _real_attempts = 0;
 _asked= missionNamespace getVariable "CTI_BASE_STARTUP_PLACEMENT";
@@ -172,7 +163,7 @@ while {! (((getMarkerPos format ["HELO_START_%1", _i])select 0) == 0)} do
 	if (CTI_BASE_FOB_MAX > 0) then {_logic setVariable ["cti_fobs", [], true]};
 
 	//--- Startup vehicles
-	if !((profileNamespace getvariable ["CTI_SAVE_ENABLED",false]) &&(count(profileNamespace getVariable ["CTI_SAVE_TOWNS",[]]) == count CTI_TOWNS)) then {
+	if !((profileNamespace getvariable ["CTI_SAVE_ENABLED",false]) &&(count(profileNamespace getVariable ["CTI_SAVE_TOWNS",[]]) == count CTI_TOWNS) && (ISLAND in [2,3])) then {
 	{
 		_model = _x select 0;
 		_equipment = _x select 1;
@@ -322,11 +313,45 @@ if (missionNamespace getvariable "CTI_PERSISTANT" == 1) then {
 //Logging of varius values
 0 spawn {
 		sleep 100; //wait for everything to finish loading
-		diag_log "CTI_Mission_Performance: Starting Server";
+		_version = 3; //version of DiscordBot logReader
+		_arr = 	[["CTI_DataPacket", "Header"],
+				 ["Version", _version], 
+				 ["Map", worldName]
+				];
+		diag_log _arr;
 		while {!CTI_GameOver} do {
-			_towns = count(((east) call CTI_CO_FNC_GetSideLogic) getVariable  ["CTI_ACTIVE",[]]) + count(((west) call CTI_CO_FNC_GetSideLogic) getVariable  ["CTI_ACTIVE",[]]);
-
-			_arr = 	["CTI_Mission_Performance:",
+			_east_sl = (east) call CTI_CO_FNC_GetSideLogic;
+			_west_sl = (west) call CTI_CO_FNC_GetSideLogic;
+			_towns = count(_east_sl getVariable  ["CTI_ACTIVE",[]]) + count(_west_sl getVariable  ["CTI_ACTIVE",[]]);
+			
+			//build player array, splitting at 800 to ensure char limit of 1000 is not reached
+			_players = [];
+			_players_sub = [];
+			{
+				if(count (_players_sub joinString ", ") >= 800) then {
+					_players pushBack _players_sub;
+					_players_sub = [];
+				};
+				_players_sub pushBack [name _x, str (side _x), getPlayerScores _x, getPos _x];
+			} forEach allPlayers - entities "HeadlessClient_F";
+			if(count (_players_sub joinString ", ") >= 10) then {
+					_players pushBack _players_sub;
+					_players_sub = [];
+			};
+			
+			//Build town arrays
+			_west_towns = [];
+			{
+				_west_towns pushBack str _x;
+			} forEach (west call CTI_CO_FNC_GetSideTowns);			
+			_east_towns = [];
+			{
+				_east_towns pushBack str _x;
+			} forEach (east call CTI_CO_FNC_GetSideTowns);
+			
+			//Post Data to .rpt log
+			//Data for general mission performance
+			diag_log[["CTI_DataPacket", "Data_1"], 
 					["time", time],
 					["fps", diag_fps],
 					["score_east", (scoreSide east)],
@@ -340,11 +365,27 @@ if (missionNamespace getvariable "CTI_PERSISTANT" == 1) then {
 					["active_SQF_count", count(diag_activeSQFScripts)],
 					["active_AI", count(allUnits)],
 					["total_objects", count(allMissionObjects "All")],
-					["active_towns", _towns]
-					];
+					["active_towns", _towns]];
+			_dataP = 2; //next data packet index
+			{ 	 
+				//Data for Replay		
+				diag_log[["CTI_DataPacket", (format ["Data_%1", _dataP])],
+						["players", _x]];
+				_dataP = _dataP+1;
+			} forEach _players;
+			
+			diag_log[["CTI_DataPacket", format ["Data_EOD_%1", _dataP]], //Marking package as "last"
+					["bases_east", _east_sl getVariable ["cti_structures_areas",[]]],
+					["bases_west", _west_sl getVariable ["cti_structures_areas",[]]],
+					["east_towns", _east_towns],
+					["west_towns", _west_towns]];
 
-			diag_log _arr;
 			sleep 60;
 		};
-		diag_log "CTI_Mission_Performance: Stopping Server";
+		//Triggerd on Misson end, used when FSM does not trigger. (used for debugging)
+		_arr = 	[["CTI_DataPacket", "EOF"], 
+				 ["Version", _version],
+				 ["Map", worldName]
+				];
+		diag_log _arr;
 };
