@@ -17,7 +17,7 @@
 	(CLASSNAME) call CTI_CO_FNC_GetVehicleTurrets
 	
   # EXAMPLE #
-    _turrets = ("B_T_MRAP_01_hmg_F") call CTI_CO_FNC_GetVehicleTurrets
+    _turrets = ("B_MRAP_01_hmg_F") call CTI_CO_FNC_GetVehicleTurrets
 	  -> Returns: [[0]]
 */
 
