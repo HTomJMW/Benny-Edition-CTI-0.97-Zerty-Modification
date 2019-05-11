@@ -617,7 +617,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="nullReturn = [this, ""Transmission Tower Brit"", resistance,400] execVM ""Common\Init\Init_Location.sqf""";
+				init="nullReturn = [this, ""Transmission Tower Brit"", resistance, 400] execVM ""Common\Init\Init_Location.sqf""";
 				name="Town4";
 			};
 			id=47;
