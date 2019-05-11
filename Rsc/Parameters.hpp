@@ -1,7 +1,7 @@
 class Params {
 	class CTI_AI_TEAMS_ENABLED {
 		title = $STR_CTI_AI_TEAMS_ENABLED;
-		values[] = {0};
+		values[] = {0,1,2,3};
 		texts[] = {$STR_CTI_DISABLED, $STR_CTI_AI_TEAMS_ENABLED_1, $STR_CTI_AI_TEAMS_ENABLED_2, $STR_CTI_AI_TEAMS_ENABLED_3};
 		default = 0;
 	};
