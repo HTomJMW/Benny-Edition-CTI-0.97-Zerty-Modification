@@ -101,7 +101,9 @@ if (CTI_IsServer) then {
 		CTI_BASES_NEIGH=[];
 		for "_i" from 1 to CTI_BASE_AREA_MAX do {	CTI_BASES_NEIGH=CTI_BASES_NEIGH + [[]];	};
 		_sl setVariable ["CTI_BASES_NEIGH",CTI_BASES_NEIGH,true];
-		_sl setVariable ["CTI_BASES_FOUND",[],true];
+		if (count (_sl getVariable ["CTI_BASES_FOUND",[]]) == 0) then {
+			_sl setVariable ["CTI_BASES_FOUND",[],true];
+		};
 	} count [east,west];
 
 	//dynamic group loop
