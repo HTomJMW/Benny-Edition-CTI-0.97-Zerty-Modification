@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5281.3281,218.71146,5431.9551};
+		pos[]={4688.394,214.68358,10600.424};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
 		aside[]={0.99999994,0,-0};
@@ -76,7 +76,7 @@ class AddonsMetaData
 randomSeed=2773227;
 class ScenarioData
 {
-	author="[H] Tom";
+	author="Yoshi_E";
 };
 class Intro
 {
@@ -105,7 +105,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="BECTI Livonia - Zerty 1.3.5.0";
+		briefingName="BECTI BE 0.97 - Zerty 1.3.5.0";
 		overviewText="By Benny - Adapted from OFP era MFCTI (Mike Melvin)";
 		resistanceWest=0;
 		timeOfChanges=24720;
@@ -127,26 +127,25 @@ class Mission
 		class Item0
 		{
 			dataType="Marker";
-			position[]={0,177.27,0};
+			position[]={22583.834,96.02002,-5973.7368};
 			name="CTI_EastRespawn";
 			type="Empty";
 			colorName="ColorRed";
 			fillName="Border";
 			drawBorder=1;
 			id=0;
-			atlOffset=-75.059998;
+			atlOffset=-63.152222;
 		};
 		class Item1
 		{
 			dataType="Marker";
-			position[]={0,205.271,0};
+			position[]={-9669.7393,147.85536,18719.67};
 			name="CTI_WestRespawn";
 			type="Empty";
 			colorName="ColorRed";
 			fillName="Border";
 			drawBorder=1;
 			id=1;
-			atlOffset=-47.059006;
 		};
 		class Item2
 		{
@@ -171,391 +170,373 @@ class Mission
 		class Item4
 		{
 			dataType="Marker";
-			position[]={0,309.28201,0};
+			position[]={6869.0361,197.02246,1716.3329};
 			name="HELO_START_0";
 			type="Empty";
 			colorName="ColorGreen";
 			id=4;
-			atlOffset=56.952011;
+			atlOffset=-40.499191;
 		};
 		class Item5
 		{
 			dataType="Marker";
-			position[]={0,200.806,0};
+			position[]={5263.7095,61.808838,4728.3486};
 			name="HELO_START_1";
 			type="Empty";
 			colorName="ColorGreen";
 			id=5;
-			atlOffset=-51.524002;
+			atlOffset=-144.60051;
 		};
 		class Item6
 		{
 			dataType="Marker";
-			position[]={0,226.728,0};
+			position[]={821.02118,87.973633,4964.6362};
 			name="HELO_START";
 			type="Empty";
 			colorName="ColorGreen";
 			id=6;
-			atlOffset=-25.602005;
+			atlOffset=-48.280212;
 		};
 		class Item7
 		{
 			dataType="Marker";
-			position[]={0,226.31,0};
+			position[]={11949.461,54.415771,1771.1272};
 			name="HELO_START_2";
 			type="Empty";
 			colorName="ColorGreen";
 			id=7;
-			atlOffset=-26.020004;
+			atlOffset=-112.61259;
 		};
 		class Item8
 		{
 			dataType="Marker";
-			position[]={0,208.086,0};
+			position[]={2138.4075,91.246338,5589.7681};
 			name="HELO_START_3";
 			type="Empty";
 			colorName="ColorGreen";
 			id=8;
-			atlOffset=-44.244003;
+			atlOffset=-142.7386;
 		};
 		class Item9
 		{
 			dataType="Marker";
-			position[]={0,84.029999,0};
+			position[]={6388.6855,-153.53833,5690.7461};
 			name="HELO_START_4";
 			type="Empty";
 			colorName="ColorGreen";
 			id=9;
-			atlOffset=-168.3;
+			atlOffset=-282.46338;
 		};
 		class Item10
 		{
 			dataType="Marker";
-			position[]={0,42.181,0};
+			position[]={12012.268,32.385582,8169.4341};
 			name="HELO_START_5";
 			type="Empty";
 			colorName="ColorGreen";
 			id=10;
-			atlOffset=-210.149;
 		};
 		class Item11
 		{
 			dataType="Marker";
-			position[]={0,67.852997,0};
+			position[]={11739.504,4.7758775,10242.01};
 			name="HELO_START_6";
 			type="Empty";
 			colorName="ColorGreen";
 			id=11;
-			atlOffset=-184.47701;
 		};
 		class Item12
 		{
 			dataType="Marker";
-			position[]={0,27.650999,0};
+			position[]={3559.8276,68.230003,9916.542};
 			name="HELO_START_7";
 			type="Empty";
 			colorName="ColorGreen";
 			id=12;
-			atlOffset=-224.679;
 		};
 		class Item13
 		{
 			dataType="Marker";
-			position[]={0,21.73,0};
+			position[]={1332.0972,137.67,10116.148};
 			name="HELO_START_8";
 			type="Empty";
 			colorName="ColorGreen";
 			id=13;
-			atlOffset=-230.60001;
 		};
 		class Item14
 		{
 			dataType="Marker";
-			position[]={0,21.924,0};
+			position[]={4140.5444,320.6564,160.99472};
 			name="HELO_START_9";
 			type="Empty";
 			colorName="ColorGreen";
 			id=14;
-			atlOffset=-230.40601;
 		};
 		class Item15
 		{
 			dataType="Marker";
-			position[]={0,30.09,0};
+			position[]={10716.184,47.100887,12233.048};
 			name="HELO_START_10";
 			type="Empty";
 			colorName="ColorGreen";
 			id=15;
-			atlOffset=-222.24001;
 		};
 		class Item16
 		{
 			dataType="Marker";
-			position[]={0,107.658,0};
+			position[]={638.74921,-175.78198,7863.7476};
 			name="HELO_START_11";
 			type="Empty";
 			colorName="ColorGreen";
 			id=16;
-			atlOffset=-144.672;
+			atlOffset=-198.87979;
 		};
 		class Item17
 		{
 			dataType="Marker";
-			position[]={0,53.075001,0};
+			position[]={6383.8481,43.785133,11777.084};
 			name="HELO_START_12";
 			type="Empty";
 			colorName="ColorGreen";
 			id=17;
-			atlOffset=-199.255;
 		};
 		class Item18
 		{
 			dataType="Marker";
-			position[]={0,5.5939999,0};
+			position[]={9135.6992,4.6242909,11625.896};
 			name="HELO_START_13";
 			type="Empty";
 			colorName="ColorGreen";
 			id=18;
-			atlOffset=-246.73601;
 		};
 		class Item19
 		{
 			dataType="Marker";
-			position[]={0,13.725,0};
+			position[]={5169.9976,138.12943,7700.7495};
 			name="HELO_START_14";
 			type="Empty";
 			colorName="ColorGreen";
 			id=19;
-			atlOffset=-238.605;
+			atlOffset=-0.74211121;
 		};
 		class Item20
 		{
 			dataType="Marker";
-			position[]={0,12.391,0};
+			position[]={6796.1631,173.75386,4805.3691};
 			name="HELO_START_15";
 			type="Empty";
 			colorName="ColorGreen";
 			id=20;
-			atlOffset=-239.939;
 		};
 		class Item21
 		{
 			dataType="Marker";
-			position[]={0,26.832001,0};
+			position[]={9648.2188,64.917999,7979.6665};
 			name="HELO_START_16";
 			type="Empty";
 			colorName="ColorGreen";
 			id=21;
-			atlOffset=-225.498;
 		};
 		class Item22
 		{
 			dataType="Marker";
-			position[]={0,13.515,0};
+			position[]={11253.902,72.786842,6353.4517};
 			name="HELO_START_17";
 			type="Empty";
 			colorName="ColorGreen";
 			id=22;
-			atlOffset=-238.815;
 		};
 		class Item23
 		{
 			dataType="Marker";
-			position[]={0,22.684,0};
+			position[]={9477.6758,76.515205,10043.436};
 			name="HELO_START_18";
 			type="Empty";
 			colorName="ColorGreen";
 			id=23;
-			atlOffset=-229.646;
 		};
 		class Item24
 		{
 			dataType="Marker";
-			position[]={0,59.219002,0};
+			position[]={7188.0732,-242.84058,9899.6943};
 			name="HELO_START_19";
 			type="Empty";
 			colorName="ColorGreen";
 			id=24;
-			atlOffset=-193.11099;
+			atlOffset=-361.82904;
 		};
 		class Item25
 		{
 			dataType="Marker";
-			position[]={0,59.848,0};
+			position[]={10787.603,-68.006836,4984.1338};
 			name="HELO_START_20";
 			type="Empty";
 			colorName="ColorGreen";
 			id=25;
-			atlOffset=-192.48199;
+			atlOffset=-211.95049;
 		};
 		class Item26
 		{
 			dataType="Marker";
-			position[]={0,117.283,0};
+			position[]={5627.686,-151.94556,11424.808};
 			name="HELO_START_21";
 			type="Empty";
 			colorName="ColorGreen";
 			id=26;
-			atlOffset=-135.047;
+			atlOffset=-183.30066;
 		};
 		class Item27
 		{
 			dataType="Marker";
-			position[]={0,18.531,0};
+			position[]={6343.8848,-194.06226,7551.8521};
 			name="HELO_START_22";
 			type="Empty";
 			colorName="ColorGreen";
 			id=27;
-			atlOffset=-233.799;
+			atlOffset=-305.47626;
 		};
 		class Item28
 		{
 			dataType="Marker";
-			position[]={0,274.09601,0};
+			position[]={3123.9341,73.467529,10780.259};
 			name="HELO_START_23";
 			type="Empty";
 			colorName="ColorGreen";
 			id=28;
-			atlOffset=21.766006;
+			atlOffset=-40.727348;
 		};
 		class Item29
 		{
 			dataType="Marker";
-			position[]={0,35.561001,0};
+			position[]={4623.5449,-247.59595,11810.57};
 			name="HELO_START_24";
 			type="Empty";
 			colorName="ColorGreen";
 			id=29;
-			atlOffset=-216.769;
+			atlOffset=-306.40781;
 		};
 		class Item30
 		{
 			dataType="Marker";
-			position[]={0,191.464,0};
+			position[]={3088.6694,-142.27466,7579.4912};
 			name="HELO_START_25";
 			type="Empty";
 			colorName="ColorGreen";
 			id=30;
-			atlOffset=-60.865997;
+			atlOffset=-211.97061;
 		};
 		class Item31
 		{
 			dataType="Marker";
-			position[]={0,116.049,0};
+			position[]={5588.6631,-289.49463,9600.9697};
 			name="HELO_START_26";
 			type="Empty";
 			colorName="ColorGreen";
 			id=31;
-			atlOffset=-136.28101;
+			atlOffset=-300.33417;
 		};
 		class Item32
 		{
 			dataType="Marker";
-			position[]={0,86.350998,0};
+			position[]={10305.158,33.39032,8645.0049};
 			name="HELO_START_27";
 			type="Empty";
 			colorName="ColorGreen";
 			id=32;
-			atlOffset=-165.979;
 		};
 		class Item33
 		{
 			dataType="Marker";
-			position[]={0,46.786999,0};
+			position[]={5775.6611,246.36861,3686.4939};
 			name="HELO_START_28";
 			type="Empty";
 			colorName="ColorGreen";
 			id=33;
-			atlOffset=-205.543;
 		};
 		class Item34
 		{
 			dataType="Marker";
-			position[]={0,43.708,0};
+			position[]={10373.19,130.51343,626.72491};
 			name="HELO_START_29";
 			type="Empty";
 			colorName="ColorGreen";
 			id=34;
-			atlOffset=-208.62201;
 		};
 		class Item35
 		{
 			dataType="Marker";
-			position[]={0,197.797,0};
+			position[]={3058.6519,-154.3728,8565.5615};
 			name="HELO_START_30";
 			type="Empty";
 			colorName="ColorGreen";
 			id=35;
-			atlOffset=-54.533005;
+			atlOffset=-171.3903;
 		};
 		class Item36
 		{
 			dataType="Marker";
-			position[]={0,57.667,0};
+			position[]={1228.8348,78.206543,1091.6505};
 			name="HELO_START_31";
 			type="Empty";
 			colorName="ColorGreen";
 			id=36;
-			atlOffset=-194.66299;
+			atlOffset=-350.11975;
 		};
 		class Item37
 		{
 			dataType="Marker";
-			position[]={0,207.68201,0};
+			position[]={7851.2104,-65.021484,6478.1167};
 			name="HELO_START_32";
 			type="Empty";
 			colorName="ColorGreen";
 			id=37;
-			atlOffset=-44.647995;
+			atlOffset=-166.24051;
 		};
 		class Item38
 		{
 			dataType="Marker";
-			position[]={0,16.791,0};
+			position[]={7854.8618,74.145088,8434.8545};
 			name="HELO_START_33";
 			type="Empty";
 			colorName="ColorGreen";
 			id=38;
-			atlOffset=-235.539;
 		};
 		class Item39
 		{
 			dataType="Marker";
-			position[]={0,29.665001,0};
+			position[]={331.63141,-178.68921,3344.3252};
 			name="HELO_START_34";
 			type="Empty";
 			colorName="ColorGreen";
 			id=39;
-			atlOffset=-222.66501;
+			atlOffset=-333.14325;
 		};
 		class Item40
 		{
 			dataType="Marker";
-			position[]={0,15.519,0};
+			position[]={4672.9858,98.164337,10730.163};
 			name="HELO_START_35";
 			type="Empty";
 			colorName="ColorGreen";
 			id=40;
-			atlOffset=-236.811;
+			atlOffset=51.11446;
 		};
 		class Item41
 		{
 			dataType="Marker";
-			position[]={0,-190.99699,0};
+			position[]={-9731.5186,252.6955,-5423.8804};
 			name="CTI_HELP";
 			type="Empty";
 			colorName="ColorUNKNOWN";
 			id=59;
-			atlOffset=-443.327;
 		};
 		class Item42
 		{
 			dataType="Marker";
-			position[]={0,105.313,0};
+			position[]={22060.604,3.6363437,18844.447};
 			name="CTI_TUTORIAL";
 			type="Empty";
 			id=60;
-			atlOffset=-147.017;
 		};
 		class Item43
 		{
@@ -685,6 +666,7 @@ class Mission
 			};
 			id=67;
 			type="FlagPole_F";
+			atlOffset=-3.8146973e-006;
 		};
 		class Item50
 		{
@@ -811,6 +793,7 @@ class Mission
 			};
 			id=74;
 			type="FlagPole_F";
+			atlOffset=-3.8146973e-006;
 		};
 		class Item57
 		{
@@ -829,6 +812,7 @@ class Mission
 			};
 			id=75;
 			type="FlagPole_F";
+			atlOffset=-3.8146973e-006;
 		};
 		class Item58
 		{
@@ -1385,6 +1369,7 @@ class Mission
 					};
 					id=116;
 					type="O_Soldier_SL_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1445,6 +1430,7 @@ class Mission
 					};
 					id=117;
 					type="O_Soldier_SL_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1505,6 +1491,7 @@ class Mission
 					};
 					id=118;
 					type="O_Soldier_SL_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1565,7 +1552,6 @@ class Mission
 					};
 					id=119;
 					type="O_Soldier_SL_F";
-					atlOffset=-1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1686,7 +1672,7 @@ class Mission
 					};
 					id=121;
 					type="O_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1747,7 +1733,7 @@ class Mission
 					};
 					id=122;
 					type="O_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1990,6 +1976,7 @@ class Mission
 					};
 					id=126;
 					type="O_Soldier_SL_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2350,6 +2337,7 @@ class Mission
 					};
 					id=132;
 					type="O_Soldier_SL_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2470,7 +2458,7 @@ class Mission
 					};
 					id=134;
 					type="O_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2651,7 +2639,6 @@ class Mission
 					};
 					id=137;
 					type="O_Soldier_SL_F";
-					atlOffset=-1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2712,6 +2699,7 @@ class Mission
 					};
 					id=138;
 					type="O_Soldier_SL_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2787,7 +2775,7 @@ class Mission
 					};
 					id=140;
 					type="B_Soldier_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2848,7 +2836,7 @@ class Mission
 					};
 					id=141;
 					type="B_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=0.00019836426;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2909,7 +2897,7 @@ class Mission
 					};
 					id=142;
 					type="B_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=0.00021362305;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2970,7 +2958,7 @@ class Mission
 					};
 					id=143;
 					type="B_Soldier_SL_F";
-					atlOffset=-1.5258789e-005;
+					atlOffset=0.00038146973;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3031,6 +3019,7 @@ class Mission
 					};
 					id=144;
 					type="B_Soldier_SL_F";
+					atlOffset=0.00042724609;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3091,6 +3080,7 @@ class Mission
 					};
 					id=145;
 					type="B_Soldier_SL_F";
+					atlOffset=0.00022888184;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3151,7 +3141,7 @@ class Mission
 					};
 					id=146;
 					type="B_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=0.00021362305;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3212,7 +3202,7 @@ class Mission
 					};
 					id=147;
 					type="B_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=0.00021362305;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3273,6 +3263,7 @@ class Mission
 					};
 					id=148;
 					type="B_Soldier_SL_F";
+					atlOffset=0.00036621094;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3333,6 +3324,7 @@ class Mission
 					};
 					id=149;
 					type="B_Soldier_SL_F";
+					atlOffset=0.00038146973;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3393,6 +3385,7 @@ class Mission
 					};
 					id=150;
 					type="B_Soldier_SL_F";
+					atlOffset=0.0001373291;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3453,7 +3446,6 @@ class Mission
 					};
 					id=151;
 					type="B_Soldier_SL_F";
-					atlOffset=-1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3514,7 +3506,7 @@ class Mission
 					};
 					id=152;
 					type="B_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=0.00032043457;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3575,7 +3567,7 @@ class Mission
 					};
 					id=153;
 					type="B_Soldier_SL_F";
-					atlOffset=-1.5258789e-005;
+					atlOffset=0.0001373291;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3636,7 +3628,7 @@ class Mission
 					};
 					id=154;
 					type="B_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=0.00021362305;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3697,6 +3689,7 @@ class Mission
 					};
 					id=155;
 					type="B_Soldier_SL_F";
+					atlOffset=0.00018310547;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3757,6 +3750,7 @@ class Mission
 					};
 					id=156;
 					type="B_Soldier_SL_F";
+					atlOffset=0.00039672852;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3817,6 +3811,7 @@ class Mission
 					};
 					id=157;
 					type="B_Soldier_SL_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3877,7 +3872,7 @@ class Mission
 					};
 					id=158;
 					type="B_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=0.00021362305;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3938,7 +3933,7 @@ class Mission
 					};
 					id=159;
 					type="B_Soldier_SL_F";
-					atlOffset=1.5258789e-005;
+					atlOffset=0.00019836426;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3999,6 +3994,7 @@ class Mission
 					};
 					id=160;
 					type="B_Soldier_SL_F";
+					atlOffset=0.00039672852;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4120,6 +4116,7 @@ class Mission
 					};
 					id=162;
 					type="B_Soldier_SL_F";
+					atlOffset=0.00018310547;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4240,6 +4237,7 @@ class Mission
 					};
 					id=164;
 					type="B_Soldier_SL_F";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4289,7 +4287,7 @@ class Mission
 				formation="STAG COLUMN";
 			};
 			id=139;
-			atlOffset=1.5258789e-005;
+			atlOffset=3.0517578e-005;
 		};
 		class Item83
 		{
@@ -4569,7 +4567,7 @@ class Mission
 		class Item92
 		{
 			dataType="Marker";
-			position[]={22222.223,3.959203,18925.252};
+			position[]={22064.549,3.5248961,18839.248};
 			name="marker_0";
 			text="Welcome Area (Do not enter)";
 			markerType="ELLIPSE";
