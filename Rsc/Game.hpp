@@ -4,15 +4,15 @@ respawnDelay = 10;
 respawnDialog = false;
 
 //--- Require briefing.html to show up.
-onLoadMission = "BECTI - Zerty/HTom/Yoshi_E 1.3.5.0";
+onLoadMission = "BECTI Livonia - Zerty/HTom/Yoshi_E 1.3.5.0";
 onLoadMissionTime = false;
-onLoadName = "BECTI - Zerty/HTom/Yoshi_E";
+onLoadName = "BECTI Livonia - Zerty/HTom/Yoshi_E";
 
-briefingName = "BECTI - Zerty/HTom/Yoshi_E 1.3.5.0";
+briefingName = "BECTI Livonia - Zerty/HTom/Yoshi_E 1.3.5.0";
 
 //--- ArmA 3 Specifics
 dev = "Benny";
-author = "Benny; Modified by Zerty, HTom, Yoshi_E [JMW]";
+author = "Benny; Modified by Zerty, HTom";
 // overviewPicture
 
 //--- Properties.
