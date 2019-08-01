@@ -21,7 +21,7 @@ class Params {
 		title = $STR_CTI_BASE_AREA_MAX;
 		values[] = {0,1,2,4,6};
 		texts[] = {"0","1","2","4","6"};
-		default = 4;
+		default = 2;
 	};
 	class CTI_BASE_HQ_REPAIR {
 		title = $STR_CTI_BASE_HQ_REPAIR;
