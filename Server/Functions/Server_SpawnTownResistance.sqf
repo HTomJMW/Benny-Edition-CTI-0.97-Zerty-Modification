@@ -216,7 +216,7 @@ _positions = [];
 //	_position = [getPos _town, 25, CTI_TOWNS_RESISTANCE_SPAWN_RANGE] call CTI_CO_FNC_GetRandomPosition;
 	_position = [_position, 50] call CTI_CO_FNC_GetEmptyPosition;
 	_road_pos=(_position nearRoads 100);
-	if (count _road_pos > 0) then {_position = _road_pos select floor random (count _road_pos);};
+	if (count _road_pos > 0) then {_position = selectRandom _road_pos;};
 	_positions pushBack _position;
 
 	_group = createGroup resistance;
