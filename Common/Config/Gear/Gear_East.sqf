@@ -167,6 +167,22 @@ _i = _i		+ ["30Rnd_762x39_AK12_Mag_Tracer_F"];
 _u = _u		+ [1];
 _p = _p		+ [30];
 
+_i = _i		+ ["75Rnd_762x39_Mag_F"];
+_u = _u		+ [3];
+_p = _p		+ [50];
+
+_i = _i		+ ["75Rnd_762x39_Mag_Tracer_F"];
+_u = _u		+ [3];
+_p = _p		+ [50];
+
+_i = _i		+ ["75rnd_762x39_AK12_Mag_F"];
+_u = _u		+ [3];
+_p = _p		+ [50];
+
+_i = _i		+ ["75rnd_762x39_AK12_Mag_Tracer_F"];
+_u = _u		+ [3];
+_p = _p		+ [50];
+
 _i = _i		+ ["30Rnd_65x39_caseless_green"];
 _u = _u		+ [1];
 _p = _p		+ [30];
@@ -190,6 +206,14 @@ _p = _p		+ [100];
 _i = _i		+ ["20Rnd_556x45_UW_mag"];
 _u = _u		+ [2];
 _p = _p		+ [50];
+
+_i = _i		+ ["2Rnd_12Gauge_Pellets"];
+_u = _u		+ [0];
+_p = _p		+ [5];
+
+_i = _i		+ ["2Rnd_12Gauge_Slug"];
+_u = _u		+ [0];
+_p = _p		+ [5];
 
 //MG Ammo
 _i = _i		+ ["150Rnd_762x54_Box"];
@@ -516,6 +540,10 @@ _i = _i		+ ["arifle_CTARS_hex_F"];
 _u = _u		+ [1];
 _p = _p		+ [50];
 
+_i = _i		+ ["arifle_AK12U_F"];
+_u = _u		+ [2];
+_p = _p		+ [80];
+
 _i = _i		+ ["arifle_AK12_F"];
 _u = _u		+ [2];
 _p = _p		+ [100];
@@ -523,6 +551,10 @@ _p = _p		+ [100];
 _i = _i		+ ["arifle_AK12_GL_F"];
 _u = _u		+ [2];
 _p = _p		+ [100];
+
+_i = _i		+ ["arifle_RPK12_F"];
+_u = _u		+ [3];
+_p = _p		+ [150];
 
 _i = _i		+ ["srifle_DMR_07_blk_F"];
 _u = _u		+ [2];
@@ -591,6 +623,10 @@ _p = _p		+ [500];
 _i = _i		+ ["srifle_GM6_ghex_F"];
 _u = _u		+ [3];
 _p = _p		+ [500];
+
+_i = _i		+ ["sgun_HunterShotgun_01_F"];
+_u = _u		+ [0];
+_p = _p		+ [25];
 
 //Launchers
 _i = _i		+ ["launch_O_Titan_short_F"];
@@ -808,6 +844,10 @@ _p = _p		+ [200];
 _i = _i		+ ["O_UAV_01_backpack_F"];
 _u = _u		+ [3];
 _p = _p		+ [2500];
+
+_i = _i		+ ["O_UGV_02_Demining_backpack_F"];
+_u = _u		+ [2];
+_p = _p		+ [2000];
 
 _i = _i		+ ["O_UAV_06_backpack_F"];
 _u = _u		+ [2];
@@ -1112,6 +1152,10 @@ _p = _p		+ [5];
 _i = _i		+ ["G_Bandanna_tan"];
 _u = _u		+ [0];
 _p = _p		+ [5];
+
+_i = _i		+ ["G_AirPurifyingRespirator_02_black_F"];
+_u = _u		+ [1];
+_p = _p		+ [10];
 
 _i = _i		+ ["G_O_Diving"];
 _u = _u		+ [2];
