@@ -67,8 +67,8 @@ _vehicle = if ( isNull _created) then {createVehicle [_type, _position, [], 7, _
 //Does a gun config exsist?
 _gun_config = missionNamespace getVariable ( format [ "CTI_LOADOUT_%1_MNT_OPTIONS" , typeOf _vehicle ] );
 if (
-( 	((typeOf _vehicle) == "O_APC_Tracked_02_AA_F")
-	|| ((typeOf _vehicle) == "B_APC_Tracked_01_AA_F")
+( 	((typeOf _vehicle) == "O_T_APC_Tracked_02_AA_ghex_F")
+	|| ((typeOf _vehicle) == "B_T_APC_Tracked_01_AA_F")
 	|| _type isKindOf "Air")
 && (missionNamespace getVariable "CTI_AC_ENABLED")>0
 && _side != CTI_RESISTANCE_ID
@@ -347,7 +347,7 @@ _vehicle setRepairCargo 0;
 _vehicle spawn {
 	while { !isNull _this && alive _this && ! cti_gameover } do {
 		    sleep 20;
-		    if ((([_this,getMarkerPos "CTI_TUTORIAL"] call  BIS_fnc_distance2D) < 500) && !isNull _this && alive _this && (getPos _this select 2) < 100) then {_this setDamage 1};
+		    if ((([_this,getMarkerPos "CTI_TUTORIAL"] call  BIS_fnc_distance2D) < 1000) && !isNull _this && alive _this && (getPos _this select 2) < 100) then {_this setDamage 1};
 		};
 };
 
