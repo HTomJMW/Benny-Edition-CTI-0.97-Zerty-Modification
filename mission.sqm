@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4688.394,214.68358,10600.424};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={1543.359,245.85034,162.38557};
+		dir[]={0.0012026125,-0.99994999,-0.0099272011};
+		up[]={0.12025788,0.00999978,-0.99269229};
+		aside[]={-0.99274194,0,-0.1202639};
 	};
 };
 binarizationWanted=0;
@@ -150,11 +150,12 @@ class Mission
 		class Item2
 		{
 			dataType="Marker";
-			position[]={-9786.8457,261.89297,-6129.3276};
+			position[]={529.80316,375.54199,752.5802};
 			name="Prison";
 			type="Empty";
 			colorName="ColorPink";
 			id=2;
+			atlOffset=-3.6256714;
 		};
 		class Item3
 		{
@@ -308,6 +309,7 @@ class Mission
 			type="Empty";
 			colorName="ColorGreen";
 			id=18;
+			atlOffset=1.4781952e-005;
 		};
 		class Item19
 		{
@@ -533,7 +535,7 @@ class Mission
 		class Item42
 		{
 			dataType="Marker";
-			position[]={22060.604,3.6363437,18844.447};
+			position[]={1543.6233,240.87871,161.62677};
 			name="CTI_TUTORIAL";
 			type="Empty";
 			id=60;
@@ -4567,16 +4569,17 @@ class Mission
 		class Item92
 		{
 			dataType="Marker";
-			position[]={22064.549,3.5248961,18839.248};
+			position[]={1543.52,240.882,161.686};
 			name="marker_0";
 			text="Welcome Area (Do not enter)";
 			markerType="ELLIPSE";
 			type="rectangle";
 			colorName="ColorCIV";
 			fillName="DiagGrid";
-			a=1000;
-			b=1000;
+			a=500;
+			b=500;
 			id=178;
+			atlOffset=0.00021362305;
 		};
 	};
 	class Connections
