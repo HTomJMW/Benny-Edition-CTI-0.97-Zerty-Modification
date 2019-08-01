@@ -12,7 +12,7 @@ briefingName = "BECTI Livonia - Zerty/HTom/Yoshi_E 1.3.5.0";
 
 //--- ArmA 3 Specifics
 dev = "Benny";
-author = "Benny; Modified by Zerty, HTom";
+author = "Benny; Modified by Zerty, HTom, Yoshi_E";
 // overviewPicture
 
 //--- Properties.
