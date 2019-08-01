@@ -473,7 +473,7 @@ class Params {
 		title = $STR_CTI_SM_TCAS;
 		values[] = {0,100,150,200,250,300,350,400,500,600};
 		texts[] = {"0","100","150","200","250","300","350","400","500","600"};
-		default = 250;
+		default = 200;
 	};
 	class CTI_SM_SHIP {
 		title = $STR_CTI_SM_SHIP;
