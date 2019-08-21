@@ -51,6 +51,38 @@ SM_CLEAN_GCONT= {
 	};
 };
 
+//Clean all groups that are no longer tracked by the mission (e.g. kicked units from BIS_fnc_dynamicGroups)
+SM_CLEAN_DG= {
+	private ["_side", "_logic", "_groups", "_check"];
+	_check = { 		
+		params ["_side"];
+		_logic=(_side) call CTI_CO_FNC_GetSideLogic;
+		_groups = allGroups select {side _x isEqualTo _side};
+		{
+			//Exclude all town defenses, player groups, or workers
+			if( !(_x in (["GetAllGroups",[]] call BIS_fnc_dynamicGroups)) &&
+				("" == _x getVariable ["cti_server_group", ""]) &&
+				(_x != _logic getVariable ["cti_defensive_team", grpNull]) &&
+				((units _x) findIf {isDamageAllowed _x} >= 0) &&
+				((units _x) findIf {_x in (_logic getVariable ["cti_workers", []])} == -1) &&
+				((units _x) findIf {unitIsUAV (vehicle _x)} == -1)
+				) then {
+					//Empty the group and delete it
+					{ deleteVehicle _x }forEach units _x; 
+					deleteGroup _x;
+			}
+		} forEach _groups;
+	};
+	
+	while {! CTI_GameOver} do {
+		{
+			[_x] call _check;
+		} forEach [east,west];
+		sleep 10;
+	};
+};
+
+
 SM_CLEAN_STRUCTURES={
 	private ["_side","_side_logic","_new_structures"];
 	_side=_this;
@@ -66,6 +98,7 @@ SM_CLEAN_STRUCTURES={
 0 spawn SM_CLEAN_REVIVES;
 if (missionNamespace getVariable "CTI_AI_TEAMS_ENABLED" ==0)then { 0 spawn SM_CLEAN_GROUPS};
 0 spawn SM_CLEAN_GCONT;
+0 spawn SM_CLEAN_DG;
 {
 	_x spawn SM_CLEAN_STRUCTURES;
 } forEach [east,west];
