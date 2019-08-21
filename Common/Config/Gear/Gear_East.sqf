@@ -167,6 +167,14 @@ _i = _i		+ ["30Rnd_762x39_AK12_Mag_Tracer_F"];
 _u = _u		+ [1];
 _p = _p		+ [30];
 
+_i = _i		+ ["30rnd_762x39_AK12_Arid_Mag_F"];
+_u = _u		+ [2];
+_p = _p		+ [30];
+
+_i = _i		+ ["30rnd_762x39_AK12_Arid_Mag_Tracer_F"];
+_u = _u		+ [2];
+_p = _p		+ [30];
+
 _i = _i		+ ["75Rnd_762x39_Mag_F"];
 _u = _u		+ [3];
 _p = _p		+ [50];
@@ -180,6 +188,14 @@ _u = _u		+ [3];
 _p = _p		+ [50];
 
 _i = _i		+ ["75rnd_762x39_AK12_Mag_Tracer_F"];
+_u = _u		+ [3];
+_p = _p		+ [50];
+
+_i = _i		+ ["75rnd_762x39_AK12_Arid_Mag_F"];
+_u = _u		+ [3];
+_p = _p		+ [50];
+
+_i = _i		+ ["75rnd_762x39_AK12_Arid_Mag_Tracer_F"];
 _u = _u		+ [3];
 _p = _p		+ [50];
 
@@ -271,11 +287,11 @@ _p = _p		+ [150];
 
 _i = _i		+ ["5Rnd_127x108_Mag"];
 _u = _u		+ [3];
-_p = _p		+ [250];
+_p = _p		+ [150];
 
 _i = _i		+ ["5Rnd_127x108_APDS_Mag"];
 _u = _u		+ [3];
-_p = _p		+ [250];
+_p = _p		+ [150];
 
 //Launchers Ammo
 _i = _i		+ ["RPG7_F"];
@@ -291,12 +307,12 @@ _u = _u		+ [1];
 _p = _p		+ [50];
 
 _i = _i		+ ["Vorona_HEAT"];
-_u = _u		+ [2];
-_p = _p		+ [170];
+_u = _u		+ [3];
+_p = _p		+ [350];
 
 _i = _i		+ ["Vorona_HE"];
-_u = _u		+ [2];
-_p = _p		+ [100];
+_u = _u		+ [3];
+_p = _p		+ [150];
 
 _i = _i		+ ["Titan_AA"];
 _u = _u		+ [2];
@@ -308,7 +324,7 @@ _p = _p		+ [100];
 
 _i = _i		+ ["Titan_AT"];
 _u = _u		+ [3];
-_p = _p		+ [250];
+_p = _p		+ [550];
 
 //Grenades
 _i = _i		+ ["HandGrenade"];
@@ -544,6 +560,10 @@ _i = _i		+ ["arifle_AK12U_F"];
 _u = _u		+ [2];
 _p = _p		+ [80];
 
+_i = _i		+ ["arifle_AK12U_arid_F"];
+_u = _u		+ [2];
+_p = _p		+ [80];
+
 _i = _i		+ ["arifle_AK12_F"];
 _u = _u		+ [2];
 _p = _p		+ [100];
@@ -554,7 +574,11 @@ _p = _p		+ [100];
 
 _i = _i		+ ["arifle_RPK12_F"];
 _u = _u		+ [3];
-_p = _p		+ [150];
+_p = _p		+ [180];
+
+_i = _i		+ ["arifle_RPK12_arid_F"];
+_u = _u		+ [3];
+_p = _p		+ [180];
 
 _i = _i		+ ["srifle_DMR_07_blk_F"];
 _u = _u		+ [2];
@@ -639,27 +663,27 @@ _p = _p		+ [250];
 
 _i = _i		+ ["launch_O_Titan_F"];
 _u = _u		+ [2];
-_p = _p		+ [125];
+_p = _p		+ [200];
 
 _i = _i		+ ["launch_O_Titan_ghex_F"];
 _u = _u		+ [2];
-_p = _p		+ [125];
+_p = _p		+ [200];
 
 _i = _i		+ ["launch_O_Vorona_brown_F"];
-_u = _u		+ [2];
-_p = _p		+ [220];
+_u = _u		+ [3];
+_p = _p		+ [350];
 
 _i = _i		+ ["launch_O_Vorona_green_F"];
-_u = _u		+ [2];
-_p = _p		+ [220];
+_u = _u		+ [3];
+_p = _p		+ [350];
 
 _i = _i		+ ["launch_RPG32_F"];
 _u = _u		+ [1];
-_p = _p		+ [100];
+_p = _p		+ [150];
 
 _i = _i		+ ["launch_RPG32_ghex_F"];
 _u = _u		+ [1];
-_p = _p		+ [100];
+_p = _p		+ [150];
 
 _i = _i		+ ["launch_RPG7_F"];
 _u = _u		+ [0];
@@ -847,7 +871,7 @@ _p = _p		+ [2500];
 
 _i = _i		+ ["O_UGV_02_Demining_backpack_F"];
 _u = _u		+ [2];
-_p = _p		+ [2000];
+_p = _p		+ [1000];
 
 _i = _i		+ ["O_UAV_06_backpack_F"];
 _u = _u		+ [2];

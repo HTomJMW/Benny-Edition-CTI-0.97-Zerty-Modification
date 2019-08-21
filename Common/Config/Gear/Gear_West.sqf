@@ -352,7 +352,7 @@ _p = _p		+ [100];
 
 _i = _i		+ ["Titan_AT"];
 _u = _u		+ [3];
-_p = _p		+ [250];
+_p = _p		+ [550];
 
 //Grenades
 _i = _i		+ ["HandGrenade"];
@@ -635,7 +635,15 @@ _i = _i		+ ["arifle_MSBS65_black_F"];
 _u = _u		+ [2];
 _p = _p		+ [100];
 
+_i = _i		+ ["arifle_MSBS65_sand_F"];
+_u = _u		+ [2];
+_p = _p		+ [100];
+
 _i = _i		+ ["arifle_MSBS65_GL_black_F"];
+_u = _u		+ [2];
+_p = _p		+ [125];
+
+_i = _i		+ ["arifle_MSBS65_GL_sand_F"];
 _u = _u		+ [2];
 _p = _p		+ [125];
 
@@ -643,7 +651,15 @@ _i = _i		+ ["arifle_MSBS65_Mark_black_F"];
 _u = _u		+ [3];
 _p = _p		+ [125];
 
+_i = _i		+ ["arifle_MSBS65_Mark_sand_F"];
+_u = _u		+ [3];
+_p = _p		+ [125];
+
 _i = _i		+ ["arifle_MSBS65_UBS_black_F"];
+_u = _u		+ [3];
+_p = _p		+ [150];
+
+_i = _i		+ ["arifle_MSBS65_UBS_sand_F"];
 _u = _u		+ [3];
 _p = _p		+ [150];
 
@@ -786,11 +802,11 @@ _p = _p		+ [250];
 
 _i = _i		+ ["launch_B_Titan_F"];
 _u = _u		+ [2];
-_p = _p		+ [125];
+_p = _p		+ [200];
 
 _i = _i		+ ["launch_B_Titan_tna_F"];
 _u = _u		+ [2];
-_p = _p		+ [125];
+_p = _p		+ [200];
 
 _i = _i		+ ["launch_MRAWS_sand_F"];
 _u = _u		+ [2];
@@ -1110,7 +1126,7 @@ _p = _p		+ [2500];
 
 _i = _i		+ ["B_UGV_02_Demining_backpack_F"];
 _u = _u		+ [2];
-_p = _p		+ [2000];
+_p = _p		+ [1000];
 
 _i = _i		+ ["B_UAV_06_backpack_F"];
 _u = _u		+ [2];
