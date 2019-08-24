@@ -1305,7 +1305,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="COLONEL";
-						init="this allowDamage false; (group this) setGroupID [""Default Team""];this disableAI ""MOVE"";this disableAI ""AUTOTARGET"";this disableAI ""TARGET"";";
+						init="this allowDamage false; (group this) setGroupID [""Default Team""];this disableAI ""MOVE"";this disableAI ""AUTOTARGET"";this disableAI ""TARGET""; (group this) setVariable [""cti_server_group"", str (side (group this))];";
 						name="CTI_EAST_DEFAULT_GROUP";
 					};
 					id=115;
@@ -2772,7 +2772,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="COLONEL";
-						init="this allowDamage false;(group this) setGroupIDGlobal [""Default Team""];this disableAI ""MOVE"";this disableAI ""AUTOTARGET"";this disableAI ""TARGET"";";
+						init="this allowDamage false;(group this) setGroupIDGlobal [""Default Team""];this disableAI ""MOVE"";this disableAI ""AUTOTARGET"";this disableAI ""TARGET""; (group this) setVariable [""cti_server_group"", str (side (group this))];";
 						name="CTI_WEST_DEFAULT_GROUP";
 					};
 					id=140;
