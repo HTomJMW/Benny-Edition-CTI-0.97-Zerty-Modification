@@ -46,6 +46,7 @@ with missionNamespace do {
 	    SM_COM_Init = compileFinal preprocessFileLineNumbers "Addons\Strat_mode\Old_Com_Eject\SM_COM_init.sqf";
 
 	   	UAV_FUEL = compileFinal preprocessFileLineNumbers "Addons\Strat_mode\Functions\UAV_Fuel.sqf";
+	   	UAV_FUELDEATH = compileFinal preprocessFileLineNumbers "Addons\Strat_mode\Functions\UAV_FuelDeath.sqf";
 	   	UAV_FIX_CREW = compileFinal preprocessFileLineNumbers "Addons\Strat_mode\Functions\UAV_Fix_Crew.sqf";
 	   	UAV_RANGE = compileFinal preprocessFileLineNumbers "Addons\Strat_mode\Functions\UAV_Range.sqf";
 	   	DYNG_WAIT = compileFinal preprocessFileLineNumbers "Addons\Strat_mode\Functions\DYNG_waitforgroup.sqf";
@@ -105,6 +106,7 @@ if (CTI_IsServer) then {
 		if (count (_sl getVariable ["CTI_BASES_FOUND",[]]) == 0) then {
 			_sl setVariable ["CTI_BASES_FOUND",[],true];
 		};
+		_sl setVariable ["CTI_COM_BLACKLIST_GLOBAL",profileNamespace getVariable ["CTI_COM_BLACKLIST_GLOBAL",[]],true];
 	true
 	} count [east,west];
 
@@ -204,6 +206,25 @@ if (CTI_IsServer) then {
 		CTI_PVF_Server_Assign_Zeus= {
   		_this  assignCurator ADMIN_ZEUS;
 		};
+
+		CTI_PVF_Server_Update_BL= {
+			_pfbl= profileNamespace getVariable ["CTI_COM_BLACKLIST_GLOBAL",[]];
+			_index=(_pfbl find _this);
+			if (_index >=0) then{
+				_pfbl deleteAt _index;
+			} else {
+				_pfbl pushBack _this;
+
+			};
+			profileNamespace setVariable ["CTI_COM_BLACKLIST_GLOBAL",_pfbl];
+			saveProfileNamespace;
+			{
+				_sl=_x call CTI_CO_FNC_GetSideLogic;
+				_sl setVariable ["CTI_COM_BLACKLIST_GLOBAL",profileNamespace getVariable ["CTI_COM_BLACKLIST_GLOBAL",[]],true];
+				true
+			} count [east,west];
+
+		};
 	};
 
 };
@@ -241,7 +262,8 @@ if (CTI_IsClient) then {
 			_marker setMarkerAlphaLocal 0.5;
 		};
 		CTI_PVF_Client_UAVSetFuel={
-			if (_this isKindOf "Helicopter_Base_F" || _this isKindOf "UGV_02_Base_F") then {_this spawn UAV_FUEL;};
+			if (_this isKindOf "Helicopter_Base_F") then {_this spawn UAV_FUEL;};
+			if (_this isKindOf "UGV_02_Base_F") then {_this spawn UAV_FUELDEATH;};
 		};
 	};
 
