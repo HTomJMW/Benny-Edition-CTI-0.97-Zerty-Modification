@@ -152,7 +152,7 @@ if (_model isKindOf "Man") then {
 		_group = _this select 1;
 		_cost = _this select 2;
 		_var_classname = _this select 3;
-		sleep(15);
+		sleep(10);
 		if(!alive _veh) then {
 			//delete wreck & refound cash
 			deleteVehicle _veh;
@@ -160,8 +160,8 @@ if (_model isKindOf "Man") then {
 			hint parseText format [localize "STR_OnPurchase_RefundUnit", _var_classname select CTI_UNIT_LABEL];
 		};
 	};
-
-	if (_veh_infos select 0 || _veh_infos select 1 || _veh_infos select 2 || _veh_infos select 3) then { //--- Not empty.
+	sleep(1); //Wait for the vehicle to spawn correctly (or die on spawn)
+	if (alive _vehicle && (_veh_infos select 0 || _veh_infos select 1 || _veh_infos select 2 || _veh_infos select 3)) then { //--- Not empty.
 		_crew = switch (true) do { case (_model isKindOf "Tank"): {"Crew"}; case (_model isKindOf "Air"): {"Pilot"}; default {"Soldier"}};
 		_crew = missionNamespace getVariable format["CTI_%1_%2", CTI_P_SideJoined, _crew];
 
@@ -191,9 +191,10 @@ if (_model isKindOf "Man") then {
 			};
 		} forEach (_var_classname select CTI_UNIT_TURRETS);
 	};
-
-	_vehicle addAction ["<t color='#86F078'>Unlock</t>","Client\Actions\Action_ToggleLock.sqf", [], 99, false, true, '', '_this != player &&alive _target && locked _target == 2'];
-	_vehicle addAction ["<t color='#86F078'>Lock</t>","Client\Actions\Action_ToggleLock.sqf", [], 99, false, true, '', '_this != player &&alive _target && locked _target == 0'];
+	if (! (unitIsUAV _vehicle)) then {
+		_vehicle addAction ["<t color='#86F078'>Unlock</t>","Client\Actions\Action_ToggleLock.sqf", [], 99, false, true, '', '_this != player &&alive _target && locked _target == 2'];
+		_vehicle addAction ["<t color='#86F078'>Lock</t>","Client\Actions\Action_ToggleLock.sqf", [], 99, false, true, '', '_this != player &&alive _target && locked _target == 0'];
+	};
 	if (! (_vehicle isKindOf "Thing") && !( _vehicle isKindOf "StaticWeapon")) then {_vehicle setVariable ["v_keys",[getPlayerUID player,group player],true]};
 	player reveal _vehicle;
 
