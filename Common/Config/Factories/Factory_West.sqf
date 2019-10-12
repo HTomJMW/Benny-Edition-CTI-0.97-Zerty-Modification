@@ -133,6 +133,7 @@ _u = _u		+ ['I_LT_01_AA_F'];
 _u = _u		+ ['I_LT_01_AT_F'];
 };
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_HEAVY], _u];
+
 if(CTI_SHOPS_HEAVY==1) then {
 _u 			= ["B_Heli_Light_01_dynamicLoadout_F"];
 _u = _u		+ ['C_Plane_Civil_01_F'];
