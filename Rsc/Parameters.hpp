@@ -393,6 +393,18 @@ class Params {
 		texts[] = {"1","2","3","5","10","100"};
 		default = 1;
 	};
+	class CTI_TOWNS_RESISTANCE_HEAVY {
+		title = $STR_CTI_TOWNS_RESISTANCE_HEAVY;
+		values[] = {1,0};
+		texts[] = {$STR_CTI_ENABLED, $STR_CTI_DISABLED};
+		default = 1;
+	};
+	class CTI_SHOPS_HEAVY {
+		title = $STR_CTI_SHOPS_HEAVY;
+		values[] = {1,0};
+		texts[] = {$STR_CTI_ENABLED, $STR_CTI_DISABLED};
+		default = 1;
+	};
 
 	class CTI_WEATHER_INITIAL {
 		title = $STR_CTI_WEATHER_INITIAL;
