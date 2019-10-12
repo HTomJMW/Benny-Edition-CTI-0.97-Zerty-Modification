@@ -380,7 +380,7 @@ class Params {
 		values[] = {0,25,50,75,100};
 		texts[] = {"Null","Normal","Hard","Very hard","HELL"};
 		default = 75;
-	};
+	};	
 	class CTI_TOWNS_RESISTANCE_INACTIVE_MAX {
 		title = $STR_CTI_TOWNS_RESISTANCE_INACTIVE_MAX;
 		values[] = {30,60,120,240};
@@ -404,7 +404,7 @@ class Params {
 		values[] = {1,0};
 		texts[] = {$STR_CTI_ENABLED, $STR_CTI_DISABLED};
 		default = 1;
-	};
+	};	
 
 	class CTI_WEATHER_INITIAL {
 		title = $STR_CTI_WEATHER_INITIAL;
