@@ -275,8 +275,8 @@ class Params {
 
 	class CTI_PLAYERS_GROUPSIZE {
 		title = $STR_CTI_PLAYERS_GROUPSIZE;
-		values[] = {0,1,2,3,4,5,8,10,12,14,16};
-		texts[] = {$STR_CTI_PLAYERS_GROUPSIZE_AUTO,"1","2","3","4","5","8","10","12","14","16"};
+		values[] = {-10,0,1,2,3,4,5,8,10,12,14,16};
+		texts[] = {$STR_CTI_DISABLED, $STR_CTI_PLAYERS_GROUPSIZE_AUTO,"1","2","3","4","5","8","10","12","14","16"};
 		default = 0;
 	};
 	class CTI_GAMEPLAY_MISSILES_RANGE {
@@ -391,6 +391,18 @@ class Params {
 		title = $STR_CTI_TOWNS_SHOPS;
 		values[] = {1,2,3,5,10,100};
 		texts[] = {"1","2","3","5","10","100"};
+		default = 1;
+	};
+	class CTI_TOWNS_RESISTANCE_HEAVY {
+		title = $STR_CTI_TOWNS_RESISTANCE_HEAVY;
+		values[] = {1,0};
+		texts[] = {$STR_CTI_ENABLED, $STR_CTI_DISABLED};
+		default = 1;
+	};
+	class CTI_SHOPS_HEAVY {
+		title = $STR_CTI_SHOPS_HEAVY;
+		values[] = {1,0};
+		texts[] = {$STR_CTI_ENABLED, $STR_CTI_DISABLED};
 		default = 1;
 	};
 
