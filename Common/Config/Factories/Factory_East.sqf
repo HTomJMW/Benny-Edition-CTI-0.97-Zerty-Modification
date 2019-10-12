@@ -120,7 +120,7 @@ _u = _u		+ ['C_Hatchback_01_sport_F'];
 _u = _u		+ ['C_Kart_01_F'];
 _u = _u		+ ['I_Truck_02_MRL_F'];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_LIGHT], _u];
-
+if(CTI_SHOPS_HEAVY==1) then {
 _u 			= ["O_T_APC_Tracked_02_cannon_ghex_F"];
 _u = _u		+ ['O_T_APC_Wheeled_02_rcws_v2_ghex_F'];
 _u = _u		+ ["O_T_MBT_02_cannon_ghex_F"];
@@ -135,8 +135,14 @@ _u = _u		+ ['I_LT_01_cannon_F'];
 _u = _u		+ ['I_LT_01_AA_F'];
 _u = _u		+ ['I_LT_01_AT_F'];
 _u = _u		+ ['I_MBT_03_cannon_F'];
+} else {
+_u = 		  ['I_LT_01_scout_F'];
+_u = _u		+ ['I_LT_01_cannon_F'];
+_u = _u		+ ['I_LT_01_AA_F'];
+_u = _u		+ ['I_LT_01_AT_F'];
+};
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_HEAVY], _u];
-
+if(CTI_SHOPS_HEAVY==1) then {
 _u 			= ['O_Heli_Light_02_unarmed_F'];
 _u = _u		+ ['O_Heli_Transport_04_F'];
 _u = _u		+ ['C_Heli_Light_01_civil_F'];
@@ -165,6 +171,28 @@ _u = _u		+ ['Land_Pod_Heli_Transport_04_medevac_F'];
 _u = _u		+ ['Land_Pod_Heli_Transport_04_covered_F'];
 _u = _u		+ ['Land_Pod_Heli_Transport_04_bench_F'];
 _u = _u		+ ['Land_Device_slingloadable_F'];
+} else {
+_u 			= ['O_Heli_Light_02_unarmed_F'];
+_u = _u		+ ['O_Heli_Transport_04_F'];
+_u = _u		+ ['C_Heli_Light_01_civil_F'];
+_u = _u		+ ['C_Plane_Civil_01_F'];
+_u = _u		+ ['O_Heli_Transport_04_bench_F'];
+_u = _u		+ ['O_Heli_Transport_04_covered_F'];
+_u = _u		+ ['O_Heli_Light_02_dynamicLoadout_F'];
+_u = _u		+ ['O_Heli_Attack_02_dynamicLoadout_F'];
+_u = _u		+ ['O_Heli_Attack_02_dynamicLoadout_black_F'];
+_u = _u		+ ['O_T_VTOL_02_infantry_dynamicLoadout_F'];
+_u = _u		+ ['O_T_VTOL_02_vehicle_dynamicLoadout_F'];
+_u = _u		+ ['O_UAV_02_F'];
+_u = _u		+ ['O_UAV_02_CAS_F'];
+_u = _u		+ ['O_UAV_02_dynamicLoadout_F'];
+_u = _u		+ ['O_Plane_CAS_02_dynamicLoadout_F'];
+_u = _u		+ ['I_Plane_Fighter_03_CAS_F'];
+_u = _u		+ ['Land_Pod_Heli_Transport_04_medevac_F'];
+_u = _u		+ ['Land_Pod_Heli_Transport_04_covered_F'];
+_u = _u		+ ['Land_Pod_Heli_Transport_04_bench_F'];
+_u = _u		+ ['Land_Device_slingloadable_F'];
+};
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_AIR], _u];
 
 _u 			= ["O_Truck_02_box_F"];
