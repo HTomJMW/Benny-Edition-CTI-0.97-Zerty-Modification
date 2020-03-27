@@ -134,6 +134,8 @@ if (isNull _created) then {
 	if (_vehicle isKindOf "CAR" || _vehicle isKindOf "TANK") then {
 		_ep = (getPos _vehicle) findEmptyPosition [0,100,"O_T_VTOL_02_vehicle_dynamicLoadout_F"];
 		if (count _ep == 0) then {_ep = (getPos _vehicle) findEmptyPosition [0,250,"O_T_VTOL_02_vehicle_dynamicLoadout_F"];};
+		if (count _ep == 0 && surfaceIsWater position _vehicle) then {_ep = [getPos _vehicle select 0, getPos _vehicle select 1, 0];}; // for repair HQ in water
+		if (count _ep == 0) then {_ep = getPos _vehicle;};
 		_vehicle setPos _ep;
 	};
 
@@ -396,7 +398,7 @@ _vehicle setRepairCargo 0;
 _vehicle spawn {
 	while { !isNull _this && alive _this && ! cti_gameover } do {
 		    sleep 20;
-		    if ((([_this,getMarkerPos "CTI_TUTORIAL"] call  BIS_fnc_distance2D) < 500) && !isNull _this && alive _this && (getPos _this select 2) < 100) then {_this setDamage 1};
+		    if ((([_this,getMarkerPos "CTI_TUTORIAL"] call  BIS_fnc_distance2D) < 1000) && !isNull _this && alive _this && (getPos _this select 2) < 100) then {_this setDamage 1};
 		};
 };
 
