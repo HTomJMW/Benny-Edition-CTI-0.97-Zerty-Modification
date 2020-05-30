@@ -441,14 +441,14 @@ class Params {
 		title = $STR_CTI_SM_BASEP_M;
 		values[] = {0,-1,2,5,10,20,50,100};
 		texts[] = {$STR_CTI_DISABLED,"Hard Protection","Dmg reduced by 2","Dmg reduced by 5","Dmg reduced by 10","Dmg reduced by 20","Dmg reduced by 50","Dmg reduced by 100"};
-		default = 10;
+		default = 50;
 	};
 
 	class CTI_SM_PATROLS {
 		title = $STR_CTI_SM_PATROLS;
 		values[] = {0,1};
 		texts[] = {$STR_CTI_DISABLED,$STR_CTI_ENABLED};
-		default = 1;
+		default = 0;
 	};
 	/*class CTI_SM_PATROLS_NUMBER {
 		title = "Zerty: Strategic: Patrols number";
@@ -473,7 +473,7 @@ class Params {
 		title = $STR_CTI_SM_STRATEGIC;
 		values[] = {0,1};
 		texts[] = {$STR_CTI_DISABLED,$STR_CTI_ENABLED};
-		default = 0;
+		default = 1;
 	};
 	class CTI_SM_STRATEGIC_NB {
 		title = $STR_CTI_SM_STRATEGIC_NB;
