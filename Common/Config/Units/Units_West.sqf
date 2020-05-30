@@ -776,14 +776,14 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_AIR];
 _s = _s + [""];
 
-_c = _c + ['C_Plane_Civil_01_F'];
+/*_c = _c + ['C_Plane_Civil_01_F'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [4000];
 _t = _t + [35];
 _u = _u + [0];
 _f = _f + [CTI_FACTORY_AIR];
-_s = _s + [""];
+_s = _s + [""];*/
 
 _c = _c + ['B_Heli_Transport_01_F'];
 _p = _p + [''];
@@ -860,7 +860,7 @@ _s = _s + [""];
 _c = _c + ["B_Slingload_01_Medevac_F"];
 _p = _p + [''];
 _n = _n + [''];
-_o = _o + [2500];
+_o = _o + [6000];
 _t = _t + [25];
 _u = _u + [0];
 _f = _f + [CTI_FACTORY_AIR];
