@@ -26,7 +26,7 @@ missionNamespace setVariable [format["CTI_%1_Vehicles_Startup", _side], [
 		["Toolkit", 3],
 		["B_FieldPack_ocamo", 4],
 		["Binocular", 2]
-	]],
+	]]/*,
 	["O_MRAP_02_F", [
 		["firstaidkit", 10],
 		["30Rnd_556x45_Stanag", 15],
@@ -34,7 +34,7 @@ missionNamespace setVariable [format["CTI_%1_Vehicles_Startup", _side], [
 		["launch_RPG7_F", 2], ["RPG7_F", 6],
 		["Binocular", 1],
 		["Toolkit", 1]
-	]]
+	]]*/
 	//,	["O_Heli_Light_02_unarmed_F", []]
 ]];
 
@@ -226,7 +226,7 @@ _u = ['O_Soldier_F'];
 _u = _u		+ ['O_supplyCrate_F'];
 _u = _u		+ ['O_Quadbike_01_F'];
 _u = _u		+ ['O_G_Offroad_01_F'];
-_u = _u		+ ['O_G_Offroad_01_armed_F'];
-_u = _u		+ ['O_G_Offroad_01_AT_F'];
+//_u = _u		+ ['O_G_Offroad_01_armed_F']; Prevent abuse
+//_u = _u		+ ['O_G_Offroad_01_AT_F'];
 
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_FTOWN], _u];
