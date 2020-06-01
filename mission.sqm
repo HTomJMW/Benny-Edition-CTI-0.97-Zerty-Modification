@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3341.5486,35.492859,2880.1831};
-		dir[]={0.80061471,-0.21794964,0.55815566};
-		up[]={0.17879254,0.97595859,0.12464674};
-		aside[]={0.57190543,4.5110937e-010,-0.82033622};
+		pos[]={3265.5537,291.0636,2835.1482};
+		dir[]={0.0089380359,-0.99993885,0.0065277489};
+		up[]={0.8075093,0.011052364,0.58975124};
+		aside[]={0.58978719,-2.3283064e-010,-0.80755872};
 	};
 };
 binarizationWanted=0;
@@ -29,14 +29,13 @@ addons[]=
 	"A3_Modules_F",
 	"A3_Characters_F_Exp",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Characters_F",
-	"A3_Structures_F_Mil_Flags"
+	"A3_Characters_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=6;
+		items=5;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -72,19 +71,12 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
-		{
-			className="A3_Structures_F_Mil";
-			name="Arma 3 - Military Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
 	};
 };
 randomSeed=2868563;
 class ScenarioData
 {
-	author="Yoshi_E JMW - HTom JMW";
+	author="Yoshi_E";
 	class Header
 	{
 		gameType="CTI";
@@ -182,7 +174,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="BECTI BE 0.97 - Zerty 1.3.5.1 - Yoshi_E - HTom";
+		briefingName="BECTI BE 0.97 - Zerty 1.3.5.2";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0;
@@ -3282,873 +3274,614 @@ class Mission
 		};
 		class Item73
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={11684.243,8.6668053,3001.811};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Saint-George Airstrip"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town0";
-			};
+			name="Town0";
+			init="nullReturn = [this, ""Saint-George Airstrip"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
 			id=288;
-			type="FlagPole_F";
-			atlOffset=4.7683716e-007;
+			type="Logic";
+			atlOffset=3.9768052;
 		};
 		class Item74
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={12832.012,10.740239,7436.9219};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Oumere"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town1";
-			};
+			name="Town1";
+			init="nullReturn = [this, ""Oumere"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
 			id=289;
-			type="FlagPole_F";
-			atlOffset=4.7683716e-007;
+			type="Logic";
+			atlOffset=3.9768052;
 		};
 		class Item75
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={13975.797,10.091349,8286.6709};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Luganville"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town2";
-			};
+			name="Town2";
+			init="nullReturn = [this, ""Luganville"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
 			id=290;
-			type="FlagPole_F";
-			atlOffset=4.7683716e-007;
+			type="Logic";
+			atlOffset=3.9768052;
 		};
 		class Item76
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={6596.7192,7.09305,6333.7451};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Yani Islets"", resistance, 190] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town3";
-			};
+			name="Town3";
+			init="nullReturn = [this, ""Yani Islets"", resistance, 190] execVM ""Common\Init\Init_Location.sqf""";
 			id=291;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item77
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={14227.145,17.829437,11573.53};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Ba"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town6";
-			};
+			name="Town6";
+			init="nullReturn = [this, ""Ba"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
 			id=292;
-			type="FlagPole_F";
-			atlOffset=-1.9073486e-006;
+			type="Logic";
+			atlOffset=3.9768028;
 		};
 		class Item78
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={7771.3711,27.327484,14858.085};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Northern Island"", resistance, 240] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town4";
-			};
+			name="Town4";
+			init="nullReturn = [this, ""Northern Island"", resistance, 240] execVM ""Common\Init\Init_Location.sqf""";
 			id=293;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item79
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={13234.49,7.5230474,13770.212};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Hotel Port"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town5";
-			};
+			name="Town5";
+			init="nullReturn = [this, ""Hotel Port"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
 			id=294;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item80
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={4560.5581,146.14912,2165.4221};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Lailai"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town7";
-			};
+			name="Town7";
+			init="nullReturn = [this, ""Lailai"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
 			id=295;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item81
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={5320.2949,6.606802,14462.36};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Ile Sainte-Marie"", resistance, 190] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town9";
-			};
+			name="Town9";
+			init="nullReturn = [this, ""Ile Sainte-Marie"", resistance, 190] execVM ""Common\Init\Init_Location.sqf""";
 			id=297;
-			type="FlagPole_F";
-			atlOffset=-2.3841858e-007;
+			type="Logic";
+			atlOffset=3.9768045;
 		};
 		class Item82
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={9969.748,303.20645,12152.958};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Vulcano Mont Tanoa"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town12";
-			};
+			name="Town12";
+			init="nullReturn = [this, ""Vulcano Mont Tanoa"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
 			id=298;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item83
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={8494.3789,15.136662,13714.712};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Savu"", resistance, 125] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town13";
-			};
+			name="Town13";
+			init="nullReturn = [this, ""Savu"", resistance, 125] execVM ""Common\Init\Init_Location.sqf""";
 			id=299;
-			type="FlagPole_F";
-			atlOffset=-9.5367432e-007;
+			type="Logic";
+			atlOffset=3.9768038;
 		};
 		class Item84
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={5755.9458,6.842967,11198.503};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Saint-Julien"", resistance, 125] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town16";
-			};
+			name="Town16";
+			init="nullReturn = [this, ""Saint-Julien"", resistance, 125] execVM ""Common\Init\Init_Location.sqf""";
 			id=300;
-			type="FlagPole_F";
-			atlOffset=2.3841858e-007;
+			type="Logic";
+			atlOffset=3.976805;
 		};
 		class Item85
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={1837.845,9.2785072,12034.233};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Tuvanaka"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town21";
-			};
+			name="Town21";
+			init="nullReturn = [this, ""Tuvanaka"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
 			id=301;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item86
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={5786.2568,8.3269615,10202.169};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Georgetown"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town17";
-			};
+			name="Town17";
+			init="nullReturn = [this, ""Georgetown"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
 			id=302;
-			type="FlagPole_F";
-			atlOffset=4.7683716e-007;
+			type="Logic";
+			atlOffset=3.9768052;
 		};
 		class Item87
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={5105.8535,6.6468048,8714.4385};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Regina"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town18";
-			};
+			name="Town18";
+			init="nullReturn = [this, ""Regina"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
 			id=303;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item88
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={8456.0947,171.64938,12477.318};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Road House"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town14";
-			};
+			name="Town14";
+			init="nullReturn = [this, ""Road House"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
 			id=304;
-			type="FlagPole_F";
-			atlOffset=1.5258789e-005;
+			type="Logic";
+			atlOffset=3.9768219;
 		};
 		class Item89
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={7038.1729,215.55681,9720.6738};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Jungel Ruins"", resistance, 340] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town15";
-			};
+			name="Town15";
+			init="nullReturn = [this, ""Jungel Ruins"", resistance, 340] execVM ""Common\Init\Init_Location.sqf""";
 			id=305;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item90
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={5564.1968,5.4805021,4031.1001};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Katkoula"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town19";
-			};
+			name="Town19";
+			init="nullReturn = [this, ""Katkoula"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
 			id=306;
-			type="FlagPole_F";
-			atlOffset=-1.1920929e-007;
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item91
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2091.2405,16.926804,3473.4451};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Bala Airstrip"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town20";
-			};
+			name="Town20";
+			init="nullReturn = [this, ""Bala Airstrip"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
 			id=307;
-			type="FlagPole_F";
-			atlOffset=-9.5367432e-007;
+			type="Logic";
+			atlOffset=3.9768038;
 		};
 		class Item92
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={8807.3057,22.281443,10244.768};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Tanouka"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town11";
-			};
+			name="Town11";
+			init="nullReturn = [this, ""Tanouka"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
 			id=308;
-			type="FlagPole_F";
-			atlOffset=1.9073486e-006;
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item93
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={11068.934,220.74681,8472.2744};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Tempel Ruins"", resistance, 290] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town10";
-			};
+			name="Town10";
+			init="nullReturn = [this, ""Tempel Ruins"", resistance, 290] execVM ""Common\Init\Init_Location.sqf""";
 			id=309;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item94
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={12871.271,7.3731475,4821.2148};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Doodstil"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town22";
-			};
+			name="Town22";
+			init="nullReturn = [this, ""Doodstil"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
 			id=310;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item95
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={9542.6416,7.4644051,13528.026};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""La Rochelle"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town23";
-			};
+			name="Town23";
+			init="nullReturn = [this, ""La Rochelle"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
 			id=311;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item96
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2586.7109,12.386756,7399.5259};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Balavu"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town24";
-			};
+			name="Town24";
+			init="nullReturn = [this, ""Balavu"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
 			id=312;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item97
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={9753.6377,236.78615,8526.7871};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Jungel"", resistance, 240] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town25";
-			};
+			name="Town25";
+			init="nullReturn = [this, ""Jungel"", resistance, 240] execVM ""Common\Init\Init_Location.sqf""";
 			id=313;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item98
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={9355.0439,10.030021,4068.147};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Moddergat"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town26";
-			};
+			name="Town26";
+			init="nullReturn = [this, ""Moddergat"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
 			id=314;
-			type="FlagPole_F";
-			atlOffset=4.7683716e-007;
+			type="Logic";
+			atlOffset=3.9768052;
 		};
 		class Item99
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2127.9761,11.42312,8375.7002};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Leqa"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town27";
-			};
+			name="Town27";
+			init="nullReturn = [this, ""Leqa"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
 			id=315;
-			type="FlagPole_F";
-			atlOffset=-1.4305115e-006;
+			type="Logic";
+			atlOffset=3.9768033;
 		};
 		class Item100
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={9344.2617,37.143295,7521.6089};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Lumberyard"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town29";
-			};
+			name="Town29";
+			init="nullReturn = [this, ""Lumberyard"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
 			id=317;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item101
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={10920.129,11.419996,6352.312};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Kotomo"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town30";
-			};
+			name="Town30";
+			init="nullReturn = [this, ""Kotomo"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
 			id=318;
-			type="FlagPole_F";
-			atlOffset=4.7683716e-007;
+			type="Logic";
+			atlOffset=3.9768052;
 		};
 		class Item102
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={13397.777,6.5268049,12077.577};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				ammo=0.33007002;
-				init="nullReturn = [this, ""Blue Pearl Industrial Port"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town32";
-			};
+			name="Town32";
+			init="nullReturn = [this, ""Blue Pearl Industrial Port"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
 			id=319;
-			type="FlagPole_F";
-			atlOffset=2.3841858e-007;
+			type="Logic";
+			atlOffset=3.976805;
 		};
 		class Item103
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={8472.6357,63.972816,1330.229};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Tuadua Island"", resistance, 140] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town33";
-			};
+			name="Town33";
+			init="nullReturn = [this, ""Tuadua Island"", resistance, 140] execVM ""Common\Init\Init_Location.sqf""";
 			id=320;
-			type="FlagPole_F";
-			atlOffset=-3.8146973e-006;
+			type="Logic";
+			atlOffset=3.9768028;
 		};
 		class Item104
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={11241.614,5.9168048,5218.9243};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Harcourt"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town31";
-			};
+			name="Town31";
+			init="nullReturn = [this, ""Harcourt"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
 			id=321;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item105
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={11124.38,354.41931,11467.963};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Comms Bravo"", resistance, 175] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town34";
-			};
+			name="Town34";
+			init="nullReturn = [this, ""Comms Bravo"", resistance, 175] execVM ""Common\Init\Init_Location.sqf""";
 			id=322;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item106
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={11694.834,10.926805,13103.596};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""La Rochelle Aerodrome"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town35";
-			};
+			name="Town35";
+			init="nullReturn = [this, ""La Rochelle Aerodrome"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
 			id=323;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item107
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={11205.733,9.0528688,14449.23};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Rock Island"", resistance, 140] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town36";
-			};
+			name="Town36";
+			init="nullReturn = [this, ""Rock Island"", resistance, 140] execVM ""Common\Init\Init_Location.sqf""";
 			id=324;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item108
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={12441.074,60.51841,14245.429};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Hotel Resort"", resistance, 350] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town37";
-			};
+			name="Town37";
+			init="nullReturn = [this, ""Hotel Resort"", resistance, 350] execVM ""Common\Init\Init_Location.sqf""";
 			id=325;
-			type="FlagPole_F";
-			atlOffset=-7.6293945e-006;
+			type="Logic";
+			atlOffset=3.976799;
 		};
 		class Item109
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={6349.0908,5.4268045,12870.776};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Nicolet"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town38";
-			};
+			name="Town38";
+			init="nullReturn = [this, ""Nicolet"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
 			id=326;
-			type="FlagPole_F";
-			atlOffset=-2.3841858e-007;
+			type="Logic";
+			atlOffset=3.9768045;
 		};
 		class Item110
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={11895.331,151.70773,10245.461};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Red Spring Mine"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town39";
-			};
+			name="Town39";
+			init="nullReturn = [this, ""Red Spring Mine"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
 			id=327;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item111
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={7314.877,6.6960678,7928.7031};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Lifou"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town40";
-			};
+			name="Town40";
+			init="nullReturn = [this, ""Lifou"", resistance, 500] execVM ""Common\Init\Init_Location.sqf""";
 			id=328;
-			type="FlagPole_F";
-			atlOffset=2.3841858e-007;
+			type="Logic";
+			atlOffset=3.976805;
 		};
 		class Item112
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2932.885,22.855204,3412.321};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Yanukka"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town42";
-			};
+			name="Town42";
+			init="nullReturn = [this, ""Yanukka"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
 			id=330;
-			type="FlagPole_F";
-			atlOffset=1.9073486e-006;
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item113
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={3941.1331,5.2934661,13919.563};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Camp Remnants"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town43";
-			};
+			name="Town43";
+			init="nullReturn = [this, ""Camp Remnants"", resistance, 200] execVM ""Common\Init\Init_Location.sqf""";
 			id=331;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item114
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={3458.2,6.0554123,6762.187};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Rautake"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town44";
-			};
+			name="Town44";
+			init="nullReturn = [this, ""Rautake"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
 			id=332;
-			type="FlagPole_F";
-			atlOffset=2.3841858e-007;
+			type="Logic";
+			atlOffset=3.976805;
 		};
 		class Item115
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={3075.0449,13.512518,11123.988};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Belfort"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town45";
-			};
+			name="Town45";
+			init="nullReturn = [this, ""Belfort"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
 			id=333;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item116
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={1000.738,9.3758945,7637.7021};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Tavu"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town46";
-			};
+			name="Town46";
+			init="nullReturn = [this, ""Tavu"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
 			id=334;
-			type="FlagPole_F";
-			atlOffset=-4.7683716e-007;
+			type="Logic";
+			atlOffset=3.9768043;
 		};
 		class Item117
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={12104.387,7.3930445,2480.6741};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Fortress"", resistance, 145] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town41";
-			};
+			name="Town41";
+			init="nullReturn = [this, ""Fortress"", resistance, 145] execVM ""Common\Init\Init_Location.sqf""";
 			id=335;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item118
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2296.521,15.85357,13207.205};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Tuvanaka Airbase"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town28";
-			};
+			name="Town28";
+			init="nullReturn = [this, ""Tuvanaka Airbase"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
 			id=336;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item119
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={13970.229,120.33942,10011.522};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Vatukoulo"", resistance, 145] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town8";
-			};
+			name="Town8";
+			init="nullReturn = [this, ""Vatukoulo"", resistance, 145] execVM ""Common\Init\Init_Location.sqf""";
 			id=337;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item120
 		{
@@ -4170,11 +3903,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=49;
+			nextID=113;
 		};
 		class Links
 		{
-			items=49;
+			items=113;
 			class Item0
 			{
 				linkID=0;
@@ -4660,6 +4393,646 @@ class Mission
 				linkID=48;
 				item0=168;
 				item1=167;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item49
+			{
+				linkID=49;
+				item0=289;
+				item1=290;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item50
+			{
+				linkID=50;
+				item0=290;
+				item1=337;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item51
+			{
+				linkID=51;
+				item0=337;
+				item1=292;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item52
+			{
+				linkID=52;
+				item0=292;
+				item1=319;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item53
+			{
+				linkID=53;
+				item0=319;
+				item1=323;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item54
+			{
+				linkID=54;
+				item0=323;
+				item1=311;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item55
+			{
+				linkID=55;
+				item0=311;
+				item1=299;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item56
+			{
+				linkID=56;
+				item0=299;
+				item1=326;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item57
+			{
+				linkID=57;
+				item0=326;
+				item1=300;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item58
+			{
+				linkID=58;
+				item0=300;
+				item1=302;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item59
+			{
+				linkID=59;
+				item0=302;
+				item1=303;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item60
+			{
+				linkID=60;
+				item0=303;
+				item1=328;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item61
+			{
+				linkID=61;
+				item0=328;
+				item1=317;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item62
+			{
+				linkID=62;
+				item0=317;
+				item1=318;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item63
+			{
+				linkID=63;
+				item0=318;
+				item1=289;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item64
+			{
+				linkID=64;
+				item0=335;
+				item1=288;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item65
+			{
+				linkID=65;
+				item0=288;
+				item1=321;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item66
+			{
+				linkID=66;
+				item0=321;
+				item1=314;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item67
+			{
+				linkID=67;
+				item0=288;
+				item1=310;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item68
+			{
+				linkID=68;
+				item0=310;
+				item1=321;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item69
+			{
+				linkID=69;
+				item0=321;
+				item1=318;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item70
+			{
+				linkID=70;
+				item0=328;
+				item1=291;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item71
+			{
+				linkID=71;
+				item0=291;
+				item1=306;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item72
+			{
+				linkID=72;
+				item0=306;
+				item1=330;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item73
+			{
+				linkID=73;
+				item0=306;
+				item1=295;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item74
+			{
+				linkID=74;
+				item0=295;
+				item1=330;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item75
+			{
+				linkID=75;
+				item0=330;
+				item1=307;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item76
+			{
+				linkID=76;
+				item0=332;
+				item1=306;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item77
+			{
+				linkID=77;
+				item0=332;
+				item1=312;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item78
+			{
+				linkID=78;
+				item0=312;
+				item1=315;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item79
+			{
+				linkID=79;
+				item0=312;
+				item1=334;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item80
+			{
+				linkID=80;
+				item0=312;
+				item1=303;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item81
+			{
+				linkID=81;
+				item0=306;
+				item1=314;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item82
+			{
+				linkID=82;
+				item0=310;
+				item1=290;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item83
+			{
+				linkID=83;
+				item0=301;
+				item1=333;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item84
+			{
+				linkID=84;
+				item0=333;
+				item1=302;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item85
+			{
+				linkID=85;
+				item0=301;
+				item1=336;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item86
+			{
+				linkID=86;
+				item0=336;
+				item1=331;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item87
+			{
+				linkID=87;
+				item0=331;
+				item1=326;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item88
+			{
+				linkID=88;
+				item0=295;
+				item1=320;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item89
+			{
+				linkID=89;
+				item0=320;
+				item1=288;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item90
+			{
+				linkID=90;
+				item0=307;
+				item1=334;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item91
+			{
+				linkID=91;
+				item0=334;
+				item1=301;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item92
+			{
+				linkID=92;
+				item0=323;
+				item1=325;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item93
+			{
+				linkID=93;
+				item0=319;
+				item1=294;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item94
+			{
+				linkID=94;
+				item0=294;
+				item1=325;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item95
+			{
+				linkID=95;
+				item0=325;
+				item1=324;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item96
+			{
+				linkID=96;
+				item0=299;
+				item1=293;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item97
+			{
+				linkID=97;
+				item0=331;
+				item1=297;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item98
+			{
+				linkID=98;
+				item0=299;
+				item1=304;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item99
+			{
+				linkID=99;
+				item0=304;
+				item1=308;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item100
+			{
+				linkID=100;
+				item0=328;
+				item1=308;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item101
+			{
+				linkID=101;
+				item0=298;
+				item1=322;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item102
+			{
+				linkID=102;
+				item0=327;
+				item1=319;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item103
+			{
+				linkID=103;
+				item0=317;
+				item1=313;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item104
+			{
+				linkID=104;
+				item0=302;
+				item1=305;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item105
+			{
+				linkID=105;
+				item0=305;
+				item1=308;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item106
+			{
+				linkID=106;
+				item0=308;
+				item1=327;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item107
+			{
+				linkID=107;
+				item0=309;
+				item1=289;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item108
+			{
+				linkID=108;
+				item0=327;
+				item1=322;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item109
+			{
+				linkID=109;
+				item0=298;
+				item1=311;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item110
+			{
+				linkID=110;
+				item0=309;
+				item1=327;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item111
+			{
+				linkID=111;
+				item0=297;
+				item1=293;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item112
+			{
+				linkID=112;
+				item0=293;
+				item1=324;
 				class CustomData
 				{
 					type="Sync";
