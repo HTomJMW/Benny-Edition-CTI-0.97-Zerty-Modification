@@ -26,7 +26,6 @@ binarizationWanted=0;
 addons[]=
 {
 	"A3_Ui_F",
-	"A3_Structures_F_Mil_Flags",
 	"A3_Modules_F",
 	"A3_Characters_F",
 	"A3_Modules_F_Curator_Curator",
@@ -36,7 +35,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=6;
+		items=5;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -46,33 +45,26 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="A3_Structures_F_Mil";
-			name="Arma 3 - Military Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item2
-		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item2
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item3
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item4
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
@@ -84,7 +76,7 @@ class AddonsMetaData
 randomSeed=4289123;
 class ScenarioData
 {
-	author="Tom";
+	author="Zerty";
 };
 class Intro
 {
@@ -113,7 +105,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="BECTI STRATIS - Zerty 1.3.5.1";
+		briefingName="BECTI STRATIS - Zerty 1.3.5.2";
 		overviewText="By Benny - Adapted from OFP era MFCTI (Mike Melvin)";
 		resistanceWest=0;
 		timeOfChanges=24720;
@@ -529,392 +521,280 @@ class Mission
 		};
 		class Item43
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={4499.6631,110.56253,6791.3037};
 				angles[]={0.15377705,0,6.2008715};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Kill Farm"", resistance, 75] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town0";
-			};
+			name="Town0";
+			init="nullReturn = [this, ""Kill Farm"", resistance, 75] execVM ""Common\Init\Init_Location.sqf""";
 			id=43;
-			type="FlagPole_F";
-			atlOffset=7.6293945e-006;
+			type="Logic";
+			atlOffset=3.9768143;
 		};
 		class Item44
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={5017.9272,212.54671,5910.1274};
 				angles[]={6.278182,0,0.010000871};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Camp Rogain"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town1";
-			};
+			name="Town1";
+			init="nullReturn = [this, ""Camp Rogain"", resistance, 250] execVM ""Common\Init\Init_Location.sqf""";
 			id=44;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item45
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2990.9219,7.25459,6042.5176};
 				angles[]={6.2806959,0,0.044969428};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Agia Marina"", resistance, 400] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town2";
-			};
+			name="Town2";
+			init="nullReturn = [this, ""Agia Marina"", resistance, 400] execVM ""Common\Init\Init_Location.sqf""";
 			id=45;
-			type="FlagPole_F";
-			atlOffset=6.9141388e-006;
+			type="Logic";
+			atlOffset=3.9768116;
 		};
 		class Item46
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2164.4468,10.095823,5585.7334};
 				angles[]={0.0024897563,0,0.0075011365};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""AirBase complex"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town3";
-			};
+			name="Town3";
+			init="nullReturn = [this, ""AirBase complex"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
 			id=46;
-			type="FlagPole_F";
-			atlOffset=1.4305115e-006;
+			type="Logic";
+			atlOffset=3.9768062;
 		};
 		class Item47
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={3527.0464,205.32501,4913.6226};
 			};
-			side="Empty";
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Transmission Tower Brit"", resistance, 400] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town4";
-			};
+			name="Town4";
+			init="nullReturn = [this, ""Transmission Tower Brit"", resistance, 400] execVM ""Common\Init\Init_Location.sqf""";
 			id=47;
-			type="FlagPole_F";
-			atlOffset=0.37797546;
+			type="Logic";
+			atlOffset=4.3547821;
 		};
 		class Item48
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={4612.167,133.95299,5298.4102};
 				angles[]={0.010000736,0,0.067404613};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""LZ Baldy"", resistance, 75] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town5";
-			};
+			name="Town5";
+			init="nullReturn = [this, ""LZ Baldy"", resistance, 75] execVM ""Common\Init\Init_Location.sqf""";
 			id=48;
-			type="FlagPole_F";
-			atlOffset=0.0090026855;
+			type="Logic";
+			atlOffset=3.9858093;
 		};
 		class Item49
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={5527.9648,82.731445,4736.9102};
 				angles[]={6.2307382,0,0.032498032};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Old Ruins"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town7";
-			};
+			name="Town7";
+			init="nullReturn = [this, ""Old Ruins"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
 			id=49;
-			type="FlagPole_F";
-			atlOffset=0.0080032349;
+			type="Logic";
+			atlOffset=3.9848099;
 		};
 		class Item50
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={6461.6992,13.778659,5339.875};
 				angles[]={0.16595954,0,0.02999169};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Kamino Firing Range"", resistance, 180] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town6";
-			};
+			name="Town6";
+			init="nullReturn = [this, ""Kamino Firing Range"", resistance, 180] execVM ""Common\Init\Init_Location.sqf""";
 			id=50;
-			type="FlagPole_F";
-			atlOffset=-6.0081482e-005;
+			type="Logic";
+			atlOffset=3.9767447;
 		};
 		class Item51
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={4361.958,230.35396,3799.0327};
 				angles[]={6.2806959,0,0.0099949092};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Air Station Mike-26"", resistance, 400] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town8";
-			};
+			name="Town8";
+			init="nullReturn = [this, ""Air Station Mike-26"", resistance, 400] execVM ""Common\Init\Init_Location.sqf""";
 			id=51;
-			type="FlagPole_F";
-			atlOffset=-1.5258789e-005;
+			type="Logic";
+			atlOffset=3.9767914;
 		};
 		class Item52
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={4390.6343,184.13283,4366.3579};
 			};
-			side="Empty";
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Old Outpost"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town9";
-			};
+			name="Town9";
+			init="nullReturn = [this, ""Old Outpost"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
 			id=52;
-			type="FlagPole_F";
-			atlOffset=0.44406128;
+			type="Logic";
+			atlOffset=4.4208679;
 		};
 		class Item53
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={1941.6224,6.8610845,3529.3713};
 				angles[]={6.2581916,0,0};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Camp Tempest"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town10";
-			};
+			name="Town10";
+			init="nullReturn = [this, ""Camp Tempest"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
 			id=53;
-			type="FlagPole_F";
-			atlOffset=-3.5762787e-006;
+			type="Logic";
+			atlOffset=3.9768012;
 		};
 		class Item54
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={3343.6348,238.47523,2909.6692};
 				angles[]={6.2606921,0,0.024991399};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Camp Maxwell"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town11";
-			};
+			name="Town11";
+			init="nullReturn = [this, ""Camp Maxwell"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
 			id=54;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item55
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2074.0532,15.995897,2661.5449};
 				angles[]={0.092237726,0,0.22131461};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Girna"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town12";
-			};
+			name="Town12";
+			init="nullReturn = [this, ""Girna"", resistance, 300] execVM ""Common\Init\Init_Location.sqf""";
 			id=55;
-			type="FlagPole_F";
-			atlOffset=2.2888184e-005;
+			type="Logic";
+			atlOffset=3.9768276;
 		};
 		class Item56
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={3077.1157,171.55862,2160.209};
 				angles[]={0.0524491,0,0.0025135824};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Agios loannis"", resistance, 75] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town13";
-			};
+			name="Town13";
+			init="nullReturn = [this, ""Agios loannis"", resistance, 75] execVM ""Common\Init\Init_Location.sqf""";
 			id=56;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item57
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2791.8853,148.30627,1761.3762};
 				angles[]={6.2756844,0,0.0075011365};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Agios Cephas"", resistance, 100] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town14";
-			};
+			name="Town14";
+			init="nullReturn = [this, ""Agios Cephas"", resistance, 100] execVM ""Common\Init\Init_Location.sqf""";
 			id=57;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item58
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2620.8408,68.290405,626.38434};
 				angles[]={0.01499443,0,0.082313478};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""The Spartan"", resistance, 125] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town15";
-			};
+			name="Town15";
+			init="nullReturn = [this, ""The Spartan"", resistance, 125] execVM ""Common\Init\Init_Location.sqf""";
 			id=58;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768066;
 		};
 		class Item59
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={4279.6992,6.4040847,2680.405};
 				angles[]={6.1835093,0,6.1736307};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Tsoukalia"", resistance, 170] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town16";
-			};
+			name="Town16";
+			init="nullReturn = [this, ""Tsoukalia"", resistance, 170] execVM ""Common\Init\Init_Location.sqf""";
 			id=59;
-			type="FlagPole_F";
-			atlOffset=0.039000034;
+			type="Logic";
+			atlOffset=4.0158048;
 		};
 		class Item60
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={2827.5806,80.018936,4456.2651};
 				angles[]={6.2083244,0,0.13664399};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Hidden Valley"", resistance, 400] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town17";
-			};
+			name="Town17";
+			init="nullReturn = [this, ""Hidden Valley"", resistance, 400] execVM ""Common\Init\Init_Location.sqf""";
 			id=60;
-			type="FlagPole_F";
-			atlOffset=-8.392334e-005;
+			type="Logic";
+			atlOffset=3.9767227;
 		};
 		class Item61
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={1726.105,9.4768047,5553.4561};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Airstrip"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town18";
-			};
+			name="Town18";
+			init="nullReturn = [this, ""Airstrip"", resistance, 150] execVM ""Common\Init\Init_Location.sqf""";
 			id=61;
-			type="FlagPole_F";
+			type="Logic";
+			atlOffset=3.9768047;
 		};
 		class Item62
 		{
-			dataType="Object";
+			dataType="Logic";
 			class PositionInfo
 			{
 				position[]={5355.4482,15.859538,3794.7825};
 				angles[]={6.255693,0,0.024993783};
 			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="nullReturn = [this, ""Limeri Bay"", resistance, 170] execVM ""Common\Init\Init_Location.sqf""";
-				name="Town19";
-			};
+			name="Town19";
+			init="nullReturn = [this, ""Limeri Bay"", resistance, 170] execVM ""Common\Init\Init_Location.sqf""";
 			id=62;
-			type="FlagPole_F";
-			atlOffset=9.5367432e-006;
+			type="Logic";
+			atlOffset=3.9768143;
 		};
 		class Item63
 		{
@@ -3760,11 +3640,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=36;
+			nextID=63;
 		};
 		class Links
 		{
-			items=36;
+			items=63;
 			class Item0
 			{
 				linkID=0;
@@ -4120,6 +4000,276 @@ class Mission
 				linkID=35;
 				item0=205;
 				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item36
+			{
+				linkID=36;
+				item0=58;
+				item1=57;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item37
+			{
+				linkID=37;
+				item0=57;
+				item1=56;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item38
+			{
+				linkID=38;
+				item0=56;
+				item1=54;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item39
+			{
+				linkID=39;
+				item0=54;
+				item1=51;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item40
+			{
+				linkID=40;
+				item0=51;
+				item1=52;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item41
+			{
+				linkID=41;
+				item0=52;
+				item1=47;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item42
+			{
+				linkID=42;
+				item0=47;
+				item1=45;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item43
+			{
+				linkID=43;
+				item0=43;
+				item1=44;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item44
+			{
+				linkID=44;
+				item0=44;
+				item1=48;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item45
+			{
+				linkID=45;
+				item0=48;
+				item1=47;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item46
+			{
+				linkID=46;
+				item0=60;
+				item1=47;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item47
+			{
+				linkID=47;
+				item0=55;
+				item1=54;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item48
+			{
+				linkID=48;
+				item0=59;
+				item1=54;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item49
+			{
+				linkID=49;
+				item0=62;
+				item1=51;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item50
+			{
+				linkID=50;
+				item0=53;
+				item1=51;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item51
+			{
+				linkID=51;
+				item0=46;
+				item1=61;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item52
+			{
+				linkID=52;
+				item0=46;
+				item1=45;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item53
+			{
+				linkID=53;
+				item0=46;
+				item1=60;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item54
+			{
+				linkID=54;
+				item0=49;
+				item1=52;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item55
+			{
+				linkID=55;
+				item0=50;
+				item1=49;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item56
+			{
+				linkID=56;
+				item0=52;
+				item1=60;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item57
+			{
+				linkID=57;
+				item0=48;
+				item1=52;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item58
+			{
+				linkID=58;
+				item0=43;
+				item1=45;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item59
+			{
+				linkID=59;
+				item0=44;
+				item1=50;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item60
+			{
+				linkID=60;
+				item0=60;
+				item1=53;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item61
+			{
+				linkID=61;
+				item0=53;
+				item1=55;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item62
+			{
+				linkID=62;
+				item0=55;
+				item1=57;
 				class CustomData
 				{
 					type="Sync";
