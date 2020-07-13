@@ -423,7 +423,7 @@ switch (_action) do {
 			    };
 			    case 33: {// CTI_Icon_Exit Tutorial
 
-			    	if (_target isKindOf "Land_Wreck_Heli_Attack_01_F") then {
+			    	if (_target isKindOf "Land_UH1H_Wreck_F") then {
 			    		if ((CTI_P_SideLogic getVariable ["CTI_LOAD_COMPLETED",false])) then {
 			    				((uiNamespace getVariable "cti_dialog_ui_interractions") displayCtrl (511000+_i)) ctrlSetTextColor [1,1,1,1];
 			    			} else {
