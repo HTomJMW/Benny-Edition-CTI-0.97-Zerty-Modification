@@ -57,7 +57,7 @@ _max_mortar=if (ISLAND != 1) then {3} else {1};
 
 for "_x" from 1 to _max_mortar do {
 	_pos2= [_pos,100,400] call CTI_CO_FNC_GetRandomPosition;
-	_v = ["I_Mortar_01_F", _pos2, 180, resistance] call CTI_CO_FNC_CreateVehicle;
+	_v = ["rhsgref_cdf_reg_M252", _pos2, 180, resistance] call CTI_CO_FNC_CreateVehicle;
 	_m = [_v,_group] call bis_fnc_spawncrew;
 	_mp=_mp + [_v];
 

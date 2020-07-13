@@ -57,13 +57,15 @@ SM_TCAS_CREATE=compile '
 	_rn= random (1);
 	_cas="";
 	if (_rn > 0.95 && _rn <= 1) then {
-		_cas = [_town, "I_Plane_Fighter_04_F","FLY"] call SM_TCAS_MAINLOOP;
+		_veh = selectRandom ["rhsgref_cdf_mig29s", "rhsgref_cdf_su25"];
+		_cas = [_town, _veh,"FLY"] call SM_TCAS_MAINLOOP;
 	};
 	if (_rn >= 0.90 && _rn <= 0.95) then {
-		_cas = [_town, "I_Plane_Fighter_03_dynamicLoadout_F","FLY"] call SM_TCAS_MAINLOOP;
+		_veh = selectRandom ["rhs_l159_CDF", "rhs_l39_cdf", "rhsgref_cdf_Mi24D_early"];
+		_cas = [_town, _veh,"FLY"] call SM_TCAS_MAINLOOP;
 	};
 	if (_rn < 0.90) then {
-		_cas = [_town, "I_Heli_light_03_dynamicLoadout_F","FORM"] call SM_TCAS_MAINLOOP;
+		_cas = [_town, "rhsgref_cdf_reg_Mi17Sh","FORM"] call SM_TCAS_MAINLOOP;
 
 	};
 	diag_log _cas;
