@@ -3574,14 +3574,14 @@ CTI_LOADOUT_RHS_TU95MS_vvs_old_MNT_OPTIONS =
 			[
 				[ "hs_weap_kh55sm_dummy_Launcher" ,
 					[
-						[ "rhs_mag_kh55sh" , "1000", [4]] ]
+						[ "rhs_mag_kh55sh" , "1000", [4] ]
 					]
 				]
 			],
 			[
 				[ "rhs_weap_gsh23lx2" ,
 					[
-						[ "rhs_mag_AM23_500" , "1000", [5]] ]
+						[ "rhs_mag_AM23_500" , "1000", [5] ]
 					]
 				]
 			],
