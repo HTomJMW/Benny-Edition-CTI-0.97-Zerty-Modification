@@ -60,7 +60,6 @@ As an empty weapon or Place Holder use:
 
 */
 
-
 CTI_LOADOUT_UNARMED_FLARES =
 [
 	[
@@ -81,446 +80,30 @@ CTI_LOADOUT_UNARMED_FLARES =
 	]
 ];
 
-
-// ***************************
-// Experimental loadouts for AA tanks
-// ***************************
-//Bluefor
-
-CTI_LOADOUT_B_APC_Tracked_01_AA_F_MNT_OPTIONS =
-[
-	[
-		"Standard - configuration" ,
-		"default",
-		[
-			[
-				["autocannon_35mm",
-					[
-						[ "680Rnd_35mm_AA_shells_Tracer_Green" , "2000"]
-					]
-				]
-			],
-			[
-				["autocannon_35mm",
-					[
-						[ "680Rnd_35mm_AA_shells_Tracer_Green" , "2000"]
-					]
-				]
-			],
-			[
-				["missiles_SAAMI",
-					[
-						[ "4Rnd_70mm_SAAMI_missiles" , "4000"]
-					]
-				]
-			],
-			[
-				["missiles_SAAMI",
-					[
-						[ "4Rnd_70mm_SAAMI_missiles" , "4000"]
-					]
-				]
-			],
-			[
-				["SmokeLauncher",
-					[
-						[ "SmokeLauncherMag" , "1000", [0,0]]
-					]
-				]
-			],
-			[
-				["SmokeLauncher",
-					[
-						[ "SmokeLauncherMag" , "1000", [0,0]]
-					]
-				]
-			]
-		]
-	]
-];
-CTI_LOADOUT_B_T_APC_Tracked_01_AA_F_MNT_OPTIONS = CTI_LOADOUT_B_APC_Tracked_01_AA_F_MNT_OPTIONS;
-
-//Opfor
-CTI_LOADOUT_O_APC_Tracked_02_AA_F_MNT_OPTIONS =
-[
-	[
-		"Standard - configuration" ,
-		"default",
-		[
-			[
-				["autocannon_35mm",
-					[
-						[ "680Rnd_35mm_AA_shells_Tracer_Green" , "2000"]
-					]
-				]
-			],
-			[
-				["autocannon_35mm",
-					[
-						[ "680Rnd_35mm_AA_shells_Tracer_Green" , "2000"]
-					]
-				]
-			],
-			[
-				["missiles_SAAMI",
-					[
-						[ "4Rnd_70mm_SAAMI_missiles" , "4000"]
-					]
-				]
-			],
-			[
-				["missiles_SAAMI",
-					[
-						[ "4Rnd_70mm_SAAMI_missiles" , "4000"]
-					]
-				]
-			],
-			[
-				["SmokeLauncher",
-					[
-						[ "SmokeLauncherMag" , "1000", [0,0]]
-					]
-				]
-			],
-			[
-				["SmokeLauncher",
-					[
-						[ "SmokeLauncherMag" , "1000", [0,0]]
-					]
-				]
-			]
-		]
-	]
-];
-CTI_LOADOUT_O_T_APC_Tracked_02_AA_ghex_F_MNT_OPTIONS = CTI_LOADOUT_O_APC_Tracked_02_AA_F_MNT_OPTIONS;
-
 // ***************************
 // BLUFOR - Vehicle loadout options
 // ***************************
 
-
 // ***************************
-// Plane - Wipeout
+// Heli - OH-6M
 // ***************************
-CTI_LOADOUT_B_Plane_CAS_01_dynamicLoadout_F_MNT_OPTIONS =
+CTI_LOADOUT_RHS_MELB_H6M_MNT_OPTIONS =
 [
 	[
 		"Pylon - configuration" ,
 		"pylon",
 		[
 			[
-				[ "Laserdesignator_pilotCamera" ,
+				[ "rhs_weap_laserDesignator_AI" ,
 					[
-						[ "Laserbatteries" , "500"]
+						[ "rhs_LaserMag_ai" , "500" ]
 					]
 				]
 			],
 			[
-				[ "Gatling_30mm_Plane_CAS_01_F" ,
+				[ "rhsusf_weap_LWIRCM" ,
 					[
-						[ "1000Rnd_Gatling_30mm_Plane_CAS_01_F" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylons1",
-					[
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000"],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylons2",
-					[
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000"],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonRack_1Rnd_Missile_AGM_02_F" , "5000"],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylons3",
-					[
-						[ "PylonRack_3Rnd_Missile_AGM_02_F" , "15000"],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000"],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonRack_1Rnd_Missile_AGM_02_F" , "5000"],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000"],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylons4",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000"],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonRack_1Rnd_Missile_AGM_02_F" , "5000"],
-						[ "PylonRack_3Rnd_Missile_AGM_02_F" , "15000"],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylons5",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000"],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonRack_1Rnd_Missile_AGM_02_F" , "5000"],
-						[ "PylonRack_3Rnd_Missile_AGM_02_F" , "15000"],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylons6",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000"],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonRack_1Rnd_Missile_AGM_02_F" , "5000"],
-						[ "PylonRack_3Rnd_Missile_AGM_02_F" , "15000"],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylons7",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000"],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonRack_1Rnd_Missile_AGM_02_F" , "5000"],
-						[ "PylonRack_3Rnd_Missile_AGM_02_F" , "15000"],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylons8",
-					[
-						[ "PylonRack_3Rnd_Missile_AGM_02_F" , "15000"],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000"],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonRack_1Rnd_Missile_AGM_02_F" , "5000"],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylons9",
-					[
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000"],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonRack_1Rnd_Missile_AGM_02_F" , "5000"],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylons10",
-					[
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000"],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
-					]
-				]
-			],
-			[
-				["CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "2000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1] ],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "1500" , [-1] ]
-					]
-				]
-			]
-		]
-	],
-	[
-		"Bomber" ,
-		"pylon",
-		[
-			[
-				[ "Laserdesignator_pilotCamera" ,
-					[
-						[ "Laserbatteries" , "500"]
-					]
-				]
-			],
-			[
-				[ "Gatling_30mm_Plane_CAS_01_F" ,
-					[
-						[ "1000Rnd_Gatling_30mm_Plane_CAS_01_F" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylons1",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"]
-					]
-				]
-			],
-			[
-				["Pylons2",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"]
-					]
-				]
-			],
-			[
-				["Pylons3",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"]
-					]
-				]
-			],
-			[
-				["Pylons4",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"]
-					]
-				]
-			],
-			[
-				["Pylons5",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"]
-					]
-				]
-			],
-			[
-				["Pylons6",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"]
-					]
-				]
-			],
-			[
-				["Pylons7",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"]
-					]
-				]
-			],
-			[
-				["Pylons8",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"]
-					]
-				]
-			],
-			[
-				["Pylons9",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"]
-					]
-				]
-			],
-			[
-				["Pylons10",
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000"]
-					]
-				]
-			],
-			[
-				["CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "2000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1] ],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "1500" , [-1] ]
+						[ "rhsusf_mag_LWIRCM" , "500" ] // x10 in original
 					]
 				]
 			]
@@ -528,401 +111,79 @@ CTI_LOADOUT_B_Plane_CAS_01_dynamicLoadout_F_MNT_OPTIONS =
 	]
 ];
 
+// ***************************
+// Heli - MH-6M
+// ***************************
+CTI_LOADOUT_RHS_MELB_MH6M_MNT_OPTIONS = CTI_LOADOUT_RHS_MELB_H6M_MNT_OPTIONS;
 
 // ***************************
-// Plane - Black Wasp II
+// Heli - AH-6M
 // ***************************
-CTI_LOADOUT_B_Plane_Fighter_01_F_MNT_OPTIONS =
+CTI_LOADOUT_RHS_MELB_AH6M_MNT_OPTIONS =
 [
 	[
 		"Pylon - configuration" ,
 		"pylon",
 		[
 			[
-				["Laserdesignator_pilotCamera" ,
+				[ "rhs_weap_laserDesignator_AI" ,
 					[
-						[ "Laserbatteries" , "500"]
+						[ "rhs_LaserMag_ai" , "500"]
 					]
 				]
 			],
 			[
-				["weapon_Fighter_Gun20mm_AA" ,
+				[ "pylon1" ,
 					[
-						[ "magazine_Fighter01_Gun20mm_AA_x450" , "1000"]
+						[ "rhs_mag_ATAS_2" , "3000" ],
+						[ "rhs_mag_DAGR_8" , "3000" ],
+						[ "rhs_mag_AGM114K_2" , "3000" ],
+						[ "rhs_mag_AGM114M_2" , "3000" ],
+						[ "rhs_mag_AGM114N_2" , "3000" ],
+						[ "rhs_mag_M151_7" , "3000" ],
+						[ "rhs_mag_M151_19" , "3000" ],
+						[ "rhs_mag_M229_7" , "3000" ],
+						[ "rhs_mag_M229_19" , "3000" ],
+						[ "rhs_mag_M257_7" , "3000" ],
+						[ "rhsusf_mag_gau19_melb_right" , "3000" ]
 					]
 				]
 			],
 			[
-				["Pylon1",
+				[ "pylon2" ,
 					[
-						[ "PylonRack_Missile_AMRAAM_D_x1" , "4000"],
-						[ "PylonRack_Missile_AMRAAM_D_x2" , "4000"],
-						[ "PylonRack_Missile_BIM9X_x1" , "4000"],
-						[ "PylonRack_Missile_BIM9X_x2" , "4000"],
-						[ "PylonRack_Missile_AGM_02_x1" , "5000"],
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
+						[ "rhs_mag_m134_pylon_3000" , "3000" ]
 					]
 				]
 			],
 			[
-				["Pylon3",
+				[ "pylon3" ,
 					[
-						[ "PylonRack_Missile_AGM_02_x1" , "5000"],
-						[ "PylonRack_Missile_AMRAAM_D_x1" , "4000"],
-						[ "PylonRack_Missile_AMRAAM_D_x2" , "4000"],
-						[ "PylonRack_Missile_BIM9X_x1" , "4000"],
-						[ "PylonRack_Missile_BIM9X_x2" , "4000"],
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"],
-						[ "PylonRack_Missile_AGM_02_x2" , "5000"],
-						[ "PylonRack_Bomb_GBU12_x2" , "5000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonRack_2Rnd_BombCluster_01_F" , "2000"],
-						[ "PylonRack_2Rnd_BombCluster_03_F" , "2000"],
-						[ "PylonRack_Bomb_SDB_x4" , "5000"],
-						[ "PylonRack_Missile_HARM_x1" , "8000"],
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000"],
-						[ "PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
+						[ "rhs_mag_m134_pylon_3000" , "3000" ]
 					]
 				]
 			],
 			[
-				["PylonBayLeft1",
+				[ "pylon4" ,
 					[
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000"]
+						[ "rhs_mag_ATAS_2" , "3000" ],
+						[ "rhs_mag_DAGR_8" , "3000" ],
+						[ "rhs_mag_AGM114K_2" , "3000" ],
+						[ "rhs_mag_AGM114M_2" , "3000" ],
+						[ "rhs_mag_AGM114N_2" , "3000" ],
+						[ "rhs_mag_M151_7" , "3000" ],
+						[ "rhs_mag_M151_19" , "3000" ],
+						[ "rhs_mag_M229_7" , "3000" ],
+						[ "rhs_mag_M229_19" , "3000" ],
+						[ "rhs_mag_M257_7" , "3000" ],
+						[ "rhsusf_mag_gau19_melb_right" , "3000" ]
 					]
 				]
 			],
 			[
-				["PylonBayCenter1",
+				[ "rhsusf_weap_LWIRCM" ,
 					[
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter2",
-					[
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter3",
-					[
-						["" , ""],
-						[ "PylonRack_Bomb_SDB_x4" , "5000"],
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter4",
-					[
-						["" , ""],
-						[ "PylonRack_Bomb_SDB_x4" , "5000"],
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter5",
-					[
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter6",
-					[
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayRight1",
-					[
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["Pylon4",
-					[
-						[ "PylonRack_Missile_AGM_02_x1" , "5000"],
-						[ "PylonRack_Missile_AMRAAM_D_x1" , "4000"],
-						[ "PylonRack_Missile_AMRAAM_D_x2" , "4000"],
-						[ "PylonRack_Missile_BIM9X_x1" , "4000"],
-						[ "PylonRack_Missile_BIM9X_x2" , "4000"],
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"],
-						[ "PylonRack_Missile_AGM_02_x2" , "5000"],
-						[ "PylonRack_Bomb_GBU12_x2" , "5000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonRack_2Rnd_BombCluster_01_F" , "2000"],
-						[ "PylonRack_2Rnd_BombCluster_03_F" , "2000"],
-						[ "PylonRack_Bomb_SDB_x4" , "5000"],
-						[ "PylonRack_Missile_HARM_x1" , "8000"],
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000"],
-						[ "PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["Pylon2",
-					[
-						[ "PylonRack_Missile_AMRAAM_D_x1" , "4000"],
-						[ "PylonRack_Missile_AMRAAM_D_x2" , "4000"],
-						[ "PylonRack_Missile_BIM9X_x1" , "4000"],
-						[ "PylonRack_Missile_BIM9X_x2" , "4000"],
-						[ "PylonRack_Missile_AGM_02_x1" , "5000"],
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"]
-					]
-				]
-			],
-			[
-				["CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "2000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1] ],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "1500" , [-1] ]
-					]
-				]
-			]
-		]
-	],
-	[
-		"Air Supremacy - Maddog",
-		"pylon",
-		[
-			[
-				["Laserdesignator_pilotCamera" ,
-					[
-						[ "Laserbatteries" , "500"]
-					]
-				]
-			],
-			[
-				["weapon_Fighter_Gun20mm_AA" ,
-					[
-						[ "magazine_Fighter01_Gun20mm_AA_x450" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylon1",
-					[
-						[ "PylonRack_Missile_AMRAAM_D_x2" , "4000"]
-					]
-				]
-			],
-			[
-				["Pylon3",
-					[
-						[ "PylonRack_Missile_AMRAAM_D_x2" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayLeft1",
-					[
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter1",
-					[
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter2",
-					[
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter3",
-					[
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter4",
-					[
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter5",
-					[
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter6",
-					[
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"]
-					]
-				]
-			],
-			[
-				["PylonBayRight1",
-					[
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["Pylon4",
-					[
-						[ "PylonRack_Missile_AMRAAM_D_x2" , "4000"]
-					]
-				]
-			],
-			[
-				["Pylon2",
-					[
-						[ "PylonRack_Missile_AMRAAM_D_x2" , "4000"]
-					]
-				]
-			],
-			[
-				["CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "2000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1] ],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "1500" , [-1] ]
-					]
-				]
-			]
-		]
-	],
-	[
-		"Ground Supremacy - Hybrid" ,
-		"pylon",
-		[
-			[
-				["Laserdesignator_pilotCamera" ,
-					[
-						[ "Laserbatteries" , "500"]
-					]
-				]
-			],
-			[
-				["weapon_Fighter_Gun20mm_AA" ,
-					[
-						[ "magazine_Fighter01_Gun20mm_AA_x450" , "1000"]
-					]
-				]
-			],
-			[
-				["Pylon1",
-					[
-						[ "PylonRack_Missile_AGM_02_x1" , "5000"]
-					]
-				]
-			],
-			[
-				["Pylon3",
-					[
-						[ "PylonRack_Missile_HARM_x1" , "8000"]
-					]
-				]
-			],
-			[
-				["PylonBayLeft1",
-					[
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter1",
-					[
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter2",
-					[
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter3",
-					[
-						[ "PylonRack_Bomb_SDB_x4" , "5000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter4",
-					[
-						[ "PylonRack_Bomb_SDB_x4" , "5000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter5",
-					[
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter6",
-					[
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"]
-					]
-				]
-			],
-			[
-				["PylonBayRight1",
-					[
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["Pylon4",
-					[
-						[ "PylonRack_Missile_HARM_x1" , "8000"]
-					]
-				]
-			],
-			[
-				["Pylon2",
-					[
-						[ "PylonRack_Missile_AGM_02_x1" , "5000"]
-					]
-				]
-			],
-			[
-				["CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "2000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1] ],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "1500" , [-1] ]
+						[ "rhsusf_mag_LWIRCM" , "500" ] // x10 in original
 					]
 				]
 			]
@@ -930,148 +191,22 @@ CTI_LOADOUT_B_Plane_Fighter_01_F_MNT_OPTIONS =
 	]
 ];
 
-
-
-
 // ***************************
-// Plane - Black Wasp II  Stealth
+// Heli - UH-60M
 // ***************************
-CTI_LOADOUT_B_Plane_Fighter_01_Stealth_F_MNT_OPTIONS =
-[
-	[
-		"Pylon - configuration" ,
-		"pylon",
-		[
-			[
-				[ "Laserdesignator_pilotCamera" ,
-					[
-						[ "Laserbatteries" , "500" , [0]]
-					]
-				]
-			],
-			[
-				[ "weapon_Fighter_Gun20mm_AA" ,
-					[
-						[ " magazine_Fighter01_Gun20mm_AA_x450" , "1000" , [0]]
-					]
-				]
-			],
-			[
-				["PylonBayRight1",
-					[
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter1",
-					[
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter2",
-					[
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter3",
-					[
-						["" , ""],
-						[ "PylonRack_Bomb_SDB_x4" , "5000"],
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter4",
-					[
-						["" , ""],
-						[ "PylonRack_Bomb_SDB_x4" , "5000"],
-						["PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter5",
-					[
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayCenter6",
-					[
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000"],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000"],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000"],
-						[ "PylonMissile_Missile_AMRAAM_D_INT_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["PylonBayRight1",
-					[
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000"]
-					]
-				]
-			],
-			[
-				["CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "2000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1] ],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "1500" , [-1] ]
-					]
-				]
-			]
-		]
-	]
-];
-// ***************************
-// Heli - AH-9 Pawnee
-// ***************************
-CTI_LOADOUT_B_Heli_Light_01_dynamicLoadout_F_MNT_OPTIONS =
+CTI_LOADOUT_RHS_UH60M2_d_MNT_OPTIONS =
 [
 	[
 		"Pylon - Configuration" ,
 		"pylon",
 		[
 			[
-				["M134_minigun" ,
+				["cmDispenser" ,
 					[
-						[ "5000Rnd_762x51_Belt" , "350"]
-					]
-				]
-			],
-			[
-				["PylonRight1" ,
-					[
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						//[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						//[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"]
-						//[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-					]
-				]
-			],
-			[
-				["PylonLeft1" ,
-					[
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						//[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						//[ "PylonRack_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"]
-						//[ "PylonRack_12Rnd_PG_missiles" , "8000"],
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "1000" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine_x2" , "1000" , [-1] ]
 					]
 				]
 			]
@@ -1079,150 +214,22 @@ CTI_LOADOUT_B_Heli_Light_01_dynamicLoadout_F_MNT_OPTIONS =
 	]
 ];
 
-
 // ***************************
-// Heli - UH-80 Ghost Hawk
+// Heli - UH60-ESSS
 // ***************************
-CTI_LOADOUT_B_Heli_Transport_01_F_MNT_OPTIONS =
+CTI_LOADOUT_RHS_UH60M_ESSS_d_MNT_OPTIONS =
 [
 	[
 		"Pylon - Configuration" ,
 		"pylon",
 		[
 			[
-				["CMFlareLauncher" ,
+				["cmDispenser" ,
 					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "2000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1] ],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "1500" , [-1] ]
-					]
-				]
-			],
-			[
-				["LMG_Minigun_Transport" ,
-					[
-						[ "2000Rnd_65x39_Belt_Tracer_Red" , "500", [1]]
-					]
-				]
-			],
-			[
-				["LMG_Minigun_Transport" ,
-					[
-						[ "2000Rnd_65x39_Belt_Tracer_Red" , "500", [1]]
-					]
-				]
-			],
-			[
-				["LMG_Minigun_Transport" ,
-					[
-						[ "2000Rnd_65x39_Belt_Tracer_Red" , "500", [2]]
-					]
-				]
-			],
-			[
-				["LMG_Minigun_Transport" ,
-					[
-						[ "2000Rnd_65x39_Belt_Tracer_Red" , "500", [2]]
-					]
-				]
-			]
-		]
-	]
-];
-CTI_LOADOUT_B_CTRG_Heli_Transport_01_sand_F_MNT_OPTIONS = CTI_LOADOUT_B_Heli_Transport_01_F_MNT_OPTIONS;
-CTI_LOADOUT_B_CTRG_Heli_Transport_01_tropic_F_MNT_OPTIONS = CTI_LOADOUT_B_Heli_Transport_01_F_MNT_OPTIONS;
-CTI_LOADOUT_B_Heli_Transport_01_camo_F_MNT_OPTIONS = CTI_LOADOUT_B_Heli_Transport_01_F_MNT_OPTIONS;
-
-
-// ***************************
-// Heli - CH-67 Huron Armed
-// ***************************
-CTI_LOADOUT_B_Heli_Transport_03_F_MNT_OPTIONS = CTI_LOADOUT_B_Heli_Transport_01_F_MNT_OPTIONS;
-CTI_LOADOUT_B_Heli_Transport_03_black_F_MNT_OPTIONS = CTI_LOADOUT_B_Heli_Transport_03_F_MNT_OPTIONS;
-
-
-
-// ***************************
-// Heli - CH-67 Huron Unarmed
-// ***************************
-CTI_LOADOUT_B_Heli_Transport_03_unarmed_F_MNT_OPTIONS = CTI_LOADOUT_UNARMED_FLARES;
-CTI_LOADOUT_B_Heli_Transport_03_unarmed_green_F_MNT_OPTIONS  = CTI_LOADOUT_UNARMED_FLARES;
-
-
-
-// ***************************
-// VTOL - 	V-44 X Blackfish (Armed)
-// ***************************
-CTI_LOADOUT_B_T_VTOL_01_armed_F_MNT_OPTIONS =
-[
-	[
-		"Pylon - Configuration" ,
-		"pylon",
-		[
-			[
-				["CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "2000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1] ],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "1500" , [-1] ]
-					]
-				]
-			],
-			[
-				[ "Laserdesignator_mounted" ,
-					[
-						[ "Laserbatteries" , "500", [0]]
-					]
-				]
-			],
-			[
-				["cannon_105mm_VTOL_01" ,
-					[
-						[ "100Rnd_105mm_HEAT_MP" , "2000", [1]]
-					]
-				]
-			],
-			[
-				["cannon_105mm_VTOL_01" ,
-					[
-						[ "40Rnd_105mm_APFSDS_T_Red" , "2000", [1]]
-					]
-				]
-			],
-			[
-				["gatling_20mm_VTOL_01" ,
-					[
-						[ "4000Rnd_20mm_Tracer_Red_shells" , "2000", [1]]
-					]
-				]
-			],
-			[
-				["autocannon_40mm_VTOL_01" ,
-					[
-						[ "240Rnd_40mm_GPR_Tracer_Red_shells" , "2000", [2]]
-					]
-				]
-			],
-			[
-				["autocannon_40mm_VTOL_01" ,
-					[
-						[ "240Rnd_40mm_GPR_Tracer_Red_shells" , "2000", [2]]
-					]
-				]
-			],
-			[
-				["autocannon_40mm_VTOL_01" ,
-					[
-						[ "160Rnd_40mm_APFSDS_Tracer_Red_shells" , "2000", [2]]
-					]
-				]
-			],
-			[
-				["gatling_20mm_VTOL_01" ,
-					[
-						[ "4000Rnd_20mm_Tracer_Red_shells" , "2000", [2]]
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "1000" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine_x2" , "1000" , [-1] ]
 					]
 				]
 			]
@@ -1230,116 +237,689 @@ CTI_LOADOUT_B_T_VTOL_01_armed_F_MNT_OPTIONS =
 	]
 ];
 
-CTI_LOADOUT_B_T_VTOL_01_infantry_F_MNT_OPTIONS = CTI_LOADOUT_UNARMED_FLARES;
-CTI_LOADOUT_B_T_VTOL_01_vehicle_F_MNT_OPTIONS = CTI_LOADOUT_UNARMED_FLARES;
-
-
-
 // ***************************
-// Heli - AH-99 Blackfoot
+// Heli - UH-60M
 // ***************************
-CTI_LOADOUT_B_Heli_Attack_01_dynamicLoadout_F_MNT_OPTIONS =
+CTI_LOADOUT_RHS_UH60M_d_MNT_OPTIONS =
 [
 	[
 		"Pylon - Configuration" ,
 		"pylon",
 		[
 			[
-				["FakeHorn" , //Dummy weapon
+				["rhs_weap_m134_minigun_1" ,
+					[
+						[ "rhs_mag_762x51_m80a1_4000" , "1000", [1]]
+					]
+				]
+			],
+			[
+				["rhs_weap_m134_minigun_2" ,
+					[
+						[ "rhs_mag_762x51_m80a1_4000" , "1000", [2]]
+					]
+				]
+			],
+			[
+				["cmDispenser" ,
+					[
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "1000" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine_x2" , "1000" , [-1] ]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Heli - CH-53E (CARGO)
+// ***************************
+CTI_LOADOUT_rhsusf_CH53e_USMC_cargo_MNT_OPTIONS =
+[
+	[
+		"Pylon - Configuration" ,
+		"pylon",
+		[
+			[
+				["cmDispenser" ,
+					[
+						[ "rhsusf_ANALE39_CMFlare_Chaff_Magazine" , "500" , [-1] ],
+						[ "rhsusf_ANALE39_CMFlare_Chaff_Magazine_x2" , "1000" , [-1] ],
+						[ "rhsusf_ANALE39_CMFlare_Magazine" , "500" , [-1] ],
+						[ "rhsusf_ANALE39_CMFlare_Magazine_x2" , "1000" , [-1] ]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Heli - AH-1Z
+// ***************************
+CTI_LOADOUT_RHS_AH1Z_MNT_OPTIONS =
+[
+	[
+		"Pylon - Configuration" ,
+		"pylon",
+		[
+			[
+				["rhs_weap_M197" ,
+					[
+						[ "rhs_mag_M197_750" , "1000" ]
+					]
+				]
+			],
+			[
+				["pylonTip1" ,
+					[
+						[ "rhs_mag_Sidewinder_heli_2" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon2" ,
+					[
+						[ "rhs_mag_DAGR_8" , "3000" ],
+						[ "rhs_mag_DAGR_16" , "3000" ],
+						[ "rhs_mag_AGM114K_2" , "3000" ],
+						[ "rhs_mag_AGM114K_4" , "3000" ],
+						[ "rhs_mag_AGM114M_2" , "3000" ],
+						[ "rhs_mag_AGM114M_4" , "3000" ],
+						[ "rhs_mag_AGM114N_2" , "3000" ],
+						[ "rhs_mag_AGM114N_4" , "3000" ],
+						[ "rhs_mag_M151_7_green" , "3000" ],
+						[ "rhs_mag_M151_19_green" , "3000" ],
+						[ "rhs_mag_M229_7_green" , "3000" ],
+						[ "rhs_mag_M229_19_green" , "3000" ],
+						[ "rhs_mag_M257_7_green" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon3" ,
+					[
+						[ "rhs_mag_DAGR_8" , "3000" ],
+						[ "rhs_mag_DAGR_16" , "3000" ],
+						[ "rhs_mag_AGM114K_2" , "3000" ],
+						[ "rhs_mag_AGM114K_4" , "3000" ],
+						[ "rhs_mag_AGM114M_2" , "3000" ],
+						[ "rhs_mag_AGM114M_4" , "3000" ],
+						[ "rhs_mag_AGM114N_2" , "3000" ],
+						[ "rhs_mag_AGM114N_4" , "3000" ],
+						[ "rhs_mag_M151_7_green" , "3000" ],
+						[ "rhs_mag_M151_19_green" , "3000" ],
+						[ "rhs_mag_M229_7_green" , "3000" ],
+						[ "rhs_mag_M229_19_green" , "3000" ],
+						[ "rhs_mag_M257_7_green" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon4" ,
+					[
+						[ "rhs_mag_DAGR_8" , "3000" ],
+						[ "rhs_mag_DAGR_16" , "3000" ],
+						[ "rhs_mag_AGM114K_2" , "3000" ],
+						[ "rhs_mag_AGM114K_4" , "3000" ],
+						[ "rhs_mag_AGM114M_2" , "3000" ],
+						[ "rhs_mag_AGM114M_4" , "3000" ],
+						[ "rhs_mag_AGM114N_2" , "3000" ],
+						[ "rhs_mag_AGM114N_4" , "3000" ],
+						[ "rhs_mag_M151_7_green" , "3000" ],
+						[ "rhs_mag_M151_19_green" , "3000" ],
+						[ "rhs_mag_M229_7_green" , "3000" ],
+						[ "rhs_mag_M229_19_green" , "3000" ],
+						[ "rhs_mag_M257_7_green" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon5" ,
+					[
+						[ "rhs_mag_DAGR_8" , "3000" ],
+						[ "rhs_mag_DAGR_16" , "3000" ],
+						[ "rhs_mag_AGM114K_2" , "3000" ],
+						[ "rhs_mag_AGM114K_4" , "3000" ],
+						[ "rhs_mag_AGM114M_2" , "3000" ],
+						[ "rhs_mag_AGM114M_4" , "3000" ],
+						[ "rhs_mag_AGM114N_2" , "3000" ],
+						[ "rhs_mag_AGM114N_4" , "3000" ],
+						[ "rhs_mag_M151_7_green" , "3000" ],
+						[ "rhs_mag_M151_19_green" , "3000" ],
+						[ "rhs_mag_M229_7_green" , "3000" ],
+						[ "rhs_mag_M229_19_green" , "3000" ],
+						[ "rhs_mag_M257_7_green" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylonTip6" ,
+					[
+						[ "rhs_mag_Sidewinder_heli_2" , "3000" ]
+					]
+				]
+			],
+			[
+				["cmDispenser" ,
+					[
+						[ "rhsusf_ANALE39_CMFlare_Chaff_Magazine" , "500" , [-1] ],
+						[ "rhsusf_ANALE39_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
+						[ "rhsusf_ANALE39_CMFlare_Chaff_Magazine_x4" , "1000" , [-1] ],
+						[ "rhsusf_ANALE39_CMFlare_Magazine" , "500" , [-1] ],
+						[ "rhsusf_ANALE39_CMFlare_Magazine_x2" , "500" , [-1] ],
+						[ "rhsusf_ANALE39_CMFlare_Magazine_x4" , "1000" , [-1] ]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Heli - AH-64D
+// ***************************
+CTI_LOADOUT_RHS_AH64D_MNT_OPTIONS =
+[
+	[
+		"Pylon - Configuration" ,
+		"pylon",
+		[
+			[
+				["rhs_weap_M230" ,
+					[
+						[ "rhs_mag_30x113mm_M789_HEDP_1200" , "1000" ]
+					]
+				]
+			],
+			[
+				["pylonTip1" ,
+					[
+						[ "rhs_mag_Sidewinder_heli" , "3000" ],
+						[ "rhs_mag_ATAS_AH64_2" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon2" ,
+					[
+						[ "rhs_mag_DAGR_8" , "3000" ],
+						[ "rhs_mag_DAGR_16" , "3000" ],
+						[ "rhs_mag_AGM114L_2" , "3000" ],
+						[ "rhs_mag_AGM114L_4" , "3000" ],
+						[ "rhs_mag_AGM114K_2" , "3000" ],
+						[ "rhs_mag_AGM114K_4" , "3000" ],
+						[ "rhs_mag_AGM114M_2" , "3000" ],
+						[ "rhs_mag_AGM114M_4" , "3000" ],
+						[ "rhs_mag_AGM114N_2" , "3000" ],
+						[ "rhs_mag_AGM114N_4" , "3000" ],
+						[ "rhs_mag_M151_7" , "3000" ],
+						[ "rhs_mag_M151_19" , "3000" ],
+						[ "rhs_mag_M229_7" , "3000" ],
+						[ "rhs_mag_M229_19" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon3" ,
+					[
+						[ "rhs_mag_DAGR_8" , "3000" ],
+						[ "rhs_mag_DAGR_16" , "3000" ],
+						[ "rhs_mag_AGM114L_2" , "3000" ],
+						[ "rhs_mag_AGM114L_4" , "3000" ],
+						[ "rhs_mag_AGM114K_2" , "3000" ],
+						[ "rhs_mag_AGM114K_4" , "3000" ],
+						[ "rhs_mag_AGM114M_2" , "3000" ],
+						[ "rhs_mag_AGM114M_4" , "3000" ],
+						[ "rhs_mag_AGM114N_2" , "3000" ],
+						[ "rhs_mag_AGM114N_4" , "3000" ],
+						[ "rhs_mag_M151_7" , "3000" ],
+						[ "rhs_mag_M151_19" , "3000" ],
+						[ "rhs_mag_M229_7" , "3000" ],
+						[ "rhs_mag_M229_19" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon4" ,
+					[
+						[ "rhs_mag_DAGR_8" , "3000" ],
+						[ "rhs_mag_DAGR_16" , "3000" ],
+						[ "rhs_mag_AGM114L_2" , "3000" ],
+						[ "rhs_mag_AGM114L_4" , "3000" ],
+						[ "rhs_mag_AGM114K_2" , "3000" ],
+						[ "rhs_mag_AGM114K_4" , "3000" ],
+						[ "rhs_mag_AGM114M_2" , "3000" ],
+						[ "rhs_mag_AGM114M_4" , "3000" ],
+						[ "rhs_mag_AGM114N_2" , "3000" ],
+						[ "rhs_mag_AGM114N_4" , "3000" ],
+						[ "rhs_mag_M151_7" , "3000" ],
+						[ "rhs_mag_M151_19" , "3000" ],
+						[ "rhs_mag_M229_7" , "3000" ],
+						[ "rhs_mag_M229_19" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon5" ,
+					[
+						[ "rhs_mag_DAGR_8" , "3000" ],
+						[ "rhs_mag_DAGR_16" , "3000" ],
+						[ "rhs_mag_AGM114L_2" , "3000" ],
+						[ "rhs_mag_AGM114L_4" , "3000" ],
+						[ "rhs_mag_AGM114K_2" , "3000" ],
+						[ "rhs_mag_AGM114K_4" , "3000" ],
+						[ "rhs_mag_AGM114M_2" , "3000" ],
+						[ "rhs_mag_AGM114M_4" , "3000" ],
+						[ "rhs_mag_AGM114N_2" , "3000" ],
+						[ "rhs_mag_AGM114N_4" , "3000" ],
+						[ "rhs_mag_M151_7" , "3000" ],
+						[ "rhs_mag_M151_19" , "3000" ],
+						[ "rhs_mag_M229_7" , "3000" ],
+						[ "rhs_mag_M229_19" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylonTip6" ,
+					[
+						[ "PylonMissile_1Rnd_AAA_missiles" , "3000" ],
+						[ "PylonMissile_1Rnd_LG_scalpel" , "3000" ],
+						[ "PylonRack_12Rnd_PG_missiles" , "3000" ],
+						[ "PylonRack_12Rnd_missiles" , "3000" ]
+					]
+				]
+			],
+			[
+				["cmDispenser" ,
+					[
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine" , "1000" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine_x2" , "1000" , [-1] ]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Plane - A-10A
+// ***************************
+CTI_LOADOUT_RHS_A10_MNT_OPTIONS =
+[
+	[
+		"Pylon - Configuration" ,
+		"pylon",
+		[
+			[
+				["RHS_weap_gau8" ,
+					[
+						[ "rhs_mag_1150Rnd_30x173_mixed" , "1000" ]
+					]
+				]
+			],
+			[
+				["pylon1" ,
+					[
+						[ "rhs_mag_Sidewinder" , "3000" ],
+						[ "rhs_mag_aim9m" , "3000" ],
+						[ "rhs_mag_Sidewinder_2" , "3000" ],
+						[ "rhs_mag_aim9m_2" , "3000" ],
+						[ "rhs_mag_mk82" , "3000" ],
+						[ "rhs_mag_gbu12" , "3000" ],
+						[ "rhs_mag_cbu100" , "3000" ],
+						[ "rhs_mag_ANALQ131" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon2" ,
+					[
+						[ "rhs_mag_FFAR_7_USAF" , "3000" ],
+						[ "rhs_mag_M151_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_M257_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_mk82" , "3000" ],
+						[ "rhs_mag_gbu12" , "3000" ],
+						[ "rhs_mag_cbu100" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon3" ,
+					[
+						[ "rhs_mag_agm65b" , "3000" ],
+						[ "rhs_mag_agm65b_3" , "3000" ],
+						[ "rhs_mag_agm65d" , "3000" ],
+						[ "rhs_mag_agm65d_3" , "3000" ],
+						[ "rhs_mag_agm65e" , "3000" ],
+						[ "rhs_mag_agm65e_3" , "3000" ],
+						[ "rhs_mag_agm65f" , "3000" ],
+						[ "rhs_mag_agm65f_3" , "3000" ],
+						[ "rhs_mag_agm65h" , "3000" ],
+						[ "rhs_mag_agm65h_3" , "3000" ],
+						[ "rhs_mag_FFAR_7_USAF" , "3000" ],
+						[ "rhs_mag_FFAR_21_USAF_LAU68_3" , "3000" ],
+						[ "rhs_mag_M151_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_M151_21_USAF_LAU131_3" , "3000" ],
+						[ "rhs_mag_M257_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_mk82" , "3000" ],
+						[ "rhs_mag_mk82_3" , "3000" ],
+						[ "rhs_mag_gbu12" , "3000" ],
+						[ "rhs_mag_cbu87" , "3000" ],
+						[ "rhs_mag_cbu89" , "3000" ],
+						[ "rhs_mag_cbu100" , "3000" ],
+						[ "rhs_mag_cbu100_3" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon4" ,
+					[
+						[ "rhs_mag_FFAR_7_USAF" , "3000" ],
+						[ "rhs_mag_FFAR_21_USAF_LAU68_3" , "3000" ],
+						[ "rhs_mag_M151_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_M151_21_USAF_LAU131_3" , "3000" ],
+						[ "rhs_mag_M257_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_mk82" , "3000" ],
+						[ "rhs_mag_mk82_3" , "3000" ],
+						[ "rhs_mag_gbu12" , "3000" ],
+						[ "rhs_mag_cbu87" , "3000" ],
+						[ "rhs_mag_cbu89" , "3000" ],
+						[ "rhs_mag_cbu100" , "3000" ],
+						[ "rhs_mag_cbu100_3" , "3000" ]
+					]
+				]
+			],
+			[
+				["pylon5" ,
+					[
+						[ "rhs_mag_FFAR_7_USAF" , "3000" ],
+						[ "rhs_mag_M151_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_M257_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_mk82" , "3000" ],
+						[ "rhs_mag_gbu12" , "3000" ],
+						[ "rhs_mag_cbu87" , "3000" ],
+						[ "rhs_mag_cbu89" , "3000" ],
+						[ "rhs_mag_cbu100" , "3000" ]
+					]
+				]
+			],
+			/*[
+				["pylon6" ,
 					[
 						[ "WeaponSafty" , "0", [-1]]
 					]
 				]
-			],
+			],*/
 			[
-				[ "Laserdesignator_mounted" ,
+				["pylon7" ,
 					[
-						[ "Laserbatteries" , "500", [0]]
+						[ "rhs_mag_FFAR_7_USAF" , "3000" ],
+						[ "rhs_mag_M151_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_M257_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_mk82" , "3000" ],
+						[ "rhs_mag_gbu12" , "3000" ],
+						[ "rhs_mag_cbu87" , "3000" ],
+						[ "rhs_mag_cbu89" , "3000" ],
+						[ "rhs_mag_cbu100" , "3000" ]
 					]
 				]
 			],
 			[
-				["gatling_20mm" ,
+				["pylon8" ,
 					[
-						[ "1000Rnd_20mm_shells" , "1000", [0]]
-					]
-				],
-				["gatling_25mm" ,
-					[
-						[ "1000Rnd_25mm_shells" , "1500", [0]] ,
-						[ "300Rnd_25mm_shells" , "500", [0]]
-					]
-				]
-			],
-			[
-				["PylonLeft1" ,
-					[
-						[ "PylonMissile_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000", [0]],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000", [0]],
-						[ "PylonRack_12Rnd_missiles" , "2000"]
+						[ "rhs_mag_FFAR_7_USAF" , "3000" ],
+						[ "rhs_mag_FFAR_21_USAF_LAU68_3" , "3000" ],
+						[ "rhs_mag_M151_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_M151_21_USAF_LAU131_3" , "3000" ],
+						[ "rhs_mag_M257_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_mk82" , "3000" ],
+						[ "rhs_mag_mk82_3" , "3000" ],
+						[ "rhs_mag_gbu12" , "3000" ],
+						[ "rhs_mag_cbu87" , "3000" ],
+						[ "rhs_mag_cbu89" , "3000" ],
+						[ "rhs_mag_cbu100" , "3000" ],
+						[ "rhs_mag_cbu100_3" , "3000" ]
 					]
 				]
 			],
 			[
-				["PylonLeft2" ,
+				["pylon9" ,
 					[
-						[ "PylonMissile_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000", [0]]
+						[ "rhs_mag_agm65b" , "3000" ],
+						[ "rhs_mag_agm65b_3" , "3000" ],
+						[ "rhs_mag_agm65d" , "3000" ],
+						[ "rhs_mag_agm65d_3" , "3000" ],
+						[ "rhs_mag_agm65e" , "3000" ],
+						[ "rhs_mag_agm65e_3" , "3000" ],
+						[ "rhs_mag_agm65f" , "3000" ],
+						[ "rhs_mag_agm65f_3" , "3000" ],
+						[ "rhs_mag_agm65h" , "3000" ],
+						[ "rhs_mag_agm65h_3" , "3000" ],
+						[ "rhs_mag_FFAR_7_USAF" , "3000" ],
+						[ "rhs_mag_FFAR_21_USAF_LAU68_3" , "3000" ],
+						[ "rhs_mag_M151_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_M151_21_USAF_LAU131_3" , "3000" ],
+						[ "rhs_mag_M257_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_mk82" , "3000" ],
+						[ "rhs_mag_mk82_3" , "3000" ],
+						[ "rhs_mag_gbu12" , "3000" ],
+						[ "rhs_mag_cbu87" , "3000" ],
+						[ "rhs_mag_cbu89" , "3000" ],
+						[ "rhs_mag_cbu100" , "3000" ],
+						[ "rhs_mag_cbu100_3" , "3000" ]
 					]
 				]
 			],
 			[
-				["PylonLeft3" ,
+				["pylon10" ,
 					[
-						[ "PylonRack_12Rnd_PG_missiles" , "8000", [0]],
-						[ "PylonMissile_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000", [0]],
-						[ "PylonRack_12Rnd_missiles" , "2000"]
+						[ "rhs_mag_FFAR_7_USAF" , "3000" ],
+						[ "rhs_mag_M151_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_M257_7_USAF_LAU131" , "3000" ],
+						[ "rhs_mag_mk82" , "3000" ],
+						[ "rhs_mag_gbu12" , "3000" ],
+						[ "rhs_mag_cbu100" , "3000" ]
 					]
 				]
 			],
 			[
-				["PylonRight3" ,
+				["pylon11" ,
 					[
-						[ "PylonRack_12Rnd_PG_missiles" , "8000", [0]],
-						[ "PylonMissile_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000", [0]],
-						[ "PylonRack_12Rnd_missiles" , "2000"]
+						[ "rhs_mag_Sidewinder" , "3000" ],
+						[ "rhs_mag_aim9m" , "3000" ],
+						[ "rhs_mag_Sidewinder_2" , "3000" ],
+						[ "rhs_mag_aim9m_2" , "3000" ],
+						[ "rhs_mag_mk82" , "3000" ],
+						[ "rhs_mag_gbu12" , "3000" ],
+						[ "rhs_mag_cbu100" , "3000" ]
 					]
 				]
 			],
 			[
-				["PylonRight2" ,
+				["cmDispenser" ,
 					[
-						[ "PylonMissile_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000", [0]]
-					]
-				]
-			],
-			[
-				["PylonRight1" ,
-					[
-						[ "PylonMissile_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000", [0]],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000", [0]],
-						[ "PylonRack_12Rnd_missiles" , "2000"]
-					]
-				]
-			],
-			[
-				["CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "2000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1] ],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "1500" , [-1] ]
+						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x4" , "500" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x8" , "1000" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x16" , "1000" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Magazine_x2" , "500" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Magazine_x4" , "500" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Magazine_x8" , "1000" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Magazine_x16" , "1000" , [-1] ]
 					]
 				]
 			]
 		]
 	]
 ];
+
+// ***************************
+// Plane - F-22A
+// ***************************
+CTI_LOADOUT_rhsusf_f22_MNT_OPTIONS =
+[
+	[
+		"Pylon - Configuration" ,
+		"pylon",
+		[
+			[
+				["rhsusf_M61A2" ,
+					[
+						[ "rhsusf_20mm_M61A2" , "1000" ]
+					]
+				]
+			],
+			[
+				["pylonBayLeft1" ,
+					[
+						[ "rhs_mag_Sidewinder_int" , "5000" ],
+						[ "rhs_mag_aim9m_int" , "5000" ]
+					]
+				]
+			],
+			[
+				["pylonBayCenter1" ,
+					[
+						[ "rhs_mag_aim120d_int" , "5000" ]
+					]
+				]
+			],
+			[
+				["pylonBayCenter2" ,
+					[
+						[ "rhs_mag_aim120d_int" , "5000" ],
+						[ "rhs_mag_aim120d_2_F22_l" , "5000" ],
+						[ "rhs_mag_mk82" , "5000" ],
+						[ "rhs_mag_gbu32" , "5000" ]
+					]
+				]
+			],
+			[
+				["pylonBayCenter3" ,
+					[
+						[ "rhs_mag_aim120d_int" , "5000" ],
+						[ "rhs_mag_aim120d_2_F22_r" , "5000" ],
+						[ "rhs_mag_mk82" , "5000" ],
+						[ "rhs_mag_gbu32" , "5000" ]
+					]
+				]
+			],
+			[
+				["pylonBayCenter4" ,
+					[
+						[ "rhs_mag_aim120d_int" , "5000" ]
+					]
+				]
+			],
+			[
+				["pylonBayRight1" ,
+					[
+						[ "rhs_mag_Sidewinder_int" , "5000" ],
+						[ "rhs_mag_aim9m_int" , "5000" ]
+					]
+				]
+			],
+			[
+				["cmDispenser" ,
+					[
+						[ "rhsusf_ANALE52_CMFlare_Chaff_Magazine" , "500" , [-1] ],
+						[ "rhsusf_ANALE52_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
+						[ "rhsusf_ANALE52_CMFlare_Chaff_Magazine_x4" , "1000" , [-1] ],
+						[ "rhsusf_ANALE52_CMFlare_Magazine" , "500" , [-1] ],
+						[ "rhsusf_ANALE52_CMFlare_Magazine_x2" , "500" , [-1] ],
+						[ "rhsusf_ANALE52_CMFlare_Magazine_x4" , "1000" , [-1] ],
+						[ "rhsusf_ANALE52_CMFlare_Magazine_x6" , "1000" , [-1] ]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Plane - C130J
+// ***************************
+CTI_LOADOUT_RHS_C130J_MNT_OPTIONS =
+[
+	[
+		"Pylon - Configuration" ,
+		"pylon",
+		[
+			[
+				["cmDispenser" ,
+					[
+						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x4" , "500" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x8" , "1000" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x16" , "1000" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Magazine_x2" , "500" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Magazine_x4" , "500" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Magazine_x8" , "1000" , [-1] ],
+						[ "rhsusf_ANALE40_CMFlare_Magazine_x16" , "1000" , [-1] ]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Plane - C130J (CARGO)
+// ***************************
+CTI_LOADOUT_RHS_C130J_Cargo_MNT_OPTIONS = CTI_LOADOUT_RHS_C130J_MNT_OPTIONS;
+
+// ***************************
+// Heli - CH-47F
+// ***************************
+CTI_LOADOUT_RHS_CH_47F_10_MNT_OPTIONS =
+[
+	[
+		"Pylon - Configuration" ,
+		"pylon",
+		[
+			[
+				["rhs_weap_m134_minigun_1" ,
+					[
+						[ "rhs_mag_762x51_m80a1_4000" , "1000" , [1] ]
+					]
+				]
+			],
+			[
+				["rhs_weap_m134_minigun_2" ,
+					[
+						[ "rhs_mag_762x51_m80a1_4000" , "1000" , [2] ]
+					]
+				]
+			],
+			[
+				["cmDispenser" ,
+					[
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x4" , "1000" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x8" , "1000" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine_x2" , "500" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine_x4" , "1000" , [-1] ],
+						[ "rhsusf_M130_CMFlare_Magazine_x8" , "1000" , [-1] ]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Heli - CH-47F (CARGO)
+// ***************************
+CTI_LOADOUT_RHS_CH_47F_10_cargo_MNT_OPTIONS = CTI_LOADOUT_RHS_CH_47F_10_MNT_OPTIONS;
+
 // ***************************
 // UAV - MQ-4A Greyhawk AA Version
 // ***************************
@@ -1352,24 +932,24 @@ CTI_LOADOUT_B_UAV_02_F_MNT_OPTIONS =
 			[
 				[ "Laserdesignator_mounted" ,
 					[
-						[ "Laserbatteries" , "500" , [0]]
+						[ "Laserbatteries" , "500" ]
 					]
 				]
 			],
 			[
 				["Missile_AA_04_Plane_CAS_01_F" ,
 					[
-						[ "2Rnd_Missile_AA_04_F" , "8000"]
+						[ "2Rnd_Missile_AA_04_F" , "8000" ]
 					]
 				],
 				["Missile_AA_03_Plane_CAS_02_F" ,
 					[
-						[ "2Rnd_Missile_AA_03_F" , "8000"]
+						[ "2Rnd_Missile_AA_03_F" , "8000" ]
 					]
 				],
 				["missiles_ASRAAM" ,
 					[
-						[ "2Rnd_AAA_missiles" , "8000"]
+						[ "2Rnd_AAA_missiles" , "8000" ]
 					]
 				]
 
@@ -1400,19 +980,19 @@ CTI_LOADOUT_B_UAV_02_CAS_F_MNT_OPTIONS =
 			[
 				[ "Laserdesignator_mounted" ,
 					[
-						[ "Laserbatteries" , "500" , [0]]
+						[ "Laserbatteries" , "500" ]
 					]
 				]
 			],
 			[
 				["GBU12BombLauncher" ,
 					[
-						[ "2Rnd_GBU12_LGB" , "4000" , [0]]
+						[ "2Rnd_GBU12_LGB" , "4000" ]
 					]
 				],
 				["Mk82BombLauncher" ,
 					[
-						[ "2Rnd_Mk82" , "3000" ,[0]]
+						[ "2Rnd_Mk82" , "3000" ,[0] ]
 					]
 				]
 
@@ -1431,7 +1011,6 @@ CTI_LOADOUT_B_UAV_02_CAS_F_MNT_OPTIONS =
 	]
 ];
 
-
 // ***************************
 // UAV - MQ-4A Greyhawk AT version
 // ***************************
@@ -1444,43 +1023,43 @@ CTI_LOADOUT_B_UAV_02_dynamicLoadout_F_MNT_OPTIONS =
 			[
 				[ "Laserdesignator_mounted" ,
 					[
-						[ "Laserbatteries" , "500" , [0]]
+						[ "Laserbatteries" , "500" ]
 					]
 				]
 			],
 			[
 				["Pylons1",
 					[
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" , [0]],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" , [0]],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" , [0]],
+						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
+						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
+						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
+						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
 						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" , [-1]],
 						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "100" , [-1]],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" , [0]],
+						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
 						[ "PylonRack_12Rnd_missiles" , "2000" , [-1]],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" , [0]],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" , [0]]
+						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" ],
+						[ "PylonMissile_1Rnd_Mk82_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ]
 					]
 				]
 			],
 			[
 				["Pylons2",
 					[
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" , [0]],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" , [0]],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" , [0]],
+						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
+						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
+						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
+						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
 						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" , [-1]],
 						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "100" , [-1]],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" , [0]],
+						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
 						[ "PylonRack_12Rnd_missiles" , "2000" , [-1]],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" , [0]],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" , [0]]
+						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" ],
+						[ "PylonMissile_1Rnd_Mk82_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ]
 					]
 				]
 			],
@@ -1510,7 +1089,7 @@ CTI_LOADOUT_B_T_UAV_03_dynamicLoadout_F_MNT_OPTIONS =
 			[
 				[ "Laserdesignator_mounted" ,
 					[
-						[ "Laserbatteries" , "500" , [0]]
+						[ "Laserbatteries" , "500" ]
 					]
 				]
 			],
@@ -1518,53 +1097,53 @@ CTI_LOADOUT_B_T_UAV_03_dynamicLoadout_F_MNT_OPTIONS =
 				["Pylons1",
 					[
 						[ "PylonRack_12Rnd_missiles" , "2000" , [-1]],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" , [0]],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" , [0]],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" , [0]],
+						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
+						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
+						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
+						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
 						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" , [-1]],
 						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "100" , [-1]],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" , [0]],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" , [0]],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" , [0]]
+						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
+						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" ],
+						[ "PylonMissile_1Rnd_Mk82_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ]
 					]
 				]
 			],
 			[
 				["Pylons2",
 					[
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" , [0]],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" , [0]],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" , [0]],
+						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
+						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
+						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
+						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
 						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" , [-1]],
 						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "100" , [-1]],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" , [0]],
+						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
 						[ "PylonRack_12Rnd_missiles" , "2000" , [-1]],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" , [0]],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" , [0]]
+						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" ],
+						[ "PylonMissile_1Rnd_Mk82_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ]
 					]
 				]
 			],
 			[
 				["Pylons3",
 					[
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" , [0]],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" , [0]],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" , [0]],
+						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
+						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
+						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
+						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
 						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" , [-1]],
 						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "100" , [-1]],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" , [0]],
+						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
 						[ "PylonRack_12Rnd_missiles" , "2000" , [-1]],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" , [0]],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" , [0]]
+						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" ],
+						[ "PylonMissile_1Rnd_Mk82_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ]
 					]
 				]
 			],
@@ -1572,17 +1151,17 @@ CTI_LOADOUT_B_T_UAV_03_dynamicLoadout_F_MNT_OPTIONS =
 				["Pylons4",
 					[
 						[ "PylonRack_12Rnd_missiles" , "2000" , [-1]],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" , [0]],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" , [0]],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" , [0]],
+						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
+						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
+						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
+						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
 						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" , [-1]],
 						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "100" , [-1]],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" , [0]],
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" , [0]],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" , [0]]
+						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
+						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" ],
+						[ "PylonMissile_1Rnd_Mk82_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ]
 					]
 				]
 			],
@@ -1612,31 +1191,31 @@ CTI_LOADOUT_B_UAV_05_F_MNT_OPTIONS =
 			[
 				[ "Laserdesignator_mounted" ,
 					[
-						[ "Laserbatteries" , "500" , [0]]
+						[ "Laserbatteries" , "500" ]
 					]
 				]
 			],
 			[
 				["Pylons1",
 					[
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000" , [0]],
-						[ "PylonMissile_Missile_AGM_02_x2" , "10000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" , [0]],
-						[ "PylonMissile_Missile_HARM_INT_x1" , "8000" , [0]],
-						[ "PylonRack_Bomb_SDB_x4" , "5000" , [0]]
+						[ "PylonMissile_Bomb_GBU12_x1" , "5000" ],
+						[ "PylonMissile_Missile_AGM_02_x2" , "10000" ],
+						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ],
+						[ "PylonMissile_Missile_HARM_INT_x1" , "8000" ],
+						[ "PylonRack_Bomb_SDB_x4" , "5000" ]
 					]
 				]
 			],
 			[
 				["Pylons2",
 					[
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000" , [0]],
-						[ "PylonMissile_Missile_AGM_02_x2" , "10000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" , [0]],
-						[ "PylonMissile_Missile_HARM_INT_x1" , "8000" , [0]],
-						[ "PylonRack_Bomb_SDB_x4" , "5000" , [0]]
+						[ "PylonMissile_Bomb_GBU12_x1" , "5000" ],
+						[ "PylonMissile_Missile_AGM_02_x2" , "10000" ],
+						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
+						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ],
+						[ "PylonMissile_Missile_HARM_INT_x1" , "8000" ],
+						[ "PylonRack_Bomb_SDB_x4" , "5000" ]
 					]
 				]
 			],
@@ -1673,14 +1252,14 @@ CTI_LOADOUT_O_T_UAV_04_CAS_F_MNT_OPTIONS =
 			[
 				[ "Laserdesignator_mounted" ,
 					[
-						[ "Laserbatteries" , "500", [0]]
+						[ "Laserbatteries" , "500"]
 					]
 				]
 			] ,
 			[
 				[ "missiles_Jian" ,
 					[
-						[ "4Rnd_LG_Jian" , "12000", [0]]
+						[ "4Rnd_LG_Jian" , "12000"]
 					]
 				]
 			] ,
@@ -1699,40 +1278,14 @@ CTI_LOADOUT_O_T_UAV_04_CAS_F_MNT_OPTIONS =
 ];
 
 // ***************************
-// Heli - Orca armed
+// Heli - KA-60
 // ***************************
-CTI_LOADOUT_O_Heli_Light_02_dynamicLoadout_F_MNT_OPTIONS =
+CTI_LOADOUT_rhs_ka60_grey_MNT_OPTIONS =
 [
 	[
 		"Pylon - configuration",
 		"pylon",
 		[
-			[
-				[ "PylonLeft1" ,
-					[
-						[ "PylonWeapon_2000Rnd_65x39_belt" , "1000" ],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
-						[ "PylonRack_12Rnd_missiles" , "2000" ],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
-						[ "PylonWeapon_300Rnd_20mm_shells" , "1000" ],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" ]
-					]
-				]
-			],
-			[
-				[ "PylonRight1" ,
-					[
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
-						[ "PylonRack_12Rnd_missiles" , "2000" ],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
-						[ "PylonWeapon_300Rnd_20mm_shells" , "1000" ],
-						[ "PylonWeapon_2000Rnd_65x39_belt" , "1000" ],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" ]
-					]
-				]
-			],
 			[
 				[ "CMFlareLauncher" ,
 					[
@@ -1748,529 +1301,25 @@ CTI_LOADOUT_O_Heli_Light_02_dynamicLoadout_F_MNT_OPTIONS =
 ];
 
 // ***************************
-// Heli - Orca unarmed
+// Heli - Mi-8T
 // ***************************
-CTI_LOADOUT_O_Heli_Light_02_unarmed_F_MNT_OPTIONS = CTI_LOADOUT_UNARMED_FLARES;
-// ***************************
-// Heli - Mi-290 Taru
-// ***************************
-CTI_LOADOUT_O_Heli_Transport_04_F_MNT_OPTIONS = CTI_LOADOUT_UNARMED_FLARES;
-// ***************************
-// Plane - To-201 Stealth
-// ***************************
-CTI_LOADOUT_O_Plane_Fighter_02_Stealth_F_MNT_OPTIONS =
+CTI_LOADOUT_RHS_Mi8T_vdv_MNT_OPTIONS =
 [
 	[
 		"Pylon - configuration",
 		"pylon",
 		[
 			[
-				[ "weapon_Fighter_Gun_30mm" ,
+				[ "cmDispenser" ,
 					[
-						[ "magazine_Fighter02_Gun30mm_AA_x180" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Laserdesignator_pilotCamera" ,
-					[
-						[ "Laserbatteries" , "500" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayRight1" ,
-					[
-						[ "PylonMissile_Missile_AA_R73_x1" , "4000" ],
-						[ "PylonMissile_Missile_AA_R77_x1" , "4000" ],
-						[ "PylonMissile_Missile_AA_R77_INT_x1" , "4000" ],
-						[ "PylonMissile_Missile_AGM_KH25_INT_x1" , "5000" ],
-						[ "PylonMissile_Bomb_KAB250_x1" , "6000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayRight2" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ]
-
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter1" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_INT_x1" , "4000" ]
-
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter3" ,
-					[
-						["PylonMissile_Missile_AA_R77_INT_x1" , "4000" ],
-						["PylonMissile_Missile_AGM_KH25_INT_x1" , "6000" ],
-						["PylonMissile_Bomb_KAB250_x1" , "6000" ],
-						["PylonMissile_Missile_KH58_INT_x1" , "8000" ],
-						["PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter2" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_INT_x1" , "4000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayLeft2" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ]
-
-					]
-				]
-			],
-			[
-				[ "PylonBayLeft1" ,
-					[
-						[ "PylonMissile_Missile_AA_R73_x1" , "4000" ],
-						[ "PylonMissile_Missile_AA_R77_x1" , "4000" ],
-						[ "PylonMissile_Missile_AA_R77_INT_x1" , "4000" ],
-						[ "PylonMissile_Missile_AGM_KH25_INT_x1" , "5000" ],
-						[ "PylonMissile_Bomb_KAB250_x1" , "6000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1] ]
-
-					]
-				]
-			]
-		]
-	]
-];
-
-
-// ***************************
-// Plane - To-201
-// ***************************
-CTI_LOADOUT_O_Plane_Fighter_02_F_MNT_OPTIONS =
-[
-	[
-		"Pylon - configuration",
-		"pylon",
-		[
-			[
-				[ "weapon_Fighter_Gun_30mm" ,
-					[
-						[ "magazine_Fighter02_Gun30mm_AA_x180" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Laserdesignator_pilotCamera" ,
-					[
-						[ "Laserbatteries" , "500" ]
-					]
-				]
-			],
-			[
-				[ "Pylons1" ,
-					[
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons2" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ]
-
-					]
-				]
-			],
-			[
-				[ "Pylons3" ,
-					[
-						[ "PylonMissile_Bomb_KAB250_x1" , "6000" ],
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ],
-						[ "PylonMissile_Missile_AGM_KH25_x1" , "5000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayRight1" ,
-					[
-						["PylonMissile_Missile_AA_R73_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayRight2" ,
-					[
-						["PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter1" ,
-					[
-						["PylonMissile_Missile_AA_R77_INT_x1" , "5000" ]
-
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter3" ,
-					[
-						[ "PylonMissile_Bomb_KAB250_x1" , "6000" ],
-						[ "PylonMissile_Missile_AA_R77_INT_x1" , "5000" ],
-						[ "PylonMissile_Missile_AGM_KH25_INT_x1" , "5000" ],
-						["PylonMissile_Missile_KH58_INT_x1" , "8000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter2" ,
-					[
-						["PylonMissile_Missile_AA_R77_INT_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayLeft2" ,
-					[
-						["PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayLeft1" ,
-					[
-						["PylonMissile_Missile_AA_R73_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons4" ,
-					[
-						[ "PylonMissile_Bomb_KAB250_x1" , "6000" ],
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ],
-						[ "PylonMissile_Missile_AGM_KH25_x1" , "5000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons5" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ],
-						["PylonMissile_Missile_KH58_INT_x1" , "8000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons6" ,
-					[
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ],
-						["PylonMissile_Missile_KH58_INT_x1" , "8000" ]
-
-					]
-				]
-			],
-			[
-				[ "CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1] ]
-
-					]
-				]
-			]
-		]
-	],
-	[
-		"Air Supremacy - Maddog",
-		"pylon",
-		[
-			[
-				[ "weapon_Fighter_Gun_30mm" ,
-					[
-						[ "magazine_Fighter02_Gun30mm_AA_x180" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Laserdesignator_pilotCamera" ,
-					[
-						[ "Laserbatteries" , "500" ]
-					]
-				]
-			],
-			[
-				[ "Pylons1" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons2" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ]
-
-					]
-				]
-			],
-			[
-				[ "Pylons3" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayRight1" ,
-					[
-						["PylonMissile_Missile_AA_R73_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayRight2" ,
-					[
-						["PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter1" ,
-					[
-						["PylonMissile_Missile_AA_R77_INT_x1" , "5000" ]
-
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter3" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_INT_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter2" ,
-					[
-						["PylonMissile_Missile_AA_R77_INT_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayLeft2" ,
-					[
-						["PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayLeft1" ,
-					[
-						["PylonMissile_Missile_AA_R73_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons4" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons5" ,
-					[
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons6" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1] ]
-
-					]
-				]
-			]
-		]
-	],
-	[
-		"Ground Supremacy",
-		"pylon",
-		[
-			[
-				[ "weapon_Fighter_Gun_30mm" ,
-					[
-						[ "magazine_Fighter02_Gun30mm_AA_x180" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Laserdesignator_pilotCamera" ,
-					[
-						[ "Laserbatteries" , "500" ]
-					]
-				]
-			],
-			[
-				[ "Pylons1" ,
-					[
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons2" ,
-					[
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ]
-
-					]
-				]
-			],
-			[
-				[ "Pylons3" ,
-					[
-						[ "PylonMissile_Missile_AGM_KH25_x1" , "5000" ],
-						[ "PylonMissile_Bomb_KAB250_x1" , "6000" ],
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayRight1" ,
-					[
-						["PylonMissile_Missile_AA_R73_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayRight2" ,
-					[
-						["PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter1" ,
-					[
-						["PylonMissile_Missile_AA_R77_INT_x1" , "5000" ]
-
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter3" ,
-					[
-						["PylonMissile_Missile_KH58_INT_x1" , "8000" ],
-						[ "PylonMissile_Bomb_KAB250_x1" , "6000" ],
-						[ "PylonMissile_Missile_AA_R77_INT_x1" , "5000" ],
-						[ "PylonMissile_Missile_AGM_KH25_INT_x1" , "5000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayCenter2" ,
-					[
-						["PylonMissile_Missile_AA_R77_INT_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayLeft2" ,
-					[
-						["PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "PylonBayLeft1" ,
-					[
-						["PylonMissile_Missile_AA_R73_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons4" ,
-					[
-						[ "PylonMissile_Missile_AGM_KH25_x1" , "5000" ],
-						[ "PylonMissile_Bomb_KAB250_x1" , "6000" ],
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons5" ,
-					[
-						["PylonMissile_Missile_KH58_INT_x1" , "8000" ],
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons6" ,
-					[
-						["PylonMissile_Missile_KH58_INT_x1" , "8000" ],
-						[ "PylonMissile_Missile_AA_R73_x1" , "5000" ],
-						[ "PylonMissile_Missile_AA_R77_x1" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1] ],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1] ]
-
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine" , "500" , [-1]],
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x2" , "500" , [-1]],
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x4" , "1000" , [-1]],
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x6" , "1000" , [-1]],
+						[ "rhs_ASO2_CMFlare_Magazine" , "500" , [-1]],
+						[ "rhs_ASO2_CMFlare_Magazine_x2" , "500" , [-1]],
+						[ "rhs_ASO2_CMFlare_Magazine_x4" , "1000" , [-1]],
+						[ "rhs_ASO2_CMFlare_Magazine_x6" , "1000" , [-1]]
 					]
 				]
 			]
@@ -2279,106 +1328,225 @@ CTI_LOADOUT_O_Plane_Fighter_02_F_MNT_OPTIONS =
 ];
 
 // ***************************
-// VTOL - Y-32
+// Plane - Mi-8MT (CARGO)
 // ***************************
-CTI_LOADOUT_O_T_VTOL_02_infantry_dynamicLoadout_F_MNT_OPTIONS =
+CTI_LOADOUT_RHS_Mi8mt_Cargo_vdv_MNT_OPTIONS = CTI_LOADOUT_RHS_Mi8T_vdv_MNT_OPTIONS;
+
+// ***************************
+// Heli - Mi-8MTV-3
+// ***************************
+CTI_LOADOUT_RHS_Mi8MTV3_vdv_MNT_OPTIONS =
 [
 	[
 		"Pylon - configuration" ,
 		"pylon",
 		[
 			[
-				[ "Laserdesignator_mounted" ,
+				[ "rhs_weap_pkt_v1" ,
 					[
-						[ "Laserbatteries" , "500" , [0]]
+						[ "rhs_mag_762x54mm_100", "500", [1]]
 					]
 				]
 			],
 			[
-				[ "gatling_30mm" ,
+				[ "rhs_weap_pkt_v2" ,
 					[
-						[ "250Rnd_30mm_APDS_shells" , "500" , [0]]
+						[ "rhs_mag_762x54mm_100", "500", [2]]
 					]
 				]
 			],
 			[
-				[ "gatling_30mm" ,
+				[ "rhs_weap_pkt_v3" ,
 					[
-						[ "250Rnd_30mm_HE_shells" , "750" , [0]]
+						[ "rhs_mag_762x54mm_100", "500", [3]]
 					]
 				]
 			],
 			[
-				[ "PylonLeft1" ,
+				[ "pylon1" ,
 					[
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" , [-1]],
-						//[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" , [0]],
-						//[ "PylonRack_4Rnd_LG_scalpel" , "20000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" , [-1]],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" , [-1]],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" , [-1]],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" , [0]],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" , [-1]],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" , [-1]]
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_s8t" , "3000" ],
+						[ "rhs_mag_b13l1_s13b" , "3000" ],
+						[ "rhs_mag_b13l1_s13d" , "3000" ],
+						[ "rhs_mag_b13l1_s13df" , "3000" ],
+						[ "rhs_mag_b13l1_s13t" , "3000" ],
+						[ "rhs_mag_b13l1_s13of" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
 					]
 				]
 			],
 			[
-				[ "PylonLeft2" ,
+				[ "pylon2" ,
 					[
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonRack_4Rnd_LG_scalpel" , "20000" , [0]],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" , [-1]],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" , [-1]],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" , [-1]],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" , [-1]],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" , [0]],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" , [-1]],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" , [-1]]
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_s8t" , "3000" ],
+						[ "rhs_mag_b13l1_s13b" , "3000" ],
+						[ "rhs_mag_b13l1_s13d" , "3000" ],
+						[ "rhs_mag_b13l1_s13df" , "3000" ],
+						[ "rhs_mag_b13l1_s13t" , "3000" ],
+						[ "rhs_mag_b13l1_s13of" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
 					]
 				]
 			],
 			[
-				[ "PylonRight2" ,
+				[ "pylon3" ,
 					[
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonRack_4Rnd_LG_scalpel" , "20000" , [0]],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" , [-1]],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" , [-1]],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" , [-1]],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" , [-1]],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" , [0]],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" , [-1]],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" , [-1]]
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_s8t" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
 					]
 				]
 			],
 			[
-				[ "PylonRight1" ,
+				[ "pylon4" ,
 					[
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" , [-1]],
-						//[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" , [0]],
-						//[ "PylonRack_4Rnd_LG_scalpel" , "20000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" , [-1]],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" , [-1]],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" , [-1]],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" , [0]],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" , [-1]],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" , [-1]]
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_s8t" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
+					]
+				]
+			],
+			/*[
+				[ "pylon5" ,
+					[
+						[ "WeaponSafty" , "0", [-1]]
 					]
 				]
 			],
 			[
-				[ "CMFlareLauncher" ,
+				[ "pylon6" ,
 					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1] ] ,
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1] ]
+						[ "WeaponSafty" , "0", [-1]]
+					]
+				]
+			],*/
+			[
+				[ "cmDispenser" ,
+					[
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x2" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x4" , "1000" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Magazine" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Magazine_x2" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Magazine_x4" , "1000" , [-1]]
 
 					]
 				]
@@ -2386,11 +1554,1393 @@ CTI_LOADOUT_O_T_VTOL_02_infantry_dynamicLoadout_F_MNT_OPTIONS =
 		]
 	]
 ];
-CTI_LOADOUT_O_T_VTOL_02_vehicle_dynamicLoadout_F_MNT_OPTIONS = CTI_LOADOUT_O_T_VTOL_02_infantry_dynamicLoadout_F_MNT_OPTIONS;
-
 
 // ***************************
-// UAV - MQ-4A Greyhawk AA Version
+// Heli - Mi-24P (VVSC)
+// ***************************
+CTI_LOADOUT_RHS_Mi24P_vvsc_MNT_OPTIONS =
+[
+	[
+		"Pylon - configuration" ,
+		"pylon",
+		[
+			[
+				[ "rhs_weap_fab250" ,
+					[
+						[ "rhs_mag_fab250" , "500" ]
+					]
+				]
+			],
+			[
+				[ "pylon1" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_s8t" , "3000" ],
+						[ "rhs_mag_b13l1_s13b" , "3000" ],
+						[ "rhs_mag_b13l1_s13d" , "3000" ],
+						[ "rhs_mag_b13l1_s13df" , "3000" ],
+						[ "rhs_mag_b13l1_s13t" , "3000" ],
+						[ "rhs_mag_b13l1_s13of" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon2" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_s8t" , "3000" ],
+						[ "rhs_mag_b13l1_s13b" , "3000" ],
+						[ "rhs_mag_b13l1_s13d" , "3000" ],
+						[ "rhs_mag_b13l1_s13df" , "3000" ],
+						[ "rhs_mag_b13l1_s13t" , "3000" ],
+						[ "rhs_mag_b13l1_s13of" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon3" ,
+					[
+						[ "rhs_mag_9M17_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M17p_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M1_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M2_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120O_Mi24_2x" , "3000" ],
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon4" ,
+					[
+						[ "rhs_mag_9M17_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M17p_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M1_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M2_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120O_Mi24_2x" , "3000" ],
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon5" ,
+					[
+						[ "rhs_mag_9M17_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M17p_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M1_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M2_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120O_Mi24_2x" , "3000" ],
+						[ "rhs_mag_mi24_empty" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon6" ,
+					[
+						[ "rhs_mag_9M17_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M17p_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M1_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M2_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120O_Mi24_2x" , "3000" ],
+						[ "rhs_mag_mi24_empty" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "cmDispenser" ,
+					[
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x2" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x4" , "1000" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Magazine" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Magazine_x2" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Magazine_x4" , "1000" , [-1]]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Heli - Mi-24P (VVS)
+// ***************************
+CTI_LOADOUT_RHS_Mi24P_vvs_MNT_OPTIONS = CTI_LOADOUT_RHS_Mi24P_vvsc_MNT_OPTIONS;
+
+// ***************************
+// Heli - Mi-24V (VDV)
+// ***************************
+CTI_LOADOUT_RHS_Mi24V_vdv_MNT_OPTIONS =
+[
+	[
+		"Pylon - configuration" ,
+		"pylon",
+		[
+			[
+				[ "rhs_weap_yakB" ,
+					[
+						[ "rhs_mag_127x108mm_1slt_1470" , "500" ]
+					]
+				]
+			],
+			[
+				[ "pylon1" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_s8t" , "3000" ],
+						[ "rhs_mag_b13l1_s13b" , "3000" ],
+						[ "rhs_mag_b13l1_s13d" , "3000" ],
+						[ "rhs_mag_b13l1_s13df" , "3000" ],
+						[ "rhs_mag_b13l1_s13t" , "3000" ],
+						[ "rhs_mag_b13l1_s13of" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon2" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_s8t" , "3000" ],
+						[ "rhs_mag_b13l1_s13b" , "3000" ],
+						[ "rhs_mag_b13l1_s13d" , "3000" ],
+						[ "rhs_mag_b13l1_s13df" , "3000" ],
+						[ "rhs_mag_b13l1_s13t" , "3000" ],
+						[ "rhs_mag_b13l1_s13of" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon3" ,
+					[
+						[ "rhs_mag_9M17_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M17p_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M1_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M2_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120O_Mi24_2x" , "3000" ],
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon4" ,
+					[
+						[ "rhs_mag_9M17_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M17p_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M1_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M2_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120O_Mi24_2x" , "3000" ],
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon5" ,
+					[
+						[ "rhs_mag_9M17_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M17p_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M1_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M2_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120O_Mi24_2x" , "3000" ],
+						[ "rhs_mag_mi24_empty" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon6" ,
+					[
+						[ "rhs_mag_9M17_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M17p_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M1_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M114M2_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120M_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120F_Mi24_2x" , "3000" ],
+						[ "rhs_mag_9M120O_Mi24_2x" , "3000" ],
+						[ "rhs_mag_mi24_empty" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "cmDispenser" ,
+					[
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x2" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x4" , "1000" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Magazine" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Magazine_x2" , "500" , [-1]] ,
+						[ "rhs_ASO2_CMFlare_Magazine_x4" , "1000" , [-1]]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Heli - Mi-24V (VVS)
+// ***************************
+CTI_LOADOUT_RHS_Mi24V_vvs_MNT_OPTIONS = CTI_LOADOUT_RHS_Mi24V_vdv_MNT_OPTIONS;
+
+// ***************************
+// Heli - Mi-28N
+// ***************************
+CTI_LOADOUT_rhs_mi28n_vvs_MNT_OPTIONS =
+[
+	[
+		"Pylon - configuration" ,
+		"pylon",
+		[
+			[
+				[ "rhs_weap_2a42" ,
+					[
+						[ "rhs_mag_3ubr11_125" , "500" ]
+					]
+				]
+			],
+			[
+				[ "pylon1" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_s8t" , "3000" ],
+						[ "rhs_mag_b13l1_s13b" , "3000" ],
+						[ "rhs_mag_b13l1_s13d" , "3000" ],
+						[ "rhs_mag_b13l1_s13df" , "3000" ],
+						[ "rhs_mag_b13l1_s13t" , "3000" ],
+						[ "rhs_mag_b13l1_s13of" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon2" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_s8t" , "3000" ],
+						[ "rhs_mag_b13l1_s13b" , "3000" ],
+						[ "rhs_mag_b13l1_s13d" , "3000" ],
+						[ "rhs_mag_b13l1_s13df" , "3000" ],
+						[ "rhs_mag_b13l1_s13t" , "3000" ],
+						[ "rhs_mag_b13l1_s13of" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_upk23_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_btz" , "3000" ],
+						[ "rhs_mag_upk23_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon3" ,
+					[
+						[ "rhs_mag_9M120_Mi28_8x" , "3000" ],
+						[ "rhs_mag_9M120M_Mi28_8x" , "3000" ],
+						[ "rhs_mag_9M120f_Mi28_8x" , "3000" ],
+						[ "rhs_mag_9M120O_Mi28_8x" , "3000" ],
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon4" ,
+					[
+						[ "rhs_mag_9M120_Mi28_8x" , "3000" ],
+						[ "rhs_mag_9M120M_Mi28_8x" , "3000" ],
+						[ "rhs_mag_9M120f_Mi28_8x" , "3000" ],
+						[ "rhs_mag_9M120O_Mi28_8x" , "3000" ],
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_s8df" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "cmDispenser" ,
+					[
+						[ "rhs_UV26_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
+						[ "rhs_UV26_CMFlare_Chaff_Magazine_x2" , "500" , [-1]] ,
+						[ "rhs_UV26_CMFlare_Chaff_Magazine_x4" , "1000" , [-1]] ,
+						[ "rhs_UV26_CMFlare_Magazine" , "500" , [-1]] ,
+						[ "rhs_UV26_CMFlare_Magazine_x2" , "500" , [-1]] ,
+						[ "rhs_UV26_CMFlare_Magazine_x4" , "1000" , [-1]]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Heli - Ka-52
+// ***************************
+CTI_LOADOUT_RHS_Ka52_vvsc_MNT_OPTIONS =
+[
+	[
+		"Pylon - configuration" ,
+		"pylon",
+		[
+			[
+				[ "rhs_weap_2a42" ,
+					[
+						[ "rhs_mag_3ubr8_230" , "500" ]
+					]
+				]
+			],
+			[
+				[ "pylon1" ,
+					[
+						[ "rhs_mag_ub16_ka52_s5" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8t" , "3000" ],
+						[ "rhs_mag_b13l1_ka52_s13b" , "3000" ],
+						[ "rhs_mag_b13l1_ka52_s13d" , "3000" ],
+						[ "rhs_mag_b13l1_ka52_s13df" , "3000" ],
+						[ "rhs_mag_b13l1_ka52_s13t" , "3000" ],
+						[ "rhs_mag_b13l1_ka52_s13of" , "3000" ],
+						[ "rhs_mag_fab250_ka52" , "3000" ],
+						[ "rhs_mag_fab250_m62_ka52" , "3000" ],
+						[ "rhs_mag_ofab250_ka52" , "3000" ],
+						[ "rhs_mag_rbk250_ao1_ka52" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25_ka52" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t_ka52" , "3000" ],
+						[ "rhs_mag_fab500_ka52" , "3000" ],
+						[ "rhs_mag_fab500_m54_ka52" , "3000" ],
+						[ "rhs_mag_rbk500_ao25_ka52" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50_ka52" , "3000" ],
+						[ "rhs_mag_rbk500_spbed_ka52" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m_ka52" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t_ka52" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25_ka52" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m_ka52" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1_ka52" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1_ka52" , "3000" ],
+						[ "rhs_mag_upk23_ka52_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ka52_ofzt" , "3000" ],
+						[ "PylonRack_4Rnd_LG_scalpel" , "3000" ],
+						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" ],
+						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" ],
+						[ "PylonRack_1Rnd_Missile_AA_03_F" , "3000" ],
+						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "3000" ],
+						[ "rhs_mag_upk23_ka52_btz" , "3000" ],
+						[ "rhs_mag_upk23_ka52_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon2" ,
+					[
+						[ "rhs_mag_ub16_ka52_s5" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8t" , "3000" ],
+						[ "rhs_mag_b13l1_ka52_s13b" , "3000" ],
+						[ "rhs_mag_b13l1_ka52_s13d" , "3000" ],
+						[ "rhs_mag_b13l1_ka52_s13df" , "3000" ],
+						[ "rhs_mag_b13l1_ka52_s13t" , "3000" ],
+						[ "rhs_mag_b13l1_ka52_s13of" , "3000" ],
+						[ "rhs_mag_fab250_ka52" , "3000" ],
+						[ "rhs_mag_fab250_m62_ka52" , "3000" ],
+						[ "rhs_mag_ofab250_ka52" , "3000" ],
+						[ "rhs_mag_rbk250_ao1_ka52" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25_ka52" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t_ka52" , "3000" ],
+						[ "rhs_mag_fab500_ka52" , "3000" ],
+						[ "rhs_mag_fab500_m54_ka52" , "3000" ],
+						[ "rhs_mag_rbk500_ao25_ka52" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50_ka52" , "3000" ],
+						[ "rhs_mag_rbk500_spbed_ka52" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m_ka52" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t_ka52" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25_ka52" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m_ka52" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1_ka52" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1_ka52" , "3000" ],
+						[ "rhs_mag_upk23_ka52_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ka52_ofzt" , "3000" ],
+						[ "PylonRack_4Rnd_LG_scalpel" , "3000" ],
+						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" ],
+						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" ],
+						[ "PylonRack_1Rnd_Missile_AA_03_F" , "3000" ],
+						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "3000" ],
+						[ "rhs_mag_upk23_ka52_btz" , "3000" ],
+						[ "rhs_mag_upk23_ka52_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon3" ,
+					[
+						[ "rhs_mag_ub16_ka52_s5" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8t" , "3000" ],
+						[ "rhs_mag_apu6_9m127m_ka52" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_upk23_ka52_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ka52_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_ka52_btz" , "3000" ],
+						[ "rhs_mag_upk23_ka52_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon4" ,
+					[
+						[ "rhs_mag_ub16_ka52_s5" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_ka52_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_ka52_s5ko" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8kom" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8df" , "3000" ],
+						[ "rhs_mag_b8v20a_ka52_s8t" , "3000" ],
+						[ "rhs_mag_apu6_9m127m_ka52" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_upk23_ka52_ofz" , "3000" ],
+						[ "rhs_mag_upk23_ka52_ofzt" , "3000" ],
+						[ "rhs_mag_upk23_ka52_btz" , "3000" ],
+						[ "rhs_mag_upk23_ka52_mixed" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "cmDispenser" ,
+					[
+						[ "rhs_UV26_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
+						[ "rhs_UV26_CMFlare_Chaff_Magazine_x2" , "500" , [-1]] ,
+						[ "rhs_UV26_CMFlare_Chaff_Magazine_x4" , "1000" , [-1]] ,
+						[ "rhs_UV26_CMFlare_Magazine" , "500" , [-1]] ,
+						[ "rhs_UV26_CMFlare_Magazine_x2" , "500" , [-1]] ,
+						[ "rhs_UV26_CMFlare_Magazine_x4" , "1000" , [-1]]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Plane - Su-25
+// ***************************
+CTI_LOADOUT_RHS_Su25SM_vvs_MNT_OPTIONS =
+[
+	[
+		"Pylon - configuration" ,
+		"pylon",
+		[
+			[
+				[ "rhs_weap_gsh302" ,
+					[
+						[ "rhs_mag_gsh30_bt_250" , "500" ]
+					]
+				]
+			],
+			[
+				[ "pylon1" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_s8t" , "3000" ],
+						[ "rhs_mag_b13l_s13b" , "3000" ],
+						[ "rhs_mag_b13l_s13d" , "3000" ],
+						[ "rhs_mag_b13l_s13df" , "3000" ],
+						[ "rhs_mag_b13l_s13t" , "3000" ],
+						[ "rhs_mag_b13l_s13of" , "3000" ],
+						[ "rhs_mag_apu68m3_s24" , "3000" ],
+						[ "rhs_mag_apu68m3_s24b" , "3000" ],
+						[ "rhs_mag_o25l_s25o" , "3000" ],
+						[ "rhs_mag_o25l_s25of" , "3000" ],
+						[ "rhs_mag_o25l_s25l" , "3000" ],
+						[ "rhs_mag_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R73" , "3000" ],
+						[ "rhs_mag_R73M" , "3000" ],
+						[ "rhs_mag_kh29l" , "3000" ],
+						[ "rhs_mag_kh29ML" , "3000" ],
+						[ "rhs_mag_kh29T" , "3000" ],
+						[ "rhs_mag_kh29D" , "3000" ],
+						[ "rhs_mag_kh29MP" , "3000" ],
+						[ "rhs_mag_fab100" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U6" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" , [-1]],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon2" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_s8t" , "3000" ],
+						[ "rhs_mag_b13l_s13b" , "3000" ],
+						[ "rhs_mag_b13l_s13d" , "3000" ],
+						[ "rhs_mag_b13l_s13df" , "3000" ],
+						[ "rhs_mag_b13l_s13t" , "3000" ],
+						[ "rhs_mag_b13l_s13of" , "3000" ],
+						[ "rhs_mag_apu68m3_s24" , "3000" ],
+						[ "rhs_mag_apu68m3_s24b" , "3000" ],
+						[ "rhs_mag_o25l_s25o" , "3000" ],
+						[ "rhs_mag_o25l_s25of" , "3000" ],
+						[ "rhs_mag_o25l_s25l" , "3000" ],
+						[ "rhs_mag_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R73" , "3000" ],
+						[ "rhs_mag_R73M" , "3000" ],
+						[ "rhs_mag_kh29l" , "3000" ],
+						[ "rhs_mag_kh29ML" , "3000" ],
+						[ "rhs_mag_kh29T" , "3000" ],
+						[ "rhs_mag_kh29D" , "3000" ],
+						[ "rhs_mag_kh29MP" , "3000" ],
+						[ "rhs_mag_fab100" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U6" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" , [-1]],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon3" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_s8t" , "3000" ],
+						[ "rhs_mag_b13l_s13b" , "3000" ],
+						[ "rhs_mag_b13l_s13d" , "3000" ],
+						[ "rhs_mag_b13l_s13df" , "3000" ],
+						[ "rhs_mag_b13l_s13t" , "3000" ],
+						[ "rhs_mag_b13l_s13of" , "3000" ],
+						[ "rhs_mag_apu68m3_s24" , "3000" ],
+						[ "rhs_mag_apu68m3_s24b" , "3000" ],
+						[ "rhs_mag_o25l_s25o" , "3000" ],
+						[ "rhs_mag_o25l_s25of" , "3000" ],
+						[ "rhs_mag_o25l_s25l" , "3000" ],
+						[ "rhs_mag_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R73" , "3000" ],
+						[ "rhs_mag_R73M" , "3000" ],
+						[ "rhs_mag_kh25" , "3000" ],
+						[ "rhs_mag_kh25ML" , "3000" ],
+						[ "rhs_mag_kh25MA" , "3000" ],
+						[ "rhs_mag_kh25MT" , "3000" ],
+						[ "rhs_mag_kh25MTP" , "3000" ],
+						[ "rhs_mag_kh25MP" , "3000" ],
+						[ "rhs_mag_fab100" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U6" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon4" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_s8t" , "3000" ],
+						[ "rhs_mag_b13l_s13b" , "3000" ],
+						[ "rhs_mag_b13l_s13d" , "3000" ],
+						[ "rhs_mag_b13l_s13df" , "3000" ],
+						[ "rhs_mag_b13l_s13t" , "3000" ],
+						[ "rhs_mag_b13l_s13of" , "3000" ],
+						[ "rhs_mag_apu68m3_s24" , "3000" ],
+						[ "rhs_mag_apu68m3_s24b" , "3000" ],
+						[ "rhs_mag_o25l_s25o" , "3000" ],
+						[ "rhs_mag_o25l_s25of" , "3000" ],
+						[ "rhs_mag_o25l_s25l" , "3000" ],
+						[ "rhs_mag_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R73" , "3000" ],
+						[ "rhs_mag_R73M" , "3000" ],
+						[ "rhs_mag_kh25" , "3000" ],
+						[ "rhs_mag_kh25ML" , "3000" ],
+						[ "rhs_mag_kh25MA" , "3000" ],
+						[ "rhs_mag_kh25MT" , "3000" ],
+						[ "rhs_mag_kh25MTP" , "3000" ],
+						[ "rhs_mag_kh25MP" , "3000" ],
+						[ "rhs_mag_fab100" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U6" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon5" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_s8t" , "3000" ],
+						[ "rhs_mag_b13l_s13b" , "3000" ],
+						[ "rhs_mag_b13l_s13d" , "3000" ],
+						[ "rhs_mag_b13l_s13df" , "3000" ],
+						[ "rhs_mag_b13l_s13t" , "3000" ],
+						[ "rhs_mag_b13l_s13of" , "3000" ],
+						[ "rhs_mag_apu68m3_s24" , "3000" ],
+						[ "rhs_mag_apu68m3_s24b" , "3000" ],
+						[ "rhs_mag_o25l_s25o" , "3000" ],
+						[ "rhs_mag_o25l_s25of" , "3000" ],
+						[ "rhs_mag_o25l_s25l" , "3000" ],
+						[ "rhs_mag_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R73" , "3000" ],
+						[ "rhs_mag_R73M" , "3000" ],
+						[ "rhs_mag_kh25" , "3000" ],
+						[ "rhs_mag_kh25ML" , "3000" ],
+						[ "rhs_mag_kh25MA" , "3000" ],
+						[ "rhs_mag_kh25MT" , "3000" ],
+						[ "rhs_mag_kh25MTP" , "3000" ],
+						[ "rhs_mag_kh25MP" , "3000" ],
+						[ "rhs_mag_fab100" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U6" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon6" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_s8t" , "3000" ],
+						[ "rhs_mag_b13l_s13b" , "3000" ],
+						[ "rhs_mag_b13l_s13d" , "3000" ],
+						[ "rhs_mag_b13l_s13df" , "3000" ],
+						[ "rhs_mag_b13l_s13t" , "3000" ],
+						[ "rhs_mag_b13l_s13of" , "3000" ],
+						[ "rhs_mag_apu68m3_s24" , "3000" ],
+						[ "rhs_mag_apu68m3_s24b" , "3000" ],
+						[ "rhs_mag_o25l_s25o" , "3000" ],
+						[ "rhs_mag_o25l_s25of" , "3000" ],
+						[ "rhs_mag_o25l_s25l" , "3000" ],
+						[ "rhs_mag_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R73" , "3000" ],
+						[ "rhs_mag_R73M" , "3000" ],
+						[ "rhs_mag_kh25" , "3000" ],
+						[ "rhs_mag_kh25ML" , "3000" ],
+						[ "rhs_mag_kh25MA" , "3000" ],
+						[ "rhs_mag_kh25MT" , "3000" ],
+						[ "rhs_mag_kh25MTP" , "3000" ],
+						[ "rhs_mag_kh25MP" , "3000" ],
+						[ "rhs_mag_fab100" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U6" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon7" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_s8t" , "3000" ],
+						[ "rhs_mag_b13l_s13b" , "3000" ],
+						[ "rhs_mag_b13l_s13d" , "3000" ],
+						[ "rhs_mag_b13l_s13df" , "3000" ],
+						[ "rhs_mag_b13l_s13t" , "3000" ],
+						[ "rhs_mag_b13l_s13of" , "3000" ],
+						[ "rhs_mag_apu68m3_s24" , "3000" ],
+						[ "rhs_mag_apu68m3_s24b" , "3000" ],
+						[ "rhs_mag_o25l_s25o" , "3000" ],
+						[ "rhs_mag_o25l_s25of" , "3000" ],
+						[ "rhs_mag_o25l_s25l" , "3000" ],
+						[ "rhs_mag_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R73" , "3000" ],
+						[ "rhs_mag_R73M" , "3000" ],
+						[ "rhs_mag_kh25" , "3000" ],
+						[ "rhs_mag_kh25ML" , "3000" ],
+						[ "rhs_mag_kh25MA" , "3000" ],
+						[ "rhs_mag_kh25MT" , "3000" ],
+						[ "rhs_mag_kh25MTP" , "3000" ],
+						[ "rhs_mag_kh25MP" , "3000" ],
+						[ "rhs_mag_fab100" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U6" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon8" ,
+					[
+						[ "rhs_mag_ub16_s5" , "3000" ],
+						[ "rhs_mag_ub16_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_s5" , "3000" ],
+						[ "rhs_mag_ub32_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_s8t" , "3000" ],
+						[ "rhs_mag_b13l_s13b" , "3000" ],
+						[ "rhs_mag_b13l_s13d" , "3000" ],
+						[ "rhs_mag_b13l_s13df" , "3000" ],
+						[ "rhs_mag_b13l_s13t" , "3000" ],
+						[ "rhs_mag_b13l_s13of" , "3000" ],
+						[ "rhs_mag_apu68m3_s24" , "3000" ],
+						[ "rhs_mag_apu68m3_s24b" , "3000" ],
+						[ "rhs_mag_o25l_s25o" , "3000" ],
+						[ "rhs_mag_o25l_s25of" , "3000" ],
+						[ "rhs_mag_o25l_s25l" , "3000" ],
+						[ "rhs_mag_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R73" , "3000" ],
+						[ "rhs_mag_R73M" , "3000" ],
+						[ "rhs_mag_kh25" , "3000" ],
+						[ "rhs_mag_kh25ML" , "3000" ],
+						[ "rhs_mag_kh25MA" , "3000" ],
+						[ "rhs_mag_kh25MT" , "3000" ],
+						[ "rhs_mag_kh25MTP" , "3000" ],
+						[ "rhs_mag_kh25MP" , "3000" ],
+						[ "rhs_mag_fab100" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U6" , "3000" ],
+						[ "rhs_mag_fab250" , "3000" ],
+						[ "rhs_mag_fab250_m62" , "3000" ],
+						[ "rhs_mag_ofab250" , "3000" ],
+						[ "rhs_mag_kab250_int" , "3000" ],
+						[ "rhs_mag_rbk250_ao1" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t" , "3000" ],
+						[ "rhs_mag_fab500" , "3000" ],
+						[ "rhs_mag_fab500_m54" , "3000" ],
+						[ "rhs_mag_kab500" , "3000" ],
+						[ "rhs_mag_kab500LK" , "3000" ],
+						[ "rhs_mag_kab500kr" , "3000" ],
+						[ "rhs_mag_kab500od" , "3000" ],
+						[ "rhs_mag_rbk500_ao25" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50" , "3000" ],
+						[ "rhs_mag_rbk500_spbed" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon9" ,
+					[
+						[ "rhs_mag_R60" , "3000" ],
+						[ "rhs_mag_R60M" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon10" ,
+					[
+						[ "rhs_mag_R60" , "3000" ],
+						[ "rhs_mag_R60M" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "cmDispenser" ,
+					[
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine" , "500" , [-1]],
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x2" , "500" , [-1]],
+						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x4" , "1000" , [-1]],
+						[ "rhs_ASO2_CMFlare_Magazine" , "500" , [-1]],
+						[ "rhs_ASO2_CMFlare_Magazine_x2" , "500" , [-1]],
+						[ "rhs_ASO2_CMFlare_Magazine_x4" , "1000" , [-1]]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// UAV - K40 Ababil-3 AA Version
 // ***************************
 CTI_LOADOUT_O_UAV_02_F_MNT_OPTIONS =
 [
@@ -2401,7 +2951,7 @@ CTI_LOADOUT_O_UAV_02_F_MNT_OPTIONS =
 			[
 				[ "Laserdesignator_mounted" ,
 					[
-						[ "Laserbatteries" , "500" , [0]]
+						[ "Laserbatteries" , "500" ]
 					]
 				]
 			],
@@ -2438,7 +2988,7 @@ CTI_LOADOUT_O_UAV_02_F_MNT_OPTIONS =
 ];
 
 // ***************************
-// UAV - MQ-4A Greyhawk Bomb Version
+// UAV - K40 Ababil-3 Bomb Version
 // ***************************
 CTI_LOADOUT_O_UAV_02_CAS_F_MNT_OPTIONS =
 [
@@ -2449,14 +2999,14 @@ CTI_LOADOUT_O_UAV_02_CAS_F_MNT_OPTIONS =
 			[
 				[ "Laserdesignator_mounted" ,
 					[
-						[ "Laserbatteries" , "500" , [0]]
+						[ "Laserbatteries" , "500" ]
 					]
 				]
 			],
 			[
 				["GBU12BombLauncher" ,
 					[
-						[ "2Rnd_GBU12_LGB" , "4000" , [0]]
+						[ "2Rnd_GBU12_LGB" , "4000" ]
 					]
 				],
 				["Mk82BombLauncher" ,
@@ -2479,8 +3029,9 @@ CTI_LOADOUT_O_UAV_02_CAS_F_MNT_OPTIONS =
 		]
 	]
 ];
+
 // ***************************
-// Plane - UAV Dynamic AT
+// Plane - K40 Ababil-3 Dynamic AT
 // ***************************
 CTI_LOADOUT_O_UAV_02_dynamicLoadout_F_MNT_OPTIONS =
 [
@@ -2491,33 +3042,33 @@ CTI_LOADOUT_O_UAV_02_dynamicLoadout_F_MNT_OPTIONS =
 			[
 				[ "Laserdesignator_mounted" ,
 					[
-						[ "Laserbatteries" , "500" , [0]]
+						[ "Laserbatteries" , "500" ]
 					]
 				]
 			],
 			[
 				["Pylons1",
 					[
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" , [0]],
+						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
+						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ],
 						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" , [-1]],
 						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" , [-1]],
 						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" , [-1]],
 						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" , [-1]],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" , [0]]
+						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" ]
 					]
 				]
 			],
 			[
 				["Pylons2",
 					[
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" , [0]],
+						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
+						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ],
 						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" , [-1]],
 						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" , [-1]],
 						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" , [-1]],
 						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" , [-1]],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" , [0]]
+						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" ]
 					]
 				]
 			],
@@ -2535,453 +3086,360 @@ CTI_LOADOUT_O_UAV_02_dynamicLoadout_F_MNT_OPTIONS =
 	]
 ];
 
-
 // ***************************
-// Heli - Kajman ( Camo )
+// UAV - Pchela-1T
 // ***************************
-CTI_LOADOUT_O_Heli_Attack_02_dynamicLoadout_F_MNT_OPTIONS =
+/*CTI_LOADOUT_rhs_pchela1t_vvs_MNT_OPTIONS =
 [
 	[
 		"Pylon - configuration" ,
 		"pylon",
 		[
-			[
-				[ "gatling_30mm" ,
-					[
-						[ "250Rnd_30mm_APDS_shells" , "500", [0]]
-					]
-				]
-			],
-			[
-				[ "gatling_30mm" ,
-					[
-						[ "250Rnd_30mm_HE_shells" , "750" , [0]]
-					]
-				]
-			],
-			[
-				[ "PylonLeft1" ,
-					[
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" , [0]],
-						//[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" , [0]],
-						//[ "PylonRack_4Rnd_LG_scalpel" , "20000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" , [0]],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_02_F" , "1000" , [0]]
-					]
-				]
-			],
-			[
-				[ "PylonLeft2" ,
-					[
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" , [0]],
-						[ "PylonRack_4Rnd_LG_scalpel" , "20000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" , [0]],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" , [0]],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_02_F" , "1000" , [0]]
-					]
-				]
-			],
-			[
-				[ "PylonRight2" ,
-					[
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" , [0]],
-						[ "PylonRack_4Rnd_LG_scalpel" , "20000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" , [0]],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" , [0]],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_02_F" , "1000" , [0]]
-					]
-				]
-			],
-			[
-				[ "PylonRight1" ,
-					[
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" , [0]],
-						//[ "PylonRack_3Rnd_LG_scalpel" , "15000" , [0]],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" , [0]],
-						//[ "PylonRack_4Rnd_LG_scalpel" , "20000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" , [0]],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" , [0]],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" , [0]],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" , [0]],
-						[ "PylonMissile_1Rnd_BombCluster_02_F" , "1000" , [0]]
-					]
-				]
-			],
-			[
-				[ "CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1]],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]],
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1]],
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1]]
-					]
-				]
-			]
-		]
-	]
-];
-//Setting same loadout for both variants
-CTI_LOADOUT_O_Heli_Attack_02_dynamicLoadout_black_F_MNT_OPTIONS = CTI_LOADOUT_O_Heli_Attack_02_dynamicLoadout_F_MNT_OPTIONS;
-// ***************************
-// Plane - NEO
-// ***************************
-CTI_LOADOUT_O_Plane_CAS_02_dynamicLoadout_F_MNT_OPTIONS =
-[
-	[
-		"Pylon - configuration" ,
-		"pylon",
-		[
-			[
-				[ "Cannon_30mm_Plane_CAS_02_F" ,
-					[
-						[ "500Rnd_Cannon_30mm_Plane_CAS_02_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Laserdesignator_pilotCamera" ,
-					[
-						[ "Laserbatteries" , "500" ]
-					]
-				]
-			],
-			[
-				[ "Pylons1" ,
-					[
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" ],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons2" ,
-					[
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" ],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ],
-						//[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						//[ "PylonRack_4Rnd_LG_scalpel" , "20000" ],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" ],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" ],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" ],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" ]
-
-					]
-				]
-			],
-			[
-				[ "Pylons3" ,
-					[
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" ],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ],
-						//[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						//[ "PylonRack_4Rnd_LG_scalpel" , "20000" ],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" ],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" ],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" ],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" ],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-
-					]
-				]
-			],
-			[
-				[ "Pylons4" ,
-					[
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" ],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ],
-						//[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						//[ "PylonRack_4Rnd_LG_scalpel" , "20000" ],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" ],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" ],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" ],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" ],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons5" ,
-					[
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" ],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						[ "PylonRack_4Rnd_LG_scalpel" , "20000" ],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" ],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" ],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" ],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" ],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons6" ,
-					[
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" ],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						[ "PylonRack_4Rnd_LG_scalpel" , "20000" ],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" ],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" ],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" ],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" ],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons7" ,
-					[
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" ],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ],
-						//[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						//[ "PylonRack_4Rnd_LG_scalpel" , "20000" ],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" ],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" ],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" ],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" ],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons8" ,
-					[
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" ],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ],
-						//[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						//[ "PylonRack_4Rnd_LG_scalpel" , "20000" ],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" ],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" ],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" ],
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" ],
-						[ "PylonMissile_1Rnd_Bomb_03_F" , "5000" ],
-						[ "PylonMissile_1Rnd_BombCluster_02_cap_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons9" ,
-					[
-						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "6000" ],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ],
-						//[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						//[ "PylonRack_4Rnd_LG_scalpel" , "20000" ],
-						[ "PylonRack_20Rnd_Rocket_03_HE_F" , "3000" ],
-						[ "PylonRack_20Rnd_Rocket_03_AP_F" , "3000" ],
-						[ "PylonRack_19Rnd_Rocket_Skyfire" , "3000" ],
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons10" ,
-					[
-						[ "PylonRack_1Rnd_Missile_AA_03_F" , "4000" ],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ]
-
-					]
-				]
-			],
-			[
-				[ "CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1] ] ,
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1] ]
-					]
-				]
-			]
-		]
-	]
-];
-
-
-
-// ***************************
-// Resistance - Vehicle loadout options
-// ***************************
-
-// ***************************
-// Helicopter - Mohawk
-// ***************************
-
-CTI_LOADOUT_I_Heli_Transport_02_F_MNT_OPTIONS = CTI_LOADOUT_UNARMED_FLARES;
-
-// ***************************
-// Helicopter - Hellcat ( unarmed )
-// ***************************
-
-CTI_LOADOUT_I_Heli_light_03_unarmed_F_MNT_OPTIONS = CTI_LOADOUT_UNARMED_FLARES;
-
-// ***************************
-// Helicopter - Hellcat (armed) TODO
-// ***************************
-/*
-I_Heli_light_03_F =
-[
-	[
-		"Pylon - configuration" ,
-		"pylon",
-		[
-		]
-	]
-];
-*/
-// ***************************
-// Helicopter - Hellcat ( armed - dynmaic)
-// ***************************
-CTI_LOADOUT_I_Heli_light_03_dynamicLoadout_F_MNT_OPTIONS =
-[
-	[
-		"Pylon - configuration" ,
-		"pylon",
-		[
-			[
-				[ "M134_minigun" ,
-					[
-						[ "5000Rnd_762x51_Yellow_Belt" , "500" ]
-					]
-				]
-			],
 			[
 				[ "Laserdesignator_mounted" ,
 					[
-						[ "Laserbatteries" , "500" , [0]]
+						[ "Laserbatteries" , "500" ]
 					]
 				]
 			],
 			[
-				["PylonLeft1" ,
+				["CMFlareLauncher" ,
 					[
-						[ "PylonRack_12Rnd_missiles" , "2000" ],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000" ],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						[ "PylonRack_4Rnd_LG_scalpel" , "20000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" ],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonWeapon_300Rnd_20mm_shells" , "3000"]
-					]
-				]
-			] ,
-			[
-				["PylonRight1" ,
-					[
-						[ "PylonRack_12Rnd_missiles" , "2000"],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000"],
-						[ "PylonMissile_1Rnd_LG_scalpel" , "5000"],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000"],
-						[ "PylonRack_4Rnd_LG_scalpel" , "20000"],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000"],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000"],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000"],
-						[ "PylonWeapon_300Rnd_20mm_shells" , "3000"]
-					]
-				]
-			] ,
-			[
-				[ "CMFlareLauncher" ,
-					[
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1] ] ,
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1] ] ,
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "1500" , [-1] ] ,
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "2000" , [-1] ]
+						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1]],
+						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]],
+						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1]],
+						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1]]
 					]
 				]
 			]
 		]
 	]
-];
+];*/
 
 // ***************************
-// Helicopter - Hellcat ( unarmed )
+// Plane - L-18
 // ***************************
-CTI_LOADOUT_I_Heli_light_03_unarmed_F_MNT_OPTIONS = CTI_LOADOUT_UNARMED_FLARES;
-
-// ***************************
-// Plane - Buzzard (CAS) TODO
-// ***************************
-/*
-CTI_LOADOUT_I_Plane_Fighter_03_CAS_F_MNT_OPTIONS =
-[
-	[
-		"Pylon - configuration" ,
-		"pylon",
-		[
-		]
-	]
-];
-*/
-// ***************************
-// Plane - Buzzard (AA)
-// ***************************
-
-CTI_LOADOUT_I_Plane_Fighter_03_AA_F_MNT_OPTIONS =
+CTI_LOADOUT_rhssaf_airforce_o_l_18_MNT_OPTIONS =
 [
 	[
 		"Pylon - configuration" ,
 		"pylon",
 		[
 			[
-				[ "Cannon_30mm_Plane_CAS_02_F" ,
+				[ "rhs_weap_gsh301" ,
 					[
-						[ "500Rnd_Cannon_30mm_Plane_CAS_02_F" , "1000" ]
+						[ "rhs_mag_gsh30_mixed_150" , "500"]
 					]
 				]
 			],
 			[
-				[ "Laserdesignator_pilotCamera" ,
+				[ "pylon1" ,
 					[
-						[ "Laserbatteries" , "500" ]
+						[ "rhs_mag_ub16_bd3_umk2a_s5" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8t" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13b" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13d" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13df" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13t" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13of" , "3000" ],
+						[ "rhs_mag_apu68_bd3_umk2a_s24" , "3000" ],
+						[ "rhs_mag_apu68_bd3_umk2a_s24b" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25o" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25of" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25l" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R27R_APU470" , "3000" ],
+						[ "rhs_mag_R27ER_APU470" , "3000" ],
+						[ "rhs_mag_R27T_APU470" , "3000" ],
+						[ "rhs_mag_R27ET_APU470" , "3000" ],
+						[ "rhs_mag_R60_APU60" , "3000" ],
+						[ "rhs_mag_R60M_APU60" , "3000" ],
+						[ "rhs_mag_R73_APU73" , "3000" ],
+						[ "rhs_mag_R73M_APU73" , "3000" ],
+						[ "rhs_mag_R77_AKU170_MIG29" , "3000" ],
+						[ "rhs_mag_R77M_AKU170_MIG29" , "3000" ],
+						[ "rhs_mag_kh25_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25ML_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MT_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MTP_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MP_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh29l_aku58_mig29" , "3000" ],
+						[ "rhs_mag_kh29ML_aku58_mig29" , "3000" ],
+						[ "rhs_mag_kh29T_aku58_mig29" , "3000" ],
+						[ "rhs_mag_kh29MP_aku58_mig29" , "3000" ],
+						[ "rhs_mag_fab100_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab250_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab250_m62_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_ofab250_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_ao1_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab500_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab500_m54_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500LK_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500kr_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500od_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ao25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_spbed_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_ptb1150_ptb" , "3000" ]
 					]
 				]
 			],
 			[
-				[ "missiles_Zephyr" ,
+				[ "pylon2" ,
 					[
-						[ "4Rnd_GAA_missiles" , "16000" ]
+						[ "rhs_mag_ub16_bd3_umk2a_s5" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8t" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13b" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13d" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13df" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13t" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13of" , "3000" ],
+						[ "rhs_mag_apu68_bd3_umk2a_s24" , "3000" ],
+						[ "rhs_mag_apu68_bd3_umk2a_s24b" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25o" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25of" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25l" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R27R_APU470" , "3000" ],
+						[ "rhs_mag_R27ER_APU470" , "3000" ],
+						[ "rhs_mag_R27T_APU470" , "3000" ],
+						[ "rhs_mag_R27ET_APU470" , "3000" ],
+						[ "rhs_mag_R60_APU60" , "3000" ],
+						[ "rhs_mag_R60M_APU60" , "3000" ],
+						[ "rhs_mag_R73_APU73" , "3000" ],
+						[ "rhs_mag_R73M_APU73" , "3000" ],
+						[ "rhs_mag_R77_AKU170_MIG29" , "3000" ],
+						[ "rhs_mag_R77M_AKU170_MIG29" , "3000" ],
+						[ "rhs_mag_kh25_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25ML_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MT_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MTP_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MP_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh29l_aku58_mig29" , "3000" ],
+						[ "rhs_mag_kh29ML_aku58_mig29" , "3000" ],
+						[ "rhs_mag_kh29T_aku58_mig29" , "3000" ],
+						[ "rhs_mag_kh29MP_aku58_mig29" , "3000" ],
+						[ "rhs_mag_fab100_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab250_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab250_m62_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_ofab250_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_ao1_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab500_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab500_m54_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500LK_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500kr_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500od_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ao25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_spbed_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_ptb1150_ptb" , "3000" ]
 					]
 				]
 			],
 			[
-				[ "missiles_ASRAAM" ,
+				[ "pylon3" ,
 					[
-						[ "2Rnd_AAA_missiles_MI06" , "8000" ]
+						[ "rhs_mag_ub16_bd3_umk2a_s5" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8t" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13b" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13d" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13df" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13t" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13of" , "3000" ],
+						[ "rhs_mag_apu68_bd3_umk2a_s24" , "3000" ],
+						[ "rhs_mag_apu68_bd3_umk2a_s24b" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25o" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25of" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25l" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R60_APU60" , "3000" ],
+						[ "rhs_mag_R60M_APU60" , "3000" ],
+						[ "rhs_mag_R73_APU73" , "3000" ],
+						[ "rhs_mag_R73M_APU73" , "3000" ],
+						[ "rhs_mag_R77_AKU170_MIG29" , "3000" ],
+						[ "rhs_mag_R77M_AKU170_MIG29" , "3000" ],
+						[ "rhs_mag_kh25_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25ML_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MT_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MTP_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MP_apu68_mig29" , "3000" ],
+						[ "rhs_mag_fab100_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab250_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab250_m62_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_ofab250_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_ao1_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab500_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab500_m54_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500LK_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500kr_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500od_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ao25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_spbed_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m_bd3_umk2a" , "3000" ],
+						[ "PylonRack_1Rnd_Missile_AA_03_F" , "3000" ],
+						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1_bd3_umk2a" , "3000" ]
 					]
 				]
 			],
 			[
-				[ "CMFlareLauncher" ,
+				[ "pylon4" ,
 					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1] ] ,
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1] ]
-
+						[ "rhs_mag_ub16_bd3_umk2a_s5" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5m1" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5k1" , "3000" ],
+						[ "rhs_mag_ub16_bd3_umk2a_s5ko" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5m1" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5k1" , "3000" ],
+						[ "rhs_mag_ub32_bd3_umk2a_s5ko" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8kom" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8df" , "3000" ],
+						[ "rhs_mag_b8m1_bd3_umk2a_s8t" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13b" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13d" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13df" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13t" , "3000" ],
+						[ "rhs_mag_b13l_bd3_umk2a_s13of" , "3000" ],
+						[ "rhs_mag_apu68_bd3_umk2a_s24" , "3000" ],
+						[ "rhs_mag_apu68_bd3_umk2a_s24b" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25o" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25of" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25l" , "3000" ],
+						[ "rhs_mag_bd3_usk_a_o25l_s25ld" , "3000" ],
+						[ "rhs_mag_R60_APU60" , "3000" ],
+						[ "rhs_mag_R60M_APU60" , "3000" ],
+						[ "rhs_mag_R73_APU73" , "3000" ],
+						[ "rhs_mag_R73M_APU73" , "3000" ],
+						[ "rhs_mag_R77_AKU170_MIG29" , "3000" ],
+						[ "rhs_mag_R77M_AKU170_MIG29" , "3000" ],
+						[ "rhs_mag_kh25_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25ML_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MT_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MTP_apu68_mig29" , "3000" ],
+						[ "rhs_mag_kh25MP_apu68_mig29" , "3000" ],
+						[ "rhs_mag_fab100_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab100_MBD3_U4T" , "3000" ],
+						[ "rhs_mag_fab250_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab250_m62_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_ofab250_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_ao1_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_ptab25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk250_zab25t_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab500_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_fab500_m54_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500LK_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500kr_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kab500od_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ao25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ofab50_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_spbed_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_ptab1m_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_rbk500_zab25t_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ao25_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ptab1m_bd3_umk2a" , "3000" ],
+						[ "PylonRack_1Rnd_Missile_AA_03_F" , "3000" ],
+						[ "PylonRack_1Rnd_Missile_AGM_01_F" , "3000" ],
+						[ "rhs_mag_kmgu2_pfm1_bd3_umk2a" , "3000" ],
+						[ "rhs_mag_kmgu2_ptm1_bd3_umk2a" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon5" ,
+					[
+						[ "rhs_mag_R60_APU60" , "3000" ],
+						[ "rhs_mag_R60M_APU60" , "3000" ],
+						[ "rhs_mag_R73_APU73" , "3000" ],
+						[ "rhs_mag_R73M_APU73" , "3000" ],
+						[ "rhs_mag_R77_AKU170_MIG29" , "3000" ],
+						[ "rhs_mag_R77M_AKU170_MIG29" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon6" ,
+					[
+						[ "rhs_mag_R60_APU60" , "3000" ],
+						[ "rhs_mag_R60M_APU60" , "3000" ],
+						[ "rhs_mag_R73_APU73" , "3000" ],
+						[ "rhs_mag_R73M_APU73" , "3000" ],
+						[ "rhs_mag_R77_AKU170_MIG29" , "3000" ],
+						[ "rhs_mag_R77M_AKU170_MIG29" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon7" ,
+					[
+						[ "rhs_mag_ptb1500" , "15000" ]
+					]
+				]
+			],
+			[
+				[ "cmDispenser" ,
+					[
+						[ "rhs_BVP3026_CMFlare_Chaff_Magazine" , "500" , [-1]],
+						[ "rhs_BVP3026_CMFlare_Chaff_Magazine_x2" , "1000" , [-1]],
+						[ "rhs_BVP3026_CMFlare_Magazine" , "500" , [-1]],
+						[ "rhs_BVP3026_CMFlare_Magazine_x2" , "1000" , [-1]]
 					]
 				]
 			]
@@ -2990,57 +3448,108 @@ CTI_LOADOUT_I_Plane_Fighter_03_AA_F_MNT_OPTIONS =
 ];
 
 // ***************************
-// Plane - Buzzard (Cas)
+// Plane - L-18 (101/CAP)
 // ***************************
+CTI_LOADOUT_rhssaf_airforce_o_l_18_101_MNT_OPTIONS = CTI_LOADOUT_rhssaf_airforce_o_l_18_MNT_OPTIONS;
 
-CTI_LOADOUT_I_Plane_Fighter_03_CAS_F_MNT_OPTIONS =
+
+// ***************************
+// Plane - MIG-29S
+// ***************************
+CTI_LOADOUT_rhs_mig29s_vvsc_MNT_OPTIONS = CTI_LOADOUT_rhssaf_airforce_o_l_18_MNT_OPTIONS;
+
+
+// ***************************
+// Plane - MIG-29SM
+// ***************************
+CTI_LOADOUT_rhs_mig29sm_vvsc_MNT_OPTIONS = CTI_LOADOUT_rhssaf_airforce_o_l_18_MNT_OPTIONS;
+
+
+// ***************************
+// Plane - T-50 (052)
+// ***************************
+CTI_LOADOUT_RHS_T50_vvs_052_MNT_OPTIONS =
 [
 	[
-		"Standart - configuration" ,
-		"default",
+		"Pylon - configuration" ,
+		"pylon",
 		[
 			[
-				[ "Cannon_30mm_Plane_CAS_02_F" ,
+				[ "rhs_weap_gsh301" ,
 					[
-						[ "500Rnd_Cannon_30mm_Plane_CAS_02_F" , "1000" ]
+						[ "rhs_mag_gsh30_bt_250" , "500" ]
 					]
 				]
 			],
 			[
-				[ "Laserdesignator_pilotCamera" ,
+				["pylonBayCenter1" ,
 					[
-						[ "Laserbatteries" , "500" ]
+						[ "rhs_mag_R77" , "5000" ],
+						[ "rhs_mag_R77M" , "5000" ],
+						[ "rhs_mag_Kh38mle_int" , "5000" ],
+						[ "rhs_mag_Kh38mae_int" , "5000" ],
+						[ "rhs_mag_Kh38mte_int" , "5000" ],
+						[ "rhs_mag_kab250_int" , "5000" ]
 					]
 				]
 			],
 			[
-				[ "missiles_SCALPEL" ,
+				["pylonBayCenter2" ,
 					[
-						[ "2Rnd_LG_scalpel" , "10000" ]
+						[ "rhs_mag_R77" , "5000" ],
+						[ "rhs_mag_R77M" , "5000" ],
+						[ "rhs_mag_Kh38mle_int" , "5000" ],
+						[ "rhs_mag_Kh38mae_int" , "5000" ],
+						[ "rhs_mag_Kh38mte_int" , "5000" ],
+						[ "rhs_mag_kab250_int" , "5000" ]
 					]
 				]
 			],
 			[
-				[ "missiles_ASRAAM" ,
+				["pylonBayCenter3" ,
 					[
-						[ "2Rnd_AAA_missiles_MI06" , "8000" ]
+						[ "rhs_mag_R77" , "5000" ],
+						[ "rhs_mag_R77M" , "5000" ],
+						[ "rhs_mag_Kh38mle_int" , "5000" ],
+						[ "rhs_mag_Kh38mae_int" , "5000" ],
+						[ "rhs_mag_Kh38mte_int" , "5000" ],
+						[ "rhs_mag_kab250_int" , "5000" ]
 					]
 				]
 			],
 			[
-				[ "GBU12BombLauncher_Plane_Fighter_03_F" ,
+				["pylonBayCenter4" ,
 					[
-						[ "2Rnd_GBU12_LGB_MI10" , "10000" ]
+						[ "rhs_mag_R77" , "5000" ],
+						[ "rhs_mag_R77M" , "5000" ],
+						[ "rhs_mag_Kh38mle_int" , "5000" ],
+						[ "rhs_mag_Kh38mae_int" , "5000" ],
+						[ "rhs_mag_Kh38mte_int" , "5000" ],
+						[ "rhs_mag_kab250_int" , "5000" ]
+					]
+				]
+			],
+			[
+				["pylonBayRight1" ,
+					[
+						[ "rhs_mag_R74M2_int" , "5000" ]
+					]
+				]
+			],
+			[
+				["pylonBayLeft1" ,
+					[
+						[ "rhs_mag_R74M2_int" , "5000" ]
 					]
 				]
 			],
 			[
 				[ "CMFlareLauncher" ,
 					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1] ] ,
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1] ]
+						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1]],
+						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]],
+						[ "192Rnd_CMFlare_Chaff_Magazine" , "1500" , [-1]],
+						[ "240Rnd_CMFlare_Chaff_Magazine" , "2000" , [-1]]
 					]
 				]
 			]
@@ -3049,287 +3558,96 @@ CTI_LOADOUT_I_Plane_Fighter_03_CAS_F_MNT_OPTIONS =
 ];
 
 // ***************************
-// Plane - Buzzard (Dynamic)
+// Plane - T-50 (054)
 // ***************************
-CTI_LOADOUT_I_Plane_Fighter_03_dynamicLoadout_F_MNT_OPTIONS =
-[
-	[
-		"Standart - configuration" ,
-		"default",
-		[
-			[
-				[ "Cannon_30mm_Plane_CAS_02_F" ,
-					[
-						[ "500Rnd_Cannon_30mm_Plane_CAS_02_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Laserdesignator_pilotCamera" ,
-					[
-						[ "Laserbatteries" , "500" ]
-					]
-				]
-			],
-			[
-				[ "Pylons1" ,
-					[
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_GAA_missiles" , "4000" ],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" ],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000" ],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
-						[ "PylonRack_12Rnd_missiles" , "2000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons2" ,
-					[
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_GAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" ],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000" ],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
-						[ "PylonRack_12Rnd_missiles" , "2000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons3" ,
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" ],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_GAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_Missile_AGM_02_F" , "5000" ],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" ],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000" ],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
-						[ "PylonRack_12Rnd_missiles" , "2000" ],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000" ],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons4" ,
-					[
-						[ "PylonWeapon_300Rnd_20mm_shells" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons5" ,
-					[
-						[ "PylonMissile_1Rnd_Bomb_04_F" , "5000" ],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_GAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_Missile_AGM_02_F" , "5000" ],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" ],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000" ],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
-						[ "PylonRack_12Rnd_missiles" , "2000" ],
-						[ "PylonMissile_1Rnd_Mk82_F" , "1000" ],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons6" ,
-					[
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_GAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
-						[ "PylonRack_3Rnd_LG_scalpel" , "15000" ],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" ],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000" ],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
-						[ "PylonRack_12Rnd_missiles" , "2000" ]
-					]
-				]
-			],
-			[
-				[ "Pylons7" ,
-					[
-						[ "PylonRack_1Rnd_LG_scalpel" , "5000" ],
-						[ "PylonRack_1Rnd_Missile_AA_04_F" , "4000" ],
-						[ "PylonRack_1Rnd_AAA_missiles" , "4000" ],
-						[ "PylonRack_1Rnd_GAA_missiles" , "4000" ],
-						[ "PylonRack_7Rnd_Rocket_04_HE_F" , "1000" ],
-						[ "PylonRack_7Rnd_Rocket_04_AP_F" , "1000" ],
-						[ "PylonRack_12Rnd_PG_missiles" , "8000" ],
-						[ "PylonRack_12Rnd_missiles" , "2000" ]
-					]
-				]
-			],
-			[
-				[ "CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1] ] ,
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1] ]
-
-					]
-				]
-			]
-		]
-	]
-];
+CTI_LOADOUT_RHS_T50_vvs_054_MNT_OPTIONS = CTI_LOADOUT_RHS_T50_vvs_052_MNT_OPTIONS;
 
 // ***************************
-// Plane - A-149 Gryphon (Dynamic)
+// Plane - Tu-95MS6 (BEAR)
 // ***************************
-CTI_LOADOUT_I_Plane_Fighter_04_F_MNT_OPTIONS =
+CTI_LOADOUT_RHS_TU95MS_vvs_old_MNT_OPTIONS =
 [
 	[
 		"Pylon - configuration" ,
 		"pylon",
 		[
 			[
-				[ "Cannon_30mm_Plane_CAS_02_F" ,
+				[ "hs_weap_kh55sm_dummy_Launcher" ,
 					[
-						[ "500Rnd_Cannon_30mm_Plane_CAS_02_F" , "1000" ]
+						[ "rhs_mag_kh55sh" , "1000", [4]] ]
 					]
 				]
 			],
 			[
-				[ "Laserdesignator_pilotCamera" ,
+				[ "rhs_weap_gsh23lx2" ,
 					[
-						[ "Laserbatteries" , "500" ]
+						[ "rhs_mag_AM23_500" , "1000", [5]] ]
 					]
 				]
 			],
 			[
-				[ "Pylon1" ,
+				["pylon1" ,
 					[
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000" ],
-						[ "PylonRack_Missile_AMRAAM_C_x1" , "4000" ]
-
+						[ "rhs_mag_kh55sm" , "2000" ],
+						[ "rhs_mag_kh55sm_nocamo" , "2000" ],
+						[ "rhs_mag_kh55sh" , "2000" ],
+						[ "rhs_mag_kh55sh_nocamo" , "2000" ]
 					]
 				]
 			],
 			[
-				[ "Pylon2" ,
+				["pylon2" ,
 					[
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000" ],
-						[ "PylonRack_Missile_AMRAAM_C_x1" , "4000" ]
+						[ "rhs_mag_kh55sm" , "2000" ],
+						[ "rhs_mag_kh55sm_nocamo" , "2000" ],
+						[ "rhs_mag_kh55sh" , "2000" ],
+						[ "rhs_mag_kh55sh_nocamo" , "2000" ]
 					]
 				]
 			],
 			[
-				[ "Pylon3" ,
+				["pylon3" ,
 					[
-						[ "PylonRack_Missile_AGM_02_x1" , "5000" ],
-						[ "PylonRack_Missile_AMRAAM_C_x1" , "4000" ],
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000" ]
-
-
-
+						[ "rhs_mag_kh55sm" , "2000" ],
+						[ "rhs_mag_kh55sm_nocamo" , "2000" ],
+						[ "rhs_mag_kh55sh" , "2000" ],
+						[ "rhs_mag_kh55sh_nocamo" , "2000" ]
 					]
 				]
 			],
 			[
-				[ "Pylon4" ,
+				["pylon4" ,
 					[
-						[ "PylonRack_Missile_AGM_02_x1" , "5000" ],
-						[ "PylonRack_Missile_AMRAAM_C_x1" , "4000" ],
-						[ "PylonMissile_Missile_BIM9X_x1" , "4000" ]
+						[ "rhs_mag_kh55sm" , "2000" ],
+						[ "rhs_mag_kh55sm_nocamo" , "2000" ],
+						[ "rhs_mag_kh55sh" , "2000" ],
+						[ "rhs_mag_kh55sh_nocamo" , "2000" ]
 					]
 				]
 			],
 			[
-				[ "Pylon5" ,
+				["pylon5" ,
 					[
-						[ "PylonRack_Missile_AMRAAM_C_x1" , "4000" ],
-						[ "PylonRack_Missile_AMRAAM_C_x2" , "4000" ],
-						[ "PylonRack_Missile_BIM9X_x1" , "4000" ],
-						[ "PylonRack_Missile_BIM9X_x2" , "4000" ],
-						[ "PylonRack_Missile_AGM_02_x1" , "5000" ],
-						[ "PylonRack_Missile_AGM_02_x2" , "10000" ],
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000" ],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ]
-
+						[ "rhs_mag_kh55sm" , "2000" ],
+						[ "rhs_mag_kh55sm_nocamo" , "2000" ],
+						[ "rhs_mag_kh55sh" , "2000" ],
+						[ "rhs_mag_kh55sh_nocamo" , "2000" ]
 					]
 				]
 			],
 			[
-				[ "Pylon6" ,
+				["pylon6" ,
 					[
-						[ "PylonRack_Missile_AMRAAM_C_x1" , "4000" ],
-						[ "PylonRack_Missile_AMRAAM_C_x2" , "4000" ],
-						[ "PylonRack_Missile_BIM9X_x1" , "4000" ],
-						[ "PylonRack_Missile_BIM9X_x2" , "4000" ],
-						[ "PylonRack_Missile_AGM_02_x1" , "5000" ],
-						[ "PylonRack_Missile_AGM_02_x2" , "10000" ],
-						[ "PylonMissile_Bomb_GBU12_x1" , "5000" ],
-						[ "PylonMissile_1Rnd_BombCluster_01_F" , "1000" ],
-						[ "PylonMissile_1Rnd_BombCluster_03_F" , "1000" ]
-					]
-				]
-			],
-			[
-				[ "CMFlareLauncher" ,
-					[
-						[ "240Rnd_CMFlare_Chaff_Magazine" , "5000" , [-1] ],
-						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
-						[ "168Rnd_CMFlare_Chaff_Magazine" , "3000" , [-1] ] ,
-						[ "192Rnd_CMFlare_Chaff_Magazine" , "4000" , [-1] ]
+						[ "rhs_mag_kh55sm" , "2000" ],
+						[ "rhs_mag_kh55sm_nocamo" , "2000" ],
+						[ "rhs_mag_kh55sh" , "2000" ],
+						[ "rhs_mag_kh55sh_nocamo" , "2000" ]
 					]
 				]
 			]
 		]
 	]
 ];
-
-// ***************************
-// Plane - A-149 Gryphon (Cluster) TODO
-// ***************************
-/*
-CTI_LOADOUT_I_Plane_Fighter_04_Cluster_F_MNT_OPTIONS =
-[
-	[
-		"Pylon - configuration" ,
-		"pylon",
-		[
-		]
-	]
-];
-*/
-
-// ***************************
-// Plane - UAV (AA) (Copyies opfor loadout)
-// ***************************
-CTI_LOADOUT_I_UAV_02_F_MNT_OPTIONS = CTI_LOADOUT_O_UAV_02_F_MNT_OPTIONS;
-
-// ***************************
-// Plane - UAV (Bomb) TODO
-// ***************************
-
-CTI_LOADOUT_I_UAV_02_CAS_F_MNT_OPTIONS = CTI_LOADOUT_O_UAV_02_CAS_F_MNT_OPTIONS;
-
-// ***************************
-// Plane - UAV (AT) TODO
-// ***************************
-
-CTI_LOADOUT_I_UAV_02_dynamicLoadout_F_MNT_OPTIONS = CTI_LOADOUT_O_UAV_02_dynamicLoadout_F_MNT_OPTIONS;
-
-
 
 // *******************************
 // Research mapping
@@ -3366,7 +3684,29 @@ CTI_ALM_AA_RESEARCHED_MAGAZINES =
 	"PylonMissile_Missile_AA_R73_x1" ,
 	"magazine_Missile_AA_R77_x1" ,
 	"PylonMissile_Missile_AA_R77_x1" ,
-	"PylonMissile_Missile_AA_R77_INT_x1"
+	"PylonMissile_Missile_AA_R77_INT_x1" ,
+	"rhs_mag_Sidewinder_heli" ,
+	"rhs_mag_Sidewinder_heli_2" ,
+	"rhs_mag_Sidewinder_int" ,
+	"rhs_mag_aim9m" ,
+	"rhs_mag_aim9m_2" ,
+	"rhs_mag_aim9m_int" ,
+	"rhs_mag_aim120d_int" ,
+	"rhs_mag_aim120d_2_F22_r" ,
+	"rhs_mag_Sidewinder_int" ,
+	"rhs_mag_9M120M_Mi24_2x" ,
+	"rhs_mag_9M120M_Mi28_8x" ,
+	"rhs_mag_apu6_9m127m_ka52" ,
+	"rhs_mag_R60" ,
+	"rhs_mag_R60M" ,
+	"rhs_mag_R27R_APU470" ,
+	"rhs_mag_R73M_APU73" ,
+	"rhs_mag_R77M" ,
+	"rhs_mag_R74M2_int" ,
+	"rhs_mag_R77_AKU170_MIG29" ,
+	"rhs_mag_R77M_AKU170_MIG29" ,
+	"rhs_mag_ATAS_AH64_2" ,
+	"rhs_mag_ATAS_2"
 ];
 
 CTI_ALM_ATGM_RESEARCHED_MAGAZINES =
@@ -3397,7 +3737,9 @@ CTI_ALM_ATGM_RESEARCHED_MAGAZINES =
 	"PylonMissile_Missile_AGM_02_x2" ,
 	"PylonRack_Missile_AGM_02_x1" ,
 	"PylonRack_Missile_AGM_02_x2" ,
-	"PylonMissile_Missile_AGM_KH25_x1"
+	"PylonMissile_Missile_AGM_KH25_x1" ,
+	"rhs_mag_AGM114K_4" ,
+	"rhs_mag_agm65d"
 ];
 
 CTI_ALM_FFAR_RESEARCHED_MAGAZINES =
@@ -3415,7 +3757,12 @@ CTI_ALM_FFAR_RESEARCHED_MAGAZINES =
 	"PylonRack_20Rnd_Rocket_03_AP_F" ,
 	"24Rnd_missiles" ,
 	"12Rnd_missiles" ,
-	"PylonRack_12Rnd_missiles"
+	"PylonRack_12Rnd_missiles" ,
+	"rhs_mag_M151_7" ,
+	"rhs_mag_M151_19_green" ,
+	"rhs_mag_M151_7_USAF_LAU131" ,
+	"rhs_mag_b8v20a_s8kom" ,
+	"rhs_mag_b8v20a_s8df"
 ];
 
 CTI_ALM_CM_RESEARCHED_MAGAZINES =
@@ -3428,5 +3775,53 @@ CTI_ALM_CM_RESEARCHED_MAGAZINES =
 	"240Rnd_CMFlare_Chaff_Magazine" ,
 	"192Rnd_CMFlare_Chaff_Magazine" ,
 	"168Rnd_CMFlare_Chaff_Magazine" ,
-	"300Rnd_CMFlare_Chaff_Magazine"
+	"300Rnd_CMFlare_Chaff_Magazine" ,
+	"rhsusf_M130_CMFlare_Chaff_Magazine" ,
+	"rhsusf_M130_CMFlare_Chaff_Magazine_x2" ,
+	"rhsusf_M130_CMFlare_Chaff_Magazine_x4" ,
+	"rhsusf_M130_CMFlare_Chaff_Magazine_x8" ,
+	"rhsusf_M130_CMFlare_Magazine" ,
+	"rhsusf_M130_CMFlare_Magazine_x2" ,
+	"rhsusf_M130_CMFlare_Magazine_x4" ,
+	"rhsusf_M130_CMFlare_Magazine_x8" ,
+	"rhsusf_ANALE39_CMFlare_Chaff_Magazine" ,
+	"rhsusf_ANALE39_CMFlare_Chaff_Magazine_x2" ,
+	"rhsusf_ANALE39_CMFlare_Chaff_Magazine_x4" ,
+	"rhsusf_ANALE39_CMFlare_Magazine" ,
+	"rhsusf_ANALE39_CMFlare_Magazine_x2" ,
+	"rhsusf_ANALE39_CMFlare_Magazine_x4" ,
+	"rhsusf_ANALE40_CMFlare_Chaff_Magazine_x2" ,
+	"rhsusf_ANALE40_CMFlare_Chaff_Magazine_x4" ,
+	"rhsusf_ANALE40_CMFlare_Chaff_Magazine_x8" ,
+	"rhsusf_ANALE40_CMFlare_Chaff_Magazine_x16" ,
+	"rhsusf_ANALE40_CMFlare_Magazine_x2" ,
+	"rhsusf_ANALE40_CMFlare_Magazine_x4" ,
+	"rhsusf_ANALE40_CMFlare_Magazine_x8" ,
+	"rhsusf_ANALE40_CMFlare_Magazine_x16" ,
+	"rhsusf_ANALE52_CMFlare_Chaff_Magazine" ,
+	"rhsusf_ANALE52_CMFlare_Chaff_Magazine_x2" ,
+	"rhsusf_ANALE52_CMFlare_Chaff_Magazine_x4" ,
+	"rhsusf_ANALE52_CMFlare_Magazine" ,
+	"rhsusf_ANALE52_CMFlare_Magazine_x2" ,
+	"rhsusf_ANALE52_CMFlare_Magazine_x4" ,
+	"rhsusf_ANALE52_CMFlare_Magazine_x6" ,
+	"rhs_UV26_CMFlare_Chaff_Magazine" ,
+	"rhs_UV26_CMFlare_Chaff_Magazine_x2" ,
+	"rhs_UV26_CMFlare_Chaff_Magazine_x4" ,
+	"rhs_UV26_CMFlare_Magazine" ,
+	"rhs_UV26_CMFlare_Magazine_x2" ,
+	"rhs_UV26_CMFlare_Magazine_x4" ,
+	"rhs_BVP3026_CMFlare_Chaff_Magazine_x2" ,
+	"rhs_BVP3026_CMFlare_Chaff_Magazine" ,
+	"rhs_BVP3026_CMFlare_Magazine_x2" ,
+	"rhs_BVP3026_CMFlare_Magazine" ,
+	"rhs_ASO2_CMFlare_Chaff_Magazine" ,
+	"rhs_ASO2_CMFlare_Chaff_Magazine_x2" ,
+	"rhs_ASO2_CMFlare_Chaff_Magazine_x4" ,
+	"rhs_ASO2_CMFlare_Chaff_Magazine_x6" ,
+	"rhs_ASO2_CMFlare_Magazine" ,
+	"rhs_ASO2_CMFlare_Magazine_x2" ,
+	"rhs_ASO2_CMFlare_Magazine_x4" ,
+	"rhs_ASO2_CMFlare_Magazine_x6" ,
+	"rhsusf_mag_LWIRCM"
 ];
