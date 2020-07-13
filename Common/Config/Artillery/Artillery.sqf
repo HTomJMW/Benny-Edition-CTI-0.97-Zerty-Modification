@@ -3,28 +3,53 @@ _m = []; //--- Magazines
 _b = []; //--- Burst
 _r = []; //--- Ranges
 
-_c = _c + ["B_Mortar_01_F"];
-_m = _m + [["8Rnd_82mm_Mo_shells", "8Rnd_82mm_Mo_Smoke_white", "8Rnd_82mm_Mo_Flare_white", "8Rnd_82mm_Mo_LG"]];
+_c = _c + ["RHS_M252_D"];
+_m = _m + [["rhs_12Rnd_m821_HE"]];
 _b = _b + [[1, 2, 4, 8]];
 _r = _r + [[[100,2500], [100,3000], [100,3500], [100,4000]]];
 
-_c = _c + ["O_Mortar_01_F"];
-_m = _m + [["8Rnd_82mm_Mo_shells", "8Rnd_82mm_Mo_Smoke_white", "8Rnd_82mm_Mo_Flare_white", "8Rnd_82mm_Mo_LG"]];
+_c = _c + ["rhs_2b14_82mm_msv"];
+_m = _m + [["rhs_mag_3vo18_10", "rhs_mag_3vs25m_10", "rhs_mag_d832du_10"]];
 _b = _b + [[1, 2, 4, 8]];
 _r = _r + [[[100,2500], [100,3000], [100,3500], [100,4000]]];
 
-_c = _c + ["I_Mortar_01_F"];
-_m = _m + [["8Rnd_82mm_Mo_shells", "8Rnd_82mm_Mo_Smoke_white", "8Rnd_82mm_Mo_Flare_white", "8Rnd_82mm_Mo_LG"]];
+_c = _c + ["rhsgref_cdf_reg_M252"];
+_m = _m + [["rhs_12Rnd_m821_HE"]];
 _b = _b + [[1, 2, 4, 8]];
 _r = _r + [[[100,2500], [100,3000], [100,3500], [100,4000]]];
 
-_c = _c + ["B_MBT_01_arty_F"];
-_m = _m + [["32Rnd_155mm_Mo_shells", "2Rnd_155mm_Mo_Cluster", "2Rnd_155mm_Mo_guided", "2Rnd_155mm_Mo_LG", "6Rnd_155mm_Mo_smoke", "6Rnd_155mm_Mo_mine", "6Rnd_155mm_Mo_AT_mine"]];
+_c = _c + ["RHS_M119_D"];
+_m = _m + [["RHS_mag_m1_he_12", "rhs_mag_m314_ilum_4", "rhs_mag_m60a2_smoke_4"]];
+_b = _b + [[1, 2, 4, 8]];
+_r = _r + [[[100,2500], [100,3000], [100,3500], [100,4000]]];
+
+_c = _c + ["rhs_D30_msv"];
+_m = _m + [["rhs_mag_3of56_10", "rhs_mag_d462_2", "rhs_mag_s463_2", "rhs_mag_3of69m_2"]];
+_b = _b + [[1, 2, 4, 8]];
+_r = _r + [[[100,2500], [100,3000], [100,3500], [100,4000]]];
+
+_c = _c + ["rhs_D30_at_msv"];
+_m = _m + [["rhs_mag_of462", "rhs_mag_bk13"]];
+_b = _b + [[1, 2, 4, 8]];
+_r = _r + [[[100,2500], [100,3000], [100,3500], [100,4000]]];
+
+_c = _c + ["rhsusf_m109d_usarmy"];
+_m = _m + [["rhs_mag_155mm_m795_28", "rhs_mag_155mm_m825a1_2", "rhs_mag_155mm_485_2", "rhs_mag_155mm_m712_2", "rhs_mag_155mm_m731_1", "rhs_mag_155mm_raams_1", "rhs_mag_155mm_m864_3"]];
 _b = _b + [[2, 4, 8, 12]];
 _r = _r + [[[800,4000], [800,7000], [800,10000], [800,20000]]];
 
-_c = _c + ["O_MBT_02_arty_F"];
-_m = _m + [["32Rnd_155mm_Mo_shells", "2Rnd_155mm_Mo_Cluster", "2Rnd_155mm_Mo_guided", "2Rnd_155mm_Mo_LG", "6Rnd_155mm_Mo_smoke", "6Rnd_155mm_Mo_mine", "6Rnd_155mm_Mo_AT_mine"]];
+_c = _c + ["rhs_2s1_tv"];
+_m = _m + [["rhs_mag_3of56_10", "rhs_mag_3of56_5", "rhs_mag_bk13_5"]];
+_b = _b + [[2, 4, 8, 12]];
+_r = _r + [[[800,4500], [800,7500], [800,10500], [800,20500]]];
+
+_c = _c + ["rhs_2s3_tv"];
+_m = _m + [["rhs_mag_HE_2a33", "rhs_mag_WP_2a33", "rhs_mag_LASER_2a33", "rhs_mag_SMOKE_2a33", "rhs_mag_ILLUM_2a33"]];
+_b = _b + [[2, 4, 8, 12]];
+_r = _r + [[[800,4500], [800,7500], [800,10500], [800,20500]]];
+
+_c = _c + ["rhs_9k79_B"];
+_m = _m + [["1_Rnd_RHS_9M79B"]];
 _b = _b + [[2, 4, 8, 12]];
 _r = _r + [[[800,4500], [800,7500], [800,10500], [800,20500]]];
 
@@ -33,8 +58,13 @@ _m = _m + [["12Rnd_230mm_rockets"]];
 _b = _b + [[2, 3, 6]];
 _r = _r + [[[800,4500], [800,7500], [800,10500], [800,20500]]];
 
-_c = _c + ["I_Truck_02_MRL_F"];
-_m = _m + [["12Rnd_230mm_rockets"]];
+_c = _c + ["rhsusf_M142_usarmy_D"];
+_m = _m + [["rhs_mag_m26a1_6"]];
+_b = _b + [[2, 3, 6]];
+_r = _r + [[[800,4500], [800,7500], [800,10500], [800,20500]]];
+
+_c = _c + ["RHS_BM21_MSV_01"];
+_m = _m + [["rhs_mag_m21of_1"]];
 _b = _b + [[2, 3, 6]];
 _r = _r + [[[800,4500], [800,7500], [800,10500], [800,20500]]];
 

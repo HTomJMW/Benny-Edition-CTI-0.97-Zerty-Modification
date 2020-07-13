@@ -1,6 +1,6 @@
 _side = _this;
 
-missionNamespace setVariable [format["CTI_%1_HQ", _side], "O_APC_Wheeled_02_rcws_v2_F"];
+missionNamespace setVariable [format["CTI_%1_HQ", _side], "rhs_btr80_msv"];
 missionNamespace setVariable [format["CTI_%1_Factories", _side], ["Barracks","Light","Heavy","Air","Ammo","Repair"]];
 
 missionNamespace setVariable [format["CTI_%1_Base_Template", _side], [
@@ -225,38 +225,80 @@ _prices = [];
 _placements = [];
 _categories = [];
 
-_headers = _headers 		+ ["MG Defense"];
-_classes = _classes 		+ ["O_HMG_01_High_F"];
+_headers = _headers 		+ ["MG Defense (mini)"];
+_classes = _classes 		+ ["RHS_NSV_TriPod_MSV"];
 _prices = _prices 			+ [200];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
 
+_headers = _headers 		+ ["MG Defense (CORD mini)"];
+_classes = _classes 		+ ["rhs_KORD_MSV"];
+_prices = _prices 			+ [250];
+_placements = _placements 	+ [[180, 5]];
+_categories = _categories 	+ ["Defense"];
+
+_headers = _headers 		+ ["MG Defense (CORD)"];
+_classes = _classes 		+ ["rhs_KORD_high_MSV"];
+_prices = _prices 			+ [250];
+_placements = _placements 	+ [[180, 5]];
+_categories = _categories 	+ ["Defense"];
+
 _headers = _headers 		+ ["GL Defense"];
-_classes = _classes 		+ ["O_GMG_01_high_F"];
+_classes = _classes 		+ ["RHS_AGS30_TriPod_MSV"];
 _prices = _prices 			+ [350];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
 
-_headers = _headers 		+ ["AT Defense"];
-_classes = _classes 		+ ["O_static_AT_F"];
+_headers = _headers 		+ ["AT Defense (SPG-9M)"];
+_classes = _classes 		+ ["rhs_SPG9M_MSV"];
+_prices = _prices 			+ [800];
+_placements = _placements 	+ [[180, 5]];
+_categories = _categories 	+ ["Defense"];
+
+_headers = _headers 		+ ["AT Defense (Metis)"];
+_classes = _classes 		+ ["rhs_Metis_9k115_2_msv"];
 _prices = _prices 			+ [900];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
 
-_headers = _headers 		+ ["AA Defense"];
-_classes = _classes 		+ ["O_static_AA_F"];
+_headers = _headers 		+ ["AT Defense (Kornet)"];
+_classes = _classes 		+ ["rhs_Kornet_9M133_2_msv"];
+_prices = _prices 			+ [1000];
+_placements = _placements 	+ [[180, 5]];
+_categories = _categories 	+ ["Defense"];
+
+_headers = _headers 		+ ["AA Defense (Igla)"];
+_classes = _classes 		+ ["rhs_Igla_AA_pod_msv"];
 _prices = _prices 			+ [800];
+_placements = _placements 	+ [[180, 5]];
+_categories = _categories 	+ ["Defense"];
+
+_headers = _headers 		+ ["AA Defense (ZSU23)"];
+_classes = _classes 		+ ["RHS_ZU23_MSV"];
+_prices = _prices 			+ [1000];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
 if (ISLAND != 1) then {
 _headers = _headers 		+ ["Mortar"];
-_classes = _classes 		+ ["O_Mortar_01_F"];
+_classes = _classes 		+ ["rhs_2b14_82mm_msv"];
 _prices = _prices 			+ [10000];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
 };
 
-_headers = _headers 		+ [["Praetorian 1C - Only on BASE Areas", [["DMG_Reduce", 10]]]];
+_headers = _headers 		+ ["Artillery"];
+_classes = _classes 		+ ["rhs_D30_msv"];
+_prices = _prices 			+ [10000];
+_placements = _placements 	+ [[180, 5]];
+_categories = _categories 	+ ["Defense"];
+
+_headers = _headers 		+ ["Artillery (AT)"];
+_classes = _classes 		+ ["rhs_D30_at_msv"];
+_prices = _prices 			+ [12000];
+_placements = _placements 	+ [[180, 5]];
+_categories = _categories 	+ ["Defense"];
+
+/*_headers = _headers 		+ [["Praetorian 1C - Only on BASE Areas", [["DMG_Reduce", 10]]]];
 _classes = _classes 		+ ["B_AAA_System_01_F"];
 _prices = _prices 			+ [25000];
 _placements = _placements 	+ [[180, 15]];
@@ -273,7 +315,7 @@ _classes = _classes 		+ ["B_SAM_System_02_F"];
 _prices = _prices 			+ [80000];
 _placements = _placements 	+ [[180, 15]];
 _categories = _categories 	+ ["Defense"];
-};
+};*/
 _headers = _headers 		+ ["R-750 Cronus Radar - Only on BASE Areas"];
 _classes = _classes 		+ ["O_Radar_System_02_F"];
 _prices = _prices 			+ [20000];
@@ -311,11 +353,11 @@ _prices = _prices 			+ [1500];
 _placements = _placements 	+ [[0, 30]];
 _categories = _categories 	+ ["Fortification"];
 
-_headers = _headers 		+ ["Dome (Big)"];
+/*_headers = _headers 		+ ["Dome (Big)"];
 _classes = _classes 		+ ["Land_Dome_Big_F"];
 _prices = _prices 			+ [6000];
 _placements = _placements 	+ [[0, 50]];
-_categories = _categories 	+ ["Fortification"];
+_categories = _categories 	+ ["Fortification"];*/
 
 _headers = _headers 		+ [["Tower",[["RuinOnDestroyed", "Land_Cargo_Patrol_V1_ruins_F"]]]];
 _classes = _classes 		+ ["Land_Cargo_Patrol_V1_F"];
@@ -444,7 +486,7 @@ _placements = _placements 	+ [[0, 7]];
 _categories = _categories 	+ ["Fortification"];
 
 _headers = _headers 		+ ["Flag"];
-_classes = _classes 		+ ["Flag_CSAT_F"];
+_classes = _classes 		+ ["rhs_Flag_Russia_F"];
 _prices = _prices 			+ [50];
 _placements = _placements 	+ [[90, 15]];
 _categories = _categories 	+ ["Flag"];
