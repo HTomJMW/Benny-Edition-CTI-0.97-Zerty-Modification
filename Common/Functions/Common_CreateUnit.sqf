@@ -97,7 +97,7 @@ _unit setSkill ["reloadspeed",_skill select 9];
 
 _unit enableFatigue false;
 
-if (_unit isKindOf "I_Soldier_M_F") then {
+/*if (_unit isKindOf "I_Soldier_M_F") then {
 _rnd = random (1);
 if (_rnd > 0.7) then {
 	comment "Exported from Arsenal by [H] Tom";
@@ -197,7 +197,7 @@ if (_rnd > 0.8) then {
 	_unit setSpeaker "male04gre";
 	[_unit,"AAF_3rdRegiment"] call bis_fnc_setUnitInsignia;
 	};
-};
+};*/
 
 //Ad event handle to UAV operators
 _unit addEventHandler ["WeaponAssembled",{[["CLIENT",side (_this select 1)], "Client_UAVSetFuel",(_this select 1),true] call CTI_CO_FNC_NetSend;}];

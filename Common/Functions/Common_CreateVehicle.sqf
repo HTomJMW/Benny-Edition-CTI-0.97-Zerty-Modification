@@ -249,7 +249,7 @@ if (isNull _created) then {
 	};
 
 	//Spawn with components [H]Tom
-	if (_vehicle isKindOf "Wheeled_APC_F" || _vehicle isKindOf "Tank") then {
+	/*if (_vehicle isKindOf "Wheeled_APC_F" || _vehicle isKindOf "Tank") then {
 		if (_vehicle isKindOf "I_APC_Wheeled_03_cannon_F") then {[_vehicle, nil, ["showTools",1]] call BIS_fnc_initVehicle;};
 		if (_vehicle isKindOf "O_APC_Wheeled_02_rcws_v2_F" || _vehicle isKindOf "O_T_APC_Wheeled_02_rcws_v2_ghex_F") then {[_vehicle, nil, ["showTools",1]] call BIS_fnc_initVehicle;};
 		if (_vehicle isKindOf "O_MBT_02_arty_F" || _vehicle isKindOf "O_T_MBT_02_arty_ghex_F") then {[_vehicle, nil, ["showLog",1]] call BIS_fnc_initVehicle;};
@@ -262,7 +262,7 @@ if (isNull _created) then {
 		if (_side == CTI_RESISTANCE_ID) then {
 			[_vehicle, FALSE, ["showcamonethull", 0.2, "showcamonetturret", 0.2, "showcamonetcannon", 0.2, "showslathull", 0.2]] call BIS_fnc_initVehicle; // Res: 20% chance for camo net and slat cage
 		};
-	};
+	};*/
 	if (_vehicle isKindOf "Offroad_01_base_F") then {
 		_offroads = ["I_G_Offroad_01_F", "I_G_Offroad_01_armed_F", "I_G_Offroad_01_AT_F", "B_G_Offroad_01_F", "B_G_Offroad_01_armed_F", "B_G_Offroad_01_AT_F", "O_G_Offroad_01_F", "O_G_Offroad_01_armed_F", "O_G_Offroad_01_AT_F"];
 		if ((typeOf _vehicle) in _offroads) then {
