@@ -45,4 +45,10 @@ if ("CMFlareLauncher_Triples" in _weapons) then {
 	} forEach (getArray(configFile >> "CfgVehicles" >> typeOf _vehicle >> "magazines"));
 };
 
+if ("rhsusf_weap_LWIRCM" in _weapons) then {
+	{
+		if (getText(configFile >> "CfgMagazines" >> _x >> "ammo") in ["RHS_Ammo_DIRCM_Vitebsk"]) then {_vehicle removeMagazineTurret [_x, [-1]]};
+	} forEach (getArray(configFile >> "CfgVehicles" >> typeOf _vehicle >> "magazines"));
+};
+
 true
