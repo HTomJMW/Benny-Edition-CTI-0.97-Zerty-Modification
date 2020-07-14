@@ -927,7 +927,7 @@ CTI_AC_GET_WEAPON_DISPLAY_NAME =
 
 	_weapon_classname = _this;
 	_weapon_name = _weapon_classname;
-	if((_weapon_classname find "Pylons") == -1 || (_weapon_classname find "pylons") == -1) then {
+	if((_weapon_classname find "Pylon") == -1 || (_weapon_classname find "pylon") == -1) then {
 		_weapon_name = getText ( configFile >> "CfgWeapons" >> _weapon_classname >> "displayName" );
 	};
 	_weapon_name
