@@ -106,7 +106,7 @@ CTI_AC_UPDATE_UI_CURRENT_LOADOUT =
 
 			// Extract chosen weapon details for the mount
 			_weapon_classname = (_mount_options select ( _mount_details select 0 ) select 0);
-			
+
 			_magazine_chosen = ((_mount_options select ( _mount_details select 0 )) select 1) select ( _mount_details select 1);
 			_magazine_classname = _magazine_chosen select 0;
 			_magazine_cost = _magazine_chosen select 1;
@@ -547,15 +547,15 @@ CTI_AC_UPDATE_UI_WEAPON_OPTIONS =
 		{
 			// Extract weapon name
 			_weapon_classname = (_weapon_options select _index_weapon) select 0;
-			
+
 			_weapon_name = _weapon_classname;
-			if((_weapon_classname find "Pylon") == -1) then {
+			if((_weapon_classname find "Pylon") == -1 || (_weapon_classname find "pylon") == -1) then {
 				_weapon_name = getText ( configFile >> "CfgWeapons" >> _weapon_classname >> "displayName" );
 			};
 			if(_weapon_name == "FakeHorn") then {
 				_weapon_name = "Weapon Safty";
 			};
-			
+
 			// Add to weapon mount point combobox
 			((uiNamespace getVariable "cti_dialog_ui_aircraftloadoutmenu") displayCtrl ( CTI_AC_UI_WEAPON_COMBOBOX_START_IDC + _index_mount )) lbAdd _weapon_name;
 		};
@@ -701,7 +701,7 @@ CTI_AC_UI_GET_SELECTED_MAGAZINE_NAME_ROW_N =
 		if ( _n < count ( _chosen_loadout ) ) then
 		{
 			//Weapon + Magazine
-			_chosen_mount = _chosen_loadout select _n; 
+			_chosen_mount = _chosen_loadout select _n;
 
 			if (_weapon_selected_row < count ( _chosen_mount ) ) then
 			{
@@ -927,7 +927,7 @@ CTI_AC_GET_WEAPON_DISPLAY_NAME =
 
 	_weapon_classname = _this;
 	_weapon_name = _weapon_classname;
-	if((_weapon_classname find "Pylons") == -1) then {
+	if((_weapon_classname find "Pylons") == -1 || (_weapon_classname find "pylons") == -1) then {
 		_weapon_name = getText ( configFile >> "CfgWeapons" >> _weapon_classname >> "displayName" );
 	};
 	_weapon_name
@@ -1051,15 +1051,15 @@ CTI_AC_PURGE_ALL_WEAPONS =
 		_mount_loadout_weapon_index = _mount_loadout select 0;
 		_mount_loadout_magazine_index = _mount_loadout select 1;
 		_mount_loadout_enabled  = _mount_loadout select 2;
-		
+
 		_magazine_options = (( _a_mountpoint_options select ( _mount_loadout_weapon_index)) select 1) select ( _mount_loadout_magazine_index );
 		_magazine_classname = _magazine_options select 0;
 
 		//Get chosen weapon and magazine classnames
 		_weapon_classname = (_a_mountpoint_options select _mount_loadout_weapon_index) select 0;
 		//Mounts pylon, not weapon
-		if((_weapon_classname find "Pylon") >= 0) then {
-			_vehicle setPylonLoadOut [_weapon_classname, ""]; 
+		if((_weapon_classname find "Pylon") >= 0 || (_weapon_classname find "pylon") >= 0) then {
+			_vehicle setPylonLoadOut [_weapon_classname, ""];
 		} else {
 			if ( count ( _magazine_options ) > 2 ) then
 			{
@@ -1245,7 +1245,7 @@ CTI_AC_GET_MAGAZINE_DISPLAY_NAME =
  funcGetTurretsWeapons = {
      private ["_result", "_getAnyMagazines", "_findRecurse", "_class"];
      _result = [];
-	 if((_this find "Pylon") == -1) then {
+	 if((_this find "Pylon") == -1 || (_this find "pylon") == -1) then {
 		 _getAnyMagazines = {
 			 private ["_weapon", "_mags"];
 			 _weapon = configFile >> "CfgWeapons" >> _this;
@@ -1287,5 +1287,5 @@ CTI_AC_GET_MAGAZINE_DISPLAY_NAME =
 		 [_class, []] call _findRecurse;
 	 };
      _result;
-	 
+
  };

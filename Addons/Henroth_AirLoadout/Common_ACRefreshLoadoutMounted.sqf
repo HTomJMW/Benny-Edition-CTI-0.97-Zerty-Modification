@@ -2,15 +2,15 @@
 	 * Name: CTI_AC_REFRESH_LOADOUT_ON_MOUNTED
 	 *
 	 * Purpose: Refreshses the weapon mount points on a vehicle
-	 * 
+	 *
 	 * Input: _vehicle => Vehicle to refresh mount point
-	 *        
+	 *
 	 * Return: <NONE>
 	 *
 	 * Side effects: <NONE>
 	 *
 */
-	
+
 private ["_side", "_vehicle", "_upgrades"];
 
 _vehicle = _this select 0;
@@ -36,15 +36,15 @@ _all_mountpoint_options = (_gun_configs select _loadout_index) select 2;
 
 
 // Loop through each mount point
-for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},{ _mount_index = _mount_index + 1}] do 
+for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},{ _mount_index = _mount_index + 1}] do
 {
-	
+
 	//Get options for mountpoint
 	_a_mountpoint_options = _all_mountpoint_options select _mount_index;
-	
+
 	// Extract chosen mountpoint options
 	_mount_loadout = _loadout_selections select ( _mount_index + 1 );
-	
+
 	if ( CTI_DEBUG ) then
 	{
 		systemChat format [ "_mount_loadout  %1" , _mount_loadout ];
@@ -52,10 +52,10 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 	_mount_loadout_weapon_index = _mount_loadout select 0;
 	_mount_loadout_magazine_index = _mount_loadout select 1;
 	_mount_loadout_enabled  = _mount_loadout select 2;
-	
-	//Get chosen weapon and magazine classnames 
+
+	//Get chosen weapon and magazine classnames
 	_weapon_classname = (_a_mountpoint_options select _mount_loadout_weapon_index) select 0;
-	
+
 	//Plyon name to plyon index
 	_pylon_index = 0;
 	{
@@ -65,37 +65,37 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 		};
 	} forEach (configProperties [configFile >> "CfgVehicles" >> _typeOfValue  >> "Components" >> "TransportPylonsComponent" >> "Pylons"]);
 
-	
+
 	_magazine_options = (( _a_mountpoint_options select ( _mount_loadout_weapon_index)) select 1) select ( _mount_loadout_magazine_index );
 	_magazine_classname = _magazine_options select 0;
 	_magazine_cost = _magazine_options select 1;
-	
-	
+
+
 	_not_resreached_magzine = false;
 	if(not (_vehicle isKindof "Tank")) then {
-		//No ATGM  if upgrade not present 
-		if (((_upgrades select CTI_UPGRADE_AIR_AT) == 0) 
+		//No ATGM  if upgrade not present
+		if (((_upgrades select CTI_UPGRADE_AIR_AT) == 0)
 			&& (_magazine_classname in CTI_ALM_ATGM_RESEARCHED_MAGAZINES)) then {
 			_not_resreached_magzine = true;
 		};
-		//No AA  if upgrade not present 
-		if (((_upgrades select CTI_UPGRADE_AIR_AA) == 0) 
+		//No AA  if upgrade not present
+		if (((_upgrades select CTI_UPGRADE_AIR_AA) == 0)
 			&& (_magazine_classname in CTI_ALM_AA_RESEARCHED_MAGAZINES)) then {
 			_not_resreached_magzine = true;
 		};
-		//No FFAR  if upgrade not present 
-		if (((_upgrades select CTI_UPGRADE_AIR_FFAR) == 0) 
+		//No FFAR  if upgrade not present
+		if (((_upgrades select CTI_UPGRADE_AIR_FFAR) == 0)
 			&& (_magazine_classname in CTI_ALM_FFAR_RESEARCHED_MAGAZINES)) then {
 			_not_resreached_magzine = true;
 		};
-		//No CM  if upgrade not present 
-		if (((_upgrades select CTI_UPGRADE_AIR_CM) == 0) 
+		//No CM  if upgrade not present
+		if (((_upgrades select CTI_UPGRADE_AIR_CM) == 0)
 			&& (_magazine_classname in CTI_ALM_CM_RESEARCHED_MAGAZINES)) then {
 			_not_resreached_magzine = true;
 		};
 	};
-	
-	
+
+
 	if ( CTI_DEBUG ) then
 	{
 		systemChat format [ "_magazine_options  %1" , _magazine_options ];
@@ -104,9 +104,9 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 	if(_weapon_classname == "FakeHorn") then {
 		_turret_position = ( _magazine_options select 2 );
 		_vehicle addWeaponTurret ["M2", _turret_position];
-	} else 
+	} else
 	{
-	
+
 		if ( ( count ( _magazine_options ) ) > 2 ) then
 		{
 			if ( CTI_DEBUG ) then
@@ -122,19 +122,19 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 					} else {
 						diag_log format ["_turret_position01: %1", _turret_position];
 						if (
-						(_weapon_classname != "CMFlareLauncher" 
+						(_weapon_classname != "CMFlareLauncher"
 						&& _weapon_classname != "SmokeLauncher") && (_turret_position select 0) == -1) then {
-					
+
 							_turret_position = [];
 						};
 					};
 				//Mounts pylon, not weapon
-				if((_weapon_classname find "Pylon") >= 0) then {
+				if((_weapon_classname find "Pylon") >= 0 || (_weapon_classname find "pylon") >= 0) then {
 					_vehicle setPylonLoadOut [_weapon_classname, _magazine_classname,  true, _turret_position];
 					if ( not _mount_loadout_enabled || _not_resreached_magzine) then {
 						// does not work correctly parseNumber((_weapon_classname splitString "Pylons") select 0);
 						_vehicle setPylonLoadOut [_weapon_classname, "",  true, _turret_position];
-					};				
+					};
 				} else {
 					_already_mounted =  ( _weapon_classname in ( _vehicle weaponsTurret ( _turret_position ) ) );
 					if ( not _already_mounted ) then
@@ -142,7 +142,7 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 						_vehicle addWeaponTurret [ _weapon_classname , _turret_position ];
 					};
 					if ( not _not_resreached_magzine ) then
-					{ 
+					{
 						_vehicle addMagazineTurret [ _magazine_classname , _turret_position ];
 					};
 					if ( not _mount_loadout_enabled ) then
@@ -155,7 +155,7 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 			else
 			{
 				_unit_in_turret = _vehicle turretUnit ( _turret_position );
-				
+
 				[["CLIENT", leader _unit_in_turret], "Client_RefreshLoadoutOnAVehicle", [_vehicle]] call CTI_CO_FNC_NetSend;
 			};
 		}
@@ -166,45 +166,45 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 				systemChat format [ "Adding magazine %1" , _magazine_classname ];
 				systemChat format [ "Adding weapon %1" , _weapon_classname ];
 			};
-			
+
 			if  ( local _vehicle ) then
 			{
 				_turret_position = ( _magazine_options select 2 );
 				if(isNil "_turret_position") then {
 					_turret_position = [];
 				} else {
-					if ((_weapon_classname != "CMFlareLauncher" && _weapon_classname != "SmokeLauncher") 
+					if ((_weapon_classname != "CMFlareLauncher" && _weapon_classname != "SmokeLauncher")
 					&& (_turret_position select 0) == -1) then {
 						_turret_position = [];
 					};
 				};
-				
-				if((_weapon_classname find "Pylon") >= 0) then {
+
+				if((_weapon_classname find "Pylon") >= 0 || (_weapon_classname find "pylon") >= 0) then {
 				//(vehicle player) setPylonLoadOut ["PylonLeft1", "PylonRack_12Rnd_PG_missiles",  true, [-1]]
 					_vehicle setPylonLoadOut [_weapon_classname, _magazine_classname,  true, _turret_position];
-					if ( not _mount_loadout_enabled  || _not_resreached_magzine) then {	
+					if ( not _mount_loadout_enabled  || _not_resreached_magzine) then {
 						_vehicle setPylonLoadOut [_weapon_classname, "",  true, _turret_position];
-					};	
+					};
 				} else {
 					// Check if weapon is already mounted and this is another "instance"
 					_already_mounted =  ( _weapon_classname in ( weapons _vehicle ) );
-					
+
 					if (_already_mounted && _weapon_classname == "SmokeLauncher") then {
 						_vehicle removeWeapon _weapon_classname;
 						_vehicle addMagazine [ _magazine_classname , 0 ];
 					};
-					
+
 					if ( not _already_mounted ) then
 					{
 						_vehicle addWeapon _weapon_classname;
 					};
-					
-					
+
+
 					if ( not _mount_loadout_enabled ) then
 					{
 						// Add the place holder magazine
 						_vehicle addMagazine [ _magazine_classname , 0 ];
-						
+
 						// Remove weapon is not from a previous instance
 						if ( not _already_mounted ) then
 						{
@@ -219,9 +219,9 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 			};
 		};
 	};
-	
+
 };
-	
+
 // Force flush of flares ... magic
 
 _vehicle addWeaponTurret [ "FakeHorn" , [-1] ];
