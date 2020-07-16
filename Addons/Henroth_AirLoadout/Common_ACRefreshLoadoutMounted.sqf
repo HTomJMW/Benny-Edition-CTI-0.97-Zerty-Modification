@@ -57,13 +57,13 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 	_weapon_classname = (_a_mountpoint_options select _mount_loadout_weapon_index) select 0;
 
 	//Plyon name to plyon index
-	_pylon_index = 0;
+	/*_pylon_index = 0;
 	{
 		_pylon = configName(_x);
 		if(_pylon == _weapon_classname) then {
 			_pylon_index = _forEachIndex + 1;
 		};
-	} forEach (configProperties [configFile >> "CfgVehicles" >> _typeOfValue  >> "Components" >> "TransportPylonsComponent" >> "Pylons"]);
+	} forEach (configProperties [configFile >> "CfgVehicles" >> _typeOfValue  >> "Components" >> "TransportPylonsComponent" >> "Pylons"]);*/
 
 
 	_magazine_options = (( _a_mountpoint_options select ( _mount_loadout_weapon_index)) select 1) select ( _mount_loadout_magazine_index );
@@ -123,13 +123,14 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 						diag_log format ["_turret_position01: %1", _turret_position];
 						if (
 						(_weapon_classname != "CMFlareLauncher"
-						&& _weapon_classname != "SmokeLauncher") && (_turret_position select 0) == -1) then {
+						|| _weapon_classname != "SmokeLauncher"
+						|| _weapon_classname != "rhsusf_weap_LWIRCM") && (_turret_position select 0) == -1) then {
 
 							_turret_position = [];
 						};
 					};
 				//Mounts pylon, not weapon
-				if((_weapon_classname find "Pylon") >= 0 || (_weapon_classname find "pylon") >= 0) then {
+				if((_weapon_classname find "Pylon") >= 0 || (_weapon_classname find "pylon") >= 0 || (_weapon_classname find "cmDispenser") >= 0) then {
 					_vehicle setPylonLoadOut [_weapon_classname, _magazine_classname,  true, _turret_position];
 					if ( not _mount_loadout_enabled || _not_resreached_magzine) then {
 						// does not work correctly parseNumber((_weapon_classname splitString "Pylons") select 0);
@@ -173,13 +174,13 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 				if(isNil "_turret_position") then {
 					_turret_position = [];
 				} else {
-					if ((_weapon_classname != "CMFlareLauncher" && _weapon_classname != "SmokeLauncher")
+					if ((_weapon_classname != "CMFlareLauncher" || _weapon_classname != "SmokeLauncher" || _weapon_classname != "rhsusf_weap_LWIRCM")
 					&& (_turret_position select 0) == -1) then {
 						_turret_position = [];
 					};
 				};
 
-				if((_weapon_classname find "Pylon") >= 0 || (_weapon_classname find "pylon") >= 0) then {
+				if((_weapon_classname find "Pylon") >= 0 || (_weapon_classname find "pylon") >= 0 || (_weapon_classname find "cmDispenser") >= 0) then {
 				//(vehicle player) setPylonLoadOut ["PylonLeft1", "PylonRack_12Rnd_PG_missiles",  true, [-1]]
 					_vehicle setPylonLoadOut [_weapon_classname, _magazine_classname,  true, _turret_position];
 					if ( not _mount_loadout_enabled  || _not_resreached_magzine) then {

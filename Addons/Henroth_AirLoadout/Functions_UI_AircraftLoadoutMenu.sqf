@@ -549,7 +549,7 @@ CTI_AC_UPDATE_UI_WEAPON_OPTIONS =
 			_weapon_classname = (_weapon_options select _index_weapon) select 0;
 
 			_weapon_name = _weapon_classname;
-			if((_weapon_classname find "Pylon") == -1 || (_weapon_classname find "pylon") == -1) then {
+			if((_weapon_classname find "Pylon") == -1 || (_weapon_classname find "pylon") == -1 || (_weapon_classname find "cmDispenser") == -1) then {
 				_weapon_name = getText ( configFile >> "CfgWeapons" >> _weapon_classname >> "displayName" );
 			};
 			if(_weapon_name == "FakeHorn") then {
@@ -927,7 +927,7 @@ CTI_AC_GET_WEAPON_DISPLAY_NAME =
 
 	_weapon_classname = _this;
 	_weapon_name = _weapon_classname;
-	if((_weapon_classname find "Pylon") == -1 || (_weapon_classname find "pylon") == -1) then {
+	if((_weapon_classname find "Pylon") == -1 || (_weapon_classname find "pylon") == -1 || (_weapon_classname find "cmDispenser") == -1) then {
 		_weapon_name = getText ( configFile >> "CfgWeapons" >> _weapon_classname >> "displayName" );
 	};
 	_weapon_name
@@ -1058,7 +1058,7 @@ CTI_AC_PURGE_ALL_WEAPONS =
 		//Get chosen weapon and magazine classnames
 		_weapon_classname = (_a_mountpoint_options select _mount_loadout_weapon_index) select 0;
 		//Mounts pylon, not weapon
-		if((_weapon_classname find "Pylon") >= 0 || (_weapon_classname find "pylon") >= 0) then {
+		if((_weapon_classname find "Pylon") >= 0 || (_weapon_classname find "pylon") >= 0 || (_weapon_classname find "cmDispenser") >= 0) then {
 			_vehicle setPylonLoadOut [_weapon_classname, ""];
 		} else {
 			if ( count ( _magazine_options ) > 2 ) then
@@ -1245,7 +1245,7 @@ CTI_AC_GET_MAGAZINE_DISPLAY_NAME =
  funcGetTurretsWeapons = {
      private ["_result", "_getAnyMagazines", "_findRecurse", "_class"];
      _result = [];
-	 if((_this find "Pylon") == -1 || (_this find "pylon") == -1) then {
+	 if((_this find "Pylon") == -1 || (_this find "pylon") == -1 || (_this find "cmDispenser") == -1) then {
 		 _getAnyMagazines = {
 			 private ["_weapon", "_mags"];
 			 _weapon = configFile >> "CfgWeapons" >> _this;
