@@ -121,11 +121,10 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 						_turret_position = [];
 					} else {
 						diag_log format ["_turret_position01: %1", _turret_position];
-						if (
-						(_weapon_classname != "CMFlareLauncher"
-						|| _weapon_classname != "SmokeLauncher"
-						|| _weapon_classname != "rhsusf_weap_LWIRCM") && (_turret_position select 0) == -1) then {
-
+						if (_weapon_classname == "CMFlareLauncher" || _weapon_classname == "SmokeLauncher" || _weapon_classname == "rhsusf_weap_LWIRCM") then
+						{
+							_turret_position = [-1];
+						} else {
 							_turret_position = [];
 						};
 					};
@@ -174,8 +173,10 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 				if(isNil "_turret_position") then {
 					_turret_position = [];
 				} else {
-					if ((_weapon_classname != "CMFlareLauncher" || _weapon_classname != "SmokeLauncher" || _weapon_classname != "rhsusf_weap_LWIRCM")
-					&& (_turret_position select 0) == -1) then {
+					if (_weapon_classname == "CMFlareLauncher" || _weapon_classname == "SmokeLauncher" || _weapon_classname == "rhsusf_weap_LWIRCM") then
+					{
+						_turret_position = [-1];
+					} else {
 						_turret_position = [];
 					};
 				};
