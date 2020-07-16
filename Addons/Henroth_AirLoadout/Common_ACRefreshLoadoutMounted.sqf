@@ -124,8 +124,6 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 						if (_weapon_classname == "CMFlareLauncher" || _weapon_classname == "SmokeLauncher" || _weapon_classname == "rhsusf_weap_LWIRCM") then
 						{
 							_turret_position = [-1];
-						} else {
-							_turret_position = [];
 						};
 					};
 				//Mounts pylon, not weapon
@@ -176,8 +174,6 @@ for [ {_mount_index = 0},{ _mount_index < ( count ( _all_mountpoint_options ))},
 					if (_weapon_classname == "CMFlareLauncher" || _weapon_classname == "SmokeLauncher" || _weapon_classname == "rhsusf_weap_LWIRCM") then
 					{
 						_turret_position = [-1];
-					} else {
-						_turret_position = [];
 					};
 				};
 
