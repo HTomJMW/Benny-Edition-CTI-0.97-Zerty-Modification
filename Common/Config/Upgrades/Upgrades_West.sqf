@@ -39,14 +39,14 @@ _c=_c +			[[25000]];
 _lev=_lev+	[1];
 _lin=_lin+	[[[]]];
 _t=_t+			[[90*CTI_UPGRADE_RATIO]];
-
+/*
 _l=_l+			[[localize "STR_Up_AAF_technologies", localize "STR_Up_AAF_technologies_Descr"]];
 _a=_a	+			[true];
 _c=_c +			[[1500,2500,4000,6000,8000,12000]];
 _lev=_lev+	[6];
 _lin=_lin+	[[[CTI_UPGRADE_LIGHT,1],[],[CTI_UPGRADE_HEAVY,1],[CTI_UPGRADE_AIR,1],[],[]]];
 _t=_t+			[[20*CTI_UPGRADE_RATIO,20*CTI_UPGRADE_RATIO,50*CTI_UPGRADE_RATIO,60*CTI_UPGRADE_RATIO,70*CTI_UPGRADE_RATIO,80*CTI_UPGRADE_RATIO]];
-
+*/
 
 _l=_l+			[[localize "STR_Up_Aircraft_FFAR", localize "STR_Up_Aircraft_FFAR_Descr"]];
 _a=_a	+			[true];
@@ -85,14 +85,14 @@ _c=_c +			[[2000, 4000, 7500]];
 _lev=_lev+	[3];
 _lin=_lin+	[[[],[],[]]];
 _t=_t+			[[20*CTI_UPGRADE_RATIO, 40*CTI_UPGRADE_RATIO, 60*CTI_UPGRADE_RATIO]];
-
+/*
 _l=_l+			[[localize "STR_Up_Tactical_Hud", localize "STR_Up_Tactical_Hud_Descr"]];
 _a=_a	+			[True];
 _c=_c +			[[9000]];
 _lev=_lev+	[1];
 _lin=_lin+	[[[CTI_UPGRADE_GEAR,3]]];
 _t=_t+			[[120*CTI_UPGRADE_RATIO]];
-
+*/
 _l=_l+			[[localize "STR_Up_Towns_Occupation", localize "STR_Up_Towns_Occupation_Descr"]];
 _a=_a	+			[true];
 _c=_c +			[[5000, 20000, 40000]];
@@ -150,7 +150,7 @@ _lev=_lev+	[1];
 _lin=_lin+	[[[CTI_UPGRADE_NETR, 3],[],[]]];
 _t=_t+			[[60*CTI_UPGRADE_RATIO]];
 
-
+/*
 _l=_l+			[[localize "STR_Up_Trophy", localize "STR_Up_Trophy_Descr"]];
 _a=_a	+			[True];
 _c=_c +			[[6000,12000]];
@@ -164,7 +164,7 @@ _c=_c +			[[6000,12000]];
 _lev=_lev+	[2];
 _lin=_lin+	[[[CTI_UPGRADE_HEAVY, 1],[]]];
 _t=_t+			[[20*CTI_UPGRADE_RATIO,40*CTI_UPGRADE_RATIO]];
-
+*/
 _l=_l+				[[localize "STR_Up_Respawn_Truck", localize "STR_Up_Respawn_Truck_Descr"]];
 _a=_a	+			[True];
 _c=_c +				[[1000,2000,4000,8000,16000]];
