@@ -3572,7 +3572,7 @@ CTI_LOADOUT_RHS_TU95MS_vvs_old_MNT_OPTIONS =
 		"pylon",
 		[
 			[
-				[ "hs_weap_kh55sm_dummy_Launcher" ,
+				[ "rhs_weap_kh55sm_dummy_Launcher" ,
 					[
 						[ "rhs_mag_kh55sh" , "1000", [4] ]
 					]
@@ -3687,6 +3687,7 @@ CTI_ALM_AA_RESEARCHED_MAGAZINES =
 	"PylonMissile_Missile_AA_R77_INT_x1" ,
 	"rhs_mag_Sidewinder_heli" ,
 	"rhs_mag_Sidewinder_heli_2" ,
+	"rhs_mag_Sidewinder" ,
 	"rhs_mag_Sidewinder_int" ,
 	"rhs_mag_Sidewinder_2" ,
 	"rhs_mag_aim9m" ,
