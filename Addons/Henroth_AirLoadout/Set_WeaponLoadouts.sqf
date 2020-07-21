@@ -3984,5 +3984,6 @@ CTI_ALM_CM_RESEARCHED_MAGAZINES =
 	"rhs_ASO2_CMFlare_Magazine_x2" ,
 	"rhs_ASO2_CMFlare_Magazine_x4" ,
 	"rhs_ASO2_CMFlare_Magazine_x6" ,
-	"rhsusf_mag_LWIRCM"
+	"rhsusf_mag_LWIRCM" ,
+	"rhs_mag_DIRCM_Lipa"
 ];
