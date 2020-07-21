@@ -201,7 +201,7 @@ CTI_LOADOUT_RHS_UH60M2_d_MNT_OPTIONS =
 		"pylon",
 		[
 			[
-				["cmDispenser" ,
+				["rhsusf_weap_CMDispenser_M130" ,
 					[
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine" , "500" , [-1] ],
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "1000" , [-1] ],
@@ -224,7 +224,7 @@ CTI_LOADOUT_RHS_UH60M_ESSS_d_MNT_OPTIONS =
 		"pylon",
 		[
 			[
-				["cmDispenser" ,
+				["rhsusf_weap_CMDispenser_M130" ,
 					[
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine" , "500" , [-1] ],
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "1000" , [-1] ],
@@ -261,7 +261,7 @@ CTI_LOADOUT_RHS_UH60M_d_MNT_OPTIONS =
 				]
 			],
 			[
-				["cmDispenser" ,
+				["rhsusf_weap_CMDispenser_M130" ,
 					[
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine" , "500" , [-1] ],
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "1000" , [-1] ],
@@ -284,7 +284,7 @@ CTI_LOADOUT_rhsusf_CH53e_USMC_cargo_MNT_OPTIONS =
 		"pylon",
 		[
 			[
-				["cmDispenser" ,
+				["rhsusf_weap_CMDispenser_ANALE39" ,
 					[
 						[ "rhsusf_ANALE39_CMFlare_Chaff_Magazine" , "500" , [-1] ],
 						[ "rhsusf_ANALE39_CMFlare_Chaff_Magazine_x2" , "1000" , [-1] ],
@@ -404,7 +404,7 @@ CTI_LOADOUT_RHS_AH1Z_MNT_OPTIONS =
 				]
 			],
 			[
-				["cmDispenser" ,
+				["rhsusf_weap_CMDispenser_ANALE39" ,
 					[
 						[ "rhsusf_ANALE39_CMFlare_Chaff_Magazine" , "500" , [-1] ],
 						[ "rhsusf_ANALE39_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
@@ -534,7 +534,7 @@ CTI_LOADOUT_RHS_AH64D_MNT_OPTIONS =
 				]
 			],
 			[
-				["cmDispenser" ,
+				["rhsusf_weap_CMDispenser_M130" ,
 					[
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine" , "500" , [-1] ],
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
@@ -742,7 +742,7 @@ CTI_LOADOUT_RHS_A10_MNT_OPTIONS =
 				]
 			],
 			[
-				["cmDispenser" ,
+				["rhsusf_weap_CMDispenser_ANALE40" ,
 					[
 						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
 						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x4" , "500" , [-1] ],
@@ -826,7 +826,7 @@ CTI_LOADOUT_rhsusf_f22_MNT_OPTIONS =
 				]
 			],
 			[
-				["cmDispenser" ,
+				["rhsusf_weap_CMDispenser_ANALE52" ,
 					[
 						[ "rhsusf_ANALE52_CMFlare_Chaff_Magazine" , "500" , [-1] ],
 						[ "rhsusf_ANALE52_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
@@ -852,7 +852,7 @@ CTI_LOADOUT_RHS_C130J_MNT_OPTIONS =
 		"pylon",
 		[
 			[
-				["cmDispenser" ,
+				["rhsusf_weap_CMDispenser_ANALE40" ,
 					[
 						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
 						[ "rhsusf_ANALE40_CMFlare_Chaff_Magazine_x4" , "500" , [-1] ],
@@ -898,7 +898,7 @@ CTI_LOADOUT_RHS_CH_47F_10_MNT_OPTIONS =
 				]
 			],
 			[
-				["cmDispenser" ,
+				["rhsusf_weap_CMDispenser_M130" ,
 					[
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine" , "500" , [-1] ],
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
@@ -1287,7 +1287,7 @@ CTI_LOADOUT_rhs_ka60_grey_MNT_OPTIONS =
 		"pylon",
 		[
 			[
-				[ "CMFlareLauncher" ,
+				[ "rhs_weap_CMFlareLauncher" ,
 					[
 						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1] ] ,
 						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1] ] ,
@@ -1310,7 +1310,7 @@ CTI_LOADOUT_RHS_Mi8T_vdv_MNT_OPTIONS =
 		"pylon",
 		[
 			[
-				[ "cmDispenser" ,
+				[ "rhs_weap_CMDispenser_ASO2" ,
 					[
 						[ "rhs_ASO2_CMFlare_Chaff_Magazine" , "500" , [-1]],
 						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x2" , "500" , [-1]],
@@ -1539,7 +1539,7 @@ CTI_LOADOUT_RHS_Mi8MTV3_vdv_MNT_OPTIONS =
 				]
 			],*/
 			[
-				[ "cmDispenser" ,
+				[ "rhs_weap_CMDispenser_ASO2" ,
 					[
 						[ "rhs_ASO2_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
 						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x2" , "500" , [-1]] ,
@@ -1565,9 +1565,9 @@ CTI_LOADOUT_RHS_Mi24P_vvsc_MNT_OPTIONS =
 		"pylon",
 		[
 			[
-				[ "rhs_weap_fab250" ,
+				[ "rhs_weap_gsh30" ,
 					[
-						[ "rhs_mag_fab250" , "500" ]
+						[ "rhs_mag_gsh30_ofzt_750" , "500" ]
 					]
 				]
 			],
@@ -1780,7 +1780,7 @@ CTI_LOADOUT_RHS_Mi24P_vvsc_MNT_OPTIONS =
 				]
 			],
 			[
-				[ "cmDispenser" ,
+				[ "rhs_weap_CMDispenser_ASO2" ,
 					[
 						[ "rhs_ASO2_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
 						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x2" , "500" , [-1]] ,
@@ -2025,7 +2025,7 @@ CTI_LOADOUT_RHS_Mi24V_vdv_MNT_OPTIONS =
 				]
 			],
 			[
-				[ "cmDispenser" ,
+				[ "rhs_weap_CMDispenser_ASO2" ,
 					[
 						[ "rhs_ASO2_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
 						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x2" , "500" , [-1]] ,
@@ -2204,7 +2204,7 @@ CTI_LOADOUT_rhs_mi28n_vvs_MNT_OPTIONS =
 				]
 			],
 			[
-				[ "cmDispenser" ,
+				[ "rhs_weap_CMDispenser_UV26" ,
 					[
 						[ "rhs_UV26_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
 						[ "rhs_UV26_CMFlare_Chaff_Magazine_x2" , "500" , [-1]] ,
@@ -2390,7 +2390,7 @@ CTI_LOADOUT_RHS_Ka52_vvsc_MNT_OPTIONS =
 				]
 			],
 			[
-				[ "cmDispenser" ,
+				[ "rhs_weap_CMDispenser_UV26" ,
 					[
 						[ "rhs_UV26_CMFlare_Chaff_Magazine" , "500" , [-1]] ,
 						[ "rhs_UV26_CMFlare_Chaff_Magazine_x2" , "500" , [-1]] ,
@@ -2924,7 +2924,7 @@ CTI_LOADOUT_RHS_Su25SM_vvs_MNT_OPTIONS =
 				]
 			],
 			[
-				[ "cmDispenser" ,
+				[ "rhs_weap_CMDispenser_ASO2" ,
 					[
 						[ "rhs_ASO2_CMFlare_Chaff_Magazine" , "500" , [-1]],
 						[ "rhs_ASO2_CMFlare_Chaff_Magazine_x2" , "500" , [-1]],
@@ -3434,7 +3434,7 @@ CTI_LOADOUT_rhssaf_airforce_o_l_18_MNT_OPTIONS =
 				]
 			],
 			[
-				[ "cmDispenser" ,
+				[ "rhs_weap_CMDispenser_BVP3026" ,
 					[
 						[ "rhs_BVP3026_CMFlare_Chaff_Magazine" , "500" , [-1]],
 						[ "rhs_BVP3026_CMFlare_Chaff_Magazine_x2" , "1000" , [-1]],
@@ -3544,7 +3544,7 @@ CTI_LOADOUT_RHS_T50_vvs_052_MNT_OPTIONS =
 				]
 			],
 			[
-				[ "CMFlareLauncher" ,
+				[ "rhs_weap_CMFlareLauncher" ,
 					[
 						[ "168Rnd_CMFlare_Chaff_Magazine" , "1000" , [-1]],
 						[ "120Rnd_CMFlare_Chaff_Magazine" , "500" , [-1]],
@@ -3985,5 +3985,7 @@ CTI_ALM_CM_RESEARCHED_MAGAZINES =
 	"rhs_ASO2_CMFlare_Magazine_x4" ,
 	"rhs_ASO2_CMFlare_Magazine_x6" ,
 	"rhsusf_mag_LWIRCM" ,
-	"rhs_mag_DIRCM_Lipa"
+	"rhsusf_mag_DIRCM" ,
+	"rhs_mag_DIRCM_Lipa" ,
+	"rhs_mag_DIRCM_Vitebsk"
 ];
