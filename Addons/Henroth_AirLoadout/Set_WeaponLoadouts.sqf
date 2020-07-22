@@ -103,7 +103,7 @@ CTI_LOADOUT_RHS_MELB_H6M_MNT_OPTIONS =
 			[
 				[ "rhsusf_weap_LWIRCM" ,
 					[
-						[ "rhsusf_mag_LWIRCM" , "500" ] // x10 in original
+						[ "rhsusf_mag_LWIRCM" , "500" , [-1] ]
 					]
 				]
 			]
@@ -183,7 +183,7 @@ CTI_LOADOUT_RHS_MELB_AH6M_MNT_OPTIONS =
 			[
 				[ "rhsusf_weap_LWIRCM" ,
 					[
-						[ "rhsusf_mag_LWIRCM" , "500" ] // x10 in original
+						[ "rhsusf_mag_LWIRCM" , "500" , [-1] ]
 					]
 				]
 			]
@@ -209,6 +209,13 @@ CTI_LOADOUT_RHS_UH60M2_d_MNT_OPTIONS =
 						[ "rhsusf_M130_CMFlare_Magazine_x2" , "1000" , [-1] ]
 					]
 				]
+			],
+			[
+				[ "rhsusf_weap_ANALQ144" ,
+					[
+						[ "rhsusf_mag_DIRCM" , "500" , [-1] ]
+					]
+				]
 			]
 		]
 	]
@@ -232,6 +239,13 @@ CTI_LOADOUT_RHS_UH60M_ESSS_d_MNT_OPTIONS =
 						[ "rhsusf_M130_CMFlare_Magazine_x2" , "1000" , [-1] ]
 					]
 				]
+			],
+			[
+				[ "rhsusf_weap_ANALQ144" ,
+					[
+						[ "rhsusf_mag_DIRCM" , "500" , [-1] ]
+					]
+				]
 			]
 		]
 	]
@@ -249,14 +263,14 @@ CTI_LOADOUT_RHS_UH60M_d_MNT_OPTIONS =
 			[
 				["rhs_weap_m134_minigun_1" ,
 					[
-						[ "rhs_mag_762x51_m80a1_4000" , "1000", [1]]
+						[ "rhs_mag_762x51_m80a1_4000" , "1000", [1] ]
 					]
 				]
 			],
 			[
 				["rhs_weap_m134_minigun_2" ,
 					[
-						[ "rhs_mag_762x51_m80a1_4000" , "1000", [2]]
+						[ "rhs_mag_762x51_m80a1_4000" , "1000", [2] ]
 					]
 				]
 			],
@@ -267,6 +281,13 @@ CTI_LOADOUT_RHS_UH60M_d_MNT_OPTIONS =
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "1000" , [-1] ],
 						[ "rhsusf_M130_CMFlare_Magazine" , "500" , [-1] ],
 						[ "rhsusf_M130_CMFlare_Magazine_x2" , "1000" , [-1] ]
+					]
+				]
+			],
+			[
+				[ "rhsusf_weap_ANALQ144" ,
+					[
+						[ "rhsusf_mag_DIRCM" , "500" , [-1] ]
 					]
 				]
 			]
@@ -290,6 +311,13 @@ CTI_LOADOUT_rhsusf_CH53e_USMC_cargo_MNT_OPTIONS =
 						[ "rhsusf_ANALE39_CMFlare_Chaff_Magazine_x2" , "1000" , [-1] ],
 						[ "rhsusf_ANALE39_CMFlare_Magazine" , "500" , [-1] ],
 						[ "rhsusf_ANALE39_CMFlare_Magazine_x2" , "1000" , [-1] ]
+					]
+				]
+			],
+			[
+				[ "rhsusf_weap_ANAAQ24" ,
+					[
+						[ "rhsusf_mag_DIRCM" , "500" , [-1] ]
 					]
 				]
 			]
@@ -540,6 +568,13 @@ CTI_LOADOUT_RHS_AH64D_MNT_OPTIONS =
 						[ "rhsusf_M130_CMFlare_Chaff_Magazine_x2" , "500" , [-1] ],
 						[ "rhsusf_M130_CMFlare_Magazine" , "1000" , [-1] ],
 						[ "rhsusf_M130_CMFlare_Magazine_x2" , "1000" , [-1] ]
+					]
+				]
+			],
+			[
+				[ "rhsusf_weap_ANALQ144" ,
+					[
+						[ "rhsusf_mag_DIRCM" , "500" , [-1] ]
 					]
 				]
 			]
@@ -864,6 +899,13 @@ CTI_LOADOUT_RHS_C130J_MNT_OPTIONS =
 						[ "rhsusf_ANALE40_CMFlare_Magazine_x16" , "1000" , [-1] ]
 					]
 				]
+			],
+			[
+				["rhsusf_weap_ANAAQ24" ,
+					[
+						[ "rhsusf_mag_DIRCM" , "500" , [-1] ]
+					]
+				]
 			]
 		]
 	]
@@ -908,6 +950,13 @@ CTI_LOADOUT_RHS_CH_47F_10_MNT_OPTIONS =
 						[ "rhsusf_M130_CMFlare_Magazine_x2" , "500" , [-1] ],
 						[ "rhsusf_M130_CMFlare_Magazine_x4" , "1000" , [-1] ],
 						[ "rhsusf_M130_CMFlare_Magazine_x8" , "1000" , [-1] ]
+					]
+				]
+			],
+			[
+				["rhsusf_weap_ANALQ212" ,
+					[
+						[ "rhsusf_mag_DIRCM" , "500" , [-1] ]
 					]
 				]
 			]
@@ -1790,6 +1839,13 @@ CTI_LOADOUT_RHS_Mi24P_vvsc_MNT_OPTIONS =
 						[ "rhs_ASO2_CMFlare_Magazine_x4" , "1000" , [-1]]
 					]
 				]
+			],
+			[
+				[ "rhs_weap_DIRCM_Lipa" ,
+					[
+						[ "rhs_mag_DIRCM_Lipa" , "500" , [-1]]
+					]
+				]
 			]
 		]
 	]
@@ -2033,6 +2089,13 @@ CTI_LOADOUT_RHS_Mi24V_vdv_MNT_OPTIONS =
 						[ "rhs_ASO2_CMFlare_Magazine" , "500" , [-1]] ,
 						[ "rhs_ASO2_CMFlare_Magazine_x2" , "500" , [-1]] ,
 						[ "rhs_ASO2_CMFlare_Magazine_x4" , "1000" , [-1]]
+					]
+				]
+			],
+			[
+				[ "rhs_weap_DIRCM_Lipa" ,
+					[
+						[ "rhs_mag_DIRCM_Lipa" , "500" , [-1]]
 					]
 				]
 			]
@@ -2398,6 +2461,13 @@ CTI_LOADOUT_RHS_Ka52_vvsc_MNT_OPTIONS =
 						[ "rhs_UV26_CMFlare_Magazine" , "500" , [-1]] ,
 						[ "rhs_UV26_CMFlare_Magazine_x2" , "500" , [-1]] ,
 						[ "rhs_UV26_CMFlare_Magazine_x4" , "1000" , [-1]]
+					]
+				]
+			],
+			[
+				[ "rhs_weap_DIRCM_Vitebsk" ,
+					[
+						[ "rhs_mag_DIRCM_Vitebsk" , "500" , [-1]]
 					]
 				]
 			]
