@@ -249,6 +249,11 @@ if (isNull _created) then {
 	};
 
 	//Spawn with components [H]Tom
+	if (_vehicle isKindOf "Tank") then {
+		if (_vehicle isKindOf "rhsgref_ins_g_t72ba" || _vehicle isKindOf "rhsgref_ins_g_t72bb") then {
+				_vehicle setvariable ['rhs_t72_disableFlag', true]; // remove Flag
+		};
+	};
 	/*if (_vehicle isKindOf "Wheeled_APC_F" || _vehicle isKindOf "Tank") then {
 		if (_vehicle isKindOf "I_APC_Wheeled_03_cannon_F") then {[_vehicle, nil, ["showTools",1]] call BIS_fnc_initVehicle;};
 		if (_vehicle isKindOf "O_APC_Wheeled_02_rcws_v2_F" || _vehicle isKindOf "O_T_APC_Wheeled_02_rcws_v2_ghex_F") then {[_vehicle, nil, ["showTools",1]] call BIS_fnc_initVehicle;};
