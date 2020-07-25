@@ -16,7 +16,7 @@ missionNamespace setVariable [format["CTI_%1_Vehicles_Startup", _side], [
 		["rhs_weap_hk416d145_m320", 2],
 		["rhs_weap_M136", 10],
 		["rhs_weap_m72a7", 6],
-		["rhs_magazine_rhs_mag_m67", 15],
+		["rhs_mag_m67", 15],
 		["rhs_mag_M441_HE", 10],
 		["firstaidkit", 10],
 		["rhsusf_acc_EOTECH", 3],
@@ -157,6 +157,8 @@ _u = _u		+ ["RHS_MELB_AH6M"];
 _u = _u		+ ["RHS_UH60M2_d"];
 _u = _u		+ ["RHS_UH60M_ESSS_d"];
 _u = _u		+ ["RHS_UH60M_d"];
+_u = _u		+ ["RHS_CH_47F_10"];
+_u = _u		+ ["RHS_CH_47F_10_cargo"];
 _u = _u 	+ ["rhsusf_CH53e_USMC_cargo"];
 _u = _u		+ ["B_UAV_02_F"];
 _u = _u		+ ["B_UAV_02_CAS_F"];
@@ -167,8 +169,6 @@ _u = _u		+ ["RHS_AH1Z"];
 _u = _u		+ ["RHS_AH64D"];
 _u = _u		+ ["RHS_A10"];
 _u = _u		+ ["rhsusf_f22"];
-_u = _u		+ ["RHS_CH_47F_10"];
-_u = _u		+ ["RHS_CH_47F_10_cargo"];
 _u = _u		+ ["RHS_C130J"];
 _u = _u		+ ["RHS_C130J_Cargo"];
 _u = _u		+ ['B_Slingload_01_Medevac_F'];

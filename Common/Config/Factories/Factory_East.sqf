@@ -16,7 +16,7 @@ missionNamespace setVariable [format["CTI_%1_Vehicles_Startup", _side], [
 		["rhs_weap_ak103_gp25", 2],
 		["rhs_weap_rpg7", 4], ["rhs_rpg7_PG7V_mag", 10],
 		["rhs_weap_rpg26", 6],
-		["rhs_magazine_rhs_mag_rgn", 15],
+		["rhs_mag_rgn", 15],
 		["rhs_VOG25", 15],
 		["firstaidkit", 10],
 		["rhs_acc_ekp1", 3],
@@ -105,15 +105,14 @@ _u = _u		+ ['O_LSV_02_AT_F'];
 _u = _u		+ ['O_UGV_01_F'];
 _u = _u		+ ['O_UGV_01_rcws_F'];
 _u = _u		+ ['rhs_zil131_msv'];
-_u = _u		+ ['rhs_btr70_msv'];
-_u = _u		+ ['rhs_btr80_msv'];
-_u = _u		+ ['rhs_btr80a_msv'];
 _u = _u		+ ['RHS_BM21_MSV_01'];
-_u = _u 	+ ["rhs_9k79_B"];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_LIGHT], _u];
 
 //if(CTI_SHOPS_HEAVY==1) then {
-_u 			= ["rhs_pts_vmf"];
+_u			= ['rhs_btr70_msv'];
+_u = _u		+ ['rhs_btr80_msv'];
+_u = _u		+ ['rhs_btr80a_msv'];
+_u = _u		+ ["rhs_pts_vmf"];
 _u = _u		+ ['rhs_bmp1_msv'];
 _u = _u		+ ["rhs_bmp1k_msv"];
 _u = _u		+ ["rhs_bmp1p_msv"];
@@ -150,6 +149,7 @@ _u = _u		+ ["rhs_t14_tv"];
 _u = _u		+ ["rhs_zsu234_aa"];
 _u = _u 	+ ["rhs_2s1_tv"];
 _u = _u 	+ ["rhs_2s3_tv"];
+_u = _u 	+ ["rhs_9k79_B"];
 //} else {
 //};
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_HEAVY], _u];
