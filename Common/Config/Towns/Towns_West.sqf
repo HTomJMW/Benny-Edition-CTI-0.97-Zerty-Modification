@@ -18,7 +18,7 @@ with missionNamespace do {
 	WEST_SOLDIER_TEAMLEADER = ["rhsusf_army_ocp_rifleman_m16", 1];
 
 	//--- Vehicles
-	WEST_MOTORIZED_MG = [["rhsusf_m1043_d_m2", 2], ["B_LSV_01_armed_F", 2]];
+	WEST_MOTORIZED_MG = [["rhsusf_m1043_d_m2", 2], ["rhsusf_m1240a1_m2_usarmy_d", 2]];
 	WEST_MOTORIZED_GL = ["rhsusf_m1043_d_mk19", 2];
 	WEST_MOTORIZED_AT = ["rhsusf_m1045_d", 2];
 

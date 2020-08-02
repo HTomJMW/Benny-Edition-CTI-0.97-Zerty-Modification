@@ -23,7 +23,8 @@ missionNamespace setVariable [format["CTI_%1_Vehicles_Startup", _side], [
 		["rhs_acc_1p63", 2],
 		["rhs_acc_ekp8_02", 1],
 		["Toolkit", 3],
-		["rhs_assault_umbts", 4],
+		["rhs_sidor", 3],
+		["rhs_assault_umbts", 2],
 		["rhssaf_zrak_rd7j", 2]
 	]]/*,
 	["O_MRAP_02_F", [
@@ -81,8 +82,6 @@ _u = _u		+ ["I_C_Offroad_02_AT_F"];
 _u = _u		+ ["O_G_Offroad_01_F"];
 _u = _u		+ ["O_G_Offroad_01_armed_F"];
 _u = _u		+ ["O_G_Offroad_01_AT_F"];
-_u = _u		+ ["O_G_Van_02_transport_F"];
-_u = _u		+ ["O_G_Van_02_vehicle_F"];
 _u = _u		+ ['rhs_gaz66o_msv'];
 _u = _u		+ ['rhs_zil131_open_msv'];
 _u = _u		+ ['RHS_Ural_Open_MSV_01'];
@@ -90,8 +89,12 @@ _u = _u		+ ['RHS_Ural_MSV_01'];
 _u = _u		+ ['RHS_Ural_Zu23_MSV_01'];
 _u = _u		+ ['rhs_kamaz5350_open_msv'];
 _u = _u		+ ['rhs_kamaz5350_msv'];
+_u = _u		+ ['rhs_kamaz5350_flatbed_msv'];
 _u = _u		+ ['rhs_uaz_open_MSV_01'];
 _u = _u		+ ['RHS_UAZ_MSV_01'];
+_u = _u		+ ['rhsgref_cdf_reg_uaz_dshkm'];
+_u = _u		+ ['rhsgref_cdf_reg_uaz_ags'];
+_u = _u		+ ['rhsgref_cdf_reg_uaz_spg9'];
 _u = _u		+ ['rhs_tigr_msv'];
 _u = _u		+ ['rhs_tigr_m_msv'];
 _u = _u		+ ['rhs_tigr_sts_msv'];
@@ -99,11 +102,9 @@ _u = _u		+ ['rhsgref_BRDM2UM_msv'];
 _u = _u		+ ['rhsgref_BRDM2_HQ_msv'];
 _u = _u		+ ['rhsgref_BRDM2_msv'];
 _u = _u		+ ['rhsgref_BRDM2_ATGM_msv'];
-_u = _u		+ ['O_LSV_02_unarmed_F'];
-_u = _u		+ ['O_LSV_02_armed_F'];
-_u = _u		+ ['O_LSV_02_AT_F'];
 _u = _u		+ ['O_UGV_01_F'];
 _u = _u		+ ['O_UGV_01_rcws_F'];
+_u = _u		+ ['rhs_gaz66_ap2_msv'];
 _u = _u		+ ['rhs_zil131_msv'];
 _u = _u		+ ['RHS_BM21_MSV_01'];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_LIGHT], _u];
@@ -177,9 +178,9 @@ _u = _u		+ ['O_UAV_02_CAS_F'];
 _u = _u		+ ['O_UAV_02_dynamicLoadout_F'];
 _u = _u		+ ['O_T_UAV_04_CAS_F'];
 _u = _u 	+ ["RHS_TU95MS_vvs_old"];
-_u = _u		+ ['Land_Pod_Heli_Transport_04_medevac_F'];
-_u = _u		+ ['Land_Pod_Heli_Transport_04_covered_F'];
-_u = _u		+ ['Land_Pod_Heli_Transport_04_bench_F'];
+_u = _u		+ ['Land_Pod_Heli_Transport_04_medevac_black_F'];
+_u = _u		+ ['Land_Pod_Heli_Transport_04_covered_black_F'];
+_u = _u		+ ['Land_Pod_Heli_Transport_04_bench_black_F'];
 //} else {
 //};
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_AIR], _u];
@@ -189,12 +190,12 @@ _u = _u		+ ["RHS_Ural_Repair_MSV_01"];
 _u = _u 	+ ["rhs_typhoon_vdv"];
 _u = _u		+ ["CTI_Salvager_East"];
 _u = _u		+ ["RHS_Ural_Fuel_MSV_01"];
-_u = _u		+ ["Land_Pod_Heli_Transport_04_repair_F"];
-_u = _u		+ ["Land_Pod_Heli_Transport_04_fuel_F"];
+_u = _u		+ ["Land_Pod_Heli_Transport_04_repair_black_F"];
+_u = _u		+ ["Land_Pod_Heli_Transport_04_fuel_black_F"];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_REPAIR], _u];
 
 _u 			= ["rhs_gaz66_ammo_msv"];
-_u = _u		+ ["Land_Pod_Heli_Transport_04_ammo_F"];
+_u = _u		+ ["Land_Pod_Heli_Transport_04_ammo_black_F"];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_AMMO], _u];
 
 _u 			= ['C_Scooter_Transport_01_F'];
@@ -202,11 +203,10 @@ _u = _u		+ ['O_Boat_Transport_01_F'];
 _u = _u		+ ['O_Boat_Armed_01_hmg_F'];
 _u = _u 	+ ["rhs_bmk_t"];
 _u = _u		+ ['O_SDV_01_F'];
-_u = _u		+ ['C_Boat_Civil_01_police_F'];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_NAVAL], _u];
 
 //--- Units - FLAG
-_u = ['O_Soldier_F'];
+_u = ['rhs_msv_emr_rifleman'];
 _u = _u		+ ['O_supplyCrate_F'];
 _u = _u		+ ['O_Quadbike_01_F'];
 _u = _u		+ ['O_G_Offroad_01_F'];

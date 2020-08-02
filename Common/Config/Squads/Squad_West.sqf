@@ -24,7 +24,7 @@ missionNamespace setVariable [format["CTI_SQUADS_%1_KIND_AIR", _side], ["AirAtta
 
 _v = _v		+ ["Infantry"];
 _t = _t		+ ["Infantry"];
-_p = _p		+ [[["rhsusf_army_ocp_rifleman", 5], ["rhsusf_army_ocp_autorifleman", 2, 80], ["rhsusf_army_ocp_medic", 1], ["rhsusf_army_ocp_riflemanat", 1, 70], ["B_Soldier_GL_F", 2, 90], ["B_sniper_F", 1, 70], ["B_soldier_M_F", 1, 55]]];
+_p = _p		+ [[["rhsusf_army_ocp_rifleman", 5], ["rhsusf_army_ocp_autorifleman", 2, 80], ["rhsusf_army_ocp_medic", 1], ["rhsusf_army_ocp_riflemanat", 1, 70], ["rhsusf_army_ocp_grenadier", 2, 90], ["rhsusf_army_ocp_sniper", 1, 70], ["rhsusf_army_ocp_marksman", 1, 55]]];
 _f = _f		+ [CTI_BARRACKS];
 _m = _m		+ [500];
 _c = _c		+ ["Infantry"];

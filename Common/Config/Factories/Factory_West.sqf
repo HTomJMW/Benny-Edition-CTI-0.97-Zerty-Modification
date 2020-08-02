@@ -23,7 +23,8 @@ missionNamespace setVariable [format["CTI_%1_Vehicles_Startup", _side], [
 		["rhsusf_acc_eotech_552", 2],
 		["rhsusf_acc_mrds", 1],
 		["Toolkit", 3],
-		["rhsusf_assault_eagleaiii_ocp", 4],
+		["rhsusf_falconii_mc", 3],
+		["rhsusf_assault_eagleaiii_ocp", 2],
 		["rhsusf_bino_m24", 2]
 	]]/*,
 	["B_MRAP_01_F", [
@@ -78,14 +79,14 @@ _u = _u		+ ["I_C_Offroad_02_AT_F"];
 _u = _u		+ ["B_G_Offroad_01_F"];
 _u = _u		+ ["B_G_Offroad_01_armed_F"];
 _u = _u		+ ["B_G_Offroad_01_AT_F"];
-_u = _u		+ ["B_G_Van_02_transport_F"];
-_u = _u		+ ["B_G_Van_02_vehicle_F"];
 _u = _u		+ ["rhsusf_M1078A1P2_D_fmtv_usarmy"];
 _u = _u		+ ["rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy"];
-_u = _u		+ ["rhsusf_m1043_d"];
+_u = _u		+ ["rhsusf_M1078A1R_SOV_M2_D_fmtv_socom"];
+_u = _u		+ ["rhsusf_M1084A1P2_D_fmtv_usarmy"];
 _u = _u		+ ["rhsusf_m998_d_4dr_halftop"];
 _u = _u		+ ["rhsusf_m998_d_2dr"];
 _u = _u		+ ["rhsusf_m998_d_2dr_fulltop"];
+_u = _u		+ ["rhsusf_m1043_d"];
 _u = _u		+ ["rhsusf_m1043_d_m2"];
 _u = _u		+ ["rhsusf_m1043_d_mk19"];
 _u = _u		+ ["rhsusf_m1045_d"];
@@ -115,13 +116,11 @@ _u = _u		+ ["rhsusf_M1232_MK19_usarmy_d"];
 _u = _u		+ ["rhsusf_M1237_M2_usarmy_d"];
 _u = _u		+ ["rhsusf_M1237_MK19_usarmy_d"];
 _u = _u		+ ['rhsusf_mrzr4_d'];
-_u = _u		+ ['B_CTRG_LSV_01_light_F'];
-_u = _u		+ ['B_LSV_01_unarmed_F'];
-_u = _u		+ ['B_LSV_01_armed_F'];
-_u = _u		+ ['B_LSV_01_AT_F'];
 _u = _u		+ ["B_UGV_01_F"];
 _u = _u		+ ["B_UGV_01_rcws_F"];
+_u = _u		+ ["rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy"];
 _u = _u  	+ ["rhsusf_M1083A1P2_D_fmtv_usarmy"];
+_u = _u  	+ ["rhsusf_M1230a1_usarmy_d"];
 _u = _u		+ ['rhsusf_M142_usarmy_D'];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_LIGHT], _u];
 
@@ -154,6 +153,9 @@ missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_HEAVY], _u];
 _u 			= ["RHS_MELB_H6M"];
 _u = _u		+ ["RHS_MELB_MH6M"];
 _u = _u		+ ["RHS_MELB_AH6M"];
+_u = _u		+ ["rhs_uh1h_hidf_unarmed"];
+_u = _u		+ ["rhs_uh1h_hidf"];
+_u = _u		+ ["rhs_uh1h_hidf_gunship"];
 _u = _u		+ ["RHS_UH60M2_d"];
 _u = _u		+ ["RHS_UH60M_ESSS_d"];
 _u = _u		+ ["RHS_UH60M_d"];
@@ -172,12 +174,12 @@ _u = _u		+ ["rhsusf_f22"];
 _u = _u		+ ["RHS_C130J"];
 _u = _u		+ ["RHS_C130J_Cargo"];
 _u = _u		+ ['B_Slingload_01_Medevac_F'];
-_u = _u		+ ['Land_Device_slingloadable_F'];
 //} else {
 //};
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_AIR], _u];
 
 _u 			= ["rhsusf_M977A4_REPAIR_usarmy_d"];
+_u = _u		+ ["rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d"];
 _u = _u		+ ["CTI_Salvager_West"];
 _u = _u		+ ["rhsusf_M978A4_usarmy_d"];
 _u = _u		+ ['B_Slingload_01_Repair_F'];
@@ -185,6 +187,7 @@ _u = _u		+ ['B_Slingload_01_Fuel_F'];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_REPAIR], _u];
 
 _u 			= ["rhsusf_M977A4_AMMO_usarmy_d"];
+_u = _u		+ ["rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d"];
 _u = _u		+ ['B_Slingload_01_Ammo_F'];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_AMMO], _u];
 
@@ -192,11 +195,10 @@ _u 			= ["C_Scooter_Transport_01_F"];
 _u = _u		+ ["B_Boat_Transport_01_F"];
 _u = _u		+ ["rhsusf_mkvsoc"];
 _u = _u		+ ["B_SDV_01_F"];
-_u = _u		+ ["C_Boat_Civil_01_rescue_F"];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_NAVAL], _u];
 
 //--- Units - FLAG
-_u = ['B_Soldier_F'];
+_u = ['rhsusf_army_ocp_rifleman'];
 _u = _u		+ ['B_supplyCrate_F'];
 _u = _u		+ ['B_Quadbike_01_F'];
 _u = _u		+ ['B_G_Offroad_01_F'];

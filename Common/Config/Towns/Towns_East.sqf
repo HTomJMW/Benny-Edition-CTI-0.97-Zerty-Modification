@@ -18,7 +18,7 @@ with missionNamespace do {
 	EAST_SOLDIER_TEAMLEADER = ["O_R_Patrol_Soldier_M_F", 1];
 
 	//--- Vehicles
-	EAST_MOTORIZED_MG = [["rhs_tigr_m_msv", 2], ["O_LSV_02_armed_F", 2]];
+	EAST_MOTORIZED_MG = [["rhs_tigr_m_msv", 2], ["rhsgref_cdf_reg_uaz_dshkm", 2]];
 	EAST_MOTORIZED_GL = ["rhs_tigr_sts_msv", 2];
 	EAST_MOTORIZED_AT = ["rhsgref_BRDM2_ATGM_msv", 2];
 

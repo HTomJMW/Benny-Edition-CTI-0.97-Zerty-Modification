@@ -374,24 +374,6 @@ _u = _u + [1];
 _f = _f + [4];
 _s = _s + [""];
 
-_c = _c + ['B_G_Van_02_transport_F'];
-_p = _p + [''];
-_n = _n + [''];
-_o = _o + [250];
-_t = _t + [15];
-_u = _u + [1];
-_f = _f + [4];
-_s = _s + [""];
-
-_c = _c + ['B_G_Van_02_vehicle_F'];
-_p = _p + [''];
-_n = _n + ['Van Cargo (can load statics)'];
-_o = _o + [250];
-_t = _t + [15];
-_u = _u + [1];
-_f = _f + [4];
-_s = _s + [""];
-
 _c = _c + ['rhsusf_M1078A1P2_D_fmtv_usarmy'];
 _p = _p + [''];
 _n = _n + [''];
@@ -405,6 +387,24 @@ _c = _c + ['rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [750];
+_t = _t + [15];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_M1078A1R_SOV_M2_D_fmtv_socom'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [700];
+_t = _t + [15];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_M1084A1P2_D_fmtv_usarmy'];
+_p = _p + [''];
+_n = _n + ['M1084A1P2 (can load cannon)'];
+_o = _o + [400];
 _t = _t + [15];
 _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
@@ -698,15 +698,6 @@ _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
-_c = _c + ['B_CTRG_LSV_01_light_F'];
-_p = _p + [''];
-_n = _n + [''];
-_o = _o + [300];
-_t = _t + [20];
-_u = _u + [1];
-_f = _f + [CTI_FACTORY_LIGHT];
-_s = _s + [""];
-
 _c = _c + ['rhsusf_mrzr4_d'];
 _p = _p + [''];
 _n = _n + [''];
@@ -716,37 +707,28 @@ _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
-_c = _c + ['B_LSV_01_unarmed_F'];
+_c = _c + ['rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy'];
 _p = _p + [''];
-_n = _n + [''];
-_o = _o + [400];
+_n = _n + ["M1085A1P2 respawn truck + Equipment"];
+_o = _o + [2200];
 _t = _t + [20];
 _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
-_s = _s + [""];
-
-_c = _c + ['B_LSV_01_armed_F'];
-_p = _p + [''];
-_n = _n + [''];
-_o = _o + [650];
-_t = _t + [20];
-_u = _u + [1];
-_f = _f + [CTI_FACTORY_LIGHT];
-_s = _s + [""];
-
-_c = _c + ['B_LSV_01_AT_F'];
-_p = _p + [''];
-_n = _n + [''];
-_o = _o + [1600];
-_t = _t + [20];
-_u = _u + [1];
-_f = _f + [CTI_FACTORY_LIGHT];
-_s = _s + [""];
+_s = _s + ["service-medic"];
 
 _c = _c + ['rhsusf_M1083A1P2_D_fmtv_usarmy'];
 _p = _p + [''];
-_n = _n + ["Mobile respawn truck + Equipment"];
+_n = _n + ["M1083A1P2 respawn truck + Equipment"];
 _o = _o + [2500];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + ["service-medic"];
+
+_c = _c + ['rhsusf_M1230a1_usarmy_d'];
+_p = _p + [''];
+_n = _n + ["M1230a1 respawn truck + Equipment"];
+_o = _o + [2800];
 _t = _t + [20];
 _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
@@ -968,6 +950,15 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_REPAIR];
 _s = _s + ["service-repairtruck"];
 
+_c = _c + ['rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [1250];
+_t = _t + [25];
+_u = _u + [0];
+_f = _f + [CTI_FACTORY_REPAIR];
+_s = _s + ["service-repairtruck"];
+
 _c = _c + ['CTI_Salvager_West'];
 _p = _p + [''];
 _n = _n + ['Salvage Truck'];
@@ -1018,6 +1009,15 @@ _c = _c + ['rhsusf_M977A4_AMMO_usarmy_d'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [4000];
+_t = _t + [25];
+_u = _u + [0];
+_f = _f + [CTI_FACTORY_AMMO];
+_s = _s + ["service-ammotruck"];
+
+_c = _c + ['rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [4250];
 _t = _t + [25];
 _u = _u + [0];
 _f = _f + [CTI_FACTORY_AMMO];
@@ -1112,6 +1112,33 @@ _t = _t + [35];
 _u = _u + [0];
 _f = _f + [CTI_FACTORY_AIR];
 _s = _s + [""];*/
+
+_c = _c + ['rhs_uh1h_hidf_unarmed'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [5500];
+_t = _t + [40];
+_u = _u + [0];
+_f = _f + [CTI_FACTORY_AIR];
+_s = _s + [""];
+
+_c = _c + ['rhs_uh1h_hidf'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [6000];
+_t = _t + [40];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_AIR];
+_s = _s + [""];
+
+_c = _c + ["rhs_uh1h_hidf_gunship"];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [6500];
+_t = _t + [40];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_AIR];
+_s = _s + [""];
 
 _c = _c + ['RHS_UH60M2_d'];
 _p = _p + [''];
@@ -1251,7 +1278,7 @@ _s = _s + [""];
 _c = _c + ['rhsusf_mkvsoc'];
 _p = _p + [''];
 _n = _n + [''];
-_o = _o + [750];
+_o = _o + [900];
 _t = _t + [25];
 _u = _u + [0];
 _f = _f + [CTI_FACTORY_NAVAL];

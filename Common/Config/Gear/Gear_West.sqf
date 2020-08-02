@@ -428,6 +428,10 @@ _i = _i		+ ["rhs_mag_M4009"];
 _u = _u		+ [1];
 _p = _p		+ [20];
 
+_i = _i		+ ["rhs_mag_an_m8hc"];
+_u = _u		+ [1];
+_p = _p		+ [20];
+
 _i = _i		+ ["rhs_mag_an_m14_th3"];
 _u = _u		+ [1];
 _p = _p		+ [20];
@@ -437,6 +441,18 @@ _u = _u		+ [1];
 _p = _p		+ [20];
 
 _i = _i		+ ["rhs_mine_M19_mag"];
+_u = _u		+ [1];
+_p = _p		+ [20];
+
+_i = _i		+ ["rhsusf_mine_m49a1_3m_mag"];
+_u = _u		+ [1];
+_p = _p		+ [20];
+
+_i = _i		+ ["rhsusf_mine_m49a1_6m_mag"];
+_u = _u		+ [1];
+_p = _p		+ [20];
+
+_i = _i		+ ["rhsusf_mine_m49a1_10m_mag"];
 _u = _u		+ [1];
 _p = _p		+ [20];
 
@@ -541,10 +557,6 @@ _u = _u		+ [2];
 _p = _p		+ [300];
 
 _i = _i		+ ["rhs_mag_maaws_HEAT"];
-_u = _u		+ [2];
-_p = _p		+ [300];
-
-_i = _i		+ ["rhs_mag_maaws_ILLUM"];
 _u = _u		+ [2];
 _p = _p		+ [300];
 

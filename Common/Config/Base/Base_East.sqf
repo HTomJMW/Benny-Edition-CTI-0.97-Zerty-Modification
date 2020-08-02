@@ -22,11 +22,11 @@ missionNamespace setVariable [format["CTI_%1_Commander_Path", _side], [
 	["upgrade", [CTI_UPGRADE_GEAR, 1], {true}],
 	["upgrade", [CTI_UPGRADE_LIGHT, 1], {true}],
 	["upgrade", [CTI_UPGRADE_TOWNS, 1], {true}],
-	["upgrade", [CTI_UPGRADE_GEAR, 2], {true}],
+	["upgrade", [CTI_UPGRADE_NETR, 1], {true}],
 	["build-structures", CTI_HEAVY, {true}],
 	["build-structures", CTI_REPAIR, {true}],
 	["build-structures", CTI_AMMO, {true}],
-	["upgrade", [CTI_UPGRADE_NETR, 1], {true}],
+	["upgrade", [CTI_UPGRADE_GEAR, 2], {true}],
 	["upgrade", [CTI_UPGRADE_HEAVY, 1], {true}],
 	["upgrade", [CTI_UPGRADE_TOWNS, 2], {true}],
 	["upgrade", [CTI_UPGRADE_NETR, 2], {true}],
@@ -67,9 +67,9 @@ missionNamespace setVariable [format["CTI_%1_Commander_Path", _side], [
 	["upgrade", [CTI_UPGRADE_REST, 5], {true}],
 	["upgrade", [CTI_UPGRADE_EXPI, 3], {true}],
 
-	["upgrade", [CTI_UPGRADE_AAF, 4], {true}],
-	["upgrade", [CTI_UPGRADE_AAF, 5], {true}],
-	["upgrade", [CTI_UPGRADE_AAF, 6], {true}],
+	//["upgrade", [CTI_UPGRADE_AAF, 4], {true}],
+	//["upgrade", [CTI_UPGRADE_AAF, 5], {true}],
+	//["upgrade", [CTI_UPGRADE_AAF, 6], {true}],
 
 	["upgrade", [CTI_UPGRADE_HEAVY, 2], {true}],
 	["upgrade", [CTI_UPGRADE_SATELLITE, 1], {true}]

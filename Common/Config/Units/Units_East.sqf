@@ -409,24 +409,6 @@ _u = _u + [1];
 _f = _f + [4];
 _s = _s + [""];
 
-_c = _c + ['O_G_Van_02_transport_F'];
-_p = _p + [''];
-_n = _n + [''];
-_o = _o + [250];
-_t = _t + [15];
-_u = _u + [1];
-_f = _f + [4];
-_s = _s + [""];
-
-_c = _c + ['O_G_Van_02_vehicle_F'];
-_p = _p + [''];
-_n = _n + ['Van Cargo (can load statics)'];
-_o = _o + [250];
-_t = _t + [15];
-_u = _u + [1];
-_f = _f + [4];
-_s = _s + [""];
-
 _c = _c + ['rhs_gaz66o_msv'];
 _p = _p + [''];
 _n = _n + [''];
@@ -463,6 +445,15 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
+_c = _c + ['rhs_gaz66_zu23_msv'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [2800];
+_t = _t + [25];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
 _c = _c + ['RHS_Ural_Zu23_MSV_01'];
 _p = _p + [''];
 _n = _n + [''];
@@ -490,6 +481,15 @@ _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
+_c = _c + ['rhs_kamaz5350_flatbed_msv'];
+_p = _p + [''];
+_n = _n + ['KamAZ-5350 (can load cannon)'];
+_o = _o + [400];
+_t = _t + [15];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
 _c = _c + ['rhs_uaz_open_MSV_01'];
 _p = _p + [''];
 _n = _n + [''];
@@ -505,6 +505,33 @@ _n = _n + [''];
 _o = _o + [300];
 _t = _t + [15];
 _u = _u + [0];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsgref_cdf_reg_uaz_dshkm'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [400];
+_t = _t + [15];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsgref_cdf_reg_uaz_ags'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [400];
+_t = _t + [15];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsgref_cdf_reg_uaz_spg9'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [400];
+_t = _t + [15];
+_u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
@@ -528,7 +555,7 @@ _s = _s + [""];
 
 _c = _c + ['rhs_tigr_sts_msv'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['GAZ-233014 (Armed)'];
 _o = _o + [650];
 _t = _t + [15];
 _u = _u + [1];
@@ -571,33 +598,6 @@ _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
-_c = _c + ['O_LSV_02_unarmed_F'];
-_p = _p + [''];
-_n = _n + [''];
-_o = _o + [400];
-_t = _t + [20];
-_u = _u + [1];
-_f = _f + [CTI_FACTORY_LIGHT];
-_s = _s + [""];
-
-_c = _c + ['O_LSV_02_armed_F'];
-_p = _p + [''];
-_n = _n + [''];
-_o = _o + [600];
-_t = _t + [20];
-_u = _u + [1];
-_f = _f + [CTI_FACTORY_LIGHT];
-_s = _s + [""];
-
-_c = _c + ['O_LSV_02_AT_F'];
-_p = _p + [''];
-_n = _n + [''];
-_o = _o + [1500];
-_t = _t + [20];
-_u = _u + [1];
-_f = _f + [CTI_FACTORY_LIGHT];
-_s = _s + [""];
-
 _c = _c + ['O_UGV_01_F'];
 _p = _p + [''];
 _n = _n + [''];
@@ -616,9 +616,18 @@ _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
+_c = _c + ['rhs_gaz66_ap2_msv'];
+_p = _p + [''];
+_n = _n + ["GAZ-66 respawn Truck + Equipment"];
+_o = _o + [2200];
+_t = _t + [25];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + ["service-medic"];
+
 _c = _c + ['rhs_zil131_msv'];
 _p = _p + [''];
-_n = _n + ["Mobile respawn Truck + Equipment"];
+_n = _n + ["ZiL-131 respawn Truck + Equipment"];
 _o = _o + [2500];
 _t = _t + [25];
 _u = _u + [1];
@@ -1057,7 +1066,7 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_REPAIR];
 _s = _s + ["service-fueltruck"];
 
-_c = _c + ["Land_Pod_Heli_Transport_04_repair_F"];
+_c = _c + ["Land_Pod_Heli_Transport_04_repair_black_F"];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [750];
@@ -1066,7 +1075,7 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_REPAIR];
 _s = _s + ["service-repairtruck"];
 
-_c = _c + ["Land_Pod_Heli_Transport_04_fuel_F"];
+_c = _c + ["Land_Pod_Heli_Transport_04_fuel_black_F"];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [550];
@@ -1085,7 +1094,7 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_AMMO];
 _s = _s + ["service-ammotruck"];
 
-_c = _c + ["Land_Pod_Heli_Transport_04_ammo_F"];
+_c = _c + ["Land_Pod_Heli_Transport_04_ammo_black_F"];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [3000];
@@ -1311,16 +1320,7 @@ _u = _u + [1];
 _f = _f + [CTI_FACTORY_AIR];
 _s = _s + [""];
 
-_c = _c + ['O_Heli_Transport_04_F'];
-_p = _p + [''];
-_n = _n + [''];
-_o = _o + [6000];
-_t = _t + [35];
-_u = _u + [0];
-_f = _f + [CTI_FACTORY_AIR];
-_s = _s + [""];
-
-_c = _c + ["Land_Pod_Heli_Transport_04_bench_F"];
+_c = _c + ["Land_Pod_Heli_Transport_04_bench_black_F"];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [550];
@@ -1329,7 +1329,7 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_AIR];
 _s = _s + [""];
 
-_c = _c + ["Land_Pod_Heli_Transport_04_covered_F"];
+_c = _c + ["Land_Pod_Heli_Transport_04_covered_black_F"];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [750];
@@ -1338,7 +1338,7 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_AIR];
 _s = _s + [""];
 
-_c = _c + ["Land_Pod_Heli_Transport_04_medevac_F"];
+_c = _c + ["Land_Pod_Heli_Transport_04_medevac_black_F"];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [6000];
@@ -1464,7 +1464,7 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_TOWN];
 _s = _s + [""];
 
-_c = _c + ['Land_Pod_Heli_Transport_04_box_F'];
+_c = _c + ['Land_Pod_Heli_Transport_04_box_black_F'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [0];

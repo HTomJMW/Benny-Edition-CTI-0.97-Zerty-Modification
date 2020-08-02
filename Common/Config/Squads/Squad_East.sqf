@@ -64,7 +64,7 @@ _s = _s		+ [[]];
 
 _v = _v		+ ["Motorized"];
 _t = _t		+ ["Motorized - MPRAP"];
-_p = _p		+ [[["rhsgref_BRDM2_msv", 3], ["rhs_tigr_sts_vdv", 2, 75]]];
+_p = _p		+ [[["rhsgref_BRDM2_msv", 3], ["rhs_tigr_sts_msv", 2, 75]]];
 _f = _f		+ [CTI_LIGHT];
 _m = _m		+ [1200];
 _c = _c		+ ["Motorized"];
