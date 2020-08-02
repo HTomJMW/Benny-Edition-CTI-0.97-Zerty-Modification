@@ -149,6 +149,9 @@ if (_defense isKindOf "B_Radar_System_01_F" || _defense isKindOf "B_SAM_System_0
 	_defense setVehicleLock "LOCKED";
 };
 
+if (_defense isKindOf "O_Radar_System_02_F" || _defense isKindOf "O_SAM_System_04_F") then {
+	[_defense, ["JungleHex",1], nil] call BIS_fnc_initVehicle;
+};
 
 if (missionNamespace getVariable "CTI_TROPHY_APS" == 1) then {
 	_defense addEventHandler["Fired","_this call TR_HANDLER;"];
