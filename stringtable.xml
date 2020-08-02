@@ -1998,7 +1998,7 @@
 				<Russian>ST LOAD :: Обьект Выгружен : %1 из %2 </Russian>
 			</Key>
 			<Key ID="STR_ST_NotFound">
-				<Original>ST LOAD :: No Static/Crate found, it must be behind your offroad/van</Original>
+				<Original>ST LOAD :: No Static/Crate found, it must be behind your offroad/truck</Original>
 				<Russian>ST LOAD :: Нет обьектов, позади вашей машины, которые можно загрузить</Russian>
 			</Key>
 	</Package>
