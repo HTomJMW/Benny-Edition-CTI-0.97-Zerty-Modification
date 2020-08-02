@@ -248,11 +248,15 @@ if (isNull _created) then {
 		_vehicle setVelocity [0,0,1];
 	};
 
-	//Spawn with components [H]Tom
-	if (_vehicle isKindOf "Tank") then {
-		if (_vehicle isKindOf "rhsgref_ins_g_t72ba" || _vehicle isKindOf "rhsgref_ins_g_t72bb") then {
-				_vehicle setvariable ['rhs_t72_disableFlag', true]; // remove Flag
-		};
+	//Spawn with components and paints [H]Tom
+	if (_side == CTI_RESISTANCE_ID && (_vehicle isKindOf "rhsgref_ins_g_t72ba" || _vehicle isKindOf "rhsgref_ins_g_t72bb")) then {
+		_vehicle setvariable ['rhs_t72_disableFlag', true]; // remove Flag
+	};
+	if (_side == CTI_EAST_ID && (_vehicle isKindOf "rhsgref_cdf_reg_uaz_dshkm" || _vehicle isKindOf "rhsgref_cdf_reg_uaz_ags" || _vehicle isKindOf "rhsgref_cdf_reg_uaz_spg9")) then {
+		[_vehicle, ["standard",1], nil] call BIS_fnc_initVehicle; // paint cdf uaz to standard
+	};
+	if (_side == CTI_WEST_ID && (_vehicle isKindOf "rhsusf_stryker_m1126_m2_d" || _vehicle isKindOf "rhsusf_stryker_m1126_mk19_d" || _vehicle isKindOf "rhsusf_stryker_m1127_m2_d" || _vehicle isKindOf "rhsusf_stryker_m1132_m2_d" || _vehicle isKindOf "rhsusf_stryker_m1134_d")) then {
+		[_vehicle, ["Tan",1], nil] call BIS_fnc_initVehicle; // paint stryker to sand
 	};
 	/*if (_vehicle isKindOf "Wheeled_APC_F" || _vehicle isKindOf "Tank") then {
 		if (_vehicle isKindOf "I_APC_Wheeled_03_cannon_F") then {[_vehicle, nil, ["showTools",1]] call BIS_fnc_initVehicle;};
