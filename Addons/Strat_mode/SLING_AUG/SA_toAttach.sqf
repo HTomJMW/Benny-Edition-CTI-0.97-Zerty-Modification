@@ -1,4 +1,4 @@
-#define pods ["Land_Pod_Heli_Transport_04_ammo_F","Land_Pod_Heli_Transport_04_bench_F","Land_Pod_Heli_Transport_04_box_F","Land_Pod_Heli_Transport_04_repair_F","Land_Pod_Heli_Transport_04_medevac_F","Land_Pod_Heli_Transport_04_fuel_F"]
+#define pods ["Land_Pod_Heli_Transport_04_ammo_black_F","Land_Pod_Heli_Transport_04_bench_black_F","Land_Pod_Heli_Transport_04_box_black_F","Land_Pod_Heli_Transport_04_repair_black_F","Land_Pod_Heli_Transport_04_medevac_black_F","Land_Pod_Heli_Transport_04_fuel_black_F"]
 #define taru "O_Heli_Transport_04_F"
 #define offset [0,-1,-1]
 #define min_length 1

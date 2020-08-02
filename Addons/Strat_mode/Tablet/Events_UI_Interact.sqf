@@ -255,7 +255,7 @@ switch (_action) do {
 			    	};
 			    };
 			    case 19: { // CTI_Icon_load //ok
-			    	if (vehicle player != player && driver vehicle player ==player && (_target iskindof "I_G_Offroad_01_F" || _target iskindOf "B_G_Van_02_vehicle_F" || _target iskindOf "O_G_Van_02_vehicle_F") && speed _target <1 && speed _target >-1 && alive _target &&  !(missionNameSpace getVariable ["STATIC_TRY",false])) then  {
+			    	if (vehicle player != player && driver vehicle player ==player && (_target iskindof "rhs_kamaz5350_flatbed_msv" || _target iskindOf "rhsusf_M1084A1P2_D_fmtv_usarmy" || _target iskindOf "O_G_Van_02_vehicle_F") && speed _target <1 && speed _target >-1 && alive _target &&  !(missionNameSpace getVariable ["STATIC_TRY",false])) then  {
 			    		((uiNamespace getVariable "cti_dialog_ui_interractions") displayCtrl (511000+_i)) ctrlSetTextColor [0,0,1,1];
 			    		((uiNamespace getVariable "cti_dialog_ui_interractions") displayCtrl (511000+_i)) ctrlSetPosition [_base_x+(_offset*_base_w),_base_y+_h_offset*_base_h,_base_w,_base_h];
 			    		_offset=_offset+1;
@@ -317,7 +317,7 @@ switch (_action) do {
 			    case 25: { // CTI_Icon_pack
 			    	_hqs=[];
 					//{_hqs set [count _hqs, _x call CTI_CO_FNC_GetSideHQ];true} count [east,west];
-			    	if (vehicle player == player && (_target iskindof "Tank" || _target iskindof "Wheeled_APC_F" || _target iskindof "Truck_F" || (typeof _target) in ["Land_Pod_Heli_Transport_04_box_F","B_Slingload_01_Cargo_F"])&& alive _target && !(_target in _hqs || _target isKindOf "UGV_02_Base_F")) then  {
+			    	if (vehicle player == player && (_target iskindof "Tank" || _target iskindof "Wheeled_APC_F" || _target iskindof "Truck_F" || (typeof _target) in ["Land_Pod_Heli_Transport_04_box_black_F","B_Slingload_01_Cargo_F"])&& alive _target && !(_target in _hqs || _target isKindOf "UGV_02_Base_F")) then  {
 			    		if (({alive _x} count (crew _target) == 0) && abs (speed _target) <1 && locked _target <2 ) then {
 			    			((uiNamespace getVariable "cti_dialog_ui_interractions") displayCtrl (511000+_i)) ctrlSetTextColor [0,0,1,1];
 			    		} else {
@@ -332,7 +332,7 @@ switch (_action) do {
 			    };
 			    case 26: { // CTI_Icon_attach
 			    	if (vehicle player != player && driver vehicle player ==player && (typeof _target) == "O_Heli_Transport_04_F"  ) then  {
-			    		if (isNull (getSlingLoad _target) || !((typeof (getSlingLoad _target)) in ["Land_Pod_Heli_Transport_04_fuel_F","Land_Pod_Heli_Transport_04_ammo_F","Land_Pod_Heli_Transport_04_bench_F","Land_Pod_Heli_Transport_04_box_F","Land_Pod_Heli_Transport_04_covered_F","Land_Pod_Heli_Transport_04_repair_F","Land_Pod_Heli_Transport_04_medevac_F"])) then {((uiNamespace getVariable "cti_dialog_ui_interractions") displayCtrl (511000+_i)) ctrlSetTextColor [0.3,0.3,0.3,1];} else {
+			    		if (isNull (getSlingLoad _target) || !((typeof (getSlingLoad _target)) in ["Land_Pod_Heli_Transport_04_fuel_black_F","Land_Pod_Heli_Transport_04_ammo_black_F","Land_Pod_Heli_Transport_04_bench_black_F","Land_Pod_Heli_Transport_04_box_black_F","Land_Pod_Heli_Transport_04_covered_black_F","Land_Pod_Heli_Transport_04_repair_black_F","Land_Pod_Heli_Transport_04_medevac_black_F"])) then {((uiNamespace getVariable "cti_dialog_ui_interractions") displayCtrl (511000+_i)) ctrlSetTextColor [0.3,0.3,0.3,1];} else {
 			    		((uiNamespace getVariable "cti_dialog_ui_interractions") displayCtrl (511000+_i)) ctrlSetTextColor [0,0,1,1];
 			    		};
 			    		((uiNamespace getVariable "cti_dialog_ui_interractions") displayCtrl (511000+_i)) ctrlSetPosition [_base_x+(_offset*_base_w),_base_y+_h_offset*_base_h,_base_w,_base_h];

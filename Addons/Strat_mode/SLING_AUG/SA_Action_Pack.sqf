@@ -1,7 +1,7 @@
 
 #define packing_time 40
 #define animation "ainvpknlmstpsnonwrfldnon_medic0s"
-#define packs ["Land_Pod_Heli_Transport_04_box_F","B_Slingload_01_Cargo_F"]
+#define packs ["Land_Pod_Heli_Transport_04_box_black_F","B_Slingload_01_Cargo_F"]
 
 private ["_caller","_started","_finished"];
 _caller=_this select 0;

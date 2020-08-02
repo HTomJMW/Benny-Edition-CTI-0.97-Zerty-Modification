@@ -1,4 +1,4 @@
-#define east_pack "Land_Pod_Heli_Transport_04_box_F"
+#define east_pack "Land_Pod_Heli_Transport_04_box_black_F"
 #define west_pack "B_Slingload_01_Cargo_F"
 #define stock_pos [100000,100000,100000]
 #define random_pos 10000
