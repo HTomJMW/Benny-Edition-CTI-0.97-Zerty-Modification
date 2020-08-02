@@ -192,6 +192,82 @@ CTI_LOADOUT_RHS_MELB_AH6M_MNT_OPTIONS =
 ];
 
 // ***************************
+// Heli - UH-1H (armed)
+// ***************************
+CTI_LOADOUT_rhs_uh1h_hidf_MNT_OPTIONS =
+[
+	[
+		"Pylon - configuration" ,
+		"pylon",
+		[
+			[
+				[ "rhs_weap_m240H_1" ,
+					[
+						[ "rhs_mag_762x51_M240_200_M80" , "1000" , [2] ]
+					]
+				]
+			],
+			[
+				[ "rhs_weap_m240H_2" ,
+					[
+						[ "rhs_mag_762x51_M240_200_M80" , "1000" , [1] ]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
+// Heli - UH-1H (gunship)
+// ***************************
+CTI_LOADOUT_rhs_uh1h_hidf_gunship_MNT_OPTIONS =
+[
+	[
+		"Pylon - configuration" ,
+		"pylon",
+		[
+			[
+				[ "rhs_weap_m240H_1" ,
+					[
+						[ "rhs_mag_762x51_M240_200_M80" , "1000" , [2] ]
+					]
+				]
+			],
+			[
+				[ "rhs_weap_m240H_2" ,
+					[
+						[ "rhs_mag_762x51_M240_200_M80" , "1000" , [1] ]
+					]
+				]
+			],
+			[
+				[ "pylon1" ,
+					[
+						[ "rhs_mag_M151_7" , "3000" ],
+						[ "rhs_mag_M151_19" , "4000" ],
+						[ "rhs_mag_M229_7" , "3000" ],
+						[ "rhs_mag_M229_19" , "4000" ],
+						[ "rhs_mag_M257_7" , "3000" ]
+					]
+				]
+			],
+			[
+				[ "pylon2" ,
+					[
+						[ "rhs_mag_M151_7" , "3000" ],
+						[ "rhs_mag_M151_19" , "4000" ],
+						[ "rhs_mag_M229_7" , "3000" ],
+						[ "rhs_mag_M229_19" , "4000" ],
+						[ "rhs_mag_M257_7" , "3000" ]
+					]
+				]
+			]
+		]
+	]
+];
+
+// ***************************
 // Heli - UH-60M
 // ***************************
 CTI_LOADOUT_RHS_UH60M2_d_MNT_OPTIONS =
