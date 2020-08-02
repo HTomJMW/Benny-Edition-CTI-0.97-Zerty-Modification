@@ -14,8 +14,8 @@ while {!CTI_GameOver} do
 		{
 			_x setAmmo [secondaryWeapon  _x, 1000000];
 			if ((typeOf _x )== "rhsgref_nat_grenadier_rpg" && count (backpackItems _x) ==0 ) then {
-				_x addItemToBackpack "rhs_rpg7_PG7V_mag";
-	   			_x addItemToBackpack "rhs_rpg7_PG7V_mag";
+				_x addItemToBackpack "rhs_rpg7_PG7VR_mag";
+	   			_x addItemToBackpack "rhs_rpg7_PG7VR_mag";
 			};
 			if ((typeOf _x )== "rhsgref_nat_specialist_aa" && count (backpackItems _x) ==0 ) then {
 				_x addItemToBackpack "rhs_mag_9k38_rocket";
