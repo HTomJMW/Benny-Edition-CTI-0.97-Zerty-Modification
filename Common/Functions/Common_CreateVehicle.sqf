@@ -255,6 +255,9 @@ if (isNull _created) then {
 	if (_side == CTI_EAST_ID && (_vehicle isKindOf "rhsgref_cdf_reg_uaz_dshkm" || _vehicle isKindOf "rhsgref_cdf_reg_uaz_ags" || _vehicle isKindOf "rhsgref_cdf_reg_uaz_spg9")) then {
 		[_vehicle, ["standard",1], nil] call BIS_fnc_initVehicle; // paint cdf uaz to standard
 	};
+	if (_side == CTI_EAST_ID && (_vehicle isKindOf "O_UGV_01_F" || _vehicle isKindOf "O_UGV_01_rcws_F")) then {
+		[_vehicle, ["Olive",1], nil] call BIS_fnc_initVehicle; // paint redfor UGV to green
+	};
 	if (_side == CTI_WEST_ID && (_vehicle isKindOf "rhsusf_stryker_m1126_m2_d" || _vehicle isKindOf "rhsusf_stryker_m1126_mk19_d" || _vehicle isKindOf "rhsusf_stryker_m1127_m2_d" || _vehicle isKindOf "rhsusf_stryker_m1132_m2_d" || _vehicle isKindOf "rhsusf_stryker_m1134_d")) then {
 		[_vehicle, ["Tan",1], nil] call BIS_fnc_initVehicle; // paint stryker to sand
 	};
@@ -352,7 +355,11 @@ if (_vehicle isKindOf "CargoNet_01_base_F") then {
 	clearItemCargoGlobal  _vehicle;
 };
 
-
+//change supply crate equipment
+if (_vehicle isKindOf "B_supplyCrate_F" || _vehicle isKindOf "O_supplyCrate_F") then {
+	_equipment = (missionNamespace getVariable format["CTI_%1_Supply_Crate", _t_side]);
+	if (count _equipment > 0) then {[_vehicle, _equipment] call CTI_CO_FNC_EquipVehicleCargoSpace;};
+};
 
 //AdminZeus
 
@@ -420,5 +427,24 @@ if (_vehicle  isKindOf "Helicopter") then {
 
 //_vehicle addEventHandler ["getIn", {if ((isplayer (_this select 2)) && ({isplayer _x} count (crew (_this select 0)))<2) exitwith {(_this select 2) assignAsCommander (_this select 0)}}];
 
+// additional actions
+if (_vehicle isKindOf "rhs_zil131_msv" || _vehicle isKindOf "rhsusf_M1083A1P2_D_fmtv_usarmy" || _vehicle isKindOf "rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy") then {
+	_text = "Treat at " + getText(configFile >> "CfgVehicles" >> typeOf _vehicle >> "displayName");
+	_action = _vehicle addAction [
+		_text,
+		{(_this select 1) action ["heal", (_this select 1)]; sleep 4; if (alive (_this select 1)) then {(_this select 1) setDammage 0;};},
+		nil,
+		1.5,
+		true,
+		true,
+		"",
+		"((getDammage _this) > 0) && (_this == vehicle _this) && (alive _target)",
+		5.5,
+		false,
+		"",
+		""
+	];
+	_vehicle setUserActionText [_action, _text, "<img size='2' image='\a3\ui_f\data\IGUI\Cfg\Actions\heal_ca'/>"];
+};
 
 _vehicle
