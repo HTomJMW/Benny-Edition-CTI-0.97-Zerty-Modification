@@ -4,11 +4,11 @@ respawnDelay = 10;
 respawnDialog = false;
 
 //--- Require briefing.html to show up.
-onLoadMission = "BECTI TANOA - Zerty/HTom/Yoshi_E 1.3.5.2";
+onLoadMission = "BECTI TANOA - Zerty/HTom/Yoshi_E 1.3.5.3";
 onLoadMissionTime = false;
 onLoadName = "BECTI TANOA - Zerty/HTom/Yoshi_E";
 
-briefingName = "BECTI TANOA - Zerty/HTom/Yoshi_E 1.3.5.2";
+briefingName = "BECTI TANOA - Zerty/HTom/Yoshi_E 1.3.5.3";
 
 //--- ArmA 3 Specifics
 dev = "Benny";
