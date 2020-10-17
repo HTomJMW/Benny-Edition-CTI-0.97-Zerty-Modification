@@ -11,6 +11,7 @@ STATIC_TRY=false;
 Attach_Static={
   _veh=_this select 0;
   _pl=_this select 1;
+  _NO=[];
   [_veh,_pl] call CTI_PVF_Request_Locality;
   waitUntil {(owner _veh) == (owner _pl)};
   if (!(_veh iskindOf "rhs_kamaz5350_flatbed_msv" || _veh iskindOf "rhsusf_M1084A1P2_D_fmtv_usarmy")) then {

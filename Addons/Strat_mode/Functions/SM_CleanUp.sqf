@@ -47,6 +47,15 @@ SM_CLEAN_GCONT= {
 			 (_x) spawn _timeout;
 			};
 		} forEach allMissionObjects "GroundWeaponHolder";
+		//remove used RHS launchers
+		{
+			if (isNil {_x getVariable "GC"} && count (WeaponCargo _x) > 0) then {
+				if ("_used" in ((WeaponCargo _x) select 0)) then {
+			 		_x setVariable ["GC",true];
+			 		(_x) spawn _timeout;
+			 	};
+			};
+		} forEach allMissionObjects "WeaponHolderSimulated";
 		sleep 10;
 	};
 };
