@@ -4,13 +4,15 @@ missionNamespace setVariable [format["CTI_%1_HQ", _side], "rhs_btr80_msv"];
 missionNamespace setVariable [format["CTI_%1_Factories", _side], ["Barracks","Light","Heavy","Air","Ammo","Repair"]];
 
 missionNamespace setVariable [format["CTI_%1_Base_Template", _side], [
-	[CTI_BARRACKS, 180, [-23,33]],
-	[CTI_LIGHT, 180, [23,33]],
-	[CTI_CONTROLCENTER, 0, [30,-40]],
-	[CTI_HEAVY, 0, [-30,-40]],
-	[CTI_AIR, 180, [-60,37]],
-	[CTI_REPAIR, 180, [60,37]],
-	[CTI_AMMO, 180, [80,37]]
+	[CTI_BARRACKS, 180, [60,0]],
+	[CTI_LIGHT, 180, [40,-40]],
+	[CTI_CONTROLCENTER, 0, [0,-60]],
+	[CTI_HEAVY, 0, [-40,-40]],
+	[CTI_AIR, 180, [-60,0]],
+	[CTI_REPAIR, 180, [-40,40]],
+	[CTI_AMMO, 180, [0,60]],
+	[CTI_RADAR, 0, [0,0]],
+	[CTI_NAVAL, 180, [40,40]]
 ]];
 
 //--- Commander course of action ["Action", Parameter(s), Condition]

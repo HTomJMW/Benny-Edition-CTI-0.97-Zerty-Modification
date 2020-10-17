@@ -39,6 +39,29 @@ missionNamespace setVariable [format["CTI_%1_Vehicles_Startup", _side], [
 
 ]];
 
+missionNamespace setVariable [format["CTI_%1_Supply_Crate", _side], [
+		["rhs_weap_hk416d145", 1],
+		["rhs_mag_30Rnd_556x45_M855A1_Stanag", 30],
+		["rhs_weap_hk416d145_m320", 2],
+		["rhsusf_acc_wmx_bk", 2],
+		["rhs_weap_M136", 4],
+		["rhs_weap_m72a7", 6],
+		["rhs_mag_m67", 12],
+		["rhs_mag_M441_HE", 6],
+		["firstaidkit", 10],
+		["rhs_mag_an_m8hc", 2],
+		["rhs_mag_m18_green", 2],
+		["Chemlight_blue", 2],
+		["Chemlight_green", 2],
+		["rhsusf_mag_17Rnd_9x19_JHP", 6],
+		["rhsusf_acc_EOTECH", 3],
+		["rhsusf_acc_eotech_552", 2],
+		["rhsusf_acc_mrds", 1],
+		["Toolkit", 1],
+		["rhsusf_falconii_mc", 2],
+		["rhsusf_bino_m24", 2]
+	]];
+
 //--- Units - Barracks
 
 _u = ["rhsusf_army_ocp_riflemanl"];
@@ -195,6 +218,7 @@ _u 			= ["C_Scooter_Transport_01_F"];
 _u = _u		+ ["B_Boat_Transport_01_F"];
 _u = _u		+ ["rhsusf_mkvsoc"];
 _u = _u		+ ["B_SDV_01_F"];
+_u = _u		+ ["rhs_pontoon_float"];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_NAVAL], _u];
 
 //--- Units - FLAG

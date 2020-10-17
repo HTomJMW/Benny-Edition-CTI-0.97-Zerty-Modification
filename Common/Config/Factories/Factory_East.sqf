@@ -17,7 +17,7 @@ missionNamespace setVariable [format["CTI_%1_Vehicles_Startup", _side], [
 		["rhs_weap_rpg7", 4], ["rhs_rpg7_PG7V_mag", 10],
 		["rhs_weap_rpg26", 6],
 		["rhs_mag_rgn", 15],
-		["rhs_VOG25", 15],
+		["rhs_VOG25", 10],
 		["firstaidkit", 10],
 		["rhs_acc_ekp1", 3],
 		["rhs_acc_1p63", 2],
@@ -37,6 +37,31 @@ missionNamespace setVariable [format["CTI_%1_Vehicles_Startup", _side], [
 	]]*/
 	//,	["O_Heli_Light_02_unarmed_F", []]
 ]];
+
+missionNamespace setVariable [format["CTI_%1_Supply_Crate", _side], [
+		["rhs_weap_ak103", 1],
+		["rhs_30Rnd_762x39mm_polymer", 30],
+		["rhs_weap_ak103_gp25", 2],
+		["rhs_acc_2dpZenit", 2],
+		["rhs_weap_rpg7", 1],
+		["rhs_rpg7_PG7V_mag", 4],
+		["rhs_weap_rpg26", 6],
+		["rhs_mag_rgo", 6],
+		["rhs_mag_rgn", 6],
+		["rhs_VOG25", 6],
+		["firstaidkit", 10],
+		["rhs_mag_rdg2_white", 2],
+		["rhs_mag_rdg2_black", 2],
+		["Chemlight_red", 2],
+		["Chemlight_yellow", 2],
+		["rhs_18rnd_9x21mm_7N28", 6],
+		["rhs_acc_ekp1", 3],
+		["rhs_acc_1p63", 2],
+		["rhs_acc_ekp8_02", 1],
+		["Toolkit", 1],
+		["rhs_sidor", 2],
+		["rhssaf_zrak_rd7j", 2]
+	]];
 
 //--- Units - Barracks
 
@@ -83,6 +108,7 @@ _u = _u		+ ["O_G_Offroad_01_F"];
 _u = _u		+ ["O_G_Offroad_01_armed_F"];
 _u = _u		+ ["O_G_Offroad_01_AT_F"];
 _u = _u		+ ['rhs_gaz66o_msv'];
+_u = _u		+ ['rhs_gaz66_zu23_msv'];
 _u = _u		+ ['rhs_zil131_open_msv'];
 _u = _u		+ ['RHS_Ural_Open_MSV_01'];
 _u = _u		+ ['RHS_Ural_MSV_01'];
@@ -203,6 +229,7 @@ _u = _u		+ ['O_Boat_Transport_01_F'];
 _u = _u		+ ['O_Boat_Armed_01_hmg_F'];
 _u = _u 	+ ["rhs_bmk_t"];
 _u = _u		+ ['O_SDV_01_F'];
+_u = _u		+ ["rhs_pontoon_float"];
 missionNamespace setVariable [format ["CTI_%1_%2Units", _side, CTI_NAVAL], _u];
 
 //--- Units - FLAG

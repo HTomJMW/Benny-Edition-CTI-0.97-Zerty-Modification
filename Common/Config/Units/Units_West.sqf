@@ -1131,7 +1131,7 @@ _u = _u + [1];
 _f = _f + [CTI_FACTORY_AIR];
 _s = _s + [""];
 
-_c = _c + ["rhs_uh1h_hidf_gunship"];
+_c = _c + ['rhs_uh1h_hidf_gunship'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [6500];
@@ -1292,6 +1292,15 @@ _t = _t + [25];
 _u = _u + [0];
 _f = _f + [CTI_FACTORY_NAVAL];
 _s = _s + ["service-repairtruck"];
+
+_c = _c + ["rhs_pontoon_float"];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [1000];
+_t = _t + [10];
+_u = _u + [0];
+_f = _f + [CTI_FACTORY_NAVAL];
+_s = _s + [""];
 
 _c = _c + ['Box_NATO_Wps_F'];
 _p = _p + [''];
