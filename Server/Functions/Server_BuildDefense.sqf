@@ -149,8 +149,13 @@ if (_defense isKindOf "B_Radar_System_01_F" || _defense isKindOf "B_SAM_System_0
 	_defense setVehicleLock "LOCKED";
 };
 
+//skins
 if (_defense isKindOf "O_Radar_System_02_F" || _defense isKindOf "O_SAM_System_04_F") then {
 	[_defense, ["JungleHex",1], nil] call BIS_fnc_initVehicle;
+};
+if (_defense isKindOf "B_AAA_System_01_F" || _defense isKindOf "B_SAM_System_01_F" || _defense isKindOf "B_SAM_System_02_F") then {
+	if ((_side call CTI_CO_FNC_GetSideID) == 0) then {[_defense, ["Sand",1], nil] call BIS_fnc_initVehicle;};
+	if ((_side call CTI_CO_FNC_GetSideID) == 1) then {[_defense, ["Green",1], nil] call BIS_fnc_initVehicle;};
 };
 
 if (missionNamespace getVariable "CTI_TROPHY_APS" == 1) then {
