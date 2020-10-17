@@ -15,7 +15,7 @@ if (vehicle	player == player  ) then{
 	_text="<t align='right'><t size='1'><t color='#00ff00'>";
 	_text=_text + getText(configFile >> "CfgVehicles" >> (typeOf (vehicle player)) >> "displayName");
 	_text=_text+"</t></t><br /><t size='0.7'>";
-	if (vehicle player isKindOf "parachutebase" || vehicle player isKindOf "staticweapon") then {
+	if (vehicle player isKindOf "parachutebase" || vehicle player isKindOf "staticweapon" || vehicle player isKindOf "rhs_k36d5_seat" || vehicle player isKindOf "rhs_a10_acesII_seat") then {
 	_text=_text+format	["<t color='#00ff00'><img image='A3\ui_f\data\IGUI\Cfg\Actions\heal_ca.paa'/> %1 </t>", ceil ((1 - getDammage (vehicle player))*100)];
 	} else {
 	_avgdamage = ((getAllHitPointsDamage (vehicle player)) select 2) call BIS_fnc_arithmeticMean;
