@@ -38,7 +38,7 @@ switch (_type) do
 
    			_veh setUnitPos "MIDDLE";
 
-
+   			_veh setVariable ["cti_duty_place", _town, true];
 		};
 
 	};
@@ -73,6 +73,7 @@ switch (_type) do
    			_veh setUnitPos "MIDDLE";
    			_veh lookAt  _town;
 
+   			_veh setVariable ["cti_duty_place", _town, true];
 		};
 	};
 
