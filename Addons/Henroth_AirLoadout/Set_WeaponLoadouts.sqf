@@ -270,7 +270,7 @@ CTI_LOADOUT_rhs_uh1h_hidf_gunship_MNT_OPTIONS =
 // ***************************
 // Heli - UH-60M
 // ***************************
-CTI_LOADOUT_RHS_UH60M2_d_MNT_OPTIONS =
+CTI_LOADOUT_RHS_UH60M2_MNT_OPTIONS =
 [
 	[
 		"Pylon - Configuration" ,
@@ -300,7 +300,7 @@ CTI_LOADOUT_RHS_UH60M2_d_MNT_OPTIONS =
 // ***************************
 // Heli - UH60-ESSS
 // ***************************
-CTI_LOADOUT_RHS_UH60M_ESSS_d_MNT_OPTIONS =
+CTI_LOADOUT_RHS_UH60M_ESSS_MNT_OPTIONS =
 [
 	[
 		"Pylon - Configuration" ,
@@ -330,7 +330,7 @@ CTI_LOADOUT_RHS_UH60M_ESSS_d_MNT_OPTIONS =
 // ***************************
 // Heli - UH-60M
 // ***************************
-CTI_LOADOUT_RHS_UH60M_d_MNT_OPTIONS =
+CTI_LOADOUT_RHS_UH60M_MNT_OPTIONS =
 [
 	[
 		"Pylon - Configuration" ,
@@ -404,7 +404,7 @@ CTI_LOADOUT_rhsusf_CH53e_USMC_cargo_MNT_OPTIONS =
 // ***************************
 // Heli - AH-1Z
 // ***************************
-CTI_LOADOUT_RHS_AH1Z_MNT_OPTIONS =
+CTI_LOADOUT_RHS_AH1Z_wd_MNT_OPTIONS =
 [
 	[
 		"Pylon - Configuration" ,
@@ -526,7 +526,7 @@ CTI_LOADOUT_RHS_AH1Z_MNT_OPTIONS =
 // ***************************
 // Heli - AH-64D
 // ***************************
-CTI_LOADOUT_RHS_AH64D_MNT_OPTIONS =
+CTI_LOADOUT_RHS_AH64D_wd_MNT_OPTIONS =
 [
 	[
 		"Pylon - Configuration" ,
@@ -993,7 +993,7 @@ CTI_LOADOUT_RHS_C130J_Cargo_MNT_OPTIONS = CTI_LOADOUT_RHS_C130J_MNT_OPTIONS;
 // ***************************
 // Heli - CH-47F
 // ***************************
-CTI_LOADOUT_RHS_CH_47F_10_MNT_OPTIONS =
+CTI_LOADOUT_RHS_CH_47F_MNT_OPTIONS =
 [
 	[
 		"Pylon - Configuration" ,
@@ -1041,7 +1041,7 @@ CTI_LOADOUT_RHS_CH_47F_10_MNT_OPTIONS =
 // ***************************
 // Heli - CH-47F (CARGO)
 // ***************************
-CTI_LOADOUT_RHS_CH_47F_10_cargo_MNT_OPTIONS = CTI_LOADOUT_RHS_CH_47F_10_MNT_OPTIONS;
+CTI_LOADOUT_RHS_CH_47F_cargo_MNT_OPTIONS = CTI_LOADOUT_RHS_CH_47F_10_MNT_OPTIONS;
 
 // ***************************
 // UAV - MQ-4A Greyhawk AA Version
