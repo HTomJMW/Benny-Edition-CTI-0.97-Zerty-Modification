@@ -392,7 +392,7 @@ _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
-_c = _c + ['rhsusf_M1078A1R_SOV_M2_WD_fmtv_socom'];
+_c = _c + ['rhsusf_M1078A1R_SOV_M2_D_fmtv_socom'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [700];
