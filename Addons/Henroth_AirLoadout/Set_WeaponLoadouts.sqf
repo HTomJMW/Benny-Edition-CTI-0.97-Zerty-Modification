@@ -1041,7 +1041,7 @@ CTI_LOADOUT_RHS_CH_47F_MNT_OPTIONS =
 // ***************************
 // Heli - CH-47F (CARGO)
 // ***************************
-CTI_LOADOUT_RHS_CH_47F_cargo_MNT_OPTIONS = CTI_LOADOUT_RHS_CH_47F_10_MNT_OPTIONS;
+CTI_LOADOUT_RHS_CH_47F_cargo_MNT_OPTIONS = CTI_LOADOUT_RHS_CH_47F_MNT_OPTIONS;
 
 // ***************************
 // UAV - MQ-4A Greyhawk AA Version
