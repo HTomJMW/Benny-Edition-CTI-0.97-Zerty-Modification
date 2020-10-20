@@ -428,7 +428,7 @@ if (_vehicle  isKindOf "Helicopter") then {
 //_vehicle addEventHandler ["getIn", {if ((isplayer (_this select 2)) && ({isplayer _x} count (crew (_this select 0)))<2) exitwith {(_this select 2) assignAsCommander (_this select 0)}}];
 
 // additional actions
-if (_vehicle isKindOf "rhs_zil131_msv" || _vehicle isKindOf "rhsusf_M1083A1P2_D_fmtv_usarmy" || _vehicle isKindOf "rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy") then {
+if (_vehicle isKindOf "rhs_zil131_msv" || _vehicle isKindOf "rhsusf_M1083A1P2_D_fmtv_usarmy" || _vehicle isKindOf "rhsusf_M1083A1P2_WD_fmtv_usarmy" || _vehicle isKindOf "rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy" || _vehicle isKindOf "rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy") then {
 	_text = "Treat at " + getText(configFile >> "CfgVehicles" >> typeOf _vehicle >> "displayName");
 	_action = _vehicle addAction [
 		_text,
