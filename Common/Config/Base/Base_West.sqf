@@ -1,6 +1,6 @@
 _side = _this;
 
-missionNamespace setVariable [format["CTI_%1_HQ", _side], "rhsusf_stryker_m1126_m2_d"];
+missionNamespace setVariable [format["CTI_%1_HQ", _side], "rhsusf_stryker_m1126_m2_wd"];
 missionNamespace setVariable [format["CTI_%1_Factories", _side], ["Barracks","Light","Heavy","Air","Ammo","Repair"]];
 
 missionNamespace setVariable [format["CTI_%1_Base_Template", _side], [
@@ -234,43 +234,43 @@ _categories = [];
 
 
 _headers = _headers 		+ ["MG Defense (mini)"];
-_classes = _classes 		+ ["RHS_M2StaticMG_MiniTripod_D"];
+_classes = _classes 		+ ["RHS_M2StaticMG_MiniTripod_WD"];
 _prices = _prices 			+ [200];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
 
 _headers = _headers 		+ ["MG Defense"];
-_classes = _classes 		+ ["RHS_M2StaticMG_D"];
+_classes = _classes 		+ ["RHS_M2StaticMG_WD"];
 _prices = _prices 			+ [200];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
 
 _headers = _headers 		+ ["GL Defense"];
-_classes = _classes 		+ ["RHS_MK19_TriPod_D"];
+_classes = _classes 		+ ["RHS_MK19_TriPod_WD"];
 _prices = _prices 			+ [350];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
 
 _headers = _headers 		+ ["AT Defense"];
-_classes = _classes 		+ ["RHS_TOW_TriPod_D"];
+_classes = _classes 		+ ["RHS_TOW_TriPod_WD"];
 _prices = _prices 			+ [900];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
 
 _headers = _headers 		+ ["AA Defense"];
-_classes = _classes 		+ ["RHS_Stinger_AA_pod_D"];
+_classes = _classes 		+ ["RHS_Stinger_AA_pod_WD"];
 _prices = _prices 			+ [800];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
 if (ISLAND != 1) then {
 _headers = _headers 		+ ["Mortar"];
-_classes = _classes 		+ ["RHS_M252_D"];
+_classes = _classes 		+ ["RHS_M252_WD"];
 _prices = _prices 			+ [10000];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
 };
 _headers = _headers 		+ ["Artillery"];
-_classes = _classes 		+ ["RHS_M119_D"];
+_classes = _classes 		+ ["RHS_M119_WD"];
 _prices = _prices 			+ [10000];
 _placements = _placements 	+ [[180, 5]];
 _categories = _categories 	+ ["Defense"];
