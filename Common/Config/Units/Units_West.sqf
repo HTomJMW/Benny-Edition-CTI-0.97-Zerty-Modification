@@ -419,7 +419,7 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
-_c = _c + ['rhsusf_m998_d_4dr_halftop'];
+_c = _c + ['rhsusf_m998_w_4dr_halftop'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [325];
@@ -428,7 +428,7 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
-_c = _c + ['rhsusf_m998_d_2dr'];
+_c = _c + ['rhsusf_m998_w_2dr'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [325];
@@ -437,7 +437,7 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
-_c = _c + ['rhsusf_m998_d_2dr_fulltop'];
+_c = _c + ['rhsusf_m998_w_2dr_fulltop'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [325];
