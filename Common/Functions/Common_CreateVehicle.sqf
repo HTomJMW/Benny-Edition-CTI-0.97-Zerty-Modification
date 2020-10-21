@@ -264,6 +264,9 @@ if (isNull _created) then {
 	if (_side == CTI_WEST_ID && (_vehicle isKindOf "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom") && ISLAND == 6) then {
 		[_vehicle, ["rhs_woodland",1], nil] call BIS_fnc_initVehicle; // paint to woodland on livonia
 	};
+		if (_side == CTI_WEST_ID && (_vehicle isKindOf "rhsusf_mrzr4_d") && ISLAND == 6) then {
+		[_vehicle, ["olive",1], nil] call BIS_fnc_initVehicle; // paint to olive on livonia
+	};
 	/*if (_vehicle isKindOf "Wheeled_APC_F" || _vehicle isKindOf "Tank") then {
 		if (_vehicle isKindOf "I_APC_Wheeled_03_cannon_F") then {[_vehicle, nil, ["showTools",1]] call BIS_fnc_initVehicle;};
 		if (_vehicle isKindOf "O_APC_Wheeled_02_rcws_v2_F" || _vehicle isKindOf "O_T_APC_Wheeled_02_rcws_v2_ghex_F") then {[_vehicle, nil, ["showTools",1]] call BIS_fnc_initVehicle;};
