@@ -1436,7 +1436,7 @@ class Mission
 						name="CTI_EAST_DEFAULT_GROUP";
 					};
 					id=115;
-					type="O_Soldier_F";
+					type="rhs_msv_emr_sergeant";
 					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
