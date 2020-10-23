@@ -23,7 +23,7 @@ missionNamespace setVariable [format["CTI_%1_Vehicles_Startup", _side], [
 		["rhsusf_acc_eotech_552", 2],
 		["rhsusf_acc_mrds", 1],
 		["Toolkit", 3],
-		["rhsusf_falconii_mc", 3],
+		["rhsusf_falconii", 3],
 		["rhsusf_assault_eagleaiii_ucp", 2],
 		["rhsusf_bino_m24", 2]
 	]]/*,
