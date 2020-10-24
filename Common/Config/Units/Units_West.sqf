@@ -122,7 +122,7 @@ _s = _s + [""];
 
 _c = _c + ['rhsusf_usmc_recon_marpat_d_rifleman'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['Rifleman (Recon)'];
 _o = _o + [100];
 _t = _t + [5];
 _u = _u + [3];
@@ -186,7 +186,7 @@ _s = _s + [""];
 
 _c = _c + ['rhsusf_usmc_recon_marpat_d_marksman'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['Marksman (Recon)'];
 _o = _o + [150];
 _t = _t + [5];
 _u = _u + [3];
@@ -871,7 +871,7 @@ _s = _s + [""];
 
 _c = _c + ['RHS_M6'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['M6A2 (AA)'];
 _o = _o + [10000];
 _t = _t + [30];
 _u = _u + [1];
@@ -979,7 +979,7 @@ _s = _s + [["rhsusf_M977A4_usarmy_d","salvager-independent"]];
 
 _c = _c + ['rhsusf_M978A4_usarmy_d'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['M978A4 (Fuel)'];
 _o = _o + [500];
 _t = _t + [25];
 _u = _u + [0];
