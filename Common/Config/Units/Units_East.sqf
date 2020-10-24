@@ -94,7 +94,7 @@ _s = _s + [""];
 
 _c = _c + ['rhs_vdv_recon_rifleman'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['Rifleman (Recon)'];
 _o = _o + [100];
 _t = _t + [5];
 _u = _u + [3];
@@ -193,7 +193,7 @@ _s = _s + [""];
 
 _c = _c + ['rhs_vdv_recon_marksman_asval'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['Marksman (Recon AS Val'];
 _o = _o + [150];
 _t = _t + [5];
 _u = _u + [3];
@@ -202,7 +202,7 @@ _s = _s + [""];
 
 _c = _c + ['rhs_vmf_recon_marksman'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['Marksman (Recon)'];
 _o = _o + [150];
 _t = _t + [5];
 _u = _u + [3];
@@ -211,7 +211,7 @@ _s = _s + [""];
 
 _c = _c + ['O_R_recon_M_F'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['Marksman (Recon ASP-1)'];
 _o = _o + [180];
 _t = _t + [5];
 _u = _u + [3];
@@ -229,7 +229,7 @@ _s = _s + [""];
 
 _c = _c + ['rhs_vdv_recon_medic'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['Medic (Recon)'];
 _o = _o + [120];
 _t = _t + [5];
 _u = _u + [3];
@@ -320,9 +320,9 @@ _s = _s + [""];
 _c = _c + ['rhs_vdv_marksman'];
 _p = _p + [''];
 _n = _n + [''];
-_o = _o + [250];
+_o = _o + [125];
 _t = _t + [5];
-_u = _u + [3];
+_u = _u + [2];
 _f = _f + [CTI_FACTORY_BARRACKS];
 _s = _s + [""];
 
@@ -1014,7 +1014,7 @@ _s = _s + [""];
 
 _c = _c + ['rhs_gaz66_repair_msv'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['GAZ-66 (Repair)'];
 _o = _o + [900];
 _t = _t + [25];
 _u = _u + [0];
@@ -1032,7 +1032,7 @@ _s = _s + ["service-repairtruck"];
 
 _c = _c + ['rhs_typhoon_vdv'];
 _p = _p + [''];
-_n = _n + [''];
+_n = _n + ['KAMAZ-63968 (Repair)'];
 _o = _o + [1100];
 _t = _t + [25];
 _u = _u + [0];
