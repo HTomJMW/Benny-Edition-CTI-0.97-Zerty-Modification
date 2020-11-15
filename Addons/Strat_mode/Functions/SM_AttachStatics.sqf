@@ -14,7 +14,7 @@ Attach_Static={
   _NO=[];
   [_veh,_pl] call CTI_PVF_Request_Locality;
   waitUntil {(owner _veh) == (owner _pl)};
-  if (!(_veh iskindOf "rhs_kamaz5350_flatbed_msv" || _veh iskindOf "rhsusf_M1084A1P2_D_fmtv_usarmy" || _veh iskindOf "rhsusf_M1084A1P2_WD_fmtv_usarmy")) then {
+  if (!(_veh iskindOf "rhs_kamaz5350_flatbed_msv" || _veh iskindOf "rhsusf_M1084A1P2_D_fmtv_usarmy" || _veh iskindOf "rhsusf_M1084A1P2_WD_fmtv_usarmy" || _veh isKindOf "rhs_kraz255b1_flatbed_msv")) then {
     _NO = nearestObjects [[(_veh modelToWorld [0,-3,0]) select 0,(_veh modelToWorld [0,-3,0]) select 1,0],STATICS_ALL,3];
   } else {
     _NO = nearestObjects [[(_veh modelToWorld [0,-5,0]) select 0,(_veh modelToWorld [0,-5,0]) select 1,0],STATICS_ALL,3];
@@ -30,12 +30,17 @@ Attach_Static={
     if((_NO select 0) isKindOf "RHS_M119_D" || (_NO select 0) isKindOf "RHS_M119_WD") then {[(_NO select 0),1] call rhs_fnc_m119_fold; (_NO select 0) attachto [_veh, [0,0.3,-1]];};
     if((_NO select 0) isKindOf (STATICS_M select 0)) then {(_NO select 0) attachto [_veh, [0,0.8,0]];};
   };
+    if (_veh iskindOf "rhs_kraz255b1_flatbed_msv") then {
+    if((_NO select 0) isKindOf "rhs_D30_msv" || (_NO select 0) isKindOf "rhs_D30_at_msv") then {[(_NO select 0),1] call rhs_fnc_d30_pack; (_NO select 0) attachto [_veh, [-0.1,-1.8,1.25]];};
+    if((_NO select 0) isKindOf "RHS_M119_D" || (_NO select 0) isKindOf "RHS_M119_WD") then {[(_NO select 0),1] call rhs_fnc_m119_fold; (_NO select 0) attachto [_veh, [0,0.2,-0.5]];};
+    if((_NO select 0) isKindOf (STATICS_M select 0)) then {(_NO select 0) attachto [_veh, [0,0.4,0.5]];};
+  };
   if (_veh iskindOf "rhsusf_M1084A1P2_D_fmtv_usarmy" || _veh iskindOf "rhsusf_M1084A1P2_WD_fmtv_usarmy") then {
     if((_NO select 0) isKindOf "rhs_D30_msv" || (_NO select 0) isKindOf "rhs_D30_at_msv") then {[(_NO select 0),1] call rhs_fnc_d30_pack; (_NO select 0) attachto [_veh, [-0.1,-1.3,1.3]];};
     if((_NO select 0) isKindOf "RHS_M119_D" || (_NO select 0) isKindOf "RHS_M119_WD") then {[(_NO select 0),1] call rhs_fnc_m119_fold; (_NO select 0) attachto [_veh, [-0.1,0.5,-0.4]];};
     if((_NO select 0) isKindOf (STATICS_M select 0)) then {(_NO select 0) attachto [_veh, [0,0.8,0.55]];};
   };
-  if (!(_veh iskindOf "rhs_kamaz5350_flatbed_msv" || _veh iskindOf "rhsusf_M1084A1P2_D_fmtv_usarmy" || _veh iskindOf "rhsusf_M1084A1P2_WD_fmtv_usarmy")) then {
+  if (!(_veh iskindOf "rhs_kamaz5350_flatbed_msv" || _veh iskindOf "rhsusf_M1084A1P2_D_fmtv_usarmy" || _veh iskindOf "rhsusf_M1084A1P2_WD_fmtv_usarmy" || _veh isKindOf "rhs_kraz255b1_flatbed_msv")) then {
     if(typeOf (_NO select 0) in STATICS_L) then {(_NO select 0) attachto [_veh,[0,-1.5,0.25]];_turn=180;};
     if(typeOf (_NO select 0) in STATICS_LMG) then {(_NO select 0) attachto [_veh,[-0.1,-2,0.5]];_turn=180;_veh animate ["HideDoor3", 1];};
     if(typeOf (_NO select 0) in STATICS_MG) then {(_NO select 0) attachto [_veh,[0.25,-2,1]];};
@@ -51,7 +56,7 @@ Dettach_Static={
   if (isNil {_veh getvariable "attachment"}) exitwith {false};
   _attached=_veh getvariable "attachment";
   detach _attached;
-  if (!(_veh iskindOf "rhs_kamaz5350_flatbed_msv" || _veh iskindOf "rhsusf_M1084A1P2_D_fmtv_usarmy" || _veh iskindOf "rhsusf_M1084A1P2_WD_fmtv_usarmy")) then {
+  if (!(_veh iskindOf "rhs_kamaz5350_flatbed_msv" || _veh iskindOf "rhsusf_M1084A1P2_D_fmtv_usarmy" || _veh iskindOf "rhsusf_M1084A1P2_WD_fmtv_usarmy" || _veh isKindOf "rhs_kraz255b1_flatbed_msv")) then {
     _attached setpos [(_veh modelToWorld [0,-5,0]) select 0,(_veh modelToWorld [0,-5,0]) select 1,0];
   } else {
     _attached setpos [(_veh modelToWorld [0,-7,0]) select 0,(_veh modelToWorld [0,-7,0]) select 1,0];
