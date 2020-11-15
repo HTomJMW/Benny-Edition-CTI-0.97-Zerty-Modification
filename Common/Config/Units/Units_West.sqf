@@ -410,15 +410,6 @@ _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
-_c = _c + ['rhsusf_m1043_w'];
-_p = _p + [''];
-_n = _n + [''];
-_o = _o + [325];
-_t = _t + [15];
-_u = _u + [0];
-_f = _f + [CTI_FACTORY_LIGHT];
-_s = _s + [""];
-
 _c = _c + ['rhsusf_m998_w_4dr_halftop'];
 _p = _p + [''];
 _n = _n + [''];
@@ -438,6 +429,15 @@ _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
 _c = _c + ['rhsusf_m998_w_2dr_fulltop'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [325];
+_t = _t + [15];
+_u = _u + [0];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1043_w'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [325];
@@ -470,6 +470,132 @@ _n = _n + [''];
 _o = _o + [1400];
 _t = _t + [20];
 _u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1151_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [325];
+_t = _t + [20];
+_u = _u + [0];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1151_m2crows_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [750];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1151_mk19crows_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [800];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1151_m2_v1_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [750];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1151_m2_lras3_v1_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [775];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1151_m240_v1_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [750];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1151_mk19_v1_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [800];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1151_m2_v2_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [800];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1151_m240_v2_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [800];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1151_mk19_v2_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [850];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1152_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [325];
+_t = _t + [20];
+_u = _u + [0];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1152_rsv_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [325];
+_t = _t + [20];
+_u = _u + [0];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1152_sicps_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [325];
+_t = _t + [20];
+_u = _u + [0];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1165_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [350];
+_t = _t + [20];
+_u = _u + [0];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
@@ -522,6 +648,33 @@ _c = _c + ['rhsusf_m1240a1_mk19crows_usarmy_wd'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [950];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1240a1_m2_uik_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [950];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1240a1_m240_uik_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [950];
+_t = _t + [20];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhsusf_m1240a1_mk19_uik_usarmy_wd'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [975];
 _t = _t + [20];
 _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
