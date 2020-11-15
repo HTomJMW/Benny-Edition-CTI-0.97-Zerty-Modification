@@ -490,6 +490,24 @@ _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + [""];
 
+_c = _c + ['rhs_kraz255b1_cargo_open_msv'];
+_p = _p + [''];
+_n = _n + [''];
+_o = _o + [400];
+_t = _t + [15];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
+_c = _c + ['rhs_kraz255b1_flatbed_msv'];
+_p = _p + [''];
+_n = _n + ['KrAZ-255B1 (can load cannon)'];
+_o = _o + [400];
+_t = _t + [15];
+_u = _u + [1];
+_f = _f + [CTI_FACTORY_LIGHT];
+_s = _s + [""];
+
 _c = _c + ['rhs_uaz_open_MSV_01'];
 _p = _p + [''];
 _n = _n + [''];
@@ -1060,6 +1078,15 @@ _s = _s + [["rhs_zil131_flatbed_msv","salvager-independent"]];
 _c = _c + ['RHS_Ural_Fuel_MSV_01'];
 _p = _p + [''];
 _n = _n + [''];
+_o = _o + [450];
+_t = _t + [25];
+_u = _u + [0];
+_f = _f + [CTI_FACTORY_REPAIR];
+_s = _s + ["service-fueltruck"];
+
+_c = _c + ['rhs_kraz255b1_fuel_msv'];
+_p = _p + [''];
+_n = _n + ['KrAZ-255B1 (Fuel)'];
 _o = _o + [450];
 _t = _t + [25];
 _u = _u + [0];
