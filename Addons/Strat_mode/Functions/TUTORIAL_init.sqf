@@ -37,6 +37,7 @@ for "_i" from 0 to 3 /* step +1 */ do {
 	};*/
 };
 
+"CraterLong_small" createVehicle _pos; //crater for RHS UH1 wreck
 TUTORIAL_EXIT= "Land_UH1H_Wreck_F" createVehicle _pos;
 TUTORIAL_EXIT enableSimulationGlobal false;
 //ADMIN_ZEUS addCuratorEditableObjects [[TUTORIAL_EXIT],false];
