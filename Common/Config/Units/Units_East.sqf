@@ -580,7 +580,7 @@ _u = _u + [1];
 _f = _f + [4];
 _s = _s + [""];
 
-_c = _c + ['O_Truck_02_transport_F'];
+_c = _c + ['O_T_Truck_02_transport_F'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [300];
@@ -679,7 +679,7 @@ _u = _u + [1];
 _f = _f + [CTI_FACTORY_LIGHT];
 _s = _s + ["service-medic"];
 
-_c = _c + ['O_Truck_02_medical_F'];
+_c = _c + ['O_T_Truck_02_Medical_F'];
 _p = _p + [''];
 _n = _n + ["Mobile respawn Kamaz + Equipment"];
 _o = _o + [2000];
@@ -753,7 +753,7 @@ _f = _f + [CTI_FACTORY_HEAVY];
 _s = _s + [""];
 
 
-_c = _c + ['O_Truck_02_box_F'];
+_c = _c + ['O_T_Truck_02_Box_F'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [900];
@@ -789,7 +789,7 @@ _u = _u + [0];
 _f = _f + [CTI_FACTORY_REPAIR];
 _s = _s + [["O_T_Truck_03_device_ghex_F","salvager-independent"]];
 
-_c = _c + ['O_Truck_02_fuel_F'];
+_c = _c + ['O_T_Truck_02_fuel_F'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [450];
@@ -826,7 +826,7 @@ _f = _f + [CTI_FACTORY_REPAIR];
 _s = _s + ["service-fueltruck"];
 
 
-_c = _c + ['O_Truck_02_Ammo_F'];
+_c = _c + ['O_T_Truck_02_Ammo_F'];
 _p = _p + [''];
 _n = _n + [''];
 _o = _o + [3000];
